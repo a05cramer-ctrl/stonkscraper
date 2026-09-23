@@ -9,7 +9,9 @@ const RPCS = (process.env.RPC_URLS || 'https://solana-rpc.publicnode.com,https:/
 const LAUNCHLAB = 'LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj';
 const MIN_LIQ = 50000; // StonkFun's bar for a quote asset
 const WATCH_TVL = process.env.WATCH_NEW_POOL_TVL === undefined ? 500000 : +process.env.WATCH_NEW_POOL_TVL; // 0 = off
-const NTFY_TOPIC = process.env.NTFY_TOPIC || 'stonkq-79e0faf6a664';
+const DISCORD = process.env.DISCORD_WEBHOOK || '';
+// With a Discord webhook set, phone pings go to Discord only (set NTFY_TOPIC too if you want both).
+const NTFY_TOPIC = process.env.NTFY_TOPIC || (DISCORD ? '' : 'stonkq-79e0faf6a664');
 const K = { state: 'sqw:state', events: 'sqw:events', run: 'sqw:run', pdas: 'sqw:pdas', lock: 'sqw:lock', fails: 'sqw:fails', test: 'sqw:test' };
 
 // ---------- base58 + Solana PDA (verified against @solana/web3.js) ----------
@@ -126,12 +128,43 @@ function pingFor(ev) {
     default: return null;
   }
 }
-async function ntfy(ev) {
-  const p = pingFor(ev);
-  if (!p || !NTFY_TOPIC) return;
+const COLORS = { coming: 0xffb627, added: 0xffb627, live: 0x43d17a, deep: 0x6fc3ff, start: 0x8ea3bb, test: 0x8ea3bb, error: 0xff6b5b };
+async function ntfy(p) {
   const headers = { Title: p.title.replace(/[^\x20-\x7e]/g, ''), Priority: p.prio, Tags: p.tags };
   if (p.click) headers.Click = p.click;
   try { await fetch('https://ntfy.sh/' + encodeURIComponent(NTFY_TOPIC), { method: 'POST', body: p.body, headers, signal: AbortSignal.timeout(10000) }); } catch {}
+}
+async function discord(list) {
+  // up to 10 embeds per message; urgent ones @everyone so the phone buzzes
+  for (let i = 0; i < list.length; i += 10) {
+    const chunk = list.slice(i, i + 10);
+    const urgent = chunk.some(([, p]) => p.prio === 'urgent');
+    const body = {
+      username: 'Quote arrivals',
+      content: urgent ? '@everyone' : '',
+      allowed_mentions: { parse: urgent ? ['everyone'] : [] },
+      embeds: chunk.map(([ev, p]) => ({
+        title: p.title,
+        description: p.body,
+        url: p.click || undefined,
+        color: COLORS[ev.type] || 0x8ea3bb,
+        timestamp: new Date(ev.t || Date.now()).toISOString(),
+      })),
+    };
+    try {
+      const r = await fetch(DISCORD, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(10000) });
+      if (r.status === 429) { await sleep(2000); await fetch(DISCORD, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(10000) }); }
+    } catch {}
+    if (i + 10 < list.length) await sleep(600);
+  }
+}
+async function notify(events) {
+  const list = events.map((ev) => [ev, pingFor(ev)]).filter(([, p]) => p);
+  if (!list.length) return;
+  await Promise.all([
+    NTFY_TOPIC ? Promise.all(list.map(([, p]) => ntfy(p))) : null,
+    DISCORD ? discord(list) : null,
+  ]);
 }
 
 // ---------- scan ----------
@@ -217,7 +250,7 @@ async function runCheck() {
       writes.push(R.cmd('SET', K.events, JSON.stringify([...events.slice().reverse(), ...old].slice(0, 150))));
     }
     await Promise.all(writes);
-    await Promise.all(events.map(ntfy));
+    await notify(events);
   } catch (e) {
     run.errors.push(e.message);
   } finally {
@@ -227,7 +260,7 @@ async function runCheck() {
     try {
       await R.cmd('SET', K.run, JSON.stringify(run));
       if (run.ok) await R.cmd('SET', K.fails, 0);
-      else if (+(await R.cmd('INCR', K.fails)) === 10) await ntfy({ type: 'error', body: `Last 10 scans had errors: ${run.errors.join('; ')}` });
+      else if (+(await R.cmd('INCR', K.fails)) === 10) await notify([{ type: 'error', t: Date.now(), body: `Last 10 scans had errors: ${run.errors.join('; ')}` }]);
       await R.cmd('DEL', K.lock);
     } catch {}
   }
@@ -257,8 +290,8 @@ async function getState() {
 
 async function testPing() {
   if ((await R.cmd('SET', K.test, 1, 'NX', 'EX', 30)) !== 'OK') return { skipped: 'wait 30s between test pings' };
-  await ntfy({ type: 'test' });
-  return { sent: true };
+  await notify([{ type: 'test', t: Date.now() }]);
+  return { sent: true, to: [NTFY_TOPIC && 'ntfy', DISCORD && 'discord'].filter(Boolean) };
 }
 
 module.exports = { runCheck, getState, testPing, configPda, onCurve, b58encode };
