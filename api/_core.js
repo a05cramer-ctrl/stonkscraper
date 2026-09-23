@@ -311,6 +311,14 @@ async function getState() {
     pairCount: Object.keys(S.pairs).length,
     arriving,
     boarding,
+    // already sitting there when the watch started
+    oldArriving: Object.entries(S.cfg)
+      .filter(([m, c]) => c && !(c.t > 0) && !S.pairs[m])
+      .map(([mint, c]) => ({ mint, ...c }))
+      .sort((a, b) => b.tvl - a.tvl),
+    oldBoarding: Object.entries(S.pairs)
+      .filter(([, p]) => !p[1] && !(p[4] > 0))
+      .map(([mint, p]) => ({ mint, sym: p[0], cat: p[3] })),
     odds: o,
     pingTo: [NTFY_TOPIC && 'ntfy', DISCORD && 'Discord'].filter(Boolean),
     events: eventsRaw ? JSON.parse(eventsRaw).slice(0, 80) : [],
