@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
-      - run: curl -s -m 70 "https://stonkscraper-cramers-projects-12073d51.vercel.app/api/check" || true
+      - run: curl -s -m 70 "https://stonkscraper.vercel.app/api/check" || true
