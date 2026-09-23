@@ -66,6 +66,8 @@
   .st.live { color: var(--green); }
   .st.deep { color: var(--sky); }
   .st.start, .st.error { color: var(--muted); }
+  .odds { color: var(--green); font-weight: 600; }
+  .cold { color: var(--muted); font-size: 18px; }
   .flip td.tick span, .flip td .st { display: inline-block; animation: flap .7s cubic-bezier(.3,1.4,.5,1) both; transform-origin: 50% 60%; }
   @keyframes flap { 0% { transform: rotateX(90deg); opacity: .2; } 60% { transform: rotateX(-12deg); opacity: 1; } 100% { transform: none; } }
   .empty { padding: 36px 20px; color: var(--muted); font-size: 16px; }
@@ -169,7 +171,7 @@
       <div class="below">
         <div class="card">
           <h2>Pings</h2>
-          <p>Your phone gets pings through the ntfy app. Desktop alerts work while this tab is open.</p>
+          <p id="pingto">Pings go to your phone. Desktop alerts work while this tab is open.</p>
           <div class="row"><button class="btn" id="alerts"></button><button class="btn" id="testping">Send test ping</button></div>
         </div>
         <div class="card"><h2>Last scan</h2><dl id="scaninfo"></dl></div>
@@ -212,15 +214,19 @@
 
     let html = '', legend = '';
     if (tab === 'arriving') {
-      legend = 'Raydium has set these up as launch quotes, but StonkFun doesn’t list them yet. Newest first.';
-      html = d.arriving.length ? `<table><thead><tr><th>Seen</th><th>Ticker</th><th class="name">Name</th><th>Liquidity</th><th>Paired vs</th><th></th></tr></thead><tbody>${
-        d.arriving.map((a) => row(`<td class="time">${esc(et(a.t))}</td><td class="tick"><span>${esc(a.sym)}</span></td><td class="name">${esc(a.name)}</td><td class="num">${esc(usd(a.tvl))}</td><td class="vs">${esc(a.vs)}</td><td class="link">${chart(a.mint)}</td>`, a.t > flipAfter)).join('')
-      }</tbody></table>` : `<div class="empty"><strong>Nothing arriving right now</strong>When Raydium sets up a new quote that StonkFun doesn’t have yet, it lands here and your phone pings.</div>`;
+      const o = d.odds || {};
+      const pct = o.pct != null ? Math.round(o.pct * 100) + '%' : '—';
+      legend = o.basis === 'own'
+        ? `Chance = how many arrivals ended up on StonkFun since the watch started: ${o.landed} of ${o.decided}${o.medianHours != null ? `, usually ${o.medianHours < 1 ? Math.max(1, Math.round(o.medianHours * 60)) + ' min' : o.medianHours.toFixed(1) + ' h'} after arriving` : ''}. No move in 3 days = going cold.`
+        : `Chance = share of tokens Raydium has set up that StonkFun lists: ${o.listed ?? 0} of ${(o.listed ?? 0) + (o.unlisted ?? 0)}. Switches to the watcher’s own track record after 5 arrivals. No move in 3 days = going cold.`;
+      html = d.arriving.length ? `<table><thead><tr><th>Seen</th><th>Ticker</th><th class="name">Name</th><th>Liquidity</th><th>Chance</th><th></th></tr></thead><tbody>${
+        d.arriving.map((a) => row(`<td class="time">${esc(et(a.t))}</td><td class="tick"><span>${esc(a.sym)}</span></td><td class="name">${esc(a.name)}</td><td class="num">${esc(usd(a.tvl))}</td><td class="num">${a.cold ? '<span class="cold">Going cold</span>' : `<span class="odds">${pct}</span>`}</td><td class="link">${chart(a.mint)}</td>`, a.t > flipAfter)).join('')
+      }</tbody></table>` : `<div class="empty"><strong>Nothing new arriving</strong>When Raydium sets up a new quote that StonkFun doesn’t have yet, it lands here with its chance and you get pinged. Chance right now: ${pct}.</div>`;
     } else if (tab === 'boarding') {
-      legend = 'On StonkFun’s list but not launchable yet.';
-      html = d.boarding.length ? `<table><thead><tr><th>Ticker</th><th>Type</th><th></th></tr></thead><tbody>${
-        d.boarding.map((b) => row(`<td class="tick"><span>${esc(b.sym)}</span></td><td class="vs">${esc(b.cat)}</td><td class="link">${chart(b.mint)}</td>`)).join('')
-      }</tbody></table>` : `<div class="empty"><strong>Nothing boarding</strong>Every pair on StonkFun’s list can be launched right now.</div>`;
+      legend = 'New on StonkFun’s list but not launchable yet.';
+      html = d.boarding.length ? `<table><thead><tr><th>Seen</th><th>Ticker</th><th>Type</th><th></th></tr></thead><tbody>${
+        d.boarding.map((b) => row(`<td class="time">${esc(et(b.t))}</td><td class="tick"><span>${esc(b.sym)}</span></td><td class="vs">${esc(b.cat)}</td><td class="link">${chart(b.mint)}</td>`, b.t > flipAfter)).join('')
+      }</tbody></table>` : `<div class="empty"><strong>Nothing boarding</strong>When StonkFun adds a pair that isn’t launchable yet, it lands here and you get pinged.</div>`;
     } else {
       legend = 'Everything the watcher has pinged, newest first. Arriving and Boarding are early. Landed means launchable. On radar is a new $500K+ pool — early, can be noise.';
       html = log.length ? `<table><thead><tr><th>Time (ET)</th><th>Ticker</th><th class="name">Name</th><th>Status</th><th>Liquidity</th><th></th></tr></thead><tbody>${
@@ -229,6 +235,7 @@
     }
     $('#rows').innerHTML = html;
     $('#legend').textContent = legend;
+    if (d.pingTo && d.pingTo.length) $('#pingto').textContent = `Pings go to ${d.pingTo.join(' and ')}. Desktop alerts work while this tab is open.`;
 
     // status pill + scan info
     const r = d.run, pill = $('#pill'), txt = $('#pilltxt');
