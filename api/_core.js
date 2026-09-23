@@ -118,9 +118,9 @@ function pingFor(ev) {
   const link = `https://dexscreener.com/solana/${ev.mint}`;
   const soft = ev.cat === 'custom';
   switch (ev.type) {
-    case 'coming': return { title: `COMING TO STONKFUN: ${ev.sym}`, body: `Raydium just set ${ev.sym}${nm} up as a launch quote. StonkFun doesn't list it yet.\nLiquidity ${usd(ev.tvl)} vs ${ev.vs}\n${ev.mint}`, prio: 'urgent', tags: 'rotating_light', click: link };
+    case 'coming': return { title: `COMING TO STONKFUN: ${ev.sym}`, body: `Raydium just set ${ev.sym}${nm} up as a launch quote. StonkFun doesn't list it yet.\nLiquidity ${usd(ev.tvl)} vs ${ev.vs}${ev.chance != null ? `\nChance StonkFun adds it: ${Math.round(ev.chance * 100)}%` : ''}\n${ev.mint}`, prio: 'urgent', tags: 'rotating_light', click: link };
     case 'added': return { title: `StonkFun added ${ev.sym} - NOT live yet`, body: `${ev.sym}${nm} is on StonkFun's list but can't be launched yet.\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'rotating_light', click: link };
-    case 'live': return { title: `LIVE on StonkFun: ${ev.sym}`, body: `${ev.sym}${nm} can be launched now.\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'green_circle', click: link };
+    case 'live': return { title: `LIVE on StonkFun: ${ev.sym}`, body: `${ev.sym}${nm} can be launched now.${ev.arrived ? `\nIt showed up as Arriving ${Math.max(1, Math.round((ev.t - ev.arrived) / 6e4))} min before this.` : ''}\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'green_circle', click: link };
     case 'deep': return { title: `New deep pool: ${ev.sym}`, body: `${ev.sym}${nm} has ${usd(ev.tvl)} on Raydium vs ${ev.vs}. Not on StonkFun, not set up yet. Early, can be noise.\n${ev.mint}`, prio: 'default', tags: 'eyes', click: link };
     case 'start': return { title: 'Quote watcher running', body: ev.body, prio: 'default', tags: 'white_check_mark' };
     case 'test': return { title: 'Test ping', body: 'Pings work.', prio: 'default', tags: 'bell' };
@@ -193,11 +193,13 @@ async function runCheck() {
     if (pairsRes.status === 'fulfilled') {
       for (const p of pairsRes.value) {
         const ready = p.launchable !== false && p.launchLabReady !== false;
-        const old = S.pairs[p.mint]; // [sym, ready, everReady, cat]
-        const base = { sym: p.symbol, name: p.name || '', mint: p.mint, cat: p.category || '', t: now };
+        const old = S.pairs[p.mint]; // [sym, ready, everReady, cat, firstSeen (0 = before watch)]
+        const arr = S.cfg[p.mint];
+        const base = { sym: p.symbol, name: p.name || '', mint: p.mint, cat: p.category || '', t: now, arrived: arr && arr.t > 0 ? arr.t : 0 };
+        if (arr && arr.t > 0 && !arr.landed) arr.landed = now;
         if (!old && !first) events.push({ ...base, type: ready ? 'live' : 'added' });
         else if (old && !old[1] && !old[2] && ready && !first) events.push({ ...base, type: 'live' });
-        S.pairs[p.mint] = [p.symbol, ready ? 1 : 0, (old && old[2]) || ready ? 1 : 0, p.category || ''];
+        S.pairs[p.mint] = [p.symbol, ready ? 1 : 0, (old && old[2]) || ready ? 1 : 0, p.category || '', old ? (old[4] || 0) : (first ? 0 : now)];
       }
       run.pairs = pairsRes.value.length;
     } else run.errors.push(pairsRes.reason.message);
@@ -230,6 +232,10 @@ async function runCheck() {
           }));
         }
       } catch (e) { run.errors.push('Solana RPC: ' + e.message); }
+      // how often a token Raydium set up is actually on StonkFun (tokens with $50K+ liquidity)
+      let listed = 0;
+      for (const m of pools.keys()) { const p = S.pairs[m]; if (p && p[1]) listed++; }
+      S.stats = { listed, unlisted: Object.keys(S.cfg).filter((m) => !S.pairs[m]).length };
     } else run.errors.push(poolsRes.reason.message);
 
     // tidy: forget radar entries older than 30 days
@@ -240,6 +246,9 @@ async function runCheck() {
       const waiting = Object.values(S.cfg).filter((c) => c).length;
       events.push({ type: 'start', t: now, body: `Watching ${run.pairs} StonkFun pairs and ${run.mints} Raydium tokens with $50K+ liquidity. ${waiting} already set up by Raydium but not on StonkFun.` });
     }
+
+    const o = odds(S, now);
+    for (const ev of events) if (ev.type === 'coming') ev.chance = o.pct;
 
     const writes = [];
     const after = JSON.stringify(S);
@@ -267,23 +276,43 @@ async function runCheck() {
   return run;
 }
 
+// Chance StonkFun adds a fresh arrival. Until 5 arrivals have had 3 days to play out, use the base rate
+// (share of Raydium-set-up tokens that StonkFun lists); after that, use the watcher's own track record.
+const COLD_MS = 72 * 36e5;
+function odds(S, now) {
+  const st = S.stats || { listed: 0, unlisted: 0 };
+  const base = st.listed + st.unlisted ? st.listed / (st.listed + st.unlisted) : null;
+  const fresh = Object.values(S.cfg).filter((c) => c && c.t > 0);
+  const done = fresh.filter((c) => c.landed || now - c.t > COLD_MS);
+  const landed = fresh.filter((c) => c.landed);
+  const own = done.length >= 5 ? done.filter((c) => c.landed).length / done.length : null;
+  const hrs = landed.map((c) => (c.landed - c.t) / 36e5).sort((a, b) => a - b);
+  return { pct: own !== null ? own : base, basis: own !== null ? 'own' : 'base', listed: st.listed, unlisted: st.unlisted, arrived: fresh.length, landed: landed.length, decided: done.length, medianHours: hrs.length ? hrs[Math.floor(hrs.length / 2)] : null };
+}
+
 async function getState() {
   const [stateRaw, eventsRaw, runRaw] = await R.cmd('MGET', K.state, K.events, K.run);
   const S = stateRaw ? JSON.parse(stateRaw) : { pairs: {}, cfg: {}, deep: {} };
+  const now = Date.now();
+  const o = odds(S, now);
+  // only things that showed up after the watch started
   const arriving = Object.entries(S.cfg)
-    .filter(([m]) => !S.pairs[m])
-    .map(([mint, c]) => ({ mint, ...c }))
-    .sort((a, b) => (b.t - a.t) || (b.tvl - a.tvl));
+    .filter(([m, c]) => c && c.t > 0 && !S.pairs[m])
+    .map(([mint, c]) => ({ mint, ...c, cold: now - c.t > COLD_MS }))
+    .sort((a, b) => b.t - a.t);
   const boarding = Object.entries(S.pairs)
-    .filter(([, p]) => !p[1])
-    .map(([mint, p]) => ({ mint, sym: p[0], cat: p[3] }));
+    .filter(([, p]) => !p[1] && p[4] > 0)
+    .map(([mint, p]) => ({ mint, sym: p[0], cat: p[3], t: p[4] }))
+    .sort((a, b) => b.t - a.t);
   return {
-    now: Date.now(),
+    now,
     run: runRaw ? JSON.parse(runRaw) : null,
     initialized: !!S.initialized,
     pairCount: Object.keys(S.pairs).length,
     arriving,
     boarding,
+    odds: o,
+    pingTo: [NTFY_TOPIC && 'ntfy', DISCORD && 'Discord'].filter(Boolean),
     events: eventsRaw ? JSON.parse(eventsRaw).slice(0, 80) : [],
   };
 }
