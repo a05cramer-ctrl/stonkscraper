@@ -1,0 +1,13 @@
+# Hits the site's scan endpoint every 5 minutes so the watcher runs 24/7.
+# The endpoint only starts a scan - no key needed, nothing secret here.
+name: scan
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - run: curl -s -m 70 "https://stonkscraper-cramers-projects-12073d51.vercel.app/api/check" || true
