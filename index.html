@@ -243,7 +243,7 @@
         L.map((b) => row(`<td class="tick old"><span>${esc(b.sym)}</span></td><td class="vs">${esc(b.cat)}</td><td class="link">${chart(b.mint)}</td>`)).join('')
       }</tbody></table>` : `<div class="empty"><strong>Nothing here</strong>Every old pair on StonkFun’s list is launchable now.</div>`;
     } else {
-      legend = 'Everything the watcher has pinged, newest first. Arriving and Boarding are early. Landed means launchable. On radar is a new $500K+ pool — early, can be noise.';
+      legend = 'Everything the watcher has pinged, newest first. Arriving and Boarding are early. Landed means launchable. On radar is new real money ($500K+) — early, can be noise.';
       html = log.length ? `<table><thead><tr><th>Time (ET)</th><th>Ticker</th><th class="name">Name</th><th>Status</th><th>Liquidity</th><th></th></tr></thead><tbody>${
         log.map((e) => row(`<td class="time">${esc(et(e.t))}</td><td class="tick"><span>${esc(e.sym || '—')}</span></td><td class="name">${esc(e.name || e.body || '')}</td><td><span class="st ${esc(e.type)}">${esc(STATUS[e.type] || e.type)}</span></td><td class="num">${esc(usd(e.tvl))}</td><td class="link">${chart(e.mint)}</td>`, e.t > flipAfter)).join('')
       }</tbody></table>` : `<div class="empty"><strong>No pings yet</strong>The first scan sets the baseline. Pings start after that.</div>`;
@@ -266,7 +266,7 @@
       <dt>When</dt><dd>${esc(et(r.t))} ET</dd>
       <dt>Took</dt><dd>${Math.max(.1, r.ms / 1000).toFixed(1)}s</dd>
       <dt>StonkFun pairs</dt><dd>${r.pairs ?? '—'}</dd>
-      <dt>Tokens watched</dt><dd>${r.mints ?? '—'} with $50K+ on Raydium</dd>
+      <dt>Tokens watched</dt><dd>${r.mints ?? '—'} (Raydium $50K+ and Jupiter-verified)</dd>
       ${r.errors && r.errors.length ? `<dt>Errors</dt><dd class="err">${esc(r.errors.join('; '))}</dd>` : ''}
       ${d.run && d.now - d.run.t > 5 * 60e3 ? `<dt>Fix</dt><dd>Check the cron job at cron-job.org is on and hits /api/check every minute.</dd>` : ''}`
       : `<dt>Status</dt><dd>Waiting for the first scan.</dd>`;
