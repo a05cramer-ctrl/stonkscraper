@@ -85,29 +85,69 @@ async function loadPairs() {
   if (!Array.isArray(list) || list.length < 10) throw new Error('StonkFun pairs list came back empty');
   return list;
 }
-function addPools(m, rows) {
+const STABLES = new Set(['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']);
+const WSOL = 'So11111111111111111111111111111111111111112';
+const JUP_VERIFIED = 'https://lite-api.jup.ag/tokens/v2/tag?query=verified';
+const MIN_LIQ_JUP = 25000;          // Jupiter-verified tokens with this much liquidity anywhere on Solana
+const UNIVERSE_TTL = 10 * 60e3;     // re-pull the token lists every 10 min; scans in between are quick
+const YOUNG_MS = 3 * 864e5;
+const liqOf = (i) => i.jup || i.real || i.tvl;
+
+// Real money in a Raydium pool = its USDC/USDT or SOL side, doubled. Fake pools (a pile of an
+// imitation token against a few $K of USDC) report a giant TVL; this sees through that.
+function realTvl(p, solUsd) {
+  const a = p.mintA && p.mintA.address, b = p.mintB && p.mintB.address;
+  let v = null;
+  if (STABLES.has(b)) v = p.mintAmountB; else if (STABLES.has(a)) v = p.mintAmountA;
+  else if (b === WSOL && solUsd) v = p.mintAmountB * solUsd; else if (a === WSOL && solUsd) v = p.mintAmountA * solUsd;
+  return v == null || !isFinite(v) ? 0 : Math.round(2 * v);
+}
+function addPools(m, rows, solUsd) {
   let below = false;
   for (const p of rows) {
     if (!(p.tvl >= MIN_LIQ)) { below = true; continue; }
+    const real = realTvl(p, solUsd);
+    const opened = +p.openTime > 0 ? +p.openTime * 1000 : 0;
     for (const [t, o] of [[p.mintA, p.mintB], [p.mintB, p.mintA]]) {
       if (!t || !t.address) continue;
-      const e = m.get(t.address);
-      if (!e || e.tvl < p.tvl) m.set(t.address, { sym: t.symbol || '?', name: t.name || '', tvl: Math.round(p.tvl), vs: (o && o.symbol) || '?' });
+      const e = m.get(t.address) || { sym: t.symbol || '?', name: t.name || '', tvl: 0, vs: '?', real: 0, born: 0 };
+      if (p.tvl > e.tvl) { e.tvl = Math.round(p.tvl); e.vs = (o && o.symbol) || '?'; }
+      if (real > e.real) e.real = real;
+      if (opened && (!e.born || opened < e.born)) e.born = opened;
+      m.set(t.address, e);
     }
   }
   return below;
 }
-async function loadPools() {
+// Every token worth checking: Raydium pools with $50K+, plus Jupiter-verified tokens with real
+// liquidity anywhere on Solana (ENA's money sat mostly off Raydium, so it was missed before).
+let UNI = null; // warm-instance cache
+async function loadUniverse() {
+  if (UNI && Date.now() - UNI.t < UNIVERSE_TTL) return UNI.map;
+  const [jup, ray] = await Promise.all([
+    getJson(JUP_VERIFIED).catch(() => null),
+    Promise.all([1, 2, 3].map((p) => getJson(RAY_POOLS(p)).catch(() => null))),
+  ]);
+  const jupOk = Array.isArray(jup);
+  if (!ray[0] && !jupOk) throw new Error('Raydium and Jupiter token lists both failed');
+  const sol = jupOk ? jup.find((t) => t.id === WSOL) : null;
+  const solUsd = (sol && sol.usdPrice) || 0;
   const m = new Map();
-  const first = await Promise.all([1, 2, 3].map((p) => getJson(RAY_POOLS(p)).catch(() => null)));
-  if (!first[0]) throw new Error('Raydium pool list failed');
   let done = false, more = true;
-  for (const j of first) { if (!j) continue; const d = j.data || {}; done = addPools(m, d.data || []) || done; more = !!d.hasNextPage; }
-  for (let p = 4; !done && more && p <= 6; p++) {
+  for (const j of ray) { if (!j) continue; const d = j.data || {}; done = addPools(m, d.data || [], solUsd) || done; more = !!d.hasNextPage; }
+  for (let p = 4; ray[0] && !done && more && p <= 6; p++) {
     const d = (await getJson(RAY_POOLS(p))).data || {};
-    done = addPools(m, d.data || []); more = !!d.hasNextPage;
+    done = addPools(m, d.data || [], solUsd); more = !!d.hasNextPage;
   }
-  if (m.size < 50) throw new Error('Raydium pool list came back empty');
+  if (jupOk) for (const t of jup) {
+    if (!t || !t.id || !(t.liquidity >= MIN_LIQ_JUP)) continue;
+    const born = Date.parse((t.firstPool && t.firstPool.createdAt) || t.createdAt || '') || 0;
+    const e = m.get(t.id);
+    if (e) { e.jup = Math.round(t.liquidity); if (born && (!e.born || born < e.born)) e.born = born; }
+    else m.set(t.id, { sym: t.symbol || '?', name: t.name || '', tvl: Math.round(t.liquidity), vs: '', real: 0, born, jup: Math.round(t.liquidity) });
+  }
+  if (m.size < 50) throw new Error('token lists came back empty');
+  UNI = { t: Date.now(), map: m };
   return m;
 }
 
@@ -118,10 +158,10 @@ function pingFor(ev) {
   const link = `https://dexscreener.com/solana/${ev.mint}`;
   const soft = ev.cat === 'custom';
   switch (ev.type) {
-    case 'coming': return { title: `COMING TO STONKFUN: ${ev.sym}`, body: `Raydium just set ${ev.sym}${nm} up as a launch quote. StonkFun doesn't list it yet.\nLiquidity ${usd(ev.tvl)} vs ${ev.vs}${ev.chance != null ? `\nChance StonkFun adds it: ${Math.round(ev.chance * 100)}%` : ''}\n${ev.mint}`, prio: 'urgent', tags: 'rotating_light', click: link };
+    case 'coming': return { title: `COMING TO STONKFUN: ${ev.sym}`, body: `Raydium just set ${ev.sym}${nm} up as a launch quote. StonkFun doesn't list it yet.\nLiquidity ${usd(ev.tvl)}${ev.vs ? ` vs ${ev.vs}` : ''}${ev.chance != null ? `\nChance StonkFun adds it: ${Math.round(ev.chance * 100)}%` : ''}\n${ev.mint}`, prio: 'urgent', tags: 'rotating_light', click: link };
     case 'added': return { title: `StonkFun added ${ev.sym} - NOT live yet`, body: `${ev.sym}${nm} is on StonkFun's list but can't be launched yet.\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'rotating_light', click: link };
     case 'live': return { title: `LIVE on StonkFun: ${ev.sym}`, body: `${ev.sym}${nm} can be launched now.${ev.arrived ? `\nIt showed up as Arriving ${Math.max(1, Math.round((ev.t - ev.arrived) / 6e4))} min before this.` : ''}\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'green_circle', click: link };
-    case 'deep': return { title: `New deep pool: ${ev.sym}`, body: `${ev.sym}${nm} has ${usd(ev.tvl)} on Raydium vs ${ev.vs}. Not on StonkFun, not set up yet. Early, can be noise.\n${ev.mint}`, prio: 'default', tags: 'eyes', click: link };
+    case 'deep': return { title: `New deep pool: ${ev.sym}`, body: `${ev.sym}${nm} has ${usd(ev.tvl)} of real liquidity${ev.vs ? ` vs ${ev.vs}` : ''}. Not on StonkFun, not set up yet. Early, can be noise.\n${ev.mint}`, prio: 'default', tags: 'eyes', click: link };
     case 'start': return { title: 'Quote watcher running', body: ev.body, prio: 'default', tags: 'white_check_mark' };
     case 'test': return { title: 'Test ping', body: 'Pings work.', prio: 'default', tags: 'bell' };
     case 'error': return { title: 'Quote watcher: scans failing', body: ev.body, prio: 'default', tags: 'warning' };
@@ -185,9 +225,10 @@ async function runCheck() {
     if (!PDAS) PDAS = pdaRaw ? JSON.parse(pdaRaw) : {};
     const before = stateRaw || '';
     const first = !S.initialized;
+    const quiet = first || S.v !== 2; // first scan after this upgrade: record what's already there, no pings
     const now = Date.now();
 
-    const [pairsRes, poolsRes] = await Promise.allSettled([loadPairs(), loadPools()]);
+    const [pairsRes, poolsRes] = await Promise.allSettled([loadPairs(), loadUniverse()]);
 
     // 1) StonkFun's list
     if (pairsRes.status === 'fulfilled') {
@@ -210,12 +251,16 @@ async function runCheck() {
       run.mints = pools.size;
       const cands = [];
       for (const [m, info] of pools) {
-        if (S.pairs[m] || S.cfg[m]) continue;
-        if (PDAS[m] === undefined) { try { PDAS[m] = configPda(m); } catch { PDAS[m] = ''; } pdaAdded++; }
-        if (PDAS[m]) cands.push([m, info]);
-        if (WATCH_TVL > 0 && info.tvl >= WATCH_TVL && !S.deep[m]) {
+        if (S.pairs[m] || S.cfg[m] || STABLES.has(m) || m === WSOL) continue;
+        let fresh = false; // never checked before
+        if (PDAS[m] === undefined) { try { PDAS[m] = configPda(m); } catch { PDAS[m] = ''; } pdaAdded++; fresh = true; }
+        if (PDAS[m]) cands.push([m, info, fresh]);
+        // radar: real money only (fake pools don't count), or a brand-new verified token
+        const young = info.born && now - info.born < YOUNG_MS;
+        const radarLiq = Math.max(info.real || 0, young ? info.jup || 0 : 0);
+        if (WATCH_TVL > 0 && radarLiq >= WATCH_TVL && !S.deep[m]) {
           S.deep[m] = now;
-          if (!first) events.push({ type: 'deep', sym: info.sym, name: info.name, mint: m, tvl: info.tvl, vs: info.vs, t: now });
+          if (!quiet) events.push({ type: 'deep', sym: info.sym, name: info.name, mint: m, tvl: radarLiq, vs: info.real ? info.vs : '', t: now });
         }
       }
       run.cands = cands.length;
@@ -226,9 +271,11 @@ async function runCheck() {
           const res = await Promise.all(chunks.slice(i, i + 4).map((c) => rpc('getMultipleAccounts', [c.map(([m]) => PDAS[m]), { encoding: 'base64', dataSlice: { offset: 0, length: 0 } }])));
           res.forEach((r, ci) => r.value.forEach((acc, k) => {
             if (!acc || acc.owner !== LAUNCHLAB) return;
-            const [m, info] = chunks[i + ci][k];
-            S.cfg[m] = { sym: info.sym, name: info.name, tvl: info.tvl, vs: info.vs, t: first ? 0 : now };
-            if (!first) events.push({ type: 'coming', sym: info.sym, name: info.name, mint: m, tvl: info.tvl, vs: info.vs, t: now });
+            const [m, info, fresh] = chunks[i + ci][k];
+            // new = checked before without a setup, or a brand-new token; otherwise it was already sitting there
+            const isNew = !quiet && (!fresh || (info.born && now - info.born < YOUNG_MS));
+            S.cfg[m] = { sym: info.sym, name: info.name, tvl: liqOf(info), vs: info.vs, t: isNew ? now : 0 };
+            if (isNew) events.push({ type: 'coming', sym: info.sym, name: info.name, mint: m, tvl: liqOf(info), vs: info.vs, t: now });
           }));
         }
       } catch (e) { run.errors.push('Solana RPC: ' + e.message); }
@@ -241,10 +288,11 @@ async function runCheck() {
     // tidy: forget radar entries older than 30 days
     for (const m of Object.keys(S.deep)) if (now - S.deep[m] > 30 * 864e5) delete S.deep[m];
 
+    if (run.pairs && run.mints) S.v = 2;
     if (first && run.pairs && run.mints) {
       S.initialized = true;
       const waiting = Object.values(S.cfg).filter((c) => c).length;
-      events.push({ type: 'start', t: now, body: `Watching ${run.pairs} StonkFun pairs and ${run.mints} Raydium tokens with $50K+ liquidity. ${waiting} already set up by Raydium but not on StonkFun.` });
+      events.push({ type: 'start', t: now, body: `Watching ${run.pairs} StonkFun pairs and ${run.mints} Raydium tokens with real liquidity. ${waiting} already set up by Raydium but not on StonkFun.` });
     }
 
     const o = odds(S, now);
