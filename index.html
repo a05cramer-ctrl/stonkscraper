@@ -142,7 +142,7 @@
   const ago = (ms) => ms < 60e3 ? `${Math.max(1, Math.round(ms / 1e3))}s ago` : ms < 3600e3 ? `${Math.round(ms / 60e3)} min ago` : `${Math.round(ms / 3600e3)} h ago`;
   const toast = (msg) => { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('on'), 2600); };
   const chart = (m) => m ? `<a href="https://dexscreener.com/solana/${esc(m)}" target="_blank" rel="noopener">Chart</a>` : '';
-  const STATUS = { early: 'Early', coming: 'Arriving', added: 'Boarding', live: 'Landed', deep: 'On radar', start: 'Watch started', error: 'Scan errors', test: 'Test ping' };
+  const STATUS = { early: 'Early', watch: 'Watch', coming: 'Arriving', added: 'Boarding', live: 'Landed', deep: 'On radar', start: 'Watch started', error: 'Scan errors', test: 'Test ping' };
   const KIND = { 'sf-top': 'Top StonkFun launch', 'sunrise-scheduled': 'Sunrise scheduled', 'sunrise-live': 'Live on Sunrise', 'stonkfun-soon': 'SOON on StonkFun', 'backpack-on': 'Backpack switched on' };
   const age = (b) => { if (!b) return ''; const d = (Date.now() - b) / 864e5; return d < 1 ? `${Math.max(1, Math.round(d * 24))} h` : `${Math.round(d)} d`; };
 
