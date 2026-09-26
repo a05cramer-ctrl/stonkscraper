@@ -1459,6 +1459,156 @@
    "t0ET": "Sep 23, 12:30:00",
    "liveET": null,
    "firstLaunchET": null
+  },
+  {
+   "sym": "CRWV",
+   "mint": "CRWVJeR2yEZuDUKYfGuKCHvLz8ywn4LGvovHfy5WiFmi",
+   "kind": "sunrise-stock",
+   "t0": 1790175600000,
+   "live": null,
+   "firstLaunch": 1790278283427,
+   "pages": 30,
+   "reachedStart": false,
+   "n": 25833,
+   "nBefore": 0,
+   "first": {
+    "et": "Sep 23, 11:05:04",
+    "leadMin": -5
+   },
+   "tx": [
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:06fd77ce"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": false,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "DhpyNW:06fd77ce"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "HeujZpdB"
+     ],
+     "what": "transfer,Ewynxd:8b010000"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:06fd77ce"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": false,
+     "signers": [
+      "LASTvjDW"
+     ],
+     "what": "Comput:02801a06,Comput:03cb2200,NA777p:001802ff,Comput:0492a8bb"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "869VFUwh"
+     ],
+     "what": "Comput:02de4902,3RWLeS:0c0e0478,transfer"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:06fd77ce"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:06fd77ce"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:06fc77ce"
+    },
+    {
+     "et": "Sep 23, 11:05:04",
+     "leadMin": -5,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:06fc77ce"
+    }
+   ],
+   "cfg": {
+    "et": "Sep 23, 11:04:08",
+    "minVsT0": 4,
+    "n": 59993,
+    "reachedStart": false,
+    "pages": 60,
+    "signers": [
+     "BuekUk3YMmm7Agnb4ni1qMCmShVpeBTdQZYNyihyzr7u"
+    ],
+    "what": "transfer,DhpyNW:062b77ce"
+   },
+   "t0ET": "Sep 23, 11:00:00",
+   "liveET": null,
+   "firstLaunchET": "Sep 24, 15:31:23"
+  },
+  {
+   "sym": "ARM",
+   "mint": "ARMbSB1MBRQrY6PNMao1HdQ431VafC6JRJCsGZ2Yv3iJ",
+   "kind": "sunrise-stock",
+   "t0": 1790107200000,
+   "live": null,
+   "firstLaunch": null,
+   "pages": 30,
+   "reachedStart": false,
+   "n": 0,
+   "nBefore": 0,
+   "first": null,
+   "tx": [],
+   "cfg": {
+    "et": "Sep 22, 16:17:03",
+    "minVsT0": 17,
+    "n": 52413,
+    "reachedStart": false,
+    "pages": 60,
+    "signers": [
+     "8homwGZ8sicmmjvzPS4Ywr83UBvRdkD8MAtdiztWcvgW"
+    ],
+    "what": "transfer,49S2VG:8b010000"
+   },
+   "t0ET": "Sep 22, 16:00:00",
+   "liveET": null,
+   "firstLaunchET": null
   }
  ]
 }
