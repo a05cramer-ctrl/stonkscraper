@@ -4,6 +4,11 @@ const crypto = require('crypto');
 const R = require('./_redis');
 
 const STONK_PAIRS = 'https://www.stonkfun.xyz/api/public/v1/pairs';
+// Sources that move before StonkFun does
+const SUNRISE = 'https://sunrise.xyz/api/tokens';                      // Sunrise listings, with their go-live time
+const QUOTE_TOKENS = 'https://www.stonkfun.xyz/api/quote-tokens';       // the launch page's own quote list ("SOON" = adminOnly)
+const BACKPACK_ASSETS = 'https://api.backpack.exchange/api/v1/assets';  // Backpack Securities stocks, with deposit/withdraw switches
+const SF_TOP = 'https://www.stonkfun.xyz/api/public/v1/tokens?sort=marketCap&pageSize=100';
 const RAY_POOLS = (p) => `https://api-v3.raydium.io/pools/info/list?poolType=all&poolSortField=liquidity&sortType=desc&pageSize=1000&page=${p}`;
 const RPCS = (process.env.RPC_URLS || 'https://solana-rpc.publicnode.com,https://api.mainnet-beta.solana.com').split(',').map((s) => s.trim()).filter(Boolean);
 const LAUNCHLAB = 'LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj';
@@ -85,10 +90,54 @@ async function rpc(method, params) {
   throw last;
 }
 async function loadPairs() {
-  const j = await getJson(STONK_PAIRS);
+  // cache-buster: the plain URL is served from Vercel's CDN, often 1-2 min stale
+  const j = await getJson(`${STONK_PAIRS}?fresh=${Math.floor(Date.now() / 15000)}`);
   const list = (j.data && j.data.pairs) || j.pairs || [];
   if (!Array.isArray(list) || list.length < 10) throw new Error('StonkFun pairs list came back empty');
   return list;
+}
+const isMint = (m) => { try { return typeof m === 'string' && b58decode(m).length === 32; } catch { return false; } };
+// Sunrise listings on Solana: mint -> { sym, name, vf (go-live ms), cls, issuer }
+async function loadSunrise() {
+  const j = await getJson(SUNRISE);
+  const out = new Map();
+  for (const x of (j.data && j.data.listings) || []) {
+    const t = x.token || {}, l = x.listing || {};
+    if (t.horizonChainId !== 'solana' || !isMint(t.address) || l.status === 'disabled') continue;
+    const vf = Date.parse(l.visibleFrom) || 0;
+    const prev = out.get(t.address);
+    if (prev && prev.vf && prev.vf <= vf) continue;
+    out.set(t.address, { sym: l.displaySymbol || t.symbol || '?', name: l.displayName || t.name || '', vf, cls: t.assetClass || '', issuer: t.issuer || '' });
+  }
+  if (out.size < 20) throw new Error('Sunrise list came back empty');
+  return out;
+}
+// StonkFun's launch-page quote list. adminOnly = shown as SOON, not open to everyone yet.
+async function loadQuoteTokens() {
+  const j = await getJson(QUOTE_TOKENS);
+  const list = j.quoteTokens || [];
+  if (list.length < 10) throw new Error('quote-tokens came back empty');
+  return list;
+}
+// Backpack Securities stocks (the Sunrise stock issuer): which ones have deposits/withdrawals switched on
+async function loadBackpack() {
+  const j = await getJson(BACKPACK_ASSETS);
+  const on = {};
+  for (const a of Array.isArray(j) ? j : []) {
+    if (!/\.US$/.test(a.symbol || '')) continue;
+    for (const t of a.tokens || []) {
+      if (t.blockchain !== 'Solana' || !isMint(t.contractAddress)) continue;
+      const f = (t.depositEnabled ? 'd' : '') + (t.withdrawEnabled ? 'w' : '');
+      if (f) on[t.contractAddress] = [a.symbol.replace(/\.US$/, ''), a.displayName || '', f];
+    }
+  }
+  if (Object.keys(on).length < 10) throw new Error('Backpack asset list came back empty');
+  return on;
+}
+// StonkFun's own biggest launches (a top launch sometimes becomes a quote, like MASK)
+async function loadSfTop() {
+  const j = await getJson(SF_TOP);
+  return ((j.data && j.data.tokens) || []).map((t) => ({ mint: t.mint, sym: t.symbol, name: t.name, mcap: (t.market && t.market.marketCapUsd) || 0, vol: (t.market && t.market.volume24hUsd) || 0, liq: (t.market && t.market.liquidityUsd) || 0, born: Date.parse(t.createdAt) || 0 }));
 }
 const STABLES = new Set(['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']);
 const WSOL = 'So11111111111111111111111111111111111111112';
@@ -162,6 +211,9 @@ async function loadUniverse() {
     else m.set(t.id, { sym: t.symbol || '?', name: t.name || '', tvl: Math.round(t.liquidity), vs: '', real: 0, born, jup: Math.round(t.liquidity) });
     const x = m.get(t.id);
     x.jvol = jvol; x.ver = 1;
+    const tags = t.tags || [];
+    const tg = (tags.includes('stable') ? 's' : '') + (tags.includes('lst') || tags.includes('yield') ? 'l' : '') + (tags.includes('prestocks') || tags.includes('tessera') ? 'p' : '') + (tags.includes('backpack') ? 'b' : '') + (tags.includes('ondo') ? 'o' : '');
+    if (tg) x.tg = tg;
     if (+t.mcap > 0) x.mcap = Math.round(+t.mcap);
   }
   if (m.size < 50) throw new Error('token lists came back empty');
@@ -170,15 +222,22 @@ async function loadUniverse() {
 }
 
 // ---------- pings ----------
-const usd = (n) => (n >= 1e6 ? `$${(n / 1e6).toFixed(1)}M` : `$${Math.round(n / 1e3)}K`);
+const usd = (n) => (n >= 1e6 ? `$${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `$${Math.round(n / 1e3)}K` : `$${Math.round(n || 0)}`);
 const dur = (min) => (min < 90 ? `${Math.max(1, Math.round(min))} min` : min < 48 * 60 ? `${(min / 60).toFixed(min < 600 ? 1 : 0)} h` : `${Math.round(min / 1440)} days`);
 const rankLine = (ev) => (ev.rank ? `\nWas #${ev.rank} on Likely next.` : '');
+function leadText(ev) {
+  const L = ev.lead;
+  if (!L) return 'No track record for this signal yet. The watcher will learn how early it runs.';
+  if (L.sched) return `Expect it on StonkFun in about ${dur(Math.max(1, L.min))} (Sunrise time + the usual few minutes).`;
+  if (L.base) return `StonkFun usually lists it about ${dur(L.min)} after this ping (${L.base}).`;
+  return `Usually live on StonkFun ${dur(L.min)} after this ping (${L.n} past cases).`;
+}
 function pingFor(ev) {
   const nm = ev.name && ev.name !== ev.sym ? ` (${ev.name})` : '';
   const link = `https://dexscreener.com/solana/${ev.mint}`;
   const soft = ev.cat === 'custom';
   switch (ev.type) {
-    case 'early': return { title: `EARLY: ${ev.sym}`, body: `${ev.why}${ev.lead ? `\nUsually live on StonkFun ${dur(ev.lead.min)} after this ping (${ev.lead.n} past cases).` : ''}${ev.tvl ? `\nLiquidity ${usd(ev.tvl)}` : ''}${rankLine(ev)}\n${ev.mint}`, prio: 'urgent', tags: 'hourglass_flowing_sand', click: link };
+    case 'early': return { title: `EARLY: ${ev.sym}`, body: `${ev.why}\n${leadText(ev)}${ev.odds ? `\nStonkFun has listed ${ev.odds.on} of ${ev.odds.of} Sunrise assets.` : ''}${rankLine(ev)}\n${ev.mint}`, prio: 'urgent', tags: 'hourglass_flowing_sand', click: link };
     case 'coming': return { title: `COMING TO STONKFUN: ${ev.sym}`, body: `Raydium just set ${ev.sym}${nm} up as a launch quote. StonkFun doesn't list it yet.\nLiquidity ${usd(ev.tvl)}${ev.vs ? ` vs ${ev.vs}` : ''}${ev.chance != null ? `\nChance StonkFun adds it: ${Math.round(ev.chance * 100)}%` : ''}${ev.early ? `\nEARLY ping came ${dur((ev.t - ev.early) / 6e4)} before this.` : ''}${rankLine(ev)}\n${ev.mint}`, prio: 'urgent', tags: 'rotating_light', click: link };
     case 'added': return { title: `StonkFun added ${ev.sym} - NOT live yet`, body: `${ev.sym}${nm} is on StonkFun's list but can't be launched yet.${rankLine(ev)}\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'rotating_light', click: link };
     case 'live': return { title: `LIVE on StonkFun: ${ev.sym}`, body: `${ev.sym}${nm} can be launched now.${ev.early ? `\nEARLY ping came ${dur((ev.t - ev.early) / 6e4)} before this.` : ''}${ev.arrived ? `\nIt showed up as Arriving ${Math.max(1, Math.round((ev.t - ev.arrived) / 6e4))} min before this.` : ''}${rankLine(ev)}\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'green_circle', click: link };
@@ -238,7 +297,7 @@ async function runCheck() {
   if (last && t0 - last.t < 20000) return { skipped: 'ran less than 20s ago', last };
   if ((await R.cmd('SET', K.lock, t0, 'NX', 'EX', 55)) !== 'OK') return { skipped: 'another scan is running' };
 
-  const run = { t: t0, errors: [] };
+  const run = { t: t0, v: FV, errors: [] };
   const events = [];
   let pdaAdded = 0;
   try {
@@ -256,7 +315,25 @@ async function runCheck() {
     S.recent = S.recent || []; // quotes that went live lately, for the digest's scorecard
 
     const uniT = UNI && UNI.t;
-    const [pairsRes, poolsRes] = await Promise.allSettled([loadPairs(), loadUniverse()]);
+    const slow = !S.slowT || now - S.slowT > SLOW_EVERY; // Backpack's list is 2 MB: every 10 min is plenty
+    const [pairsRes, poolsRes, sunRes, qtRes, bpRes, topRes] = await Promise.allSettled([
+      loadPairs(), loadUniverse(), loadSunrise(), loadQuoteTokens(),
+      slow ? loadBackpack() : Promise.resolve(null), slow ? loadSfTop() : Promise.resolve(null),
+    ]);
+    // side sources: a failure only skips their signals, it doesn't count as a failed scan
+    run.warn = [sunRes, qtRes, bpRes, topRes].filter((r) => r.status === 'rejected').map((r) => r.reason.message);
+    const sun = sunRes.status === 'fulfilled' ? sunRes.value : null;
+    const qt = qtRes.status === 'fulfilled' ? qtRes.value : null;
+    if (slow && (bpRes.status === 'fulfilled' || topRes.status === 'fulfilled')) S.slowT = now;
+    // Backpack stocks switched on since the last look
+    let bpNew = null;
+    if (bpRes.status === 'fulfilled' && bpRes.value) {
+      const prev = S.bp || null;
+      bpNew = {};
+      if (prev) for (const [m, v] of Object.entries(bpRes.value)) if (!prev[m] || (v[2].length > prev[m][2].length)) bpNew[m] = v;
+      S.bp = bpRes.value;
+    }
+    if (topRes.status === 'fulfilled' && topRes.value) S.top = topRes.value.filter((t) => t.mcap >= 1e6).slice(0, 40).map((t) => [t.mint, t.sym, Math.round(t.mcap), Math.round(t.vol), Math.round(t.liq), t.born]);
 
     // 1) StonkFun's list
     if (pairsRes.status === 'fulfilled') {
@@ -272,7 +349,13 @@ async function runCheck() {
         else if (old && !old[1] && !old[2] && ready && !first) ev = { ...base, type: 'live' };
         if (ev) events.push(ev);
         if (ev && ev.type === 'live') {
-          if (er && er.t > 0 && !er.live) { er.live = now; const L = (S.leads[er.kind] = S.leads[er.kind] || []); L.push(Math.round((now - er.t) / 6e4)); if (L.length > 50) L.shift(); }
+          if (er && !er.live) {
+            er.live = now;
+            for (const [k, t] of Object.entries(er.st || { [er.kind]: er.t })) {
+              if (!(t > 0)) continue;
+              const L = (S.leads[k] = S.leads[k] || []); L.push(Math.round((now - t) / 6e4)); if (L.length > 50) L.shift();
+            }
+          }
           S.recent.push({ sym: p.symbol, mint: p.mint, t: now, rank: base.rank, early: base.early, arrived: base.arrived });
         }
         S.pairs[p.mint] = [p.symbol, ready ? 1 : 0, (old && old[2]) || ready ? 1 : 0, p.category || '', old ? (old[4] || 0) : (first ? 0 : now)];
@@ -320,13 +403,21 @@ async function runCheck() {
       S.stats = { listed, unlisted: Object.keys(S.cfg).filter((m) => !S.pairs[m]).length };
     } else run.errors.push(poolsRes.reason.message);
 
-    // 3) EARLY: signals that come before Raydium's setup
-    if (poolsRes.status === 'fulfilled' && pairsRes.status === 'fulfilled') {
+    // 3) EARLY: signals that come before StonkFun lists a quote. One ping per token per stage
+    // (a later, stronger stage pings again: Backpack switch-on -> Sunrise scheduled -> Sunrise live).
+    if (pairsRes.status === 'fulfilled') {
       try {
-        for (const c of await earlyCandidates({ S, uni: poolsRes.value, pairs: pairsRes.value, now })) {
-          if (S.early[c.mint] || S.pairs[c.mint] || S.cfg[c.mint]) continue;
-          S.early[c.mint] = { t: quiet ? 0 : now, kind: c.kind, sym: c.sym };
-          if (!quiet) events.push({ type: 'early', sym: c.sym, name: c.name, mint: c.mint, tvl: c.tvl || 0, why: c.why, kind: c.kind, lead: leadFor(S, c.kind), rank: S.lr[c.mint] || 0, t: now });
+        const sunStats = sun ? sunriseStats(sun, S) : null;
+        for (const c of earlyCandidates({ S, now, sun, qt, bpNew })) {
+          // skip what StonkFun has, or what already got a COMING ping (an old, unannounced config doesn't count: MNDE)
+          if ((S.pairs[c.mint] && S.pairs[c.mint][2]) || (S.cfg[c.mint] && S.cfg[c.mint].t > 0)) continue;
+          const e = S.early[c.mint] || (S.early[c.mint] = { t: 0, kind: c.kind, sym: c.sym, st: {}, q: now });
+          if (e.st && e.st[c.kind] !== undefined) continue;
+          if (e.st && Object.keys(e.st).some((k) => STAGE[k] >= STAGE[c.kind])) continue;
+          (e.st = e.st || {})[c.kind] = quiet ? 0 : now;
+          if (quiet) continue;
+          if (!(e.t > 0)) { e.t = now; e.kind = c.kind; }
+          events.push({ type: 'early', sym: c.sym, name: c.name, mint: c.mint, why: c.why, kind: c.kind, at: c.at || 0, lead: leadFor(S, c.kind, c, now), odds: c.kind.startsWith('sunrise') ? sunStats : null, rank: S.lr[c.mint] || 0, t: now });
         }
       } catch (e) { run.errors.push('early: ' + e.message); }
     }
@@ -335,7 +426,7 @@ async function runCheck() {
     let likely = null;
     const moved = events.some((e) => e.type === 'coming' || e.type === 'early' || e.type === 'live');
     if (poolsRes.status === 'fulfilled' && pairsRes.status === 'fulfilled' && (UNI.t !== uniT || moved || !S.lk || now - S.lk > LIKELY_EVERY)) {
-      likely = rankLikely(poolsRes.value, S, now);
+      likely = rankLikely(poolsRes.value, S, now, sun);
       S.lk = now;
       S.lr = Object.fromEntries(likely.map((r) => [r.mint, r.rank]));
     }
@@ -350,7 +441,7 @@ async function runCheck() {
 
     // tidy: forget radar entries older than 30 days, EARLY entries after 30 days, scorecard after 3 days
     for (const m of Object.keys(S.deep)) if (now - S.deep[m] > 30 * 864e5) delete S.deep[m];
-    for (const m of Object.keys(S.early)) if (S.early[m].t > 0 ? now - S.early[m].t > 30 * 864e5 : S.pairs[m]) delete S.early[m];
+    for (const m of Object.keys(S.early)) { const e = S.early[m]; if (now - (e.t > 0 ? e.t : e.q || now) > 30 * 864e5 || (!(e.t > 0) && S.pairs[m])) delete S.early[m]; }
     S.recent = S.recent.filter((r) => now - r.t < 3 * 864e5);
 
     if (run.pairs && run.mints) { S.v = 2; S.fv = FV; }
@@ -406,40 +497,116 @@ function nyParts(t) {
 }
 
 // ---------- EARLY ----------
-// Each producer returns [{ mint, sym, name, kind, why, tvl }] for tokens that are likely to become a
-// StonkFun quote soon. Filled in from the listing research.
-async function earlyCandidates() { return []; }
-// Typical minutes from an EARLY ping to live, per signal kind, from the research on past listings.
-const BASE_LEAD = {};
-function leadFor(S, kind) {
+const SLOW_EVERY = 10 * 60e3;
+const nyClock = (t) => new Date(t).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+// later stage = closer to live; a token pings again when it reaches a later stage
+const STAGE = { 'sf-top': 1, 'backpack-on': 1, 'stonkfun-soon': 2, 'sunrise-scheduled': 2, 'sunrise-live': 3 };
+// StonkFun promotes its big launches to quotes; every launch above this market cap is a quote so far
+const SF_PROMOTE_MCAP = +(process.env.SF_PROMOTE_MCAP || 5e6);
+// Tokens that are about to become StonkFun quotes, from sources that move first.
+function earlyCandidates({ S, now, sun, qt, bpNew }) {
+  const out = [];
+  const listed = (m) => S.pairs[m] && S.pairs[m][2];
+  if (sun) for (const [m, x] of sun) {
+    if (listed(m) || !x.vf || x.cls === 'stablecoin') continue; // StonkFun skips Sunrise stablecoins (USDv)
+    const nm = x.name && x.name !== x.sym ? ` (${x.name.replace(/ - Backpack Securities$/, '')})` : '';
+    if (x.vf > now + 60e3) out.push({ mint: m, sym: x.sym, name: x.name, kind: 'sunrise-scheduled', at: x.vf, why: `Sunrise has ${x.sym}${nm} scheduled to go live at ${nyClock(x.vf)} ET.` });
+    else if (now - x.vf < 3 * 36e5) out.push({ mint: m, sym: x.sym, name: x.name, kind: 'sunrise-live', at: x.vf, why: `Sunrise put ${x.sym}${nm} live on Solana at ${nyClock(x.vf)} ET.` });
+  }
+  if (qt) for (const q of qt) if (q.adminOnly && !listed(q.quoteMint)) out.push({ mint: q.quoteMint, sym: q.symbol, name: q.name, kind: 'stonkfun-soon', why: `StonkFun shows ${q.symbol} as SOON on its launch page (admin-only for now).` });
+  for (const [m, sym, mcap] of S.top || []) {
+    if (listed(m) || mcap < SF_PROMOTE_MCAP || Object.values(S.pairs).some((p) => String(p[0]).toUpperCase() === String(sym).toUpperCase())) continue;
+    out.push({ mint: m, sym, name: '', kind: 'sf-top', why: `${sym} is a StonkFun launch at ${usd(mcap)} market cap and not a quote yet. Every StonkFun launch above ${usd(SF_PROMOTE_MCAP)} is a quote so far (MASK, SI, ALLINU got promoted this week).` });
+  }
+  for (const [m, v] of Object.entries(bpNew || {})) if (!listed(m) && !(sun && sun.has(m))) out.push({ mint: m, sym: v[0], name: v[1], kind: 'backpack-on', why: `Backpack switched on ${v[0]} (${v[1]})${v[2] === 'dw' ? ' for deposits and withdrawals' : v[2] === 'd' ? ' for deposits' : ' for withdrawals'}. Sunrise stocks are Backpack stocks.` });
+  return out;
+}
+// How many Sunrise assets StonkFun has taken so far
+function sunriseStats(sun, S) {
+  let on = 0; for (const m of sun.keys()) if (S.pairs[m] && S.pairs[m][2]) on++;
+  return { on, of: sun.size };
+}
+// Minutes from this kind of EARLY ping to StonkFun live. Research baseline until the watcher has 3 of its own.
+// sunrise-live: Sunrise go-live -> StonkFun live was 2-10 min on the last Sunrise listings (IREN 2, ZAMA 8,
+//   SQQQ 10, cbLTC 10), and the ping lands up to 2 min after Sunrise goes live.
+// sf-top: StonkFun launches that became quotes had crossed $5M market cap 15 h to 10 days before
+//   (WOW 15 h, CRACKER 28 h, SI 98 h, KNOTS 101 h, FEELSGOOD 151 h, ZCAT 207 h, LEVERCAT 240 h).
+const BASE_LEAD = {
+  'sunrise-live': { min: 6, n: 4, base: 'last 4 Sunrise listings' },
+  'sf-top': { min: 101 * 60, n: 7, base: 'the last 7 launches that became quotes, 15 h to 10 days after passing $5M' },
+};
+function leadFor(S, kind, c, now) {
   const L = (S.leads && S.leads[kind]) || [];
   if (L.length >= 3) { const s = L.slice().sort((a, b) => a - b); return { min: s[Math.floor(s.length / 2)], n: s.length }; }
+  if (kind === 'sunrise-scheduled' && c && c.at) return { min: Math.round((c.at - now) / 6e4) + 8, n: 0, sched: 1 };
   return BASE_LEAD[kind] || null;
 }
 
 // ---------- Likely next ----------
-// Verified tokens with real liquidity that StonkFun doesn't list, ranked by liquidity, volume and newness.
-function rankLikely(uni, S, now) {
-  const listedSyms = new Set(Object.values(S.pairs).map((p) => String(p[0] || '').toUpperCase()));
-  const rows = [];
+// Tokens StonkFun doesn't list yet, ranked by how likely they are to be next: Sunrise assets first (StonkFun
+// takes almost every one), then Backpack stocks that just got switched on, StonkFun's own top launches
+// (MASK went that way), then verified tokens by liquidity, 24 h volume and newness.
+function rankLikely(uni, S, now, sun) {
+  const listed = (m) => S.pairs[m] && S.pairs[m][2];
+  const syms = new Set(Object.values(S.pairs).map((p) => String(p[0] || '').toUpperCase()));
+  const rows = new Map();
+  const row = (m, sym, name) => {
+    let r = rows.get(m);
+    if (!r) {
+      const i = uni.get(m) || {};
+      r = { mint: m, sym: sym || i.sym || '?', name: name || i.name || '', liq: Math.max(i.jup || 0, i.real || 0), vol: Math.max(i.jvol || 0, i.rvol || 0), born: i.born || 0, s: 0, why: [], special: 0, tg: i.tg || '' };
+      // Jupiter tags: families StonkFun lists (PreStocks, Tessera, Backpack stocks) vs ones it mostly skips
+      if (/p/.test(r.tg)) { r.special += 4; r.why.push('PreStock/Tessera'); }
+      if (/b/.test(r.tg)) { r.special += 3; r.why.push('Backpack stock'); }
+      rows.set(m, r);
+    }
+    return r;
+  };
   for (const [m, i] of uni) {
-    if (S.pairs[m] || STABLES.has(m) || m === WSOL) continue;
+    if (listed(m) || STABLES.has(m) || m === WSOL) continue;
     if (!i.ver && !(i.real >= 2 * MIN_LIQ) && !S.cfg[m]) continue; // unverified: only with real money in the pool
-    if (listedSyms.has(String(i.sym || '').toUpperCase())) continue; // copies of tickers StonkFun already has
-    const liq = Math.max(i.jup || 0, i.real || 0);
-    const vol = Math.max(i.jvol || 0, i.rvol || 0);
-    const age = i.born ? (now - i.born) / 864e5 : null;
-    let s = Math.log10(Math.max(liq, 1e3)) + 0.6 * Math.log10(Math.max(vol, 1e3));
-    const why = [];
-    if (age !== null && age < 21) s += 3 * Math.exp(-age / 4);
-    else if (age !== null && age > 60) s -= 1.5; // big for months and still not listed: StonkFun passed on it
-    if (S.cfg[m]) { s += 6; why.push('Raydium set up'); }
-    if (S.early[m] && S.early[m].t > 0) { s += 3; why.push(S.early[m].kind); }
-    if (vol > 2 * liq && vol > 1e5) why.push('hot volume');
-    rows.push({ mint: m, sym: i.sym, name: i.name, liq, vol, born: i.born || 0, s: Math.round(s * 100) / 100, why: why.join(' · ') });
+    const up = String(i.sym || '').toUpperCase();
+    if (syms.has(up) || syms.has(up + 'X')) continue;             // StonkFun already has the ticker, or its xStock twin
+    row(m);
   }
-  rows.sort((a, b) => b.s - a.s);
-  return rows.slice(0, LIKELY_N).map((r, k) => ({ ...r, rank: k + 1 }));
+  if (sun) for (const [m, x] of sun) {
+    if (listed(m)) continue;
+    const up = String(x.sym || '').toUpperCase();
+    if (syms.has(up) || syms.has(up + 'X')) continue; // StonkFun already has it, or its xStock twin
+    const r = row(m, x.sym, x.name);
+    if (x.cls === 'stablecoin') { r.special += 1; r.why.push('Sunrise stablecoin'); continue; }
+    if (x.vf > now) { r.special += 9; r.why.push(`Sunrise ${nyClock(x.vf)} ET`); }
+    else if (now - x.vf < 3 * 864e5) { r.special += 7; r.why.push('new on Sunrise'); }
+    else { r.special += 2; r.why.push('Sunrise'); } // older ones StonkFun skipped so far (ENA still got picked up months later)
+  }
+  for (const [m, v] of Object.entries(S.bp || {})) {
+    if (listed(m) || (sun && sun.has(m)) || syms.has(String(v[0]).toUpperCase()) || syms.has(String(v[0]).toUpperCase() + 'X')) continue;
+    const r = row(m, v[0], v[1]); r.special += 3; r.why.push('Backpack stock on');
+  }
+  for (const [m, sym, mcap, vol, liq, born] of S.top || []) {
+    if (listed(m) || syms.has(String(sym || '').toUpperCase())) continue; // ticker clash with a quote StonkFun has
+    const r = row(m, sym);
+    r.liq = Math.max(r.liq, liq || 0); r.vol = Math.max(r.vol, vol || 0); if (!r.born && born) r.born = born;
+    // StonkFun promotes its biggest launches to quotes (its top 9 by market cap are all quotes)
+    r.special += 2 + 1.5 * Math.max(0, Math.log10(mcap || 1) - 6); r.why.push(`StonkFun launch ${usd(mcap)} mcap`);
+  }
+  for (const r of rows.values()) {
+    const age = r.born ? (now - r.born) / 864e5 : null;
+    let s = Math.log10(Math.max(r.liq, 1e3)) + 0.6 * Math.log10(Math.max(r.vol, 1e3)) + r.special;
+    if (age !== null && age < 21) s += 3 * Math.exp(-age / 4);
+    else if (age !== null && age > 60 && !r.special) s -= 1.5; // big for months and still not listed: StonkFun passed on it
+    if (/[sl]/.test(r.tg) && r.special < 5) s -= 4;               // stablecoins and staked SOL: StonkFun rarely adds them
+    if (/o/.test(r.tg)) s -= 1;                                    // Ondo stocks: none listed so far
+    // a fresh Raydium setup (COMING ping) almost always lands; an old one StonkFun has passed on for a while (MNDE did land)
+    if (S.cfg[r.mint]) { if (S.cfg[r.mint].t > 0) { s += 6; r.why.unshift('Raydium set up'); } else { s += 1.5; r.why.unshift('old Raydium setup'); } }
+    const e = S.early[r.mint];
+    if (e && e.t > 0) { s += 3; r.why.unshift('EARLY'); }
+    if (r.vol > 2 * r.liq && r.vol > 1e5) r.why.push('hot volume');
+    r.s = Math.round(s * 100) / 100;
+    r.why = [...new Set(r.why)].join(' · ');
+    delete r.special; delete r.tg;
+  }
+  return [...rows.values()].sort((a, b) => b.s - a.s).slice(0, LIKELY_N).map((r, k) => ({ ...r, rank: k + 1 }));
 }
 
 const SITE = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : '';
@@ -526,4 +693,4 @@ async function testPing(what) {
   return { sent: true, to: [NTFY_TOPIC && 'ntfy', DISCORD && 'discord'].filter(Boolean) };
 }
 
-module.exports = { runCheck, getState, testPing, configPda, onCurve, b58encode };
+module.exports = { runCheck, getState, testPing, configPda, onCurve, b58encode, rankLikely };

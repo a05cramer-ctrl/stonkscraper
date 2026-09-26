@@ -143,6 +143,7 @@
   const toast = (msg) => { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('on'), 2600); };
   const chart = (m) => m ? `<a href="https://dexscreener.com/solana/${esc(m)}" target="_blank" rel="noopener">Chart</a>` : '';
   const STATUS = { early: 'Early', coming: 'Arriving', added: 'Boarding', live: 'Landed', deep: 'On radar', start: 'Watch started', error: 'Scan errors', test: 'Test ping' };
+  const KIND = { 'sf-top': 'Top StonkFun launch', 'sunrise-scheduled': 'Sunrise scheduled', 'sunrise-live': 'Live on Sunrise', 'stonkfun-soon': 'SOON on StonkFun', 'backpack-on': 'Backpack switched on' };
   const age = (b) => { if (!b) return ''; const d = (Date.now() - b) / 864e5; return d < 1 ? `${Math.max(1, Math.round(d * 24))} h` : `${Math.round(d)} d`; };
 
   async function api(path, extra) {
@@ -224,19 +225,19 @@
     let html = '', legend = '';
     if (tab === 'likely') {
       const L = d.likely || [];
-      legend = `Verified tokens with real liquidity that StonkFun doesn’t list yet, ranked by liquidity, 24 h volume and newness. Set-up and EARLY ones go to the top.${d.digestHour >= 0 ? ` Top 15 goes to Discord every day at ${String(d.digestHour).padStart(2, '0')}:00 ET.` : ''}${d.likelyAt ? ` Ranked ${ago(d.now - d.likelyAt)}.` : ''}`;
+      legend = `Tokens StonkFun doesn’t list yet, ranked by how likely they are to be next: new Sunrise listings, StonkFun’s own big launches, PreStock/Tessera/Backpack stocks, then verified tokens by liquidity, 24 h volume and newness. Raydium set-up and EARLY ones go to the top.${d.digestHour >= 0 ? ` Top 15 goes to Discord every day at ${String(d.digestHour).padStart(2, '0')}:00 ET.` : ''}${d.likelyAt ? ` Ranked ${ago(d.now - d.likelyAt)}.` : ''}`;
       html = L.length ? `<table><thead><tr><th>#</th><th>Ticker</th><th class="name">Name</th><th>Liquidity</th><th>24h vol</th><th>Age</th><th class="why">Why</th><th></th></tr></thead><tbody>${
         L.map((r) => row(`<td class="rank num">${r.rank}</td><td class="tick"><span>${esc(r.sym)}</span></td><td class="name">${esc(r.name)}</td><td class="num">${esc(usd(r.liq))}</td><td class="num">${esc(usd(r.vol))}</td><td class="num time">${esc(age(r.born))}</td><td class="why">${esc(r.why || '')}</td><td class="link">${chart(r.mint)}</td>`)).join('')
       }</tbody></table>` : `<div class="empty"><strong>Nothing ranked yet</strong>The list fills in after the next scan.</div>`;
     } else if (tab === 'arriving') {
       const o = d.odds || {};
-      const pct = o.pct != null ? Math.round(o.pct * 100) + '%' : '—';
-      legend = o.basis === 'own'
-        ? `Chance = how many arrivals ended up on StonkFun since the watch started: ${o.landed} of ${o.decided}${o.medianHours != null ? `, usually ${o.medianHours < 1 ? Math.max(1, Math.round(o.medianHours * 60)) + ' min' : o.medianHours.toFixed(1) + ' h'} after arriving` : ''}. No move in 3 days = going cold.`
-        : `Chance = share of tokens Raydium has set up that StonkFun lists: ${o.listed ?? 0} of ${(o.listed ?? 0) + (o.unlisted ?? 0)}. Switches to the watcher’s own track record after 5 arrivals. No move in 3 days = going cold.`;
       const E = (d.early || []).filter((e) => !e.setUp);
+      const pct = o.pct != null ? Math.round(o.pct * 100) + '%' : '—';
+      legend = (E.length ? 'Early = a source that moves before StonkFun (Sunrise schedule, Backpack, StonkFun SOON). ' : '') + (o.basis === 'own'
+        ? `Chance = how many arrivals ended up on StonkFun since the watch started: ${o.landed} of ${o.decided}${o.medianHours != null ? `, usually ${o.medianHours < 1 ? Math.max(1, Math.round(o.medianHours * 60)) + ' min' : o.medianHours.toFixed(1) + ' h'} after arriving` : ''}. No move in 3 days = going cold.`
+        : `Chance = share of tokens Raydium has set up that StonkFun lists: ${o.listed ?? 0} of ${(o.listed ?? 0) + (o.unlisted ?? 0)}. Switches to the watcher’s own track record after 5 arrivals. No move in 3 days = going cold.`);
       html = d.arriving.length || E.length ? `<table><thead><tr><th>Seen</th><th>Ticker</th><th class="name">Name</th><th>Liquidity</th><th>Chance</th><th></th></tr></thead><tbody>${
-        E.map((e) => row(`<td class="time">${esc(et(e.t))}</td><td class="tick"><span>${esc(e.sym)}</span></td><td class="name">${esc(e.kind)}</td><td class="num"></td><td class="num"><span class="st early">Early</span></td><td class="link">${chart(e.mint)}</td>`, e.t > flipAfter)).join('')
+        E.map((e) => row(`<td class="time">${esc(et(e.t))}</td><td class="tick"><span>${esc(e.sym)}</span></td><td class="name">${esc(KIND[e.kind] || e.kind)}</td><td class="num"></td><td class="num"><span class="st early">Early</span></td><td class="link">${chart(e.mint)}</td>`, e.t > flipAfter)).join('')
       }${
         d.arriving.map((a) => row(`<td class="time">${esc(et(a.t))}</td><td class="tick"><span>${esc(a.sym)}</span></td><td class="name">${esc(a.name)}</td><td class="num">${esc(usd(a.tvl))}</td><td class="num">${a.cold ? '<span class="cold">Going cold</span>' : `<span class="odds">${pct}</span>`}</td><td class="link">${chart(a.mint)}</td>`, a.t > flipAfter)).join('')
       }</tbody></table>` : `<div class="empty"><strong>Nothing new arriving</strong>When Raydium sets up a new quote that StonkFun doesn’t have yet, it lands here with its chance and you get pinged. Chance right now: ${pct}.</div>`;
@@ -281,8 +282,9 @@
       <dt>When</dt><dd>${esc(et(r.t))} ET</dd>
       <dt>Took</dt><dd>${Math.max(.1, r.ms / 1000).toFixed(1)}s</dd>
       <dt>StonkFun pairs</dt><dd>${r.pairs ?? '—'}</dd>
-      <dt>Tokens watched</dt><dd>${r.mints ?? '—'} (Raydium $50K+ and Jupiter-verified)</dd>
+      <dt>Tokens watched</dt><dd>${r.mints ?? '—'} (Raydium $50K+ and Jupiter-verified), plus Sunrise, Backpack and StonkFun’s launch page</dd>
       ${r.errors && r.errors.length ? `<dt>Errors</dt><dd class="err">${esc(r.errors.join('; '))}</dd>` : ''}
+      ${r.warn && r.warn.length ? `<dt>Side sources</dt><dd class="err">${esc(r.warn.join('; '))}</dd>` : ''}
       ${d.run && d.now - d.run.t > 5 * 60e3 ? `<dt>Fix</dt><dd>Check the cron job at cron-job.org is on and hits /api/check every minute.</dd>` : ''}`
       : `<dt>Status</dt><dd>Waiting for the first scan.</dd>`;
   }

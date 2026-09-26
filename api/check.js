@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
   let out;
   try {
     const r = await runCheck();
-    out = r.skipped ? { skipped: r.skipped } : { ok: r.ok, ms: r.ms, events: r.events };
+    out = r.skipped ? { skipped: r.skipped } : { ok: r.ok, ms: r.ms, events: r.events, v: r.v };
   } catch (e) { out = { error: e.message }; }
   res.statusCode = out.error ? 500 : 200;
   res.setHeader('content-type', 'application/json');
