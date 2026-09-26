@@ -1686,6 +1686,184 @@
    "t0ET": "Sep 23, 11:00:00",
    "liveET": null,
    "firstLaunchET": "Sep 24, 15:31:23"
+  },
+  {
+   "sym": "COPX",
+   "mint": "CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5",
+   "kind": "sunrise-stock",
+   "t0": 1790020800000,
+   "live": null,
+   "firstLaunch": 1790020829097,
+   "pre": {
+    "n": 2229,
+    "pages": 8,
+    "reachedStart": false
+   },
+   "preFirst": {
+    "et": "Sep 21, 15:59:54",
+    "leadMin": 0
+   },
+   "preTx": [
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:066695c5"
+    },
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "AgmLJBMD",
+      "AVeLwVc7"
+     ],
+     "what": "Comput:02f48406,Comput:03ea061b,DF1ow4:f8c69e91,transferChecked,create,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,setAuthority,BiSoNH:079071ec,transfer,DF1ow4:e445a52e,CAMMCz:2b04ed0b"
+    },
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "LASTvjDW"
+     ],
+     "what": "Comput:02801a06,Comput:03cd1e00,NA777p:001803ff,Comput:0421119b"
+    },
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "869VFUwh"
+     ],
+     "what": "Comput:02f70202,3RWLeS:0c086c95,transfer"
+    },
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "3KvsoNxg"
+     ],
+     "what": "Comput:02981606,Comput:034c3900,Prism8:0d031402,transfer"
+    },
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "7FjuiQ1B"
+     ],
+     "what": "Comput:02698203,Comput:035ccb00,createIdempotent,JUP6Lk:bb64facc,closeAccount,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,CPMMoo:8fbe5ada,transferChecked,CAMMCz:2b04ed0b,BiSoNH:02682022,transfer"
+    },
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "2usUGo4w"
+     ],
+     "what": "Comput:02e0be05,Comput:03073c00,Comput:0480cc06,2WNvbS:0503ffff"
+    },
+    {
+     "et": "Sep 21, 15:59:54",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "2usUGo4w"
+     ],
+     "what": "Comput:02e0be05,Comput:03254a00,Comput:0480cc06,2WNvbS:0503ffff"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "DhpyNW:067895c5"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "DhpyNW:067795c5"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:067895c5"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:067795c5"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "28XBLVnT"
+     ],
+     "what": "FLASHX:01000000,FLASHX:00592203,transfer,createAccount,initializeAccount3,CPMMoo:8fbe5ada,transferChecked,CAMMCz:2b04ed0b,closeAccount,FLASHX:070150c5,SwapBaseInput,TransferChecked,SwapV2"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "5KXDF6Qn"
+     ],
+     "what": "Comput:0350c300,createIdempotent,LanMV9:9527de9b,LanMV9:e445a52e,transferChecked,SellExactIn,TransferChecked"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:027895c5"
+    },
+    {
+     "et": "Sep 21, 16:00:00",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "6SDfK4FW"
+     ],
+     "what": "Comput:0260cc05,Comput:039a2728,term9Y:de44ee3b,term9Y:49f2ace2,term9Y:e517cb97,term9Y:3f097242,transfer,ValidateNonce"
+    }
+   ],
+   "cfg": {
+    "foundK": -4,
+    "reachedStart": true,
+    "n": 3741,
+    "et": "Sep 21, 15:54:23",
+    "minVsT0": -5.6,
+    "signers": [
+     "6SgmruFfVSnv7Zc5gRTMpkCj4Hve1WBnNVtAza5AdmkA"
+    ],
+    "what": "Comput:02100905,Comput:038f1e17,createIdempotent,transfer,syncNative,JUP6Lk:e517cb97,closeAccount,LanMV9:faea0d7b,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,CAMMCz:2b04ed0b,transferChecked"
+   },
+   "t0ET": "Sep 21, 16:00:00",
+   "liveET": null,
+   "firstLaunchET": "Sep 21, 16:00:29"
   }
  ]
 }
