@@ -1,0 +1,27 @@
+{
+ "items": [
+  {
+   "sym": "MNDE",
+   "mint": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
+   "kind": "custom",
+   "t0": 1790359266610,
+   "live": 1790359266610,
+   "firstLaunch": 1790359170668,
+   "pre": {
+    "n": 0,
+    "pages": 8,
+    "reachedStart": false
+   },
+   "preFirst": null,
+   "preTx": [],
+   "cfg": {
+    "foundK": -10080,
+    "reachedStart": false,
+    "n": 0
+   },
+   "t0ET": "Sep 25, 14:01:06",
+   "liveET": "Sep 25, 14:01:06",
+   "firstLaunchET": "Sep 25, 13:59:30"
+  }
+ ]
+}

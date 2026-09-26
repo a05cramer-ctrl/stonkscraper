@@ -1,0 +1,3 @@
+76s calibrated 49 points
+76s items 59
+103s MNDE   custom           t0 Sep 25, 14:01:06 | pre24h 0  | cfg none   | 27s
