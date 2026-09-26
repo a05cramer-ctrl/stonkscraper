@@ -57,7 +57,7 @@ let rpcN = 0;
 export async function rpc(method, params, tries = 6) {
   let last;
   for (let i = 0; i < tries; i++) {
-    const pool = method === 'getTransaction' ? HISTORY : RPCS;
+    const pool = ['getTransaction', 'getBlock', 'getBlockTime', 'getSignaturesForAddress'].includes(method) ? HISTORY : RPCS;
     const url = pool[(rpcN++) % pool.length];
     try {
       const r = await fetch(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method, params }), signal: AbortSignal.timeout(40000) });
