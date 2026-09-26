@@ -1,0 +1,5 @@
+sunriseTg 200 105706
+stonkTg 200 26481
+bpAssets 200 2153396
+bpMarkets 200 177533
+done

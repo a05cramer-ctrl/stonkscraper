@@ -1,0 +1,18 @@
+{
+ "sunriseTg": {
+  "status": 200,
+  "len": 105706
+ },
+ "stonkTg": {
+  "status": 200,
+  "len": 26481
+ },
+ "bpAssets": {
+  "status": 200,
+  "len": 2153396
+ },
+ "bpMarkets": {
+  "status": 200,
+  "len": 177533
+ }
+}
