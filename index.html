@@ -12,7 +12,7 @@
   :root {
     --bg: #0e1c2f; --panel: #15283f; --line: #213b58; --flap: #0a1626;
     --amber: #ffb627; --text: #eef2f6; --muted: #8ea3bb;
-    --green: #43d17a; --sky: #6fc3ff; --red: #ff6b5b;
+    --green: #43d17a; --sky: #6fc3ff; --red: #ff6b5b; --violet: #c792ea;
     --board: "Barlow Condensed", "Arial Narrow", sans-serif;
     --ui: "Barlow", system-ui, sans-serif;
     box-sizing: border-box;
@@ -65,6 +65,9 @@
   .st.added { color: var(--amber); }
   .st.live { color: var(--green); }
   .st.deep { color: var(--sky); }
+  .st.early { color: var(--violet); }
+  td.why { color: var(--muted); font-size: 18px; max-width: 280px; overflow: hidden; text-overflow: ellipsis; }
+  td.rank { color: var(--muted); width: 1%; }
   .st.start, .st.error { color: var(--muted); }
   .odds { color: var(--green); font-weight: 600; }
   .cold { color: var(--muted); font-size: 18px; }
@@ -139,10 +142,11 @@
   const ago = (ms) => ms < 60e3 ? `${Math.max(1, Math.round(ms / 1e3))}s ago` : ms < 3600e3 ? `${Math.round(ms / 60e3)} min ago` : `${Math.round(ms / 3600e3)} h ago`;
   const toast = (msg) => { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('on'), 2600); };
   const chart = (m) => m ? `<a href="https://dexscreener.com/solana/${esc(m)}" target="_blank" rel="noopener">Chart</a>` : '';
-  const STATUS = { coming: 'Arriving', added: 'Boarding', live: 'Landed', deep: 'On radar', start: 'Watch started', error: 'Scan errors', test: 'Test ping' };
+  const STATUS = { early: 'Early', coming: 'Arriving', added: 'Boarding', live: 'Landed', deep: 'On radar', start: 'Watch started', error: 'Scan errors', test: 'Test ping' };
+  const age = (b) => { if (!b) return ''; const d = (Date.now() - b) / 864e5; return d < 1 ? `${Math.max(1, Math.round(d * 24))} h` : `${Math.round(d)} d`; };
 
-  async function api(path) {
-    const r = await fetch(`/api/${path}?key=${encodeURIComponent(KEY)}`, { cache: 'no-store' });
+  async function api(path, extra) {
+    const r = await fetch(`/api/${path}?key=${encodeURIComponent(KEY)}${extra ? '&' + extra : ''}`, { cache: 'no-store' });
     const j = await r.json().catch(() => ({ error: `Server returned ${r.status}` }));
     if (r.status === 401) { LS.del('sqw-key'); KEY = null; gate('That key was wrong. Paste the WATCH_KEY from Vercel.'); throw new Error('401'); }
     if (!r.ok) throw new Error(j.error || `Server returned ${r.status}`);
@@ -161,7 +165,7 @@
   function shell() {
     app.innerHTML = `<div class="wrap">
       <header>
-        <div><h1>Quote arrivals</h1><p class="sub">New StonkFun quote pairs, caught while Raydium is still setting them up.</p></div>
+        <div><h1>Quote arrivals</h1><p class="sub">New StonkFun quote pairs, caught before and while Raydium sets them up.</p></div>
         <div class="status"><span class="pill" id="pill"><span class="dot"></span><span id="pilltxt">Loading</span></span><button class="btn" id="scan">Scan now</button></div>
       </header>
       <section class="board" aria-label="Quote board">
@@ -173,13 +177,14 @@
         <div class="card">
           <h2>Pings</h2>
           <p id="pingto">Pings go to your phone. Desktop alerts work while this tab is open.</p>
-          <div class="row"><button class="btn" id="alerts"></button><button class="btn" id="testping">Send test ping</button></div>
+          <div class="row"><button class="btn" id="alerts"></button><button class="btn" id="testping">Send test ping</button><button class="btn" id="digestnow">Send digest now</button></div>
         </div>
         <div class="card"><h2>Last scan</h2><dl id="scaninfo"></dl></div>
       </div>
     </div>`;
     $('#scan').onclick = () => scan(true);
     $('#testping').onclick = async () => { try { const r = await api('test'); toast(r.sent ? 'Test ping sent' : r.skipped); } catch (e) { if (e.message !== '401') toast(e.message); } };
+    $('#digestnow').onclick = async () => { try { const r = await api('test', 'what=digest'); toast(r.sent ? 'Digest sent' : r.skipped); } catch (e) { if (e.message !== '401') toast(e.message); } };
     $('#alerts').onclick = toggleAlerts;
     paintAlerts();
   }
@@ -206,7 +211,8 @@
     const d = data;
     const log = d.events.filter((e) => e.type !== 'test');
     const tabs = [
-      ['arriving', 'Arriving', d.arriving.length],
+      ['likely', 'Likely next', (d.likely || []).length],
+      ['arriving', 'Arriving', d.arriving.length + (d.early || []).length],
       ['boarding', 'Boarding', d.boarding.length],
       ['oldarr', 'Old arriving', (d.oldArriving || []).length],
       ['oldboard', 'Old boarding', (d.oldBoarding || []).length],
@@ -216,13 +222,22 @@
     $('#tabs').querySelectorAll('.tab').forEach((b) => (b.onclick = () => { tab = b.dataset.t; LS.set('sqw-tab', tab); paint(); }));
 
     let html = '', legend = '';
-    if (tab === 'arriving') {
+    if (tab === 'likely') {
+      const L = d.likely || [];
+      legend = `Verified tokens with real liquidity that StonkFun doesn’t list yet, ranked by liquidity, 24 h volume and newness. Set-up and EARLY ones go to the top.${d.digestHour >= 0 ? ` Top 15 goes to Discord every day at ${String(d.digestHour).padStart(2, '0')}:00 ET.` : ''}${d.likelyAt ? ` Ranked ${ago(d.now - d.likelyAt)}.` : ''}`;
+      html = L.length ? `<table><thead><tr><th>#</th><th>Ticker</th><th class="name">Name</th><th>Liquidity</th><th>24h vol</th><th>Age</th><th class="why">Why</th><th></th></tr></thead><tbody>${
+        L.map((r) => row(`<td class="rank num">${r.rank}</td><td class="tick"><span>${esc(r.sym)}</span></td><td class="name">${esc(r.name)}</td><td class="num">${esc(usd(r.liq))}</td><td class="num">${esc(usd(r.vol))}</td><td class="num time">${esc(age(r.born))}</td><td class="why">${esc(r.why || '')}</td><td class="link">${chart(r.mint)}</td>`)).join('')
+      }</tbody></table>` : `<div class="empty"><strong>Nothing ranked yet</strong>The list fills in after the next scan.</div>`;
+    } else if (tab === 'arriving') {
       const o = d.odds || {};
       const pct = o.pct != null ? Math.round(o.pct * 100) + '%' : '—';
       legend = o.basis === 'own'
         ? `Chance = how many arrivals ended up on StonkFun since the watch started: ${o.landed} of ${o.decided}${o.medianHours != null ? `, usually ${o.medianHours < 1 ? Math.max(1, Math.round(o.medianHours * 60)) + ' min' : o.medianHours.toFixed(1) + ' h'} after arriving` : ''}. No move in 3 days = going cold.`
         : `Chance = share of tokens Raydium has set up that StonkFun lists: ${o.listed ?? 0} of ${(o.listed ?? 0) + (o.unlisted ?? 0)}. Switches to the watcher’s own track record after 5 arrivals. No move in 3 days = going cold.`;
-      html = d.arriving.length ? `<table><thead><tr><th>Seen</th><th>Ticker</th><th class="name">Name</th><th>Liquidity</th><th>Chance</th><th></th></tr></thead><tbody>${
+      const E = (d.early || []).filter((e) => !e.setUp);
+      html = d.arriving.length || E.length ? `<table><thead><tr><th>Seen</th><th>Ticker</th><th class="name">Name</th><th>Liquidity</th><th>Chance</th><th></th></tr></thead><tbody>${
+        E.map((e) => row(`<td class="time">${esc(et(e.t))}</td><td class="tick"><span>${esc(e.sym)}</span></td><td class="name">${esc(e.kind)}</td><td class="num"></td><td class="num"><span class="st early">Early</span></td><td class="link">${chart(e.mint)}</td>`, e.t > flipAfter)).join('')
+      }${
         d.arriving.map((a) => row(`<td class="time">${esc(et(a.t))}</td><td class="tick"><span>${esc(a.sym)}</span></td><td class="name">${esc(a.name)}</td><td class="num">${esc(usd(a.tvl))}</td><td class="num">${a.cold ? '<span class="cold">Going cold</span>' : `<span class="odds">${pct}</span>`}</td><td class="link">${chart(a.mint)}</td>`, a.t > flipAfter)).join('')
       }</tbody></table>` : `<div class="empty"><strong>Nothing new arriving</strong>When Raydium sets up a new quote that StonkFun doesn’t have yet, it lands here with its chance and you get pinged. Chance right now: ${pct}.</div>`;
     } else if (tab === 'boarding') {
@@ -243,7 +258,7 @@
         L.map((b) => row(`<td class="tick old"><span>${esc(b.sym)}</span></td><td class="vs">${esc(b.cat)}</td><td class="link">${chart(b.mint)}</td>`)).join('')
       }</tbody></table>` : `<div class="empty"><strong>Nothing here</strong>Every old pair on StonkFun’s list is launchable now.</div>`;
     } else {
-      legend = 'Everything the watcher has pinged, newest first. Arriving and Boarding are early. Landed means launchable. On radar is new real money ($500K+) — early, can be noise.';
+      legend = 'Everything the watcher has pinged, newest first. Early comes before Raydium’s setup. Arriving and Boarding come just before launch. Landed means launchable. On radar is new real money ($500K+) — early, can be noise.';
       html = log.length ? `<table><thead><tr><th>Time (ET)</th><th>Ticker</th><th class="name">Name</th><th>Status</th><th>Liquidity</th><th></th></tr></thead><tbody>${
         log.map((e) => row(`<td class="time">${esc(et(e.t))}</td><td class="tick"><span>${esc(e.sym || '—')}</span></td><td class="name">${esc(e.name || e.body || '')}</td><td><span class="st ${esc(e.type)}">${esc(STATUS[e.type] || e.type)}</span></td><td class="num">${esc(usd(e.tvl))}</td><td class="link">${chart(e.mint)}</td>`, e.t > flipAfter)).join('')
       }</tbody></table>` : `<div class="empty"><strong>No pings yet</strong>The first scan sets the baseline. Pings start after that.</div>`;
@@ -273,7 +288,7 @@
   }
 
   function alertNew() {
-    const fresh = data.events.filter((e) => e.t > lastSeen && ['coming', 'added', 'live', 'deep'].includes(e.type));
+    const fresh = data.events.filter((e) => e.t > lastSeen && ['early', 'coming', 'added', 'live', 'deep'].includes(e.type));
     if (!fresh.length) return;
     if (alertsOn && lastSeen) {
       beep();
