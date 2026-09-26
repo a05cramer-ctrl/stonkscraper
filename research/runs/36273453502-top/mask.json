@@ -1,0 +1,69 @@
+{
+ "data": {
+  "token": {
+   "mint": "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+   "pool": "HGMEiG5yyYPx7NYJeeugSQbxXEVEEkQt8yG63rrBbq6",
+   "name": "Nullmask",
+   "symbol": "MASK",
+   "quote": {
+    "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+    "symbol": "ZEC",
+    "name": "Zcash",
+    "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+    "category": "custom",
+    "categoryLabel": "Custom"
+   },
+   "launchpad": "launchlab",
+   "mode": "reward",
+   "quoteOnlyFees": true,
+   "transferFee": {
+    "bps": 300
+   },
+   "flywheel": {
+    "active": true
+   },
+   "imageUrl": "https://gateway.irys.xyz/7Dbdj8EPHEmf3bmRGnZMdeYTbDcKy7qGwrpDuqVzeKii",
+   "links": {
+    "website": "https://nullmask.io/",
+    "twitter": "https://x.com/NullMaskio"
+   },
+   "market": {
+    "priceUsd": 0.01941675609039714,
+    "marketCapUsd": 19416756.090397142,
+    "fdvUsd": 19416756.090397142,
+    "volume24hUsd": 5956258.726574855,
+    "liquidityUsd": 511640.2710836392,
+    "priceChange24h": 174.78859191671367,
+    "peakMarketCapUsd": 27116765.031799648
+   },
+   "status": "graduated",
+   "graduationProgress": 1,
+   "graduatedAt": "2026-09-23T11:04:22.392Z",
+   "createdAt": "2026-09-23T08:52:51.406Z"
+  },
+  "launch": {
+   "mint": "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+   "pool": "HGMEiG5yyYPx7NYJeeugSQbxXEVEEkQt8yG63rrBbq6",
+   "name": "Nullmask",
+   "symbol": "MASK",
+   "creator": "FrXTvkebakR2oNctgsHz1yeijmu9wTZifL3FmffJP5xJ",
+   "quote": {
+    "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+    "symbol": "ZEC"
+   },
+   "launchpad": "launchlab",
+   "mode": "reward",
+   "transferFee": {
+    "bps": 300
+   },
+   "logoUrl": "https://gateway.irys.xyz/7Dbdj8EPHEmf3bmRGnZMdeYTbDcKy7qGwrpDuqVzeKii",
+   "startMarketCapUsd": 3280.4179653267856,
+   "targetMarketCapUsd": 3280.4179653267856,
+   "createdAt": "2026-09-23T08:50:41.946Z"
+  },
+  "network": "mainnet-beta"
+ },
+ "meta": {
+  "generatedAt": "2026-09-26T21:34:43.083Z"
+ }
+}

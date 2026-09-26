@@ -1,0 +1,3582 @@
+{
+ "data": {
+  "tokens": [
+   {
+    "mint": "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+    "pool": "HGMEiG5yyYPx7NYJeeugSQbxXEVEEkQt8yG63rrBbq6",
+    "name": "Nullmask",
+    "symbol": "MASK",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://gateway.irys.xyz/7Dbdj8EPHEmf3bmRGnZMdeYTbDcKy7qGwrpDuqVzeKii",
+    "links": {
+     "website": "https://nullmask.io/",
+     "twitter": "https://x.com/NullMaskio"
+    },
+    "market": {
+     "priceUsd": 0.019482998637850354,
+     "marketCapUsd": 19482998.637850355,
+     "fdvUsd": 19482998.637850355,
+     "volume24hUsd": 5956233.318972759,
+     "liquidityUsd": 513457.9138506109,
+     "priceChange24h": 175.76504793065772,
+     "peakMarketCapUsd": 27116765.031799648
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-23T11:04:22.392Z",
+    "createdAt": "2026-09-23T08:52:51.406Z"
+   },
+   {
+    "mint": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+    "pool": "5aBH535rESkhjVb2nEaMPfyjiTw3uK57vE6c5uhZHjPY",
+    "name": "Super Inu",
+    "symbol": "SI",
+    "quote": {
+     "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+     "symbol": "NVDAX",
+     "name": "NVIDIA",
+     "logoUrl": "/api/asset/quote-logo/Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh?v=44a1e3f8",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://axiomtrading.sfo3.cdn.digitaloceanspaces.com/7ovByu4CKE2ogdbYTRx8o9z1XarkNMA3hXyxThWamoon.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.013985866215224053,
+     "marketCapUsd": 13985866.215224054,
+     "fdvUsd": 13985866.215224054,
+     "volume24hUsd": 4335993.551998118,
+     "liquidityUsd": 490536.79840669635,
+     "priceChange24h": 28.48850239741021,
+     "peakMarketCapUsd": 19220962.72249348
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-21T15:46:50.247Z",
+    "createdAt": "2026-09-21T15:49:04.818Z"
+   },
+   {
+    "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+    "pool": "7a8xxAJBELDo6P9dikSYctdw6ce8F4mWr3ahcAD8Ao49",
+    "name": "STONK",
+    "symbol": "STONK",
+    "quote": {
+     "mint": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
+     "symbol": "SPYX",
+     "name": "SP500",
+     "logoUrl": "/api/asset/quote-logo/XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W?v=c2b8ddb3",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "creator": "H6qoWz4hxRb9a65nMXv1ERZWHmbG3foFZoK6CEm7acRQ",
+    "launchpad": "raydium",
+    "mode": "standard",
+    "quoteOnlyFees": false,
+    "imageUrl": "/api/asset/quote-logo/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx?v=c3c81410",
+    "metadataUri": "https://gateway.irys.xyz/7HzAyVbL19x2RsKPwFD2NdESBDS1ZhawFojcVLvsFr5N",
+    "links": {},
+    "market": {
+     "priceUsd": 0.285426182154147,
+     "marketCapUsd": 233019283.34619603,
+     "fdvUsd": 233019283.34619603,
+     "volume24hUsd": 1993664.3648852585,
+     "priceChange24h": -6.757066058579531,
+     "peakMarketCapUsd": 330810898.17038244
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-07-23T19:24:05.347Z",
+    "createdAt": "2026-07-23T19:08:03.348Z"
+   },
+   {
+    "mint": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+    "pool": "BTccxxTFi7a9xJTE1exKn38Jgie35s6gNeRxd8DM61Rc",
+    "name": "Anonymous Cat",
+    "symbol": "ZCAT",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "raydium",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://gateway.irys.xyz/7uFsXwyuyzKDiqdda4L2cq3DcpcdRqYhwe4m8ZoVJ1BQ",
+    "links": {},
+    "market": {
+     "priceUsd": 0.08111112607252736,
+     "marketCapUsd": 78506226.75615092,
+     "fdvUsd": 78506226.75615092,
+     "volume24hUsd": 1823274.053844042,
+     "priceChange24h": 19.474699356697922,
+     "peakMarketCapUsd": 172605806.54574123
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-08-30T23:59:36.276Z",
+    "createdAt": "2026-08-30T23:30:26.185Z"
+   },
+   {
+    "mint": "G4PF5viRAdYCA3QLf3g81J7NoWyMWoyZxMLJ52f4xon7",
+    "pool": "6smhQTzkafN6ehPvUQwcPUp83FSms5Ntk6z1uvRj3kEM",
+    "name": "froges",
+    "symbol": "froges",
+    "quote": {
+     "mint": "oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ",
+     "symbol": "OPENAI",
+     "name": "OPENAI",
+     "logoUrl": "/api/asset/quote-logo/oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ?v=dc519d3a",
+     "category": "tessera",
+     "categoryLabel": "Tessera"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://metadata.j7tracker.io/images/ZLelOL1D3v",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00004788905778096539,
+     "marketCapUsd": 47889.057780965384,
+     "fdvUsd": 47889.057780965384,
+     "volume24hUsd": 1769676.5617909664,
+     "liquidityUsd": 23323.470510359366,
+     "peakMarketCapUsd": 444883.5021998696
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T15:31:52.328Z",
+    "createdAt": "2026-09-26T15:34:11.021Z"
+   },
+   {
+    "mint": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+    "pool": "FE1kGMg4PCLbbz2AMBaHSiG3USXpVNtUVKDFrC7E3fco",
+    "name": "RuneScape Gold",
+    "symbol": "GP",
+    "quote": {
+     "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+     "symbol": "GLDX",
+     "name": "GOLD",
+     "logoUrl": "/api/asset/quote-logo/Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re?v=e924ada2",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://gateway.irys.xyz/5wTHVjcQcbpWaKGLe2w8T1hpGoQsLAxhTvSMpXuKHPUx",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.005877457563694379,
+     "marketCapUsd": 5877457.56369438,
+     "fdvUsd": 5877457.56369438,
+     "volume24hUsd": 1687319.2605661564,
+     "liquidityUsd": 255105.1859071194,
+     "priceChange24h": -65.38723048081833,
+     "peakMarketCapUsd": 32467156.370092534
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-08T02:13:25.201Z",
+    "createdAt": "2026-09-08T01:38:21.198Z"
+   },
+   {
+    "mint": "2bX5CKZ7SHvacmMQFq7nBjQMmpPFbCZkpA7367du9Wa2",
+    "pool": "7RqA5qwYgzeev2pYPYFVEaArueukCbFxDiEgayUdEiix",
+    "name": "o",
+    "symbol": "o",
+    "quote": {
+     "mint": "oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ",
+     "symbol": "OPENAI",
+     "name": "OPENAI",
+     "logoUrl": "/api/asset/quote-logo/oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ?v=dc519d3a",
+     "category": "tessera",
+     "categoryLabel": "Tessera"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/4aoojhaZdTaeREP6YaJMMnBMBVvGa6QXpPczALvHp2e1.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0008084277347918808,
+     "marketCapUsd": 808427.7347918808,
+     "fdvUsd": 808427.7347918808,
+     "volume24hUsd": 1332465.7908253674,
+     "liquidityUsd": 89404.90586266304,
+     "peakMarketCapUsd": 1102804.594790073
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T19:30:34.075Z",
+    "createdAt": "2026-09-26T19:37:10.816Z"
+   },
+   {
+    "mint": "8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2",
+    "pool": "BasVE5j5whL9To1EY8ZKPNyxvhkSzMwzXNe5zCG9Mwy7",
+    "name": "Sand Kitten",
+    "symbol": "SNDK",
+    "quote": {
+     "mint": "SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH",
+     "symbol": "SNDK",
+     "name": "SANDISK",
+     "logoUrl": "/api/asset/quote-logo/SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH?v=3f33db13",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/HxsrBJD2n1VDMJ6KfdhMGxT7VRB53ym84gq1QBPfjM9P",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0018870572047881553,
+     "marketCapUsd": 1887057.2047881554,
+     "fdvUsd": 1887057.2047881554,
+     "volume24hUsd": 1136386.777022082,
+     "liquidityUsd": 130624.22294049196,
+     "priceChange24h": 269.6739241174222,
+     "peakMarketCapUsd": 2360589.0855871146
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T01:36:13.344Z",
+    "createdAt": "2026-09-25T01:37:02.170Z"
+   },
+   {
+    "mint": "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+    "pool": "7ixRTR9qJipFLaY9XXYtYdoRWRbvqQTEdS6YGNPFtHjX",
+    "name": "ALLINU",
+    "symbol": "ALLINU",
+    "quote": {
+     "mint": "DKNGQFNGQmoBdXSRGKJ8tTu7uPDasw5JDcfMmWniNfow",
+     "symbol": "DKNG",
+     "name": "DKNG",
+     "logoUrl": "/api/asset/quote-logo/DKNGQFNGQmoBdXSRGKJ8tTu7uPDasw5JDcfMmWniNfow?v=fae119a7",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://axiomtrading.sfo3.cdn.digitaloceanspaces.com/3jt62QcVQvTu2gCCYFWPBnVNgQ2uv5fVxkSa9hFepump.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.008529295512084393,
+     "marketCapUsd": 8529295.512084393,
+     "fdvUsd": 8529295.512084393,
+     "volume24hUsd": 1034987.2170743509,
+     "liquidityUsd": 313232.31392795185,
+     "priceChange24h": 79.44775679256742,
+     "peakMarketCapUsd": 29411832.748069886
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-11T20:03:07.781Z",
+    "createdAt": "2026-09-11T20:05:00.407Z"
+   },
+   {
+    "mint": "6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8",
+    "pool": "31jrCKZgiqcGvEYnditbXQgWyYynogot7xfgtRASimuh",
+    "name": "Grokification",
+    "symbol": "GROK",
+    "quote": {
+     "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+     "symbol": "SPCXX",
+     "name": "SPACEX",
+     "logoUrl": "/api/asset/quote-logo/Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8?v=8e308f08",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/9QcuEErCatXYn49iSb8FU9kZiSe4zi8FexhCPaWZEF1b.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.002699039998232788,
+     "marketCapUsd": 2699039.998232788,
+     "fdvUsd": 2699039.998232788,
+     "volume24hUsd": 948524.3525214861,
+     "liquidityUsd": 184031.67104194453,
+     "priceChange24h": 0.8939172818549945,
+     "peakMarketCapUsd": 6901728.018444014
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-21T18:54:32.949Z",
+    "createdAt": "2026-09-21T18:50:29.238Z"
+   },
+   {
+    "mint": "9AdPA9ZeY8rEvSBvoL2KuWrz2LQQ7zNDNkY8Jegrtg8d",
+    "pool": "CQjxUjNFYvPcemt82svNDgmFfGEBUzPVFW2oYJf51oft",
+    "name": "The Sift",
+    "symbol": "Sift",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://md.sdfgsdfsdf.uk/static/images/jMjevZmo.jpg",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00021504585221833813,
+     "marketCapUsd": 215045.85221833814,
+     "fdvUsd": 215045.85221833814,
+     "volume24hUsd": 890469.5754290192,
+     "liquidityUsd": 45409.22798205433,
+     "peakMarketCapUsd": 325238.15869109525
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T17:30:14.928Z",
+    "createdAt": "2026-09-26T17:29:47.483Z"
+   },
+   {
+    "mint": "BGtTkNXH8kqUW6cSZzEm8XyMMzZoQDuxZTFijz7ETW9c",
+    "pool": "BiAkYMrt5eKCvTuBiE9F6RTxQHhP6pbr2EiH9gFCjWwD",
+    "name": "o",
+    "symbol": "o",
+    "quote": {
+     "mint": "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+     "symbol": "OPENAI",
+     "name": "OPENAI",
+     "logoUrl": "/api/asset/quote-logo/PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF?v=f6dce61d",
+     "category": "prestock",
+     "categoryLabel": "PreStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://ipfs.launchblitz.ai/async/BGtTkNXH8kqUW6cSZzEm8XyMMzZoQDuxZTFijz7ETW9c.png",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00002379248127707648,
+     "marketCapUsd": 23792.481277076477,
+     "fdvUsd": 23792.481277076477,
+     "volume24hUsd": 785083.8801202299,
+     "liquidityUsd": 15039.280929100494,
+     "peakMarketCapUsd": 251564.66671077156
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T00:50:34.884Z",
+    "createdAt": "2026-09-26T00:52:11.003Z"
+   },
+   {
+    "mint": "3mK2nkpohvxfXEhWeKETjoeFfhFKFVqm51Swu6miChPe",
+    "pool": "EQn3vARf4RctFSDLPitD7zRb5fpypkjq3HuoeUJgk2NJ",
+    "name": "Black Cat #4269",
+    "symbol": "BLACKCAT",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://ipfs.launchblitz.ai/async/3mK2nkpohvxfXEhWeKETjoeFfhFKFVqm51Swu6miChPe.png",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000042893159724572555,
+     "marketCapUsd": 42893.15972457256,
+     "fdvUsd": 42893.15972457256,
+     "volume24hUsd": 759514.9455678947,
+     "liquidityUsd": 20933.217360481412,
+     "peakMarketCapUsd": 165074.70510374173
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T23:16:40.892Z",
+    "createdAt": "2026-09-25T23:18:59.610Z"
+   },
+   {
+    "mint": "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr",
+    "pool": "F5kpA8oXhgaPKEyoyMRwaZSkQpo4f1YBsMaNjtrhhBrA",
+    "name": "NearKat",
+    "symbol": "NEARKAT",
+    "quote": {
+     "mint": "3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+     "symbol": "NEAR",
+     "name": "NEAR",
+     "logoUrl": "https://bafkreiekxdv4uxm7ctijvj7wql6bto3cokws6xvfdbg7ylrvt2vtimnqri.ipfs.w3s.link",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://gateway.irys.xyz/EiwGr8C8Jf1MqrB1GbCCEjNXzXpr1NNhcitM6u39DQEA",
+    "links": {
+     "website": "https://nearkat.xyz/",
+     "twitter": "https://x.com/NearKatSol"
+    },
+    "market": {
+     "priceUsd": 0.007117382933958155,
+     "marketCapUsd": 7117382.933958153,
+     "fdvUsd": 7117382.933958153,
+     "volume24hUsd": 683855.6589915539,
+     "liquidityUsd": 409558.0422990598,
+     "priceChange24h": 29.554128727341798,
+     "peakMarketCapUsd": 16675258.021204578
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-07T03:48:20.385Z",
+    "createdAt": "2026-09-07T00:36:30.252Z"
+   },
+   {
+    "mint": "8RVBk8vxLiUHueLUW1f4izFVqN3nWippLhkohKg6EGkS",
+    "pool": "GeNDy5afAWz7S9w2tMLgpK3xQqXjeDaCvYV9h8joEmjo",
+    "name": "KNOTS",
+    "symbol": "KNOTS",
+    "quote": {
+     "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+     "symbol": "STONK",
+     "name": "STONK",
+     "logoUrl": "/api/asset/quote-logo/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx?v=c3c81410",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://gateway.irys.xyz/3KNgu99JvZ961wXUxcZ8LXDXjaWK4651Wo9oUZSA5U4L",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/KnotsOnStonk"
+    },
+    "market": {
+     "priceUsd": 0.009371029884789373,
+     "marketCapUsd": 9371029.884789374,
+     "fdvUsd": 9371029.884789374,
+     "volume24hUsd": 638915.640123831,
+     "liquidityUsd": 796273.5561420231,
+     "priceChange24h": -10.363229115694539,
+     "peakMarketCapUsd": 51612421.53199439
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-06T14:47:58.750Z",
+    "createdAt": "2026-09-05T16:34:45.099Z"
+   },
+   {
+    "mint": "527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz",
+    "pool": "4utLuH8cwyFAhC3Wxn8rUiqpoGXH7dCyWUceiC4u6hT3",
+    "name": "Bop",
+    "symbol": "BOP",
+    "quote": {
+     "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+     "symbol": "Bonk",
+     "name": "Bonk",
+     "logoUrl": "/api/asset/quote-logo/DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263?v=eb383f78",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://proximaimage.hel1.your-objectstorage.com/launch-images/32f5f961-5eb5-4862-b4ac-97284878c4a1",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0011616574776585637,
+     "marketCapUsd": 1161657.4776585638,
+     "fdvUsd": 1161657.4776585638,
+     "volume24hUsd": 581221.11037958,
+     "liquidityUsd": 109501.16077670251,
+     "priceChange24h": 23.16696836451495,
+     "peakMarketCapUsd": 1970457.7095728791
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-22T05:29:27.590Z",
+    "createdAt": "2026-09-22T05:30:46.998Z"
+   },
+   {
+    "mint": "At541hRZhK9LWKj9w2dqN2wCdpFyZgRa1Un2yG7xa43m",
+    "pool": "3gkqzphji5MWCkQYhM6bEFxKqXNW28f9q4ge4qSqow9Q",
+    "name": "V-BUCKS",
+    "symbol": "VBUCKS",
+    "quote": {
+     "mint": "SiLVFMgD3eD2rgK628NbTBq9MnuJF5FW2CRaVyTB35L",
+     "symbol": "SILVER",
+     "name": "SILVER",
+     "logoUrl": "/api/asset/quote-logo/SiLVFMgD3eD2rgK628NbTBq9MnuJF5FW2CRaVyTB35L?v=9a46dd50",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/8RTV3CNQ4kc2apZs1D5BUsPaZeS6CwpB5kLudchDK3M2",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0007752613771098829,
+     "marketCapUsd": 775261.3771098829,
+     "fdvUsd": 775261.3771098829,
+     "volume24hUsd": 546146.0604417172,
+     "liquidityUsd": 97211.39043632628,
+     "priceChange24h": -36.628680254115544,
+     "peakMarketCapUsd": 2317363.718538159
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-19T02:50:05.860Z",
+    "createdAt": "2026-09-14T10:50:01.781Z"
+   },
+   {
+    "mint": "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+    "pool": "GmASjsnrLPxApHm1eofM1dPNE8pYpgbEjxbxYJ4HTqd",
+    "name": "WoW Gold",
+    "symbol": "WOW",
+    "quote": {
+     "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+     "symbol": "GLDX",
+     "name": "GOLD",
+     "logoUrl": "/api/asset/quote-logo/Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re?v=e924ada2",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/88ShZYXEEX2YxhJnzqEijVkoCgLeVMHYwQUMLYAeZ4QS",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/WoWGoldChain"
+    },
+    "market": {
+     "priceUsd": 0.0025905512868003946,
+     "marketCapUsd": 2590551.2868003948,
+     "fdvUsd": 2590551.2868003948,
+     "volume24hUsd": 493688.92099852033,
+     "liquidityUsd": 159179.56111569438,
+     "priceChange24h": 13.901061486231004,
+     "peakMarketCapUsd": 6735843.851649607
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-14T09:59:42.564Z",
+    "createdAt": "2026-09-14T00:39:46.053Z"
+   },
+   {
+    "mint": "ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK",
+    "pool": "BQWun869866KQnxFfNeLysoXHuMrvoh5Jp2JL7JRWxXx",
+    "name": "Just a Backpack",
+    "symbol": "🎒",
+    "quote": {
+     "mint": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+     "symbol": "BP",
+     "name": "Backpack",
+     "logoUrl": "/api/asset/quote-logo/BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy?v=0bfb622f",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://axiomtrading.sfo3.cdn.digitaloceanspaces.com/CYGw4sDm5vX1JeQ7uyiZo3qniYwmsPJg3MHSKcNQpump.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0032130000259588706,
+     "marketCapUsd": 3213000.025958871,
+     "fdvUsd": 3213000.025958871,
+     "volume24hUsd": 430123.5974536067,
+     "liquidityUsd": 342630.3322942958,
+     "priceChange24h": -17.318140428439087,
+     "peakMarketCapUsd": 7021146.924177212
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-07T08:23:23.827Z",
+    "createdAt": "2026-09-06T16:42:51.974Z"
+   },
+   {
+    "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+    "pool": "Ad7pbBvVRNofo96WR6eHwmU2o4naZ6Lao1J98hW8a1TQ",
+    "name": "Hypurr",
+    "symbol": "PURR",
+    "quote": {
+     "mint": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+     "symbol": "HYPE",
+     "name": "HYPE",
+     "logoUrl": "/api/asset/quote-logo/98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g?v=11c10eb7",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "raydium",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "flywheel": {
+     "active": true
+    },
+    "imageUrl": "https://gateway.irys.xyz/ENbdipSawCZv6Z4Lv1hvGpppmnbS3pArfrpJtcTi7p3a",
+    "links": {},
+    "market": {
+     "priceUsd": 0.006272530392841366,
+     "marketCapUsd": 6051199.332067373,
+     "fdvUsd": 6051199.332067373,
+     "volume24hUsd": 415506.29220410675,
+     "priceChange24h": 26.901744470394217,
+     "peakMarketCapUsd": 18352197.17063287
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-08-20T01:40:57.700Z",
+    "createdAt": "2026-08-20T01:07:55.607Z"
+   },
+   {
+    "mint": "4RQUffJw21gc53u6Somr9ZXSmPzTYY81dLC7E3BWu4hJ",
+    "pool": "7AfZWopw4rCo3zYVri9Mhe9wjG2chfwCUHWYpHwcDcvD",
+    "name": "Faker",
+    "symbol": "Faker",
+    "quote": {
+     "mint": "EWY4owSJYMpwN33qGDu5gGxpkQkpMJu8ZUsQJaNZG5dv",
+     "symbol": "EWY",
+     "name": "EWY",
+     "logoUrl": "/api/asset/quote-logo/EWY4owSJYMpwN33qGDu5gGxpkQkpMJu8ZUsQJaNZG5dv?v=7d116c59",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/BuDt8gBKjg94uWgJnde7hqApAu52neLBh51JMmNMCeCV.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000074792833589483,
+     "marketCapUsd": 7479.283358948299,
+     "fdvUsd": 7479.283358948299,
+     "volume24hUsd": 394718.7375202645,
+     "liquidityUsd": 7671.170020175912,
+     "peakMarketCapUsd": 120919.81328112142
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T15:04:56.818Z",
+    "createdAt": "2026-09-26T15:04:26.121Z"
+   },
+   {
+    "mint": "2ahsXQuUXn9Godak4HjR7EiWXWZSwDjMvw5f8Dfv23Kj",
+    "pool": "AnR6uuFwEs5LoQBVyMxfPPnjHzGRAB44rcttRREA99W9",
+    "name": "BLUB",
+    "symbol": "BLUB",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/9AdPA9ZeY8rEvSBvoL2KuWrz2LQQ7zNDNkY8Jegrtg8d.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000004083028280025615,
+     "marketCapUsd": 4083.028280025615,
+     "fdvUsd": 4083.028280025615,
+     "volume24hUsd": 372928.4663276326,
+     "liquidityUsd": 6118.014268038694,
+     "peakMarketCapUsd": 57863.06087110317
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T17:31:53.920Z",
+    "createdAt": "2026-09-26T17:32:01.401Z"
+   },
+   {
+    "mint": "Fh9wRZe64RfyriT9ooqhniV88dFFo4khwGFAqKmoXEDL",
+    "pool": "AdjVtBj2cfUnLujS6noQERYLRqBKEoNvT8RDmAPpJYP1",
+    "name": "Lester",
+    "symbol": "LESTER",
+    "quote": {
+     "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+     "symbol": "CBLTC",
+     "name": "Coinbase Wrapped LTC",
+     "logoUrl": "/api/asset/quote-logo/cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf?v=dcd1c0cf",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/DaKS5yZmER9SkefFAfSYVJfyg7zzhmtk2voPRrhfzf1U",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.00018541904463789674,
+     "marketCapUsd": 185419.04463789673,
+     "fdvUsd": 185419.04463789673,
+     "volume24hUsd": 360875.54904681706,
+     "liquidityUsd": 40101.20308068745,
+     "priceChange24h": -6.463838286307966,
+     "peakMarketCapUsd": 427951.77072192606
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T17:56:12.319Z",
+    "createdAt": "2026-09-25T17:46:22.433Z"
+   },
+   {
+    "mint": "CFNRDaxFcvRwRSNnA5cHrCCr6AHhk9dNkHWpRUjNupFL",
+    "pool": "987VwvJZ5FRjWCY9ZwC2tRUGL8FbMT1aF4pUrT7XjPjD",
+    "name": "Raydium Cat",
+    "symbol": "RAYCAT",
+    "quote": {
+     "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+     "symbol": "RAY",
+     "name": "Raydium",
+     "logoUrl": "/api/asset/quote-logo/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R?v=3836b499",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "raydium",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/B77x6QzyvAbwR6RXZyQajSN6TppjKsRxTa5YfVqCss5W",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0026374170034427313,
+     "marketCapUsd": 2538563.3984512365,
+     "fdvUsd": 2538563.3984512365,
+     "volume24hUsd": 351305.4724150605,
+     "priceChange24h": -4.021783332643181,
+     "peakMarketCapUsd": 16146051.892479254
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-08-13T12:36:12.384Z",
+    "createdAt": "2026-08-13T12:30:24.634Z"
+   },
+   {
+    "mint": "4Kz2FwUJVEb2P2dFBbj4AHFM7Li6rn5mJdFsUU2nWNkC",
+    "pool": "JDWFtdB77wMTRgS8sQCZCSgdbEH2o4r5rZrpSUe9WAji",
+    "name": "Spam",
+    "symbol": "SPAM",
+    "quote": {
+     "mint": "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp",
+     "symbol": "XMR",
+     "name": "XMR",
+     "logoUrl": "/api/asset/quote-logo/WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp?v=9e80ab5b",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000947564807981374,
+     "marketCapUsd": 94756.48079813739,
+     "fdvUsd": 94756.48079813739,
+     "volume24hUsd": 349624.4570787071,
+     "liquidityUsd": 28692.006435882813,
+     "peakMarketCapUsd": 206194.62670124313
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T18:03:49.091Z",
+    "createdAt": "2026-09-26T18:06:43.398Z"
+   },
+   {
+    "mint": "8xvzGFP8kreKmQY12gzTfCk3BfJ1zV8zf3hsC4Sb3UM2",
+    "pool": "FDXt1uTxT4fgX2oqL42vF9JAhQxwctnoWumLNyp4MhUR",
+    "name": "Stonx",
+    "symbol": "STONX",
+    "quote": {
+     "mint": "So11111111111111111111111111111111111111112",
+     "symbol": "SOL",
+     "name": "Wrapped SOL",
+     "logoUrl": "/api/asset/quote-logo/So11111111111111111111111111111111111111112?v=2aa6de95",
+     "category": "solana",
+     "categoryLabel": "Solana"
+    },
+    "launchpad": "launchlab",
+    "mode": "standard",
+    "quoteOnlyFees": true,
+    "imageUrl": "https://chubby-amethyst-finch.myfilebase.com/ipfs/bafkreicszrknlxx472m7tqb433aub753kfhcvxqyyzodhlwidoss53alv4",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000005584813009893086,
+     "marketCapUsd": 5584.813009893086,
+     "fdvUsd": 5584.813009893086,
+     "volume24hUsd": 347104.13920382835,
+     "liquidityUsd": 7081.854382092494,
+     "peakMarketCapUsd": 89420.68192845747
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T16:12:18.904Z",
+    "createdAt": "2026-09-26T15:35:06.228Z"
+   },
+   {
+    "mint": "7rk2Kf2MxJB2h73UTg7p6MwdZk1x5PEtDtAjkyFY48Fr",
+    "pool": "FPGKPbsB8Qq5DzGBtNoYSdchUr4XSviMPpaB7FNSMLnw",
+    "name": "Billions",
+    "symbol": "BILLIONS",
+    "quote": {
+     "mint": "DJTu7vi8norVzdVAffgvb39VP7wjKeTsgaMBJrzfxvoF",
+     "symbol": "DJT",
+     "name": "DJT",
+     "logoUrl": "/api/asset/quote-logo/DJTu7vi8norVzdVAffgvb39VP7wjKeTsgaMBJrzfxvoF?v=fc70f83a",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://pub-3c9a66db79e848b2bf3605d2e51bc6af.r2.dev/images/1781953936355.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00000294493961467633,
+     "marketCapUsd": 2944.9396146763297,
+     "fdvUsd": 2944.9396146763297,
+     "volume24hUsd": 338358.0019007271,
+     "liquidityUsd": 5162.650499040135,
+     "peakMarketCapUsd": 18671.08437944856
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T19:15:42.679Z",
+    "createdAt": "2026-09-26T19:19:54.498Z"
+   },
+   {
+    "mint": "FEmYzW42dkfcZ4cYHaJp7FxbvCm1ttndfau3W1rqZoXv",
+    "pool": "6fXiGFquqpLWnqSD9UhpYeh677L3vnkPakXrun1dQeZQ",
+    "name": "The Sift",
+    "symbol": "Sift",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://metadata.j7tracker.io/images/9b62cff305bf44be",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000038003465426602206,
+     "marketCapUsd": 3800.3465426602206,
+     "fdvUsd": 3800.3465426602206,
+     "volume24hUsd": 331668.2261771701,
+     "liquidityUsd": 5866.804225237822,
+     "peakMarketCapUsd": 49920.853287877544
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T17:37:26.142Z",
+    "createdAt": "2026-09-26T17:46:14.824Z"
+   },
+   {
+    "mint": "5WpdKV43mFmVQgy6KhgqmU1N4xtLE4rAFtnsTf8rApwd",
+    "pool": "An4Z8H7AWJgYj1oN95a7VwJ388soFes3PR9LMN4bWYCg",
+    "name": "Zop",
+    "symbol": "ZOP",
+    "quote": {
+     "mint": "So11111111111111111111111111111111111111112",
+     "symbol": "SOL",
+     "name": "Wrapped SOL",
+     "logoUrl": "/api/asset/quote-logo/So11111111111111111111111111111111111111112?v=2aa6de95",
+     "category": "solana",
+     "categoryLabel": "Solana"
+    },
+    "launchpad": "launchlab",
+    "mode": "standard",
+    "quoteOnlyFees": true,
+    "imageUrl": "https://gateway.irys.xyz/5wJvTqMT1jhcQh1Ffjz2jASQdLPSbbPK3zHjbXCepVi5",
+    "links": {
+     "website": "https://zop.family/",
+     "twitter": "https://x.com/zopfamily"
+    },
+    "market": {
+     "priceUsd": 0.00019924442977115189,
+     "marketCapUsd": 199244.4297711519,
+     "fdvUsd": 199244.4297711519,
+     "volume24hUsd": 317268.7410624682,
+     "liquidityUsd": 46195.80338969448,
+     "priceChange24h": -23.98885506150725,
+     "peakMarketCapUsd": 394924.7025847399
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-24T18:40:43.006Z",
+    "createdAt": "2026-09-24T18:41:21.005Z"
+   },
+   {
+    "mint": "6BZY2BgeqVKEYCTgU9Q9oUwx6bDqv32djy6WGaXTci1i",
+    "pool": "8gTQ2TXdyXkCzPAyTt253J4RP1EjLefMY8VvYvqpdr1x",
+    "name": "Happy Penguin",
+    "symbol": "WODL",
+    "quote": {
+     "mint": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+     "symbol": "PENGU",
+     "name": "Pudgy Penguins",
+     "logoUrl": "/api/asset/quote-logo/2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv?v=c2e990a8",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/E4gbKen1MqpXmA5WYNUcvhksrBv2TPCzmcEd2fzSNZzV",
+    "links": {
+     "website": "https://linktr.ee/wodlonsol",
+     "twitter": "https://x.com/wodlonsol"
+    },
+    "market": {
+     "priceUsd": 0.0006393527901834023,
+     "marketCapUsd": 639352.7901834022,
+     "fdvUsd": 639352.7901834022,
+     "volume24hUsd": 307720.3093302289,
+     "liquidityUsd": 75351.6491425381,
+     "priceChange24h": 2.6137211252093673,
+     "peakMarketCapUsd": 945779.4680740862
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T12:50:00.886Z",
+    "createdAt": "2026-09-25T12:15:36.641Z"
+   },
+   {
+    "mint": "6kNNgyrdvjkRC8eRGQqx5sLfZG2jTmg3NCFmkX2hYP4j",
+    "pool": "CvrqeBYbep9F6ghReV3kUoXAwaTEpkhDBBMio69v4rKP",
+    "name": "SOMETHING THE CAT",
+    "symbol": "SOMETHING",
+    "quote": {
+     "mint": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+     "symbol": "SPX",
+     "name": "SPX6900 (Wormhole)",
+     "logoUrl": "/api/asset/quote-logo/J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr?v=fbc43925",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/2qzBDARdxfnXUwkbwyxmmWF4Dmb6XS2Zh2gzSkRrqGvk",
+    "links": {
+     "website": "https://www.spx6900.com/",
+     "twitter": "https://x.com/somethingthecat"
+    },
+    "market": {
+     "priceUsd": 0.0009319529051677637,
+     "marketCapUsd": 931952.9051677637,
+     "fdvUsd": 931952.9051677637,
+     "volume24hUsd": 289905.1421374536,
+     "liquidityUsd": 84767.95434784777,
+     "priceChange24h": -47.57942917843449,
+     "peakMarketCapUsd": 2536141.774140377
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-10T10:45:31.599Z",
+    "createdAt": "2026-09-10T09:55:03.182Z"
+   },
+   {
+    "mint": "9h5AzEQzYu9CV5K6uLtFRMD1KcbxZSFNxZEgBTNfw5Na",
+    "pool": "DKbw5S3FGKuvfo6Gd3oY1cik5TjtZDWPEVtUzF8qVpCP",
+    "name": "Stonk Cats",
+    "symbol": "STONKCATS",
+    "quote": {
+     "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+     "symbol": "STONK",
+     "name": "STONK",
+     "logoUrl": "/api/asset/quote-logo/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx?v=c3c81410",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/4hmTbSyA46UDqNoKqr4cnUoXsgaCFkNKj4Mx7qaPGNkg",
+    "links": {
+     "website": "https://www.launchmynft.io/collections/BTRcwVTSoBwXg9XXEXcK4UYYCTmhd6iv81TZggFG522q/jKl0TdryB5I2mvzjSA48",
+     "twitter": "https://x.com/stonkcatsnft",
+     "telegram": "https://t.me/stonkcatssol"
+    },
+    "market": {
+     "priceUsd": 0.0026171002547929075,
+     "marketCapUsd": 2617100.2547929077,
+     "fdvUsd": 2617100.2547929077,
+     "volume24hUsd": 283851.4241204601,
+     "liquidityUsd": 170132.27558679396,
+     "priceChange24h": 42.35591881427834,
+     "peakMarketCapUsd": 3859264.065797722
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-15T04:09:41.839Z",
+    "createdAt": "2026-09-15T01:50:12.750Z"
+   },
+   {
+    "mint": "CB1YQfUzgsnaCd93cZLdiX1uASW7utWBaYMUsvcwNUBV",
+    "pool": "9VcGzbpvLTy5EVt4f1h9NvfYfKSJwbJdhUuGkhVuXbw",
+    "name": "loom",
+    "symbol": "LOOM",
+    "quote": {
+     "mint": "So11111111111111111111111111111111111111112",
+     "symbol": "SOL",
+     "name": "Wrapped SOL",
+     "logoUrl": "/api/asset/quote-logo/So11111111111111111111111111111111111111112?v=2aa6de95",
+     "category": "solana",
+     "categoryLabel": "Solana"
+    },
+    "launchpad": "raydium",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/E19VTZw7bASKKervmri5KuwtEM9aCksWxwU1AosLeZDN",
+    "metadataUri": "https://gateway.irys.xyz/DMr41YUJd7p4kGTTqgM66Fn45wze91cRVvzxv6XFV73E",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000916329236855947,
+     "marketCapUsd": 887487.4278602605,
+     "fdvUsd": 887487.4278602605,
+     "volume24hUsd": 271563.1451496906,
+     "priceChange24h": 2.931446474673982,
+     "peakMarketCapUsd": 4732750.189313277
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-08-11T19:14:10.854Z",
+    "createdAt": "2026-08-11T19:06:18.739Z"
+   },
+   {
+    "mint": "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih",
+    "pool": "2qsVzWvtrBtPrjkRGMXJibKnb9PEbAPfobqLRNDxF9oD",
+    "name": "GROK",
+    "symbol": "GROK",
+    "quote": {
+     "mint": "BoTx8y9ynfdxf5ZjWtCoBVkff52qKA82ysaLU8ZM6d8T",
+     "symbol": "ROBOSTRATEGY",
+     "name": "BOT",
+     "logoUrl": "/api/asset/quote-logo/BoTx8y9ynfdxf5ZjWtCoBVkff52qKA82ysaLU8ZM6d8T?v=a8ab5b44",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/9QdsBbw3ru98QF8zyZMsj394y5qEpbDHfY5EnMM3fYnW",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0024431710926414102,
+     "marketCapUsd": 2443171.0926414104,
+     "fdvUsd": 2443171.0926414104,
+     "volume24hUsd": 264869.2940337741,
+     "liquidityUsd": 153826.5667809127,
+     "priceChange24h": 49.26021184671108,
+     "peakMarketCapUsd": 4219997.723364334
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-12T08:40:52.566Z",
+    "createdAt": "2026-09-12T08:40:43.509Z"
+   },
+   {
+    "mint": "F9PvspnWkP3hSLaYxQb2LvFRBgyrLVhdUJ5q39tZZPbC",
+    "pool": "Dmfyc7zGrrywvZdh89cMee6D4aw5LRD513ZFSxjVKqt",
+    "name": "Brick By Brick",
+    "symbol": "BRICK",
+    "quote": {
+     "mint": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+     "symbol": "BP",
+     "name": "Backpack",
+     "logoUrl": "/api/asset/quote-logo/BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy?v=0bfb622f",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/6ahjUsxtzB7ApLwAmwE7irRqHAv42ox4dwZMELHLbonk.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00004704042338579379,
+     "marketCapUsd": 47040.423385793794,
+     "fdvUsd": 47040.423385793794,
+     "volume24hUsd": 263934.51396506355,
+     "liquidityUsd": 22068.848047829146,
+     "priceChange24h": -48.79521397055082,
+     "peakMarketCapUsd": 492623.97461496503
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T11:47:58.236Z",
+    "createdAt": "2026-09-25T11:38:26.105Z"
+   },
+   {
+    "mint": "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
+    "pool": "6jdErVCCFU6iC4vYvPFHmFmy1xTYCqRDC4Q8jCJF3S8Z",
+    "name": "Feels Good Man",
+    "symbol": "FEELSGOOD",
+    "quote": {
+     "mint": "PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m",
+     "symbol": "PEPE",
+     "name": "Pepe",
+     "logoUrl": "/api/asset/quote-logo/PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m?v=5f6a2633",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/Acn9o3D97T6ukMdULBJw7HZkCNhi26MhHpAggVa4iFQu",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0022246398880496733,
+     "marketCapUsd": 2224639.8880496733,
+     "fdvUsd": 2224639.8880496733,
+     "volume24hUsd": 262933.5511029452,
+     "liquidityUsd": 161255.191505794,
+     "priceChange24h": 38.81073926985839,
+     "peakMarketCapUsd": 13475578.664096795
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-18T21:36:49.373Z",
+    "createdAt": "2026-09-18T21:30:47.922Z"
+   },
+   {
+    "mint": "G4PZQ4tTMjeNQfrSyMUMXN919NTeKA8hXUEzjRmr9btr",
+    "pool": "5oYy84Hrnvxpargm89xUMdHNSULAv82LTV1NuVWCm5cd",
+    "name": "Poorly drawn piggy bank",
+    "symbol": "PIGGYBANK",
+    "quote": {
+     "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+     "symbol": "JTO",
+     "name": "Jito",
+     "logoUrl": "/api/asset/quote-logo/jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL?v=b5f34a7d",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/C7CfEaQzSRbvVr4Euix122wcpY1pts1a4Fgp11tUqJ9C",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/jito/status/1885010407196180756/video/1"
+    },
+    "market": {
+     "priceUsd": 0.0005393849470402827,
+     "marketCapUsd": 539384.9470402827,
+     "fdvUsd": 539384.9470402827,
+     "volume24hUsd": 261834.7989176986,
+     "liquidityUsd": 73686.71404154741,
+     "priceChange24h": 77.82886400811128,
+     "peakMarketCapUsd": 766667.0134298378
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-23T04:02:06.292Z",
+    "createdAt": "2026-09-20T09:20:57.680Z"
+   },
+   {
+    "mint": "E4Ap4icMLwKot8rkkTbq5JkS5kZxt5XCE3yfxbzYBjHx",
+    "pool": "2RmBs1KYzkDuaRR4F8zU9rPR6KT16eCgJ9YS1c8XXZgQ",
+    "name": "Buy The Cat",
+    "symbol": "BTC",
+    "quote": {
+     "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+     "symbol": "WBTC",
+     "name": "Wrapped BTC (Wormhole)",
+     "logoUrl": "/api/asset/quote-logo/3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh?v=6aa608f6",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "raydium",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/DzqTc3JmkcToAq4b4dXnvYAwTUpbtZud15rHLzbURG5E",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0022588701140946886,
+     "marketCapUsd": 2178910.77012314,
+     "fdvUsd": 2178910.77012314,
+     "volume24hUsd": 258587.83620453675,
+     "priceChange24h": 1.0870569910437888,
+     "peakMarketCapUsd": 25996149.56205
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-08-31T06:20:12.940Z",
+    "createdAt": "2026-08-31T05:59:26.484Z"
+   },
+   {
+    "mint": "3rLbP63g74ugwqpwqTpwsELmRkQR9wnR2fv5mhtGHNZi",
+    "pool": "A84gqWH3dNW8sSCFR5QLKoXCizJg7owRqBHMb3DiZtFY",
+    "name": "PHISH",
+    "symbol": "PHISH",
+    "quote": {
+     "mint": "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp",
+     "symbol": "XMR",
+     "name": "XMR",
+     "logoUrl": "/api/asset/quote-logo/WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp?v=9e80ab5b",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/FjrqXeV12XxfjH4mHG1tuCD2Lok9eFfVsetyW3ySQiNQ",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.000010064208451125985,
+     "marketCapUsd": 10064.208451125985,
+     "fdvUsd": 10064.208451125985,
+     "volume24hUsd": 251552.0746158779,
+     "liquidityUsd": 9200.555244529536,
+     "peakMarketCapUsd": 67104.89083673766
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T14:11:30.350Z",
+    "createdAt": "2026-09-26T07:12:09.267Z"
+   },
+   {
+    "mint": "4wa7FpP3GJMxJNbWacKXHJx2gpMbeByypocTPLiZ6iEA",
+    "pool": "3wcqQtwfy2Ys7Cpfx81QByxUconyfP2Wb7xbdunG3ZZR",
+    "name": "The Black Cat",
+    "symbol": "ZCAT",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/13feFFyZp7zH7cqn68dj7eYMwwHPwzwMhWss4Ks93dBx.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000024723662619306242,
+     "marketCapUsd": 2472.3662619306247,
+     "fdvUsd": 2472.3662619306247,
+     "volume24hUsd": 245323.08199431532,
+     "liquidityUsd": 4847.359717506096,
+     "peakMarketCapUsd": 4247.644640356817
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T23:14:37.720Z",
+    "createdAt": "2026-09-25T23:17:08.582Z"
+   },
+   {
+    "mint": "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky",
+    "pool": "2dSF7bEDi5mYxtk6smwu3Rs2D33g6Urt2raTRHJ83y9U",
+    "name": "Alice",
+    "symbol": "ALICE",
+    "quote": {
+     "mint": "XsfCC9VL4DamVGNgdJpfLXB3sBVa158Gbx8sh7NzmTk",
+     "symbol": "VIDAX",
+     "name": "VIDAX",
+     "logoUrl": "/api/asset/quote-logo/XsfCC9VL4DamVGNgdJpfLXB3sBVa158Gbx8sh7NzmTk?v=af61e9ee",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "raydium",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/3zGJehFo1CEmk6uL2D5BCSsvi6VmZEfGxjrJeQCEMm5s",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0006937923786336318,
+     "marketCapUsd": 686693.1237486692,
+     "fdvUsd": 686693.1237486692,
+     "volume24hUsd": 226855.38904765097,
+     "priceChange24h": -21.244304688415106,
+     "peakMarketCapUsd": 1361128.648670828
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-08T08:38:04.867Z",
+    "createdAt": "2026-09-01T09:27:43.627Z"
+   },
+   {
+    "mint": "CGeebcVvUjMMVHMJYdpRFdHeFD7r4dgEh7DMyWG2BaXZ",
+    "pool": "Bc2Qt99oYvhvgp2XBG8tNg1UHMzTEeLnv8KUhgSt1fWJ",
+    "name": "The SpaceX Dragon",
+    "symbol": "GRACE",
+    "quote": {
+     "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+     "symbol": "SPCXX",
+     "name": "SPACEX",
+     "logoUrl": "/api/asset/quote-logo/Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8?v=8e308f08",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://metadata.j7tracker.io/images/dbZVGXsVI3",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000038223075087158745,
+     "marketCapUsd": 3822.3075087158745,
+     "fdvUsd": 3822.3075087158745,
+     "volume24hUsd": 223831.6914189317,
+     "liquidityUsd": 5843.536066621312,
+     "peakMarketCapUsd": 32928.40383778346
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T21:47:35.627Z",
+    "createdAt": "2026-09-25T21:49:14.883Z"
+   },
+   {
+    "mint": "FvhorDts9M8uJekzs3pBcYUPUjWtCTrGLhdv3ADHyeRY",
+    "pool": "AM5hsNus5magTZ6cvkXqSs6LMaYATjXSRsRg3nwBrJEu",
+    "name": "LinkedInu",
+    "symbol": "LinkedInu",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/mMHUFPJma7sGuFxYteoHJkfzb5iW6oLxsvVnUYfSTNK.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0006653054573987489,
+     "marketCapUsd": 665305.457398749,
+     "fdvUsd": 665305.457398749,
+     "volume24hUsd": 222674.08707913893,
+     "liquidityUsd": 86752.4144830432,
+     "priceChange24h": -24.657177059774625,
+     "peakMarketCapUsd": 3215659.21523342
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-16T22:45:20.934Z",
+    "createdAt": "2026-09-16T22:44:16.780Z"
+   },
+   {
+    "mint": "ASecaQw8dJF3QDfL8kmHkh1h4vnPsnfJejtbCMusXt4T",
+    "pool": "EQ3iZAgvidAKkr1snDJC2CMrMB1mFFZ6Fk4SEFRWof1W",
+    "name": "Black Cat",
+    "symbol": "bCat",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/3mK2nkpohvxfXEhWeKETjoeFfhFKFVqm51Swu6miChPe.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000026102059273988585,
+     "marketCapUsd": 2610.205927398859,
+     "fdvUsd": 2610.205927398859,
+     "volume24hUsd": 215096.94550928252,
+     "liquidityUsd": 4996.667141806117,
+     "peakMarketCapUsd": 8775.43767612089
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T23:16:43.145Z",
+    "createdAt": "2026-09-25T23:18:59.610Z"
+   },
+   {
+    "mint": "4AdFwKHbivTpGjBjenyYxbdtrUdZ6uVGwjhofmh2KN3x",
+    "pool": "DNu8YiQBrpL17St3te3N9jFoMqA7g6Wm2e3kNyxNYaqi",
+    "name": "hyENA",
+    "symbol": "hyENA",
+    "quote": {
+     "mint": "72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1",
+     "symbol": "ENA",
+     "name": "Ethena",
+     "logoUrl": "/api/asset/quote-logo/72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1?v=6051fb2e",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/DwxWrEkpsxQ7ZurKk2Zj6447sw3qsqRdYVqH5Mo2Aoga.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00008107243102879372,
+     "marketCapUsd": 81072.43102879373,
+     "fdvUsd": 81072.43102879373,
+     "volume24hUsd": 210725.65899549297,
+     "liquidityUsd": 32414.368625590676,
+     "priceChange24h": -42.54765611599943,
+     "peakMarketCapUsd": 363141.3895559289
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-23T20:01:35.658Z",
+    "createdAt": "2026-09-23T20:03:24.324Z"
+   },
+   {
+    "mint": "EhjDFKVvQAMyw9JkULwUii7TSyTm7tEh5R6drQ5ymoNP",
+    "pool": "HMRNHUqu6RKejmn9ymboB1CZu5Hkjn6kAXHggLtjXnVw",
+    "name": "Minihard",
+    "symbol": "MINIHARD",
+    "quote": {
+     "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+     "symbol": "SPCXX",
+     "name": "SPACEX",
+     "logoUrl": "/api/asset/quote-logo/Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8?v=8e308f08",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/DTwnaK2xrgb5PSctazkGDFGoA3vjcdJG9sKJqQMQZjjg.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000025665053129596122,
+     "marketCapUsd": 2566.505312959612,
+     "fdvUsd": 2566.505312959612,
+     "volume24hUsd": 202972.6185486005,
+     "liquidityUsd": 4785.246378412114,
+     "peakMarketCapUsd": 16667.60711114589
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T22:07:39.645Z",
+    "createdAt": "2026-09-25T22:10:08.473Z"
+   },
+   {
+    "mint": "Fa2GbakiWnxvV2m5GP9u7JUsRGsnZawwdDkzwzeVEwif",
+    "pool": "3CeQpiUGijZw1mqQjv4cYt6r94bYmU7MxvAwgfKDWHWn",
+    "name": "O",
+    "symbol": "O",
+    "quote": {
+     "mint": "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+     "symbol": "OPENAI",
+     "name": "OPENAI",
+     "logoUrl": "/api/asset/quote-logo/PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF?v=f6dce61d",
+     "category": "prestock",
+     "categoryLabel": "PreStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiom-rh-v2.axiom-cdn.io/0x9d6967e7f5ed93ba3fbbcb03ec2e13b617591e18.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000003798480349676985,
+     "marketCapUsd": 3798.480349676985,
+     "fdvUsd": 3798.480349676985,
+     "volume24hUsd": 202526.83427297501,
+     "liquidityUsd": 5780.850437663441,
+     "peakMarketCapUsd": 56205.10624096683
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T00:46:33.721Z",
+    "createdAt": "2026-09-26T00:40:17.545Z"
+   },
+   {
+    "mint": "9fgGFfdHUfeMeDUd9DjJaRjpJ7oz38j4ikwf3uxrayPS",
+    "pool": "ALKpSnbBuXLdtsuVYP1xFuX5mUJcwCveMWnSvtmu6Sp6",
+    "name": "Frogecoin",
+    "symbol": "FROGE",
+    "quote": {
+     "mint": "oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ",
+     "symbol": "OPENAI",
+     "name": "OPENAI",
+     "logoUrl": "/api/asset/quote-logo/oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ?v=dc519d3a",
+     "category": "tessera",
+     "categoryLabel": "Tessera"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://metadata.j7tracker.io/images/oHrLfamgnJ",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000029398589016548627,
+     "marketCapUsd": 2939.8589016548626,
+     "fdvUsd": 2939.8589016548626,
+     "volume24hUsd": 196185.06438554576,
+     "liquidityUsd": 5334.10497291473,
+     "peakMarketCapUsd": 47978.727478044886
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T15:34:41.490Z",
+    "createdAt": "2026-09-26T15:36:28.780Z"
+   },
+   {
+    "mint": "7fHxQvcWdvNeVx2Ni33t2BEDc1zfnZ8LCRdwX8STtrcH",
+    "pool": "2xbybHXL7aKRDkXCYvVNSSSyHaXiDoHckL4riv9DVvvs",
+    "name": "Prestonkkk",
+    "symbol": "PRE",
+    "quote": {
+     "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+     "symbol": "STONK",
+     "name": "STONK",
+     "logoUrl": "/api/asset/quote-logo/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx?v=c3c81410",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://silver-capable-cattle-625.mypinata.cloud/ipfs/bafkreichfe7bbaoeznr3obo4l77tibnhbzj2m5ji4gqrvkfuyhxfbj4a5q",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00024883848828679243,
+     "marketCapUsd": 248838.48828679242,
+     "fdvUsd": 248838.48828679242,
+     "volume24hUsd": 186466.00343960564,
+     "liquidityUsd": 43454.979577770406,
+     "peakMarketCapUsd": 654414.8305912605
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T01:46:32.526Z",
+    "createdAt": "2026-09-26T01:52:28.551Z"
+   },
+   {
+    "mint": "6AUURRdHb9TrfPHv9AMofa8NEVoZDXcsbWKcUBpFSRXs",
+    "pool": "7wZmu7hJGNGRdgKhVfLdMDQ11AtiXrRe5L1g1D66TyiV",
+    "name": "CypherCat",
+    "symbol": "CYPHERCAT",
+    "quote": {
+     "mint": "CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK",
+     "symbol": "CYPH",
+     "name": "CYPH",
+     "logoUrl": "/api/asset/quote-logo/CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK?v=d4ee80f1",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/2uFseqRFub6mXs2hWe32B3ZSWNmoNpkzip7KLe83K7hm",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0004677628611324997,
+     "marketCapUsd": 467762.8611324997,
+     "fdvUsd": 467762.8611324997,
+     "volume24hUsd": 185800.78209888775,
+     "liquidityUsd": 72736.93450731278,
+     "priceChange24h": -28.250209666426073,
+     "peakMarketCapUsd": 5188131.141750108
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-18T12:38:37.000Z",
+    "createdAt": "2026-09-18T16:40:28.540Z"
+   },
+   {
+    "mint": "7Qy2cXpdj4Fu2DUPVWdN3oogM3JSwLUV2LZaKVgVcPZh",
+    "pool": "3TdHJooAAzbN8hiRoMTSfNttmdDbe2iPvGkmPLTe9L6s",
+    "name": "HYPERCAT",
+    "symbol": "HYPERCAT",
+    "quote": {
+     "mint": "7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx",
+     "symbol": "XHYPE",
+     "name": "Hylo 3x Leveraged HYPE",
+     "logoUrl": "/api/asset/quote-logo/7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx?v=76976b58",
+     "category": "leverage",
+     "categoryLabel": "Leverage"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/D6uqJBkBFtXhEUwpsTe9U8NnDvmTTWBSeJhb2USZKwuK",
+    "links": {
+     "website": "https://hypercat.run/",
+     "twitter": "https://x.com/Hyper_cat_sol"
+    },
+    "market": {
+     "priceUsd": 0.0015267719607370204,
+     "marketCapUsd": 1526771.9607370205,
+     "fdvUsd": 1526771.9607370205,
+     "volume24hUsd": 184484.62187102568,
+     "liquidityUsd": 114236.95225695959,
+     "priceChange24h": 21.221628193491426,
+     "peakMarketCapUsd": 3179426.819207678
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-23T17:39:50.931Z",
+    "createdAt": "2026-09-23T17:41:26.084Z"
+   },
+   {
+    "mint": "27XVtvjVVwBgZKDfBQfQ3L8TvWvBWCDYL7vBnFtjbdLc",
+    "pool": "4YvjRh5NDHxH1U3EmgYTtxz5AWvyQkRni5s1kwxubXzb",
+    "name": "purrpetual",
+    "symbol": "PURRP",
+    "quote": {
+     "mint": "7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx",
+     "symbol": "XHYPE",
+     "name": "Hylo 3x Leveraged HYPE",
+     "logoUrl": "/api/asset/quote-logo/7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx?v=76976b58",
+     "category": "leverage",
+     "categoryLabel": "Leverage"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://offchainflow.com/stonkfun-launch/logo.jpg",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0004173347401287796,
+     "marketCapUsd": 417334.7401287796,
+     "fdvUsd": 417334.7401287796,
+     "volume24hUsd": 179545.5601096889,
+     "liquidityUsd": 60512.19424399787,
+     "priceChange24h": 77.8021072636121,
+     "peakMarketCapUsd": 846423.4972375913
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-23T20:51:50.896Z",
+    "createdAt": "2026-09-23T17:35:34.399Z"
+   },
+   {
+    "mint": "HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX",
+    "pool": "D6ytueSg9LkAPnuwzA93Fh6gFUV7HdLT4QjKD2HiUVy8",
+    "name": "SATOSHINU",
+    "symbol": "SATOSHINU",
+    "quote": {
+     "mint": "5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ",
+     "symbol": "WBTC",
+     "name": "Wrapped BTC",
+     "logoUrl": "/api/asset/quote-logo/5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ?v=39cd07a5",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/EdCnJpxuj8qzcD5ZAtukhdWVyiopZDaS8mMdPijKtZXv",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/Satoshinuwbtc"
+    },
+    "market": {
+     "priceUsd": 0.00036840596510478025,
+     "marketCapUsd": 368405.9651047803,
+     "fdvUsd": 368405.9651047803,
+     "volume24hUsd": 179487.00073619638,
+     "liquidityUsd": 60914.54928742629,
+     "priceChange24h": -25.245112052887244,
+     "peakMarketCapUsd": 1414940.567897106
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-21T22:00:57.224Z",
+    "createdAt": "2026-09-21T22:01:56.560Z"
+   },
+   {
+    "mint": "7MCgYMzq3fov6oERdtTMAYbN2U9LZrrSYS1MBhjixZFr",
+    "pool": "G3vxBkKjhYrmgyVpFezFjDFVqxp4CZBuZd9avB9oBzZG",
+    "name": "Pudgy Polly",
+    "symbol": "POLLY",
+    "quote": {
+     "mint": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+     "symbol": "PENGU",
+     "name": "Pudgy Penguins",
+     "logoUrl": "/api/asset/quote-logo/2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv?v=c2e990a8",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/6qay2UucsX5aqBixwSCkdpqN5z5F5VpnLff4DqrW2Zzc",
+    "links": {
+     "website": "https://pudgypolly.xyz/",
+     "twitter": "https://x.com/pudgypolly",
+     "telegram": "https://t.me/pollycommunity"
+    },
+    "market": {
+     "priceUsd": 0.00163705235292898,
+     "marketCapUsd": 1637052.35292898,
+     "fdvUsd": 1637052.35292898,
+     "volume24hUsd": 176721.50546904624,
+     "liquidityUsd": 148343.67822884588,
+     "priceChange24h": -13.432380755339167,
+     "peakMarketCapUsd": 2372915.4727895805
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-10T15:26:43.232Z",
+    "createdAt": "2026-09-10T15:16:46.618Z"
+   },
+   {
+    "mint": "Gt9brNVXP7gdGtUqZLcJAhbZTjLEcKrA53F18fRSEeAp",
+    "pool": "8U64VQnEtqSQhMEubnzRJ9mSeerhunSjunEuhTxngVZM",
+    "name": "ㅤ",
+    "symbol": "ㅤ",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/7p4JgKrEfqUNv8aw45j4UYp9Wjmj6szCDd4vp7LXRgo7",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0002675536767846192,
+     "marketCapUsd": 267553.6767846192,
+     "fdvUsd": 267553.6767846192,
+     "volume24hUsd": 175291.6486742041,
+     "liquidityUsd": 67154.1275313563,
+     "priceChange24h": 3.9360026107346346,
+     "peakMarketCapUsd": 2170690.087564969
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-11T23:33:47.730Z",
+    "createdAt": "2026-09-11T23:12:23.343Z"
+   },
+   {
+    "mint": "DcU5cd4GKQpKrDYLcz9MfKsZWaTNCkrowhZRdUGsfonG",
+    "pool": "FqaQQbnH8vsgyibeHg1MbfWSfkYM8irTmaQNRPBKcfP3",
+    "name": "Arise Chickun",
+    "symbol": "CHICKUN",
+    "quote": {
+     "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+     "symbol": "CBLTC",
+     "name": "Coinbase Wrapped LTC",
+     "logoUrl": "/api/asset/quote-logo/cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf?v=dcd1c0cf",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/4CnXfDiwpSYtTFBnmtwH6uu2cKjxuAjj4WanPeXz7Bty",
+    "links": {
+     "website": "https://x.com/litecoin/status/1411249046472298496",
+     "twitter": "https://x.com/litecoin/status/1409668334732201984"
+    },
+    "market": {
+     "priceUsd": 0.000003169489893691347,
+     "marketCapUsd": 3169.489893691347,
+     "fdvUsd": 3169.489893691347,
+     "volume24hUsd": 172391.8639623053,
+     "liquidityUsd": 5234.97581285346,
+     "peakMarketCapUsd": 51946.01670049536
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T22:52:27.717Z",
+    "createdAt": "2026-09-25T22:32:28.051Z"
+   },
+   {
+    "mint": "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm",
+    "pool": "F9vVy32NXaTL3t1xvtzy22aZd574Z9kPzJEELukUFMhE",
+    "name": "Amoeba Farm",
+    "symbol": "AMBA",
+    "quote": {
+     "mint": "SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH",
+     "symbol": "SNDK",
+     "name": "SANDISK",
+     "logoUrl": "/api/asset/quote-logo/SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH?v=3f33db13",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/94Wk4HBwVG3e9ErfHDKjn7jo1paArBSb147gDS7vqrNE",
+    "links": {
+     "website": "https://amoeba.farm/",
+     "twitter": "https://x.com/AmoebaFarm",
+     "telegram": "https://t.me/amoebafarm"
+    },
+    "market": {
+     "priceUsd": 0.0007059561903783846,
+     "marketCapUsd": 705956.1903783847,
+     "fdvUsd": 705956.1903783847,
+     "volume24hUsd": 170459.5694201386,
+     "liquidityUsd": 87766.59474725352,
+     "priceChange24h": 6.322403255762943,
+     "peakMarketCapUsd": 3222355.302904591
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-10T10:55:29.198Z",
+    "createdAt": "2026-09-10T10:32:16.386Z"
+   },
+   {
+    "mint": "CZhArjZE1zAhg6p8QJQ7Vs734q6jK1Y74Rggpr52VxNV",
+    "pool": "4jjedwD64Zwx7LdTNRFjgx8VrpofHBZboYSVR1vAYo2Y",
+    "name": "Surf",
+    "symbol": "SURF",
+    "quote": {
+     "mint": "So11111111111111111111111111111111111111112",
+     "symbol": "SOL",
+     "name": "Wrapped SOL",
+     "logoUrl": "/api/asset/quote-logo/So11111111111111111111111111111111111111112?v=2aa6de95",
+     "category": "solana",
+     "categoryLabel": "Solana"
+    },
+    "launchpad": "launchlab",
+    "mode": "standard",
+    "quoteOnlyFees": true,
+    "imageUrl": "https://chubby-amethyst-finch.myfilebase.com/ipfs/bafkreib5wjbwfpplh7exdn6ogjpmkroruykfzm5mq6ih6zfsexjmyitnba",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000026176701034552696,
+     "marketCapUsd": 2617.67010345527,
+     "fdvUsd": 2617.67010345527,
+     "volume24hUsd": 170018.23037144216,
+     "liquidityUsd": 4813.560101156162,
+     "peakMarketCapUsd": 49818.885761569574
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T19:13:01.186Z",
+    "createdAt": "2026-09-26T19:14:09.824Z"
+   },
+   {
+    "mint": "CcY1oA55vGEZBwVwfichY67nRyfhAdDj1tNniDeNk8WW",
+    "pool": "G94m12VT4G8zrhCKEyhY3fgXkC48kU7y2bBCHAvKCW7a",
+    "name": "Harold The Duck",
+    "symbol": "HAROLD",
+    "quote": {
+     "mint": "SNAPcESrvnH8yUdgeMF6xm1hym9b6hW6s8YeqeHdZFz",
+     "symbol": "SNAP",
+     "name": "SNAP",
+     "logoUrl": "/api/asset/quote-logo/SNAPcESrvnH8yUdgeMF6xm1hym9b6hW6s8YeqeHdZFz?v=21c5f066",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/73QknGXw66GGHCtY3ZP5yX8kFcsFJ7um6sdRrLad1KQ3",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/haroldtheducksf?s=11"
+    },
+    "market": {
+     "priceUsd": 0.00011397820618476872,
+     "marketCapUsd": 113978.20618476871,
+     "fdvUsd": 113978.20618476871,
+     "volume24hUsd": 168666.70515585487,
+     "liquidityUsd": 32214.416814910852,
+     "priceChange24h": 57.912501727124656,
+     "peakMarketCapUsd": 182016.43035225925
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-24T21:54:13.671Z",
+    "createdAt": "2026-09-24T19:59:44.020Z"
+   },
+   {
+    "mint": "C9uyJ9uHiv9KLRdEPtGyeGgz6HWf2DrWkTL28J1HJM5N",
+    "pool": "9nAvzV7mm8Dh8dzmhwSM8twu1agnKHfDwBFfGzdht6sy",
+    "name": "Break The Ceiling",
+    "symbol": "BTC",
+    "quote": {
+     "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+     "symbol": "WBTC",
+     "name": "Wrapped BTC (Wormhole)",
+     "logoUrl": "/api/asset/quote-logo/3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh?v=6aa608f6",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "links": {},
+    "market": {
+     "priceUsd": 0.000034230251228378266,
+     "marketCapUsd": 34230.25122837826,
+     "fdvUsd": 34230.25122837826,
+     "volume24hUsd": 159782.46784383597,
+     "liquidityUsd": 70.02591018087071,
+     "peakMarketCapUsd": 55715.56086744009
+    },
+    "status": "new",
+    "graduationProgress": 0.0006754781199351702,
+    "graduatedAt": "2026-09-25T22:38:54.436Z",
+    "createdAt": "2026-09-25T22:32:28.051Z"
+   },
+   {
+    "mint": "ADfTFJzD4bUTkTPubb9srfeQtBVgxdUv3eTaR9fJMRXn",
+    "pool": "Bs65aGMwWafPxpeawGUgZ45z8Ufe1nRhn82apy7aW2rf",
+    "name": "NIPPLE",
+    "symbol": "NIPPLE",
+    "quote": {
+     "mint": "6UpQcMAb5xMzxc7ZfPaVMgx3KqsvKZdT5U718BzD5We2",
+     "symbol": "wXRP",
+     "name": "Wrapped XRP",
+     "logoUrl": "https://cdn.prod.website-files.com/61a0a50381fdccb6c37927e5/692521b55b7c02a5da964dc3_wXRP-token-logo.svg",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/9keW42uUuXxTZQh5bWbXFE4GYG2mLLBLd3SKbjV3T3NK",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.00007173677301267619,
+     "marketCapUsd": 71736.77301267619,
+     "fdvUsd": 71736.77301267619,
+     "volume24hUsd": 156384.64246158456,
+     "liquidityUsd": 24323.59612816362,
+     "peakMarketCapUsd": 79452.9648853019
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T15:20:49.664Z",
+    "createdAt": "2026-09-26T01:33:35.382Z"
+   },
+   {
+    "mint": "85ikpxaCo2F7yN8yaFXjEYbBGHMJJchNBVniwsfiFmu8",
+    "pool": "HaigjcCELeLhSbKwaVrVqCBWqoW6RAnGjTpGBpHCY6Wr",
+    "name": "PIZZA",
+    "symbol": "PIZZA",
+    "quote": {
+     "mint": "5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ",
+     "symbol": "WBTC",
+     "name": "Wrapped BTC",
+     "logoUrl": "/api/asset/quote-logo/5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ?v=39cd07a5",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/BJ8sYiD6XsYue1o4rVcktj7p15vmKR57VhLMZg3ktCU8",
+    "links": {
+     "website": "https://www.pizzacoin.lol/",
+     "twitter": "https://x.com/pizzaonstonk"
+    },
+    "market": {
+     "priceUsd": 0.000003425852047892361,
+     "marketCapUsd": 3425.852047892361,
+     "fdvUsd": 3425.852047892361,
+     "volume24hUsd": 148774.66646122996,
+     "liquidityUsd": 5414.218062211864,
+     "peakMarketCapUsd": 62067.61256558847
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T00:06:34.975Z",
+    "createdAt": "2026-09-26T00:08:15.209Z"
+   },
+   {
+    "mint": "7nbkAemuSzF1NKtatCVMuY4KKcB4geFJ5PyTJCW6qTQa",
+    "pool": "5mKzsDd2tVLycp6eXBwfpiLBxrxWa1bYTxB1swtT9uYF",
+    "name": "No Risk No Rari",
+    "symbol": "RARI",
+    "quote": {
+     "mint": "CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta",
+     "symbol": "CARS",
+     "name": "Rip Cars",
+     "logoUrl": "/api/asset/quote-logo/CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta?v=dc0dc6a4",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://media.discordapp.net/attachments/1503425136471183470/1553466462461497384/image.png?ex=6ab959e2&is=6ab80862&hm=311e48ba996f4d83e5faeca9856b16d960122175b75148d3ae47fbdf5ac5c528&=&format=webp&quality=lossless",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000026710461374373785,
+     "marketCapUsd": 2671.046137437378,
+     "fdvUsd": 2671.046137437378,
+     "volume24hUsd": 148725.478189868,
+     "liquidityUsd": 4303.123964282317,
+     "peakMarketCapUsd": 49549.583263013235
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T18:22:58.836Z",
+    "createdAt": "2026-09-26T18:06:43.398Z"
+   },
+   {
+    "mint": "2pouN3by7twkiZGy5aEKYUpf78ALDpKRTNu2WsQkpkqt",
+    "pool": "DqCumznz9iyi98NpfYS5R1Yr5cXFaMvXv2axd3A1XKhP",
+    "name": "Buttensor",
+    "symbol": "BUTT",
+    "quote": {
+     "mint": "taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY",
+     "symbol": "TAO",
+     "name": "Bittensor",
+     "logoUrl": "/api/asset/quote-logo/taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY?v=a3f4db2d",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://edge.uxento.io/image/9T8hbMk8dV6wmUfPqTqZBYP7bjx4cKv42eTE29fhzXLX",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0008478793709339407,
+     "marketCapUsd": 847879.3709339406,
+     "fdvUsd": 847879.3709339406,
+     "volume24hUsd": 143750.31916008022,
+     "liquidityUsd": 119337.69032393377,
+     "priceChange24h": -4.321305507725349,
+     "peakMarketCapUsd": 11426778.315219436
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-06T05:19:25.798Z",
+    "createdAt": "2026-09-06T05:18:37.463Z"
+   },
+   {
+    "mint": "4rkGWJNSUPBcMicXMRAzohEyeJLFG8gUjwiWaz7Pddr3",
+    "pool": "ApAj5u35HZWb3PPrMErZcLGVPP76fp4QnEpoMTPuxhRo",
+    "name": "Christmas Cracker",
+    "symbol": "CRACKER",
+    "quote": {
+     "mint": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+     "symbol": "GP",
+     "name": "GP",
+     "logoUrl": "/api/asset/quote-logo/HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ?v=1f19001b",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/9zetBQCLPPcGHPtR28MuHRqQB1byXPdY6x4KfRzMZCTo",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0004779289714496985,
+     "marketCapUsd": 477928.9714496985,
+     "fdvUsd": 477928.9714496985,
+     "volume24hUsd": 143677.9764768039,
+     "liquidityUsd": 57040.01245393492,
+     "priceChange24h": -91.68118526609608,
+     "peakMarketCapUsd": 32128729.75293478
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-17T14:13:47.497Z",
+    "createdAt": "2026-09-17T04:05:10.505Z"
+   },
+   {
+    "mint": "4nWd9eLDfrQBQjHpx4ijLPNCXEPCtDirDCpqhB1dBze5",
+    "pool": "FE6A87ryP3DLSvoBuzeSAYX4A5eXXhLtSkNH5wMJ4i3M",
+    "name": "Bubbles",
+    "symbol": "BUBBLES",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://metadata.j7tracker.io/images/f7bba5c8ef974701",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000026600866122796647,
+     "marketCapUsd": 2660.086612279665,
+     "fdvUsd": 2660.086612279665,
+     "volume24hUsd": 138132.77553741366,
+     "liquidityUsd": 4817.572452984768,
+     "peakMarketCapUsd": 13384.169547363768
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T17:32:37.166Z",
+    "createdAt": "2026-09-26T17:33:17.809Z"
+   },
+   {
+    "mint": "7toD95hvAjmw8TFhviCfCpmbVXZZATQpYqqm5ZpgfGuB",
+    "pool": "A3mQuThicstz5Kp7c5W3GeBNBEBi9fEUXW8dMPnqAnro",
+    "name": "Accelerate",
+    "symbol": "Accelerate",
+    "quote": {
+     "mint": "4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs",
+     "symbol": "xSOL",
+     "name": "xSOL",
+     "logoUrl": "/api/asset/quote-logo/4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs?v=2ac8f2a6",
+     "category": "leverage",
+     "categoryLabel": "Leverage"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/7eyqrkTCMyJEM7bFvCTaXzBWNuutNeqVRWD5ftippump.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000003554232977237158,
+     "marketCapUsd": 3554.232977237158,
+     "fdvUsd": 3554.232977237158,
+     "volume24hUsd": 136396.40270676723,
+     "liquidityUsd": 113.6405362208818,
+     "peakMarketCapUsd": 23490.12578336184
+    },
+    "status": "new",
+    "graduationProgress": 0.011194728348531472,
+    "createdAt": "2026-09-25T21:42:03.139Z"
+   },
+   {
+    "mint": "DUe1qheefigxhjboRqKkGWjSTeYivjLo6yq763redsRC",
+    "pool": "GyMAQPREU9MumTCDDpkJng6DVW3RTog3V44SpSe8D6xR",
+    "name": "WOJAK",
+    "symbol": "WOJAK",
+    "quote": {
+     "mint": "PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m",
+     "symbol": "PEPE",
+     "name": "Pepe",
+     "logoUrl": "/api/asset/quote-logo/PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m?v=5f6a2633",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00007907209793759741,
+     "marketCapUsd": 79072.0979375974,
+     "fdvUsd": 79072.0979375974,
+     "volume24hUsd": 135500.63972160235,
+     "liquidityUsd": 30248.453247403155,
+     "priceChange24h": -75.91031625436254,
+     "peakMarketCapUsd": 2999245.1520779436
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-19T06:58:34.072Z",
+    "createdAt": "2026-09-18T21:33:05.728Z"
+   },
+   {
+    "mint": "EAc9166iLDRRFCtVgScCdZUaTL7XBwAoDWibHtVs1GaC",
+    "pool": "6RQUC9qvuD67TVghxkYBRdif6t6YPSa4RYYUvQsNVmVx",
+    "name": "Phantom Cat",
+    "symbol": "PCAT",
+    "quote": {
+     "mint": "pSo1f9nQXWgXibFtKf7NWYxb5enAM4qfP6UJSiXRQfL",
+     "symbol": "PSOL",
+     "name": "Phantom Staked SOL",
+     "logoUrl": "/api/asset/quote-logo/pSo1f9nQXWgXibFtKf7NWYxb5enAM4qfP6UJSiXRQfL?v=c0666460",
+     "category": "solana",
+     "categoryLabel": "Solana"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading.sfo3.cdn.digitaloceanspaces.com/BAjNes2p4sRc4E7z7U89XVvBWkED6RSrmLJsXzC8ZigB.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000004237710022614577,
+     "marketCapUsd": 4237.710022614577,
+     "fdvUsd": 4237.710022614577,
+     "volume24hUsd": 134868.9565829564,
+     "liquidityUsd": 430.98335049228945,
+     "peakMarketCapUsd": 39033.43537166014
+    },
+    "status": "new",
+    "graduationProgress": 0.041858069716885646,
+    "createdAt": "2026-09-25T22:32:28.051Z"
+   },
+   {
+    "mint": "3qA5L2EDyDeTLvF3t69uEXzGUjJD3K3jzj5cgA8zm5ic",
+    "pool": "CLAX1VmQSWd7MZGhRtjp2bc9WnABaaW9w5jXqKp6ZoTM",
+    "name": "ZEPE",
+    "symbol": "ZEPE",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/HspR3Z8uh3XfKvFNuQdCHu8Ztu5R7FbNbfhR4Vvs2VKV",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.000033626696247687216,
+     "marketCapUsd": 33626.69624768722,
+     "fdvUsd": 33626.69624768722,
+     "volume24hUsd": 134233.00350878152,
+     "liquidityUsd": 17431.72530034633,
+     "peakMarketCapUsd": 185925.11135772255
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T06:42:52.442Z",
+    "createdAt": "2026-09-26T05:55:48.229Z"
+   },
+   {
+    "mint": "4UHmZGe6X4DZ5dxYGiGXMhi3Sp34uPWtHB7qDMyvRbYB",
+    "pool": "B6v6mg5GZSzXAfWYP521c8D6LwMgABbzZrEqgY97E1td",
+    "name": "Queefcoin",
+    "symbol": "QUEEF",
+    "quote": {
+     "mint": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+     "symbol": "Fartcoin",
+     "name": "Fartcoin",
+     "logoUrl": "/api/asset/quote-logo/9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump?v=bda65e46",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://proximaimage.hel1.your-objectstorage.com/launch-images/e9c96b2d-be85-48c1-a0e3-50d06e4f033d",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0003825780470800744,
+     "marketCapUsd": 382578.0470800744,
+     "fdvUsd": 382578.0470800744,
+     "volume24hUsd": 134200.20871515523,
+     "liquidityUsd": 67082.2732111179,
+     "priceChange24h": -29.457665951559044,
+     "peakMarketCapUsd": 4779704.0089153135
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-20T04:53:37.742Z",
+    "createdAt": "2026-09-20T04:01:25.096Z"
+   },
+   {
+    "mint": "G2KB6Yvhs2ojSVtQ8AmCLAMR6wLxzAscS8nNERcYtUVD",
+    "pool": "7x4HWZv58veJa1RH3oriuBxESHECxrta3gHeGKEN4VZH",
+    "name": "Loomi",
+    "symbol": "LOOMI",
+    "quote": {
+     "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+     "symbol": "WETH",
+     "name": "Wrapped Ether (Wormhole)",
+     "logoUrl": "/api/asset/quote-logo/7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs?v=a067ee39",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/H3LxqJA4wCK5GM2YGwn7p3pPRZmc6fUD8JDFDN6TXgx9",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.00010231136131657959,
+     "marketCapUsd": 102311.3613165796,
+     "fdvUsd": 102311.3613165796,
+     "volume24hUsd": 132858.5275713407,
+     "liquidityUsd": 30095.70028771791,
+     "priceChange24h": -15.859824101645925,
+     "peakMarketCapUsd": 249601.64193378013
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-22T23:00:37.734Z",
+    "createdAt": "2026-09-21T21:20:37.530Z"
+   },
+   {
+    "mint": "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h",
+    "pool": "HQ5UfDUBdcMWticzMFPZdiX3MyNgSo7tvNwzzf6jEB1Y",
+    "name": "binky",
+    "symbol": "BINKY",
+    "quote": {
+     "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+     "symbol": "WBTC",
+     "name": "Wrapped BTC (Wormhole)",
+     "logoUrl": "/api/asset/quote-logo/3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh?v=6aa608f6",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/27uRkL6yBBQckPSDpiPDn1F2LSKZUoA1BT9pW2nfKSJh",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/binkythecow?s=11"
+    },
+    "market": {
+     "priceUsd": 0.00015306344939392238,
+     "marketCapUsd": 153063.44939392238,
+     "fdvUsd": 153063.44939392238,
+     "volume24hUsd": 132645.49552401956,
+     "liquidityUsd": 36996.94301584943,
+     "priceChange24h": 397.6761564430783,
+     "peakMarketCapUsd": 261045.68655636636
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-20T04:38:45.872Z",
+    "createdAt": "2026-09-20T03:50:25.728Z"
+   },
+   {
+    "mint": "GJSfEpiK9RnmRt9AnZi3FL1b2K6AApcW1SzTs2FeHGis",
+    "pool": "A8Gg3PtJ8sJX6r5J6veVnRqMxb3gCZSfr7g5M1kGoZMP",
+    "name": "BRRR",
+    "symbol": "BRRR",
+    "quote": {
+     "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+     "symbol": "USDC",
+     "name": "USDC",
+     "logoUrl": "/api/asset/quote-logo/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v?v=d5921837",
+     "category": "currency",
+     "categoryLabel": "Currency"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/6iCcH7sDA269MqRFb8NZbYA3jWWpjzQveFd3ESpRshPN",
+    "links": {
+     "website": "https://brrr.fyi/",
+     "twitter": "https://x.com/brrrfyi"
+    },
+    "market": {
+     "priceUsd": 0.0007411229783034677,
+     "marketCapUsd": 741122.9783034677,
+     "fdvUsd": 741122.9783034677,
+     "volume24hUsd": 129169.49740524472,
+     "liquidityUsd": 81052.31783919754,
+     "priceChange24h": 49.360631160512305,
+     "peakMarketCapUsd": 4012650.305370362
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-18T12:11:46.609Z",
+    "createdAt": "2026-09-13T09:55:16.483Z"
+   },
+   {
+    "mint": "HGgjMVDNfGYEFaakSHtWxA4FnZTRaRsiweF56y28GHGh",
+    "pool": "BBwJumXmGMDxh3efpLR3wYiqRi561MM8CVNcGyEmhZk4",
+    "name": "Digital Silver",
+    "symbol": "SILVER",
+    "quote": {
+     "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+     "symbol": "CBLTC",
+     "name": "Coinbase Wrapped LTC",
+     "logoUrl": "/api/asset/quote-logo/cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf?v=dcd1c0cf",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/7SMEovmXempgEdKAv5MsuzAP6u9vbc1YFDkE5VSS92ta",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/litecoin/status/1976145597871604144"
+    },
+    "market": {
+     "priceUsd": 0.000004032486994752385,
+     "marketCapUsd": 4032.4869947523844,
+     "fdvUsd": 4032.4869947523844,
+     "volume24hUsd": 127734.51936900598,
+     "liquidityUsd": 274.50822280066717,
+     "peakMarketCapUsd": 30408.826067214774
+    },
+    "status": "new",
+    "graduationProgress": 0.025782534408795396,
+    "createdAt": "2026-09-26T02:29:29.944Z"
+   },
+   {
+    "mint": "4TQiE8UY2pbpsguBDjm2hEkxCExzU9Z2CzbkAE4Sw3nw",
+    "pool": "GcY5ynz8kt4DU9iPKJh3ehHUhUwr1QQ3ZHbR78nFNMGq",
+    "name": "sidelinedInu",
+    "symbol": "SIDELINED",
+    "quote": {
+     "mint": "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+     "symbol": "ALLINU",
+     "name": "ALLINU",
+     "logoUrl": "/api/asset/quote-logo/4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8?v=7bb3d38b",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/BqWk7oKG91mH32WUbSod28RJuzQyyqxwJfKqx6wHQCNC",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.00005191119819453438,
+     "marketCapUsd": 51911.19819453438,
+     "fdvUsd": 51911.19819453438,
+     "volume24hUsd": 127029.09784578906,
+     "liquidityUsd": 21028.96923331201,
+     "peakMarketCapUsd": 169686.3578054089
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T18:07:59.738Z",
+    "createdAt": "2026-09-26T17:54:53.868Z"
+   },
+   {
+    "mint": "AGi2s9zPRPHs3zEDPhPTroumTEXK5ufymYSfEFndCSSW",
+    "pool": "2aaw5Wk7mX1jxajGE2YTRz3ScjuksktU3ijhSPmrsXeg",
+    "name": "Leveraged Cat",
+    "symbol": "LEVERCAT",
+    "quote": {
+     "mint": "4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs",
+     "symbol": "xSOL",
+     "name": "xSOL",
+     "logoUrl": "/api/asset/quote-logo/4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs?v=2ac8f2a6",
+     "category": "leverage",
+     "categoryLabel": "Leverage"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/72ipFM6nub2FJEzQjhLSG2KGq7YDFQ2qmp8ZpYwcNKyh",
+    "links": {
+     "website": "https://levercat.money/",
+     "twitter": "https://x.com/LeverCatSol"
+    },
+    "market": {
+     "priceUsd": 0.0014539287029427174,
+     "marketCapUsd": 1453928.7029427176,
+     "fdvUsd": 1453928.7029427176,
+     "volume24hUsd": 126689.18551335695,
+     "liquidityUsd": 154138.621954463,
+     "priceChange24h": -2.5648096897874395,
+     "peakMarketCapUsd": 8092369.744539557
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-07T11:33:22.184Z",
+    "createdAt": "2026-09-07T11:20:03.301Z"
+   },
+   {
+    "mint": "5pizh5MRFsfK6bdxFy3dMgPyRCoA1E6zXBaSbpVT9kDv",
+    "pool": "9Pv6cLWqSEQMNjp5z2ow3imbc5VDuQGa4bZG5yxExuPp",
+    "name": "CAR",
+    "symbol": "CAR",
+    "quote": {
+     "mint": "CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta",
+     "symbol": "CARS",
+     "name": "Rip Cars",
+     "logoUrl": "/api/asset/quote-logo/CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta?v=dc0dc6a4",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://metadata.j7tracker.io/images/YHjsCr78ki",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000005079279920612396,
+     "marketCapUsd": 5079.2799206123955,
+     "fdvUsd": 5079.2799206123955,
+     "volume24hUsd": 126411.96557513079,
+     "liquidityUsd": 956.3685705410239,
+     "peakMarketCapUsd": 29946.43940957889
+    },
+    "status": "new",
+    "graduationProgress": 0.10365139576157971,
+    "createdAt": "2026-09-26T18:04:42.345Z"
+   },
+   {
+    "mint": "6JrR1iqPdinYTNvNPWTR2P7e2wSJ1rwdsrKGyhnzjUVr",
+    "pool": "z58gAw7antKgUQQwA3zUM76VVNHdNriENiQPdFUnVvb",
+    "name": "wifout",
+    "symbol": "wifout",
+    "quote": {
+     "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+     "symbol": "$WIF",
+     "name": "dogwifhat",
+     "logoUrl": "/api/asset/quote-logo/EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm?v=f5df9417",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading.sfo3.cdn.digitaloceanspaces.com/4MnsXrzvnrv6nEeCkMTwoAs8RpfZ5RAACw4SjLuyK1G3.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0006535022227793489,
+     "marketCapUsd": 653502.222779349,
+     "fdvUsd": 653502.222779349,
+     "volume24hUsd": 124851.94280480224,
+     "liquidityUsd": 88041.83703483625,
+     "priceChange24h": -17.531501402814133,
+     "peakMarketCapUsd": 7068660.839064357
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-15T14:22:49.647Z",
+    "createdAt": "2026-09-10T20:34:16.042Z"
+   },
+   {
+    "mint": "6FEjyaUYzADDLRQBu6SbRfJjkTiGmiA9fiKG8Q1sCyhK",
+    "pool": "9dKkubUEC2tHHLjApLJPDUMPemsJ46NPmDURvmZA1imu",
+    "name": "Stainless Steel Starship",
+    "symbol": "SSS",
+    "quote": {
+     "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+     "symbol": "SPCXX",
+     "name": "SPACEX",
+     "logoUrl": "/api/asset/quote-logo/Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8?v=8e308f08",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://pbs.twimg.com/media/HTC3tQwWAAABDID.jpg",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000004641126951479039,
+     "marketCapUsd": 4641.126951479038,
+     "fdvUsd": 4641.126951479038,
+     "volume24hUsd": 124627.60894677819,
+     "liquidityUsd": 673.0641181670097,
+     "priceChange24h": 37.123427385319616,
+     "peakMarketCapUsd": 34287.6105878826
+    },
+    "status": "new",
+    "graduationProgress": 0.06778369727080455,
+    "createdAt": "2026-09-25T07:22:43.723Z"
+   },
+   {
+    "mint": "HMD6LV9hj6SdSKF4oTd7dYTVUhVL8MzYvPZYgb7BQSrW",
+    "pool": "FAKDGC4xaxhkDSMQ38i5Ebt3nwBSuHs544x9BoCt61qQ",
+    "name": "Last pack magic",
+    "symbol": "JIRACHI",
+    "quote": {
+     "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+     "symbol": "CARDS",
+     "name": "Collector Crypt",
+     "logoUrl": "/api/asset/quote-logo/CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp?v=fcb579c9",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/5Ut8chwH3KJ3E3LsUUeZrVEoR1BQmBAx1CPVEYqfjFGC",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/Dexerto/status/2102442840714326270"
+    },
+    "market": {
+     "priceUsd": 0.00004640058336404717,
+     "marketCapUsd": 46400.58336404717,
+     "fdvUsd": 46400.58336404717,
+     "volume24hUsd": 119926.3257015258,
+     "liquidityUsd": 23099.885181030473,
+     "priceChange24h": -65.74362049339798,
+     "peakMarketCapUsd": 946277.4300051272
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-24T11:01:41.251Z",
+    "createdAt": "2026-09-24T10:42:16.540Z"
+   },
+   {
+    "mint": "6eLWCTf9vd2FbdrTiAb9npTMd7VEtsjtTsmVJdPuKCot",
+    "pool": "2D3ToPUhmtuVHfFgeofRLmCxL9CcQKdfDo3asfQxauKz",
+    "name": "DEEPDIVE",
+    "symbol": "DEEPDIVE",
+    "quote": {
+     "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+     "symbol": "SPCXX",
+     "name": "SPACEX",
+     "logoUrl": "/api/asset/quote-logo/Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8?v=8e308f08",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/3cr5w9txQsXaHKx8BofUHNGC2oRfG7NdxjWHk5FzAkcg",
+    "links": {
+     "website": "https://deepdiveiq.netlify.app/",
+     "twitter": "https://x.com/deepdivemt?s=11",
+     "telegram": "https://t.me/DEEPDIVEIQ"
+    },
+    "market": {
+     "priceUsd": 0.000154862671420314,
+     "marketCapUsd": 154862.671420314,
+     "fdvUsd": 154862.671420314,
+     "volume24hUsd": 119043.55171702491,
+     "liquidityUsd": 36590.382920361,
+     "priceChange24h": 178.500369639128,
+     "peakMarketCapUsd": 190982.06974722442
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T16:57:31.788Z",
+    "createdAt": "2026-09-25T16:42:01.084Z"
+   },
+   {
+    "mint": "PREJ7HM8U91qhE81mpLTiD9JxwRVkHUtxAybJf4gZ8K",
+    "pool": "2BJNbPtx7K7WUzTcXZCotbBrTgAA2JA93vC3WqHHS6iX",
+    "name": "PRESTONK",
+    "symbol": "PRE",
+    "quote": {
+     "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+     "symbol": "STONK",
+     "name": "STONK",
+     "logoUrl": "/api/asset/quote-logo/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx?v=c3c81410",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "standard",
+    "quoteOnlyFees": true,
+    "imageUrl": "https://silver-capable-cattle-625.mypinata.cloud/ipfs/bafkreidqxafhusyqtsch6yijfvvogzaxwvqjuvc5hhv2l6zc5xvf45jyam",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000021693575872113063,
+     "marketCapUsd": 2169.3575872113065,
+     "fdvUsd": 2169.3575872113065,
+     "volume24hUsd": 117947.19002443484,
+     "liquidityUsd": 4214.228835074851,
+     "peakMarketCapUsd": 1107388.4130294318
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-25T22:35:31.460Z",
+    "createdAt": "2026-09-25T22:38:54.436Z"
+   },
+   {
+    "mint": "4cqf9BS5BdBpiib2epBaSRmjbeH7dvvpn1ZZoXr9LpFT",
+    "pool": "CX2Hn4WgJjtmCiAQjZ9iQW2g31Bfo1Sn3x3sCwTeovKR",
+    "name": "666Coin",
+    "symbol": "666",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/7Jiuu87VvVMYCCkMoo9ovrKFsRqRTKRGHZZ2fMwupump.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000005841453017870795,
+     "marketCapUsd": 5841.4530178707955,
+     "fdvUsd": 5841.4530178707955,
+     "volume24hUsd": 117636.00792466936,
+     "liquidityUsd": 1137.8961832029945,
+     "peakMarketCapUsd": 11527.715579860487
+    },
+    "status": "new",
+    "graduationProgress": 0.11045262480700589,
+    "createdAt": "2026-09-26T15:26:44.223Z"
+   },
+   {
+    "mint": "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83",
+    "pool": "FZuTAARDYJapX7HqniQEzzDboNY8RT4FXCrakVFJap2R",
+    "name": "USEFUL COIN",
+    "symbol": "USEFUL",
+    "quote": {
+     "mint": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+     "symbol": "USELESS",
+     "name": "USELESS COIN",
+     "logoUrl": "/api/asset/quote-logo/Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk?v=1cf72f2b",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "raydium",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/76SSnDMxSkXjP5hopEzCFhhDXvvsFAGGmxKocAy9YaXr",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000676102547193174,
+     "marketCapUsd": 667763.162476118,
+     "fdvUsd": 667763.162476118,
+     "volume24hUsd": 117621.79933199803,
+     "priceChange24h": -17.51146159724358,
+     "peakMarketCapUsd": 7052567.327908844
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-05T16:07:37.723Z",
+    "createdAt": "2026-09-05T15:21:23.800Z"
+   },
+   {
+    "mint": "BL1KNVQpvguMrFNCBFYs9WBfkn7o5qqiwPEBb7hxpump",
+    "pool": "Ekz5sXsuz4i8f6NPgEFoUoaVwJu9YCriNxgbBNZP2LKs",
+    "name": "KodaPacks",
+    "symbol": "KODA",
+    "quote": {
+     "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+     "symbol": "CARDS",
+     "name": "Collector Crypt",
+     "logoUrl": "/api/asset/quote-logo/CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp?v=fcb579c9",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "standard",
+    "quoteOnlyFees": true,
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000022356988096610074,
+     "marketCapUsd": 2235.6988096610075,
+     "fdvUsd": 2235.6988096610075,
+     "volume24hUsd": 112479.90849389326,
+     "liquidityUsd": 4467.117708016028,
+     "peakMarketCapUsd": 82312.67633883892
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T19:51:09.525Z",
+    "createdAt": "2026-09-26T19:53:14.064Z"
+   },
+   {
+    "mint": "5HpB4gU9M7xtHC2fLK1FXP7UuDQUvJTRD6guwPKPJUGi",
+    "pool": "8XVr7CnhB8yjNuXkCkmUM2Jwks6ZmYLxqeteFJzxk2jz",
+    "name": "Blub",
+    "symbol": "BLUB",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/8JfZqaPRPeLzTGekVRK1H2bxR39WRoVJ54Y1xk1aahdJ",
+    "links": {
+     "website": "https://x.com/minecraft/status/2102775462170923375?s=46"
+    },
+    "market": {
+     "priceUsd": 0.000008928793346016727,
+     "marketCapUsd": 8928.793346016728,
+     "fdvUsd": 8928.793346016728,
+     "volume24hUsd": 110851.18494538896,
+     "liquidityUsd": 8604.113500306268,
+     "priceChange24h": 132.33497534349348,
+     "peakMarketCapUsd": 48619.24081790397
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T18:49:19.630Z",
+    "createdAt": "2026-09-23T20:13:25.938Z"
+   },
+   {
+    "mint": "7tFbGa9wt4Q4yxNAdaDcTKahv4WPrJtXh6ty7gjWyKx3",
+    "pool": "FDQkSn7z7VX9CunSJossJ4R5J8Cns5pcRqmTWTCsECs8",
+    "name": "Zcash Official Mascot",
+    "symbol": "JubJub",
+    "quote": {
+     "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+     "symbol": "ZEC",
+     "name": "Zcash",
+     "logoUrl": "https://arweave.net/QSYqnmB7NYlB7n1R6rz935Y07dlRK0tIuKe2mof5Sho",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/B8jQbbk9W2Z3JTRWt8sN3Ydq8DdYshmuz53jphADpump.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00030978038069795136,
+     "marketCapUsd": 309780.38069795136,
+     "fdvUsd": 309780.38069795136,
+     "volume24hUsd": 110592.71959356808,
+     "liquidityUsd": 68708.71686644206,
+     "priceChange24h": -2.948750252089738,
+     "peakMarketCapUsd": 4086579.4711400475
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-13T01:54:15.316Z",
+    "createdAt": "2026-09-10T01:03:51.354Z"
+   },
+   {
+    "mint": "AvmFXAHGM1M5V4wcoFCeswgg6r7bkyTdV8J7amVdGPAS",
+    "pool": "2PFqvf5uCMeWdCGfCoUK72USLKNEL6jYN1rTP7H1fnRv",
+    "name": "Aeon",
+    "symbol": "AEON",
+    "quote": {
+     "mint": "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+     "symbol": "OPENAI",
+     "name": "OPENAI",
+     "logoUrl": "/api/asset/quote-logo/PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF?v=f6dce61d",
+     "category": "prestock",
+     "categoryLabel": "PreStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://ipfs.launchblitz.ai/async/AvmFXAHGM1M5V4wcoFCeswgg6r7bkyTdV8J7amVdGPAS.png",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000034477708241511854,
+     "marketCapUsd": 34477.70824151185,
+     "fdvUsd": 34477.70824151185,
+     "volume24hUsd": 110441.67071967405,
+     "liquidityUsd": 18954.276463425973,
+     "priceChange24h": -73.42611854753909,
+     "peakMarketCapUsd": 290040.95250905614
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-23T14:56:29.084Z",
+    "createdAt": "2026-09-22T03:10:13.085Z"
+   },
+   {
+    "mint": "HhcfXbZ2rukoKx8oAH8rfkmzXbwvfdh6MMLZjneg4rWk",
+    "pool": "DxFU2dC45UemwViowEinyTSSkLxwSAnRDAMa5Y7QpjQK",
+    "name": "Copper Cat",
+    "symbol": "COPCAT",
+    "quote": {
+     "mint": "CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5",
+     "symbol": "COPX",
+     "name": "Global X Copper Miners ETF",
+     "logoUrl": "/api/asset/quote-logo/CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5?v=e41261c9",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://axiomtrading-v2.axiom-cdn.io/8LG4T5yKimtLh1kQ3ezqjNw1WX5WoB8rVHnFwBfkKJg6.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0001403624347434491,
+     "marketCapUsd": 140362.4347434491,
+     "fdvUsd": 140362.4347434491,
+     "volume24hUsd": 105696.68154080458,
+     "liquidityUsd": 37839.78404868606,
+     "priceChange24h": -35.766741114006905,
+     "peakMarketCapUsd": 3261888.842489232
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-21T20:03:44.692Z",
+    "createdAt": "2026-09-21T20:00:29.097Z"
+   },
+   {
+    "mint": "6i9FXZMb4u84Wisa81RKiDtJP5ToQ1jkxr3Evqzr1yhv",
+    "pool": "HDv68VRWLztiGVNZGEVcdg3P9T3zkjALmyG4Pj87R2JY",
+    "name": "Employim",
+    "symbol": "EMPLOYIM",
+    "quote": {
+     "mint": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+     "symbol": "neet",
+     "name": "NotInEmploymentEducationTraining",
+     "logoUrl": "/api/asset/quote-logo/Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump?v=1229509c",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/99uGZkvBfzpWBk2aGbdBcrK35z2S9ro1U9k5xkavVT9E",
+    "links": {
+     "website": "https://www.stonkfun.xyz/",
+     "twitter": "https://x.com/Employim69"
+    },
+    "market": {
+     "priceUsd": 0.00024224579827164088,
+     "marketCapUsd": 242245.79827164087,
+     "fdvUsd": 242245.79827164087,
+     "volume24hUsd": 103848.1550915805,
+     "liquidityUsd": 51471.88939391807,
+     "priceChange24h": -41.65669827453882,
+     "peakMarketCapUsd": 602721.2792039869
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-22T23:10:24.108Z",
+    "createdAt": "2026-09-22T23:07:52.403Z"
+   },
+   {
+    "mint": "7Udj2HQyi3otTozQtTbwzxS8G85yzMRaj5AnLU9pkeeb",
+    "pool": "8bhYDmYYTt6n7ba12u777FdJV9pdjRzx2vPNab4f9iDk",
+    "name": "valuecoin",
+    "symbol": "value",
+    "quote": {
+     "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+     "symbol": "CBLTC",
+     "name": "Coinbase Wrapped LTC",
+     "logoUrl": "/api/asset/quote-logo/cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf?v=dcd1c0cf",
+     "category": "backpack",
+     "categoryLabel": "Sunrise"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://thumbnails.padre.gg/SOLANA-2vzhCvCVXdy1Gh5NPnQ6T1xThytS8cVpbahR6ycrwhYJ",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0000033713649616050995,
+     "marketCapUsd": 3371.3649616050993,
+     "fdvUsd": 3371.3649616050993,
+     "volume24hUsd": 103472.37956249078,
+     "liquidityUsd": 12.534533748792434,
+     "peakMarketCapUsd": 6181.495620786964
+    },
+    "status": "new",
+    "graduationProgress": 0.0012314940978684745,
+    "createdAt": "2026-09-25T22:57:34.198Z"
+   },
+   {
+    "mint": "syUi3BFEUFjhxxkGYo4nkD7YPUyA4NjaNud1ZR4dPPA",
+    "pool": "9Wf2xforsZXZ2qtWCaBUsr1gGCxML1fwq45XTaCB1jpA",
+    "name": "Lightning McQueen",
+    "symbol": "MCQUEEN",
+    "quote": {
+     "mint": "CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta",
+     "symbol": "CARS",
+     "name": "Rip Cars",
+     "logoUrl": "/api/asset/quote-logo/CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta?v=dc0dc6a4",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "standard",
+    "quoteOnlyFees": true,
+    "imageUrl": "https://gateway.irys.xyz/G28TrGqc86PVTaY2P2qNHQ3EesMF9gFMo6q44CBzsizC",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.0000021679942366392025,
+     "marketCapUsd": 2167.9942366392024,
+     "fdvUsd": 2167.9942366392024,
+     "volume24hUsd": 102377.82726874184,
+     "liquidityUsd": 3851.3248185844627,
+     "peakMarketCapUsd": 50980.93208433317
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T18:20:08.936Z",
+    "createdAt": "2026-09-26T18:14:26.847Z"
+   },
+   {
+    "mint": "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT",
+    "pool": "8ZPPkEXE9RY9L2PYxK1H7ni9rvoNtcFDY7EXBTc3twpB",
+    "name": "Minecoin",
+    "symbol": "MINECOIN",
+    "quote": {
+     "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+     "symbol": "MSFTX",
+     "name": "MSFT",
+     "logoUrl": "/api/asset/quote-logo/XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX?v=f09feeb6",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://gateway.irys.xyz/6DGiUtVDZEq8PZV3bKbRos2b98qveXz1ZyEFp7mHCwd7",
+    "links": {
+     "website": "https://www.minecraft.net/en-us/marketplace/buy-minecoins",
+     "twitter": "https://x.com/Chilldev69/status/2102591640007274970?s=20"
+    },
+    "market": {
+     "priceUsd": 0.00007377708560172893,
+     "marketCapUsd": 73777.08560172893,
+     "fdvUsd": 73777.08560172893,
+     "volume24hUsd": 102102.74272876706,
+     "liquidityUsd": 28334.3488211075,
+     "priceChange24h": -25.450630895178406,
+     "peakMarketCapUsd": 701299.264611749
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-23T02:54:35.892Z",
+    "createdAt": "2026-09-23T02:55:32.280Z"
+   },
+   {
+    "mint": "39HqgQ18g9R33sUfKq1TjX4sbKrgTb4YntnBCFhURJvy",
+    "pool": "575opbMA657NXgdGVYaf2g92gjKBKeiDUDQvEdqbywf8",
+    "name": "Monero-Chan",
+    "symbol": "MONEROCHAN",
+    "quote": {
+     "mint": "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp",
+     "symbol": "XMR",
+     "name": "XMR",
+     "logoUrl": "/api/asset/quote-logo/WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp?v=9e80ab5b",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://axiomtrading.sfo3.cdn.digitaloceanspaces.com/H5b4iYiZYycr7fmQ1dMj7hdfLGAEPcDH261K4hugpump.webp",
+    "links": {},
+    "market": {
+     "priceUsd": 0.0002344702869478471,
+     "marketCapUsd": 234470.2869478471,
+     "fdvUsd": 234470.2869478471,
+     "volume24hUsd": 101563.71062695085,
+     "liquidityUsd": 41907.81023949397,
+     "priceChange24h": -29.820527771578366,
+     "peakMarketCapUsd": 4464211.794547321
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-08T19:19:35.607Z",
+    "createdAt": "2026-09-08T19:20:44.085Z"
+   },
+   {
+    "mint": "H6ibmg2HroqMWMFbTkzsuGsnRumuULFBL6hoMLmZmLe",
+    "pool": "4Yaje7wxKm312RHTTyqYAcEAXdaWVbN1fy7LBJkMeaBs",
+    "name": "Tower of Babel",
+    "symbol": "BABEL",
+    "quote": {
+     "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+     "symbol": "GLDX",
+     "name": "GOLD",
+     "logoUrl": "/api/asset/quote-logo/Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re?v=e924ada2",
+     "category": "xstock",
+     "categoryLabel": "xStock"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/EB2BX973oiRvCFpBnzKjrFSCUmBQWm5wUXmKBfFqkmFm",
+    "links": {
+     "website": "https://babeltower.fun/",
+     "twitter": "https://x.com/babeltowerfun"
+    },
+    "market": {
+     "priceUsd": 0.0002873677162247029,
+     "marketCapUsd": 287367.71622470283,
+     "fdvUsd": 287367.71622470283,
+     "volume24hUsd": 99611.30604509656,
+     "liquidityUsd": 49765.793914201255,
+     "priceChange24h": 253.678683110654,
+     "peakMarketCapUsd": 426671.31822207524
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-22T13:59:19.837Z",
+    "createdAt": "2026-09-22T13:59:13.422Z"
+   },
+   {
+    "mint": "ANGcGgFuGYv1tiphv2BHhM5H54mvEHwYmSGE6X4tkkE8",
+    "pool": "FDdxvMaaj5gaR2SJg3enx18XZpDeGm7ttQxYehRvJzv4",
+    "name": "Vibecat",
+    "symbol": "VIBECAT",
+    "quote": {
+     "mint": "4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs",
+     "symbol": "xSOL",
+     "name": "xSOL",
+     "logoUrl": "/api/asset/quote-logo/4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs?v=2ac8f2a6",
+     "category": "leverage",
+     "categoryLabel": "Leverage"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 100
+    },
+    "imageUrl": "https://ipfs.launchblitz.ai/async/ANGcGgFuGYv1tiphv2BHhM5H54mvEHwYmSGE6X4tkkE8.jpg",
+    "links": {},
+    "market": {
+     "priceUsd": 0.00000341114113749645,
+     "marketCapUsd": 3411.14113749645,
+     "fdvUsd": 3411.14113749645,
+     "volume24hUsd": 96507.44843999557,
+     "liquidityUsd": 22.70907423281139,
+     "peakMarketCapUsd": 16086.522191420076
+    },
+    "status": "new",
+    "graduationProgress": 0.002217400448392326,
+    "createdAt": "2026-09-25T23:11:40.976Z"
+   },
+   {
+    "mint": "3c7mmVSyEH8jfZXgxvpLsETtko1Y16DyRJ5XYB4snhGt",
+    "pool": "GPp86F5JeH8gZzM2kzZsLRzL5SVYiEgbZ8X1Z3NfLktw",
+    "name": "SANTA",
+    "symbol": "SANTA",
+    "quote": {
+     "mint": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+     "symbol": "GP",
+     "name": "GP",
+     "logoUrl": "/api/asset/quote-logo/HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ?v=1f19001b",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/AKY9WFU9N81E4a4539yYAxWWtLURRmKKb3NF9fU3oLjz",
+    "links": {
+     "website": "https://gp.gold/",
+     "twitter": "https://x.com/cyrusabrahimx"
+    },
+    "market": {
+     "priceUsd": 0.00046711458876168364,
+     "marketCapUsd": 467114.5887616836,
+     "fdvUsd": 467114.5887616836,
+     "volume24hUsd": 94201.53127110002,
+     "liquidityUsd": 53610.62027377321,
+     "priceChange24h": -68.56188591238153,
+     "peakMarketCapUsd": 2222497.043291126
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-17T21:47:52.787Z",
+    "createdAt": "2026-09-17T20:05:41.632Z"
+   },
+   {
+    "mint": "F2RQsvs4FDPoefppFBDp8c5z6hGAH3mEmLCpWBkWQPv7",
+    "pool": "An85UWev2QdvMH2ChAuEWsczcshRqT39yLCyAfk2ASBC",
+    "name": "ILLY",
+    "symbol": "ILLY",
+    "quote": {
+     "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+     "symbol": "CARDS",
+     "name": "Collector Crypt",
+     "logoUrl": "/api/asset/quote-logo/CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp?v=fcb579c9",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://ipfs.io/ipfs/QmTYoF3bX4u2rbakswCorFRGW9KvRx5WYPguDHyN5LvDZz",
+    "links": {},
+    "market": {
+     "priceUsd": 0.000003783265101021981,
+     "marketCapUsd": 3783.265101021981,
+     "fdvUsd": 3783.265101021981,
+     "volume24hUsd": 93108.5614861913,
+     "liquidityUsd": 5752.540106323421,
+     "peakMarketCapUsd": 15205.98899897801
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T03:23:15.640Z",
+    "createdAt": "2026-09-26T03:28:31.810Z"
+   },
+   {
+    "mint": "BkuopU9ufiJoEHScHDF8MS14J3McWSPjHk5GkghhKbhj",
+    "pool": "7Gnag5gS7rAt18ofNF3hoXn2Vf67VPWPK98KHQLtTj51",
+    "name": "SUPER CAT",
+    "symbol": "SC",
+    "quote": {
+     "mint": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+     "symbol": "SI",
+     "name": "Super Inu",
+     "logoUrl": "/api/asset/quote-logo/DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP?v=470d1c2d",
+     "category": "custom",
+     "categoryLabel": "Custom"
+    },
+    "launchpad": "launchlab",
+    "mode": "reward",
+    "quoteOnlyFees": true,
+    "transferFee": {
+     "bps": 300
+    },
+    "imageUrl": "https://gateway.irys.xyz/EEhh6AZNJV8e57EmZ4TixSGRjazy76RJ7CDqM5HRDhGf",
+    "links": {
+     "website": "https://www.stonkfun.xyz/"
+    },
+    "market": {
+     "priceUsd": 0.000031407545337226276,
+     "marketCapUsd": 31407.54533722628,
+     "fdvUsd": 31407.54533722628,
+     "volume24hUsd": 92439.88304387603,
+     "liquidityUsd": 15935.553447125807,
+     "peakMarketCapUsd": 59549.61363325859
+    },
+    "status": "graduated",
+    "graduationProgress": 1,
+    "graduatedAt": "2026-09-26T16:57:33.121Z",
+    "createdAt": "2026-09-26T16:51:42.872Z"
+   }
+  ],
+  "pagination": {
+   "page": 1,
+   "pageSize": 100,
+   "total": 139773,
+   "totalPages": 1398
+  },
+  "network": "mainnet-beta"
+ },
+ "meta": {
+  "generatedAt": "2026-09-26T21:34:55.159Z"
+ }
+}
