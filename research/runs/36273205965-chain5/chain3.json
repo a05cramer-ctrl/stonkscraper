@@ -547,6 +547,209 @@
    "t0ET": "Sep 24, 22:02:16",
    "liveET": "Sep 24, 22:02:16",
    "firstLaunchET": "Sep 24, 22:10:51"
+  },
+  {
+   "sym": "cbLTC",
+   "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+   "kind": "sunrise-crypto",
+   "t0": 1790357400000,
+   "live": 1790358034913,
+   "firstLaunch": 1790358382433,
+   "pre": {
+    "n": 370,
+    "pages": 1,
+    "reachedStart": true
+   },
+   "preFirst": {
+    "et": "Sep 24, 18:59:30",
+    "leadMin": 1111
+   },
+   "preTx": [
+    {
+     "et": "Sep 24, 18:59:30",
+     "leadMin": 1111,
+     "err": false,
+     "signers": [
+      "41A4kPSg"
+     ],
+     "what": "Comput:03ba0700,offqSM:82ddf29a,Comput:0280a903,RmnXLf:56c83a8f,41FGTo:5c6496c6,mintTo,Execute,VerifyNotCursed,ReleaseOrMintTokens"
+    },
+    {
+     "et": "Sep 24, 19:13:28",
+     "leadMin": 1097,
+     "err": false,
+     "signers": [
+      "EZG6yhsK"
+     ],
+     "what": "Comput:03c80500,offqSM:82ddf29a,Comput:0280a903,RmnXLf:56c83a8f,Execute,VerifyNotCursed"
+    },
+    {
+     "et": "Sep 25, 11:48:42",
+     "leadMin": 101,
+     "err": false,
+     "signers": [
+      "41A4kPSg"
+     ],
+     "what": "Comput:03250000,create,Comput:02b23a00,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3"
+    },
+    {
+     "et": "Sep 25, 11:48:57",
+     "leadMin": 101,
+     "err": false,
+     "signers": [
+      "41A4kPSg"
+     ],
+     "what": "Comput:03250000,offqSM:82ddf29a,Comput:0280a903,RmnXLf:56c83a8f,41FGTo:5c6496c6,mintTo,Execute,VerifyNotCursed,ReleaseOrMintTokens"
+    },
+    {
+     "et": "Sep 25, 11:58:21",
+     "leadMin": 92,
+     "err": false,
+     "signers": [
+      "4XFvp7P3"
+     ],
+     "what": "DNL1tg:2323bdc1,createAccount,initializeAccount3,DZNTS5:00,InitializeMarket"
+    },
+    {
+     "et": "Sep 25, 12:18:42",
+     "leadMin": 71,
+     "err": false,
+     "signers": [
+      "EZG6yhsK"
+     ],
+     "what": "Comput:03480900,offqSM:82ddf29a,Comput:0280a903,RmnXLf:56c83a8f,Execute,VerifyNotCursed"
+    },
+    {
+     "et": "Sep 25, 12:20:44",
+     "leadMin": 69,
+     "err": false,
+     "signers": [
+      "8AmNcUYK"
+     ],
+     "what": "Comput:03d70900,create,Comput:025e6100,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3"
+    },
+    {
+     "et": "Sep 25, 12:20:44",
+     "leadMin": 69,
+     "err": false,
+     "signers": [
+      "7EaxD58X"
+     ],
+     "what": "Comput:03fd0800,create,Comput:02244100,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3"
+    },
+    {
+     "et": "Sep 25, 13:29:06",
+     "leadMin": 1,
+     "err": false,
+     "signers": [
+      "6ihGsFMv",
+      "5Vacg34H"
+     ],
+     "what": "Comput:031b4100,Comput:02c02709,createAccountWithSeed,initializeAccount,CAMMCz:4dffae52,closeAccount,createAccount,initializeMintCloseAuthority,initializeMetadataPointer,initializeMint2,create,getAccountDataSize,initializeImmutableOwner,initializeAccount3"
+    },
+    {
+     "et": "Sep 25, 13:29:15",
+     "leadMin": 1,
+     "err": false,
+     "signers": [
+      "CfyGEtZT"
+     ],
+     "what": "Comput:031b4100,Comput:02c02709,createAccountWithSeed,initializeAccount,CAMMCz:3a7fbc3e,closeAccount,CAMMCz:7b865100,transferChecked,burn,DecreaseLiquidityV2,ClosePosition,Burn,CloseAccount"
+    },
+    {
+     "et": "Sep 25, 13:29:29",
+     "leadMin": 1,
+     "err": false,
+     "signers": [
+      "AkKHu7X3"
+     ],
+     "what": "Comput:031b4100,Comput:02c02709,createAccountWithSeed,initializeAccount,CAMMCz:3a7fbc3e,closeAccount,transferChecked,DecreaseLiquidityV2"
+    },
+    {
+     "et": "Sep 25, 13:29:34",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "2DxoMGxs",
+      "3dm27j3W"
+     ],
+     "what": "Comput:031b4100,Comput:02c02709,CAMMCz:2b44d4a7,CAMMCz:4dffae52,createAccount,getAccountDataSize,initializeImmutableOwner,initializeAccount3,initializeMintCloseAuthority,initializeMetadataPointer,initializeMint2,create,transferChecked,transfer"
+    },
+    {
+     "et": "Sep 25, 13:29:36",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "CfyGEtZT",
+      "Ee61FRHA"
+     ],
+     "what": "Comput:031b4100,Comput:02c02709,createAccountWithSeed,initializeAccount,CAMMCz:4dffae52,closeAccount,createAccount,initializeMintCloseAuthority,initializeMetadataPointer,initializeMint2,create,getAccountDataSize,initializeImmutableOwner,initializeAccount3"
+    },
+    {
+     "et": "Sep 25, 13:29:48",
+     "e": "Error: 429"
+    },
+    {
+     "et": "Sep 25, 13:29:48",
+     "leadMin": 0,
+     "err": true,
+     "signers": [
+      "rm4cojND"
+     ],
+     "what": "createIdempotent,2M86GV:00808e43,Comput:02188003,Comput:03309e00,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,CAMMCz:f8c69e91,transfer,Swap"
+    },
+    {
+     "et": "Sep 25, 13:29:48",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "AkKHu7X3"
+     ],
+     "what": "Comput:031b4100,Comput:02c02709,createAccountWithSeed,initializeAccount,CAMMCz:3a7fbc3e,closeAccount,transferChecked,DecreaseLiquidityV2"
+    }
+   ],
+   "cfg": {
+    "foundK": 8,
+    "reachedStart": true,
+    "n": 11730,
+    "et": "Sep 25, 13:36:57",
+    "minVsT0": 7,
+    "signers": [
+     "7JJobp5o867GGUokgpqE6Ld4SJsecRK7qVB3xHqwBcZW"
+    ],
+    "what": "createAccountWithSeed,initializeAccount3,LanMV9:faea0d7b,transfer,LanMV9:e445a52e,transferChecked,InitializeAccount3,BuyExactIn,TransferChecked"
+   },
+   "t0ET": "Sep 25, 13:30:00",
+   "liveET": "Sep 25, 13:40:34",
+   "firstLaunchET": "Sep 25, 13:46:22"
+  },
+  {
+   "sym": "SQQQ",
+   "mint": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+   "kind": "sunrise-stock",
+   "t0": 1790346600000,
+   "live": 1790347236326,
+   "firstLaunch": 1790347693090,
+   "pre": {
+    "n": 0,
+    "pages": 1,
+    "reachedStart": true
+   },
+   "preFirst": null,
+   "preTx": [],
+   "cfg": {
+    "foundK": 8,
+    "n": 3726,
+    "et": "Sep 25, 10:38:00",
+    "minVsT0": 8,
+    "signers": [
+     "bsFqdZPiHBHDofMk8vLa3e8Gp2ezmtDuXW4WbCikHwF"
+    ],
+    "what": "FLASHX:01000000,FLASHX:002b4db0,transfer,createAccount,initializeAccount3,LanMV9:9527de9b,LanMV9:e445a52e,transferChecked,CAMMCz:2b04ed0b,closeAccount,SellExactIn,TransferChecked,SwapV2"
+   },
+   "t0ET": "Sep 25, 10:30:00",
+   "liveET": "Sep 25, 10:40:36",
+   "firstLaunchET": "Sep 25, 10:48:13"
   }
  ]
 }
