@@ -1,0 +1,1927 @@
+{
+ "rpcTest": {
+  "https://solana-rpc.publicnode.com": {
+   "status": 200,
+   "ok": false,
+   "err": null,
+   "t": null
+  },
+  "https://api.mainnet-beta.solana.com": {
+   "status": 200,
+   "ok": true,
+   "err": null,
+   "t": 1790261702
+  },
+  "https://solana.drpc.org": {
+   "status": 400,
+   "ok": false,
+   "err": "{\"message\":\"chain is not available on free plan, please upgrade to paid plan\",\"code\":35}",
+   "t": null
+  }
+ },
+ "listings": [
+  {
+   "sym": "cbLTC",
+   "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+   "cls": "crypto",
+   "issuer": null,
+   "vf": 1790357400000,
+   "upd": 1790367682710,
+   "onSF": true,
+   "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+   "mintInfo": {
+    "mintAuthority": "FYJb4eQJUeSLNMaFaPbgzXnKQFSt9sYsL1k5CjFdcizM",
+    "supply": "614979745101",
+    "decimals": 8,
+    "freezeAuthority": "GoFoFfEDgALWRTw5dSY3VZQSwbFpvBEhDv1sFAWzYpbf",
+    "len": 82
+   },
+   "len": 82,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "4kHNWAuej6wzNurWu2skznxmxCVCNaA6m16A4WKqqBt3BK1QcrivHyhXxc8a1ZG6kYegNfcrngdEk2kj9w3bXvJj",
+    "t": 1790377191000,
+    "et": "Sep 25, 18:59:51"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 25, 13:30:00",
+   "updET": "Sep 25, 16:21:22"
+  },
+  {
+   "sym": "SQQQ",
+   "mint": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1790346600000,
+   "upd": 1790350230047,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "EzHCq2gnCdFaeZcAf9ujd3a84ZzzmCRwGcUqLhFBKsUE",
+    "supply": "7663716565",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 701
+   },
+   "len": 701,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "61AQZ7pS65d62PLBa7WvvuyM97Dvr2BuJL4HWFBQVX1fEGTni8gDrBCxJQdcvheT3pSxepaptL4B7iL8qqauXMxs",
+    "t": 1790350810000,
+    "et": "Sep 25, 11:40:10"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 25, 10:30:00",
+   "updET": "Sep 25, 11:30:30"
+  },
+  {
+   "sym": "IREN",
+   "mint": "RENzhrJQgmAnfcLhU1U5XwAMc6TC15UA6jCbPBaasnj",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1790280000000,
+   "upd": 1790279246470,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "7jdrGaAgoAzJfNzLJctbqCzeZKVFeXg9wXGUTPAgBdp3",
+    "supply": "2738634605",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 677
+   },
+   "len": 677,
+   "pages": 23,
+   "sigsSeen": 22926,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "okXWatwjgV7oxEwmEae2DqoWaS9iuWUM3WtLjzykmc1iJcLdfSwD6yGMWJ93t6Yfyefg3P4EcNBEkPiAuqadpFQ",
+    "t": 1790308023000,
+    "et": "Sep 24, 23:47:03"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 24, 16:00:00",
+   "updET": "Sep 24, 15:47:26"
+  },
+  {
+   "sym": "ZAMA",
+   "mint": "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh",
+   "cls": "crypto",
+   "issuer": null,
+   "vf": 1790261400000,
+   "upd": 1790279150475,
+   "onSF": true,
+   "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+   "mintInfo": {
+    "mintAuthority": "H9UdnuUqDJ5RV2GguybxsQb7CBQN7kQGBpKxk2dzQzx3",
+    "supply": "15129070707615724",
+    "decimals": 9,
+    "freezeAuthority": null,
+    "len": 82
+   },
+   "len": 82,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "3aZ5yQq31ZtTi6iLnxZ87PrNA1cPiN9bQGn6uAxash67kR6DE1vsQGKPUzTkXnRoWxNx6FkiBeMjdSHHDMed1YQR",
+    "t": 1790263473000,
+    "et": "Sep 24, 11:24:33"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 24, 10:50:00",
+   "updET": "Sep 24, 15:45:50"
+  },
+  {
+   "sym": "APE",
+   "mint": "C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f",
+   "cls": "crypto",
+   "issuer": null,
+   "vf": 1790190000000,
+   "upd": 1790202544018,
+   "onSF": true,
+   "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+   "mintInfo": {
+    "mintAuthority": "Gy6X83nN8ENZhfzZ6yjRoYwDSk4QMg3x5dNv8b2RhvdG",
+    "supply": "3096348003514711",
+    "decimals": 9,
+    "freezeAuthority": null,
+    "len": 82
+   },
+   "len": 82,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "3S1nMTBx83zbaBYMMcFXNeH4QH1VHUWo6qjnRGV4A2Vmf755Tdxwaau7pp2oJgqF891t8MDVQwD5HBjfmWBtegce",
+    "t": 1790274954000,
+    "et": "Sep 24, 14:35:54"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 23, 15:00:00",
+   "updET": "Sep 23, 18:29:04"
+  },
+  {
+   "sym": "USDV",
+   "mint": "USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk",
+   "cls": "stablecoin",
+   "issuer": null,
+   "vf": 1790181000000,
+   "upd": 1790184452910,
+   "onSF": false,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "BWB53KgBqDZ75rMnEKohR3arDBtPtonppTx2RmjkqQ2r",
+    "supply": "6059987483400",
+    "decimals": 6,
+    "freezeAuthority": "5iMSLkZdvmYZUb3LPbmvynAujEuyyu7azLeQpRSfjY1p",
+    "len": 617
+   },
+   "len": 617,
+   "pages": 9,
+   "sigsSeen": 8122,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "5TJos5FwZAZ2BrWudRUGPSwfYSGvuGnzyZxLhytiDzqwPCPmZAzoGJyKmjLsVooghBm4sEBmZirCapjeS1Y1gf8a",
+    "t": 1790309282000,
+    "et": "Sep 25, 00:08:02"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 23, 12:30:00",
+   "updET": "Sep 23, 13:27:32"
+  },
+  {
+   "sym": "CRWV",
+   "mint": "CRWVJeR2yEZuDUKYfGuKCHvLz8ywn4LGvovHfy5WiFmi",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1790175600000,
+   "upd": 1790199370553,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "6Fw4z711wTEZNLe5amd8BrRRQRB38cvVvtadCKkHEn6N",
+    "supply": "1287611938",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 682
+   },
+   "len": 682,
+   "pages": 2,
+   "sigsSeen": 1749,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "aYtnhKqAh3u1SxuSRqu2MuxgRGofR1s95TLtem214GEXKeJZAcexmUCqmboGcrRKEaEHTo5xpm282bMQgfdtqzn",
+    "t": 1790308137000,
+    "et": "Sep 24, 23:48:57"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 23, 11:00:00",
+   "updET": "Sep 23, 17:36:10"
+  },
+  {
+   "sym": "ARM",
+   "mint": "ARMbSB1MBRQrY6PNMao1HdQ431VafC6JRJCsGZ2Yv3iJ",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1790107200000,
+   "upd": 1790109415058,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "3iVaLFZtBZ9qbkYrdnaExxPargnWDZwDKskHPFjcaRY6",
+    "supply": "390943725",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 683
+   },
+   "len": 683,
+   "pages": 16,
+   "sigsSeen": 15501,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "2rgyj41GJa1KHrwRULTfRu2thBNUp5RTrUtHGJnEFzyNfHcG249pUWHASjWZLxmDrmpwq35uAtabQECfiwhr7EUP",
+    "t": 1790308387000,
+    "et": "Sep 24, 23:53:07"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 22, 16:00:00",
+   "updET": "Sep 22, 16:36:55"
+  },
+  {
+   "sym": "IONQ",
+   "mint": "NQ5hSuXQZrbnrwcDVk2qN73njjd3E3v3badYHnj5thF",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1790091000000,
+   "upd": 1790109214800,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "BAwDA2CGupPg56SJkeELvf9sC3YzsQ8Nc5MnnALdp7hp",
+    "supply": "3196673559",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 677
+   },
+   "len": 677,
+   "pages": 52,
+   "sigsSeen": 51095,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "4kKkSoV8EFtxSoGCVn7EWvSWV8tzsJrgzFzMhMANsPQV79d4enZfzVz2nrfo3uHgX6BEXgPTRrCfsinU1EfKw31s",
+    "t": 1790308579000,
+    "et": "Sep 24, 23:56:19"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 22, 11:30:00",
+   "updET": "Sep 22, 16:33:34"
+  },
+  {
+   "sym": "COPX",
+   "mint": "CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1790020800000,
+   "upd": 1790092597935,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "4S7eNNQcLMHeZr8MCX7cPmMKbqnVVUZ1PRRLAopTTeQt",
+    "supply": "3320676260",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 699
+   },
+   "len": 699,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "4qxzgZVu4V72t8dT6JmKrcZ7Dhc7vraCUXkCQVuxtnC2g8G1MSLZgP3ZABK8ZfQxDMAVPU8JxubbANq9ca5bb3ER",
+    "t": 1790194124000,
+    "et": "Sep 23, 16:08:44"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 21, 16:00:00",
+   "updET": "Sep 22, 11:56:37"
+  },
+  {
+   "sym": "URA",
+   "mint": "URARfsinxCRw4JpvQhuT4CxavdZXZEMjv9ZwWmWpwag",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1790002800000,
+   "upd": 1790051308060,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "7YKhgXzbSug6r9nZZNaVSXpCfin8ntMnQhM8HHSnBXHZ",
+    "supply": "5990320783",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 691
+   },
+   "len": 691,
+   "pages": 9,
+   "sigsSeen": 8973,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "5WyxDCgVf8WPEbU47Ehdis5mT7TmYHgcxgvdtUtA8eVtMGZSkdsFf6bpSvMrAX9b3cQLCH8En8YbJqwUdTiHXDVw",
+    "t": 1790308433000,
+    "et": "Sep 24, 23:53:53"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 21, 11:00:00",
+   "updET": "Sep 22, 00:28:28"
+  },
+  {
+   "sym": "BB",
+   "mint": "BBosJLw8ZzoATiEyywiifx7AgmrD2Cm3XjFWbhbRhChy",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789833660000,
+   "upd": 1789792145420,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "ChKbRQbNXCd5FAupajHHZLY2LLB7Hq47yXx7xMnCswfS",
+    "supply": "17782355622",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 679
+   },
+   "len": 679,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "51SS4nZtvUS8iy2dZkQsuAq5owAuK98ouD8yuDhkXN2e38UFbsQiHJ4jUxmGtiZ8QtR7KYEsxQqaFRusEosT5cCb",
+    "t": 1789848558000,
+    "et": "Sep 19, 16:09:18"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 19, 12:01:00",
+   "updET": "Sep 19, 00:29:05"
+  },
+  {
+   "sym": "PEPE",
+   "mint": "PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m",
+   "cls": "crypto",
+   "issuer": null,
+   "vf": 1789765200000,
+   "upd": 1789842286795,
+   "onSF": true,
+   "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+   "mintInfo": {
+    "mintAuthority": "HiRmjPfmXKuGgHh4ESPUMoAjfTGx8pHi8Pycqrc5eb2c",
+    "supply": "3187051018493027",
+    "decimals": 4,
+    "freezeAuthority": null,
+    "len": 82
+   },
+   "len": 82,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "5dGhuhRTFT43R11uuaDDov8k1ByjM1iwk55wmiuJVcXBgZzCqG24dbZCHc4o9zq4Ny9JqRhK3Ce3QuL3RNubC2ZG",
+    "t": 1790286351000,
+    "et": "Sep 24, 17:45:51"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 18, 17:00:00",
+   "updET": "Sep 19, 14:24:46"
+  },
+  {
+   "sym": "CYPH",
+   "mint": "CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789747200000,
+   "upd": 1789745059059,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "Cmzoo3U8ezcb95BJYmy3e6p6Lh1kyPm2bjDLcvNtVXES",
+    "supply": "150649430699",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 696
+   },
+   "len": 696,
+   "pages": 39,
+   "sigsSeen": 38816,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "NhfRnpYL522eq8TCt5CNnosY52yZWA1AnUQWYuTCqNYVksFA9QPukZ8r9eJwZud95ArKLVWnuqDK4F2R7biEEpy",
+    "t": 1790308735000,
+    "et": "Sep 24, 23:58:55"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 18, 12:00:00",
+   "updET": "Sep 18, 11:24:19"
+  },
+  {
+   "sym": "USO",
+   "mint": "USNv3NkKA27Dh4nsHJDPhW4VoEcTQmjoZyJt2dqdwFu",
+   "cls": "crypto",
+   "issuer": "backpack_securities",
+   "vf": 1789740000000,
+   "upd": 1789744951250,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "9QcovrmyR7yb988nznuHDEJQvRFvtcjPaNEJjg8htmru",
+    "supply": "1139687309",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 697
+   },
+   "len": 697,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "5vfQX8FV54ED8kgQrCfzHqyFpc9h3RWBhwToFXtZQhJbMJyS7RCoigjfQgWtxtFr6BSqSzQ8PbMjovjoyDLybyZr",
+    "t": 1789988465000,
+    "et": "Sep 21, 07:01:05"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 18, 10:00:00",
+   "updET": "Sep 18, 11:22:31"
+  },
+  {
+   "sym": "RUM",
+   "mint": "RUMsPfFZFnN1ZmGANwP7FNMJMjKH4m9RiMePrtVtLe7",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789675200000,
+   "upd": 1789676033177,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "4ffj7SAFJJEnqPgbyrtL77MqtQ61MpzED9o8Ei94N1gj",
+    "supply": "7209057705",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 685
+   },
+   "len": 685,
+   "pages": 1,
+   "sigsSeen": 169,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "muVYkBoD765sDKKXXX3vkMVpzioFG6isvMxKjHiA4xfxPUj9miDJuushVNQ88QDXXUVeWogyYpiVkJj9QKfXZBs",
+    "t": 1790312381000,
+    "et": "Sep 25, 00:59:41"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 17, 16:00:00",
+   "updET": "Sep 17, 16:13:53"
+  },
+  {
+   "sym": "WULF",
+   "mint": "WULFeyfrj1VJKD9HhRTcW8R4g5HefUA11HDEdBv2WxD",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789657200000,
+   "upd": 1789657343580,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "DZDiU8T6FkmPFZV155LZukgEjXnGnQuW7xcDEEi1pU4p",
+    "supply": "4891927402",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 681
+   },
+   "len": 681,
+   "pages": 1,
+   "sigsSeen": 497,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "5Arizs5uFvEVAUySXEFnJqqKDMBmiUcae2x3ML5rdDYBj2JCTDXLTe5pwK78fbjEF9j4ZRZ5TFZ243tgD6LHda87",
+    "t": 1790309118000,
+    "et": "Sep 25, 00:05:18"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 17, 11:00:00",
+   "updET": "Sep 17, 11:02:23"
+  },
+  {
+   "sym": "INJ",
+   "mint": "1NJMqVM4PadjuzYmeB7zV7q7DV8oB3ExaQCd9x6KsLz",
+   "cls": "crypto",
+   "issuer": null,
+   "vf": 1789651800000,
+   "upd": 1789683418120,
+   "onSF": true,
+   "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+   "mintInfo": {
+    "mintAuthority": "5uVJjzgHV5a3o7cn9ynR2wXDA9i3dXwiBxBMRG5wYYKn",
+    "supply": "90042159179078",
+    "decimals": 9,
+    "freezeAuthority": null,
+    "len": 82
+   },
+   "len": 82,
+   "pages": 22,
+   "sigsSeen": 21433,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "7u9WmxbQzTpNXVFSBHsjcKJRMVkHCkfxMgeuzZK9Etx9GtEcFkmESDs14JX8QWF4dQTGp86izeorTMAXJypS52Z",
+    "t": 1790308745000,
+    "et": "Sep 24, 23:59:05"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 17, 09:30:00",
+   "updET": "Sep 17, 18:16:58"
+  },
+  {
+   "sym": "LUV",
+   "mint": "LUV9GB51PNZNRyzzyYK3rtqFfvDvWtRiXZ34wVq2HrX",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789588800000,
+   "upd": 1789611445528,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "3xpRMraH1NEmaivVi9EN83yHnHj5z7i1o7svyAjVmx5n",
+    "supply": "1067568628",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 693
+   },
+   "len": 693,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "3D5rmDijQbamKdrE3hEk185kdbc1rYVcxNorxGDEqbzktVqvJscvzU3NYTQzKTLyaMZRw2e6fgjwjbL6NXg6EFZV",
+    "t": 1789592463000,
+    "et": "Sep 16, 17:01:03"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 16, 16:00:00",
+   "updET": "Sep 16, 22:17:25"
+  },
+  {
+   "sym": "FWDI",
+   "mint": "FWDtiB5fXHdVAewPqvHPL2dh4aBC1C6GacQbePoQXKjz",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789588500000,
+   "upd": 1790003576560,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "9yCM9pZHhefojiTqLm1cDbQZFaKR1YvZU4KPWzW3rdbc",
+    "supply": "15668243514",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 697
+   },
+   "len": 697,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "3DvSdZ9AC5UPFwyY1iMCBPAy5FYSRg6s1ej8w97RKkEhkmuxDg6kEjjLpwFdvRP5z3GxemCCwW9tvL1soVpath5W",
+    "t": 1789734527000,
+    "et": "Sep 18, 08:28:47"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 16, 15:55:00",
+   "updET": "Sep 21, 11:12:56"
+  },
+  {
+   "sym": "AMD",
+   "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789570500000,
+   "upd": 1789569645515,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "ByQt1hrWaQBAgQr4jpxuYSnJsYnM8nr4rX6gZrVTzz94",
+    "supply": "394466596",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 701
+   },
+   "len": 701,
+   "pages": 17,
+   "sigsSeen": 16164,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "4u9oEFfGL9HY824sYkFYeiXf32G9T1UWFERx9LDBwP42LDdTgmGSiRafEepL5Z5Z5XKgBs3YiLM4Ty6E7CRKY7eS",
+    "t": 1790309122000,
+    "et": "Sep 25, 00:05:22"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 16, 10:55:00",
+   "updET": "Sep 16, 10:40:45"
+  },
+  {
+   "sym": "BROS",
+   "mint": "BRVaZKg6J9iF2BEsdpsxJ9NyvN9PPxPZuoQUX2v8qqkk",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789501800000,
+   "upd": 1789501516416,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "KRj8bpcVTfMnPvSCNqsbJuZTNgu88QNwkkj43aRt5u7",
+    "supply": "2350424594",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 683
+   },
+   "len": 683,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "4Xee5Kh7hGkHHnbaNWpj8ooKVhZn7KREq2yej8wYyysBBLq2NURHBkpBRi6Ajt3xWwmQFMFzEeUh4rDYpABnEjFM",
+    "t": 1789506951000,
+    "et": "Sep 15, 17:15:51"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 15, 15:50:00",
+   "updET": "Sep 15, 15:45:16"
+  },
+  {
+   "sym": "FLY",
+   "mint": "FLYRq3en8r2Z69gN3KyAnDrvnitEJNkwPYY7favinHeD",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789483800000,
+   "upd": 1789483925410,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "53CLKmmVrAuR2kD1rztBSDhYCCa8CMiBrmytx9btVi5h",
+    "supply": "1308993148",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 688
+   },
+   "len": 688,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "5D1WEQS7ssr1mfaiyDbd7zu3CDnbLB4nreRWaYXEkoUXfADb6HGVRjwAEvZq2uescixEYjgXS6m3dvZzX5Co8UsE",
+    "t": 1789489776000,
+    "et": "Sep 15, 12:29:36"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 15, 10:50:00",
+   "updET": "Sep 15, 10:52:05"
+  },
+  {
+   "sym": "PTN",
+   "mint": "PTNzAfFAB4LvoUQEUUGrFMyUoRLExMYjH6CcfyQfsVP",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789415400000,
+   "upd": 1789416555578,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "Ht96hhtpQwxEqHt9K7PeSEvzorFV6RbFKJS75w3maBTy",
+    "supply": "15554753874",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 710
+   },
+   "len": 710,
+   "pages": 3,
+   "sigsSeen": 2478,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "4GKoxYNkafC4MHituVDUA5fmsuW9DmwGWaYLFejdW7vyFmRjtxnYGL6RY613Fger1pvm3a9arEP5Sv6bBtm7KDq7",
+    "t": 1790309440000,
+    "et": "Sep 25, 00:10:40"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 14, 15:50:00",
+   "updET": "Sep 14, 16:09:15"
+  },
+  {
+   "sym": "SCHH",
+   "mint": "SCHHJ3jRdSjeFEVAaLrnYdx3Brphn92Ys7z1qkiCtPX",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789397700000,
+   "upd": 1789396984829,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "426KMHpNKRmfd12AvWPvZXErQbbN1xgDzDszmPFnVPeA",
+    "supply": "2755204937",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 693
+   },
+   "len": 693,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "pp61iiLznj8dAtYGYpXBBSxiSq94PYvuLJmTzTPs4YHrL8kodBHZqbRH85jhRcKzz8E99CwezsdUfMaLgK4h3pj",
+    "t": 1789409586000,
+    "et": "Sep 14, 14:13:06"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 14, 10:55:00",
+   "updET": "Sep 14, 10:43:04"
+  },
+  {
+   "sym": "LINK",
+   "mint": "LinkhB3afbBKb2EQQu7s7umdZceV3wcvAUJhQAfQ23L",
+   "cls": "crypto",
+   "issuer": null,
+   "vf": 1789322400000,
+   "upd": 1789327445108,
+   "onSF": true,
+   "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+   "mintInfo": {
+    "mintAuthority": "BCk1GxBKRdoPX3hGXfKxbe6cLENAikuMts9eLxsM7A9S",
+    "supply": "30037001487896",
+    "decimals": 9,
+    "freezeAuthority": "GoFoFfEDgALWRTw5dSY3VZQSwbFpvBEhDv1sFAWzYpbf",
+    "len": 82
+   },
+   "len": 82,
+   "pages": 11,
+   "sigsSeen": 10388,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "4teQUjECsg6EYcMVB7Sj7mEE2c7DDqFkt1mEa2JJckfq5FpmH5vuHj7eizsUdRPcSMNW5UhH4qEE2BNjZVCHYBXX",
+    "t": 1790309468000,
+    "et": "Sep 25, 00:11:08"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 13, 14:00:00",
+   "updET": "Sep 13, 15:24:05"
+  },
+  {
+   "sym": "FLWS",
+   "mint": "FLWSojG1gB5VStYR3Sb4nQFRt43UBYkqih1j2CpVLqgd",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789236000000,
+   "upd": 1789233999622,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "BtSKef76m1JsUR4QxjduukD7FFLWiWsfQB6uMUeTMyz3",
+    "supply": "47012754064",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 690
+   },
+   "len": 690,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "31qFAqCQofrEUt8nhDn7vgzJeuwm7NpsB2kVKzuaWLQpLoKXjW1ztF1sDrXq7t5S3WgJaATBg2WSY8gBB1nkfX1P",
+    "t": 1789686204000,
+    "et": "Sep 17, 19:03:24"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 12, 14:00:00",
+   "updET": "Sep 12, 13:26:39"
+  },
+  {
+   "sym": "DKNG",
+   "mint": "DKNGQFNGQmoBdXSRGKJ8tTu7uPDasw5JDcfMmWniNfow",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789156800000,
+   "upd": 1789079756380,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "mHRjfhQqbuPZcHk1YSoNSQmZWFqj2Yc3om1UTQgQJef",
+    "supply": "29000900180",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 683
+   },
+   "len": 683,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "jDdyYe95JXGQZmYiBqmW5yGXNjs1UsXgWPsmgyhfCdifbYeG97dAazjc7RCw6SMMko28wwbUco6i9o5KRo5ccxr",
+    "t": 1790284166000,
+    "et": "Sep 24, 17:09:26"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 11, 16:00:00",
+   "updET": "Sep 10, 18:35:56"
+  },
+  {
+   "sym": "WEN",
+   "mint": "WENAZ2WyPbmgvUcKfQ8hyMDfBQP9bZ65hsZ5KTFrRGZ",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789140600000,
+   "upd": 1789136829217,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "2R1N2gJibQEZJVe2b1hzutGUQ2sCAAQcyv9sCQQGfwg8",
+    "supply": "23539944730",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 690
+   },
+   "len": 690,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "53uF2Z5eLSXQ6VHL9XhnhSiDcVYN4kobCNGaMXJh4c1v4J5zVbshtwwWb7pyN6HSK9JE6MiLmtoMwwHqKg3WCQho",
+    "t": 1789758404000,
+    "et": "Sep 18, 15:06:44"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 11, 11:30:00",
+   "updET": "Sep 11, 10:27:09"
+  },
+  {
+   "sym": "DNUT",
+   "mint": "DNUTsCvKbKwu2RM72cUuW3TD9YpzArzACcqYQssjPLSk",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789069800000,
+   "upd": 1789069879261,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "GsxfJifoHKMP7QRuzoxWfhzcj3sDTdv65FrBYngWvNHJ",
+    "supply": "35943858445",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 704
+   },
+   "len": 704,
+   "pages": 7,
+   "sigsSeen": 6580,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "25nyfZUGPUygu6HqDv8wtZBbMiruZNDxD7eg4SeZ1nMfRSWbR2g5SHW87Ke95nSNF1D9QAS29bi7ZYGkaTRo3zuB",
+    "t": 1790309687000,
+    "et": "Sep 25, 00:14:47"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 10, 15:50:00",
+   "updET": "Sep 10, 15:51:19"
+  },
+  {
+   "sym": "GRND",
+   "mint": "GRNDYDpqwpCm6jVxpbh4xT5AM4r3p391qYsKTHqgaET2",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1789048200000,
+   "upd": 1789047762799,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "EfB3iMswBzLBrVamjRHqPMKzvu7fyYsuLY1zu9fiPGFY",
+    "supply": "10507322549",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 687
+   },
+   "len": 687,
+   "pages": 18,
+   "sigsSeen": 17107,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "MRMAn1k7k8i1HBBVMTbaqzYCnKa97GYQmPbMu1D4tC75yn6v63tuz3TohUzbVdAbzs5JkX8bPeJekum2YBJatrH",
+    "t": 1790309636000,
+    "et": "Sep 25, 00:13:56"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 10, 09:50:00",
+   "updET": "Sep 10, 09:42:42"
+  },
+  {
+   "sym": "BA",
+   "mint": "BArimz1PcKZr8PcPh3tcZ2dg4S7FJLk3cw6R5F8GsHKg",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985398371,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "2cvL5ctqB4sgDwHW3zYR1wbULu7KeV7UJ9xHcHrTyDyx",
+    "supply": "480555327",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 687
+   },
+   "len": 687,
+   "pages": 2,
+   "sigsSeen": 1305,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "NKn7kpwy4EJbSTFTkG55JdmVgvb3i4pynkyhHFyByUpLz4xQiETSaSWgtgzVaujQhLZtPbvRLMWrCkRALWjHdGG",
+    "t": 1790310278000,
+    "et": "Sep 25, 00:24:38"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:18"
+  },
+  {
+   "sym": "BABA",
+   "mint": "BABANGA4JE7Kkam4nTrALAwAVgsNJUuFJnnkF7S16BZp",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985400457,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "4oquU2Jyw8FWjyfYCqshnQctPmVwDs3pZXXRh4Lnu89w",
+    "supply": "2442026306",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 694
+   },
+   "len": 694,
+   "pages": 30,
+   "sigsSeen": 29637,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "bTqAXNvKA9tSDeegCynYfwM3LA6qS9ravrCYcsqhPbVnoroTXdx2J5BP645bRVgLqyCmxUD3jQhauurGRtfJxNW",
+    "t": 1790309839000,
+    "et": "Sep 25, 00:17:19"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:20"
+  },
+  {
+   "sym": "BULL",
+   "mint": "BULL151gUXcFV5wXEUqu9Am2L7Qt4bTJRLRuAUjkcspC",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985402572,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "GstZxcNV2U1nZAiPQLw1nA263xyfhKJMEMJp6spo7yqc",
+    "supply": "11502069987",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 715
+   },
+   "len": 715,
+   "pages": 2,
+   "sigsSeen": 1252,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "tWXmtZfikz9ABFWJ9gs3UXeCzdMTSVYvGh9AcJBrnpzq7T9NaoHWMWVkadstzkvC5KuNjDS1tGJkJEeuyTdrn3W",
+    "t": 1790314383000,
+    "et": "Sep 25, 01:33:03"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:22"
+  },
+  {
+   "sym": "COST",
+   "mint": "CZEB3WNZuF2Yz1z2H81RcCk8T7fsw82KB33zqamASVsg",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985407669,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "HSoK14XcYifGGuHyBi5DVctoK77VbNXs2Je4Znmz6owC",
+    "supply": "142492848",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 689
+   },
+   "len": 689,
+   "pages": 14,
+   "sigsSeen": 13009,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "544DZHqWVhfx33c5WiQxxsdRewUpF8KeeZLMqUYf3vnWjmpFfUDeVXt8hsjifeKpGPpbAn4zkiJbtvw15W8juRht",
+    "t": 1790310524000,
+    "et": "Sep 25, 00:28:44"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:27"
+  },
+  {
+   "sym": "DELL",
+   "mint": "DELL2aRKQz7DMq5DrKLtkn47ZCnbxXPZXrSGbkmd13wy",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985405403,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "8ffbEV276khmZuLftwR8XTUTDFZ16GFogxx4vdyuoJXs",
+    "supply": "131580665",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 690
+   },
+   "len": 690,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "ztKrdL7gKcM4t8g5shnHxoL4BRWTL5QV4ewVtNRpXy5GGAPSHc8FDTNxpSiDTnX2tCGsZfDuKvUEsGMhkRkKtaW",
+    "t": 1789106664000,
+    "et": "Sep 11, 02:04:24"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:25"
+  },
+  {
+   "sym": "DJT",
+   "mint": "DJTu7vi8norVzdVAffgvb39VP7wjKeTsgaMBJrzfxvoF",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985419636,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "3zbLadZi7cn7A6SavYkKah2QzUQEGNDtwmf5o17Rx17G",
+    "supply": "69774810328",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 720
+   },
+   "len": 720,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "5sLLukQYuEbfBWUb8k93AnFpXpNhNkTd1fFhq4TCjx5zpVgNnVeUJXPLT712XqKfwMyHGsvUyZE4GuJ7PaUW1TsN",
+    "t": 1790449798000,
+    "et": "Sep 26, 15:09:58"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:39"
+  },
+  {
+   "sym": "HIMS",
+   "mint": "HiMSSzzwkZkrXJ4PGVJRdtfLaANeAztjjcgk5Dxe7Lwx",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985417420,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "AQGfwosRHg8uZGf7cCPe1yax8fVoWKnW6r3odYVJuC31",
+    "supply": "15128496093",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 699
+   },
+   "len": 699,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "eBfqtdqAbxw9RtCLnu5gnt7meNEa6F6qX8t1wVQWDnK4DZfFTq7ffr5kCNhdbqWq4ScWgy8f9j9r4aQx3GDQzZ5",
+    "t": 1790388916000,
+    "et": "Sep 25, 22:15:16"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:37"
+  },
+  {
+   "sym": "HTZ",
+   "mint": "HTZsLG4zqaNvWMwXSLHH3GG5KyJpKwpBRsKVdMG6hvzP",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985425763,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "99esU2CxAvPoP21t6wHkfiE2oSM7YVrNETujPv2rH2eh",
+    "supply": "27887949341",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 710
+   },
+   "len": 710,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "37v1sKnBBgSqSqHARSFJSVxBaAP6eKYVazhgpM1rkUhhVnCrfiZSa9pCCWUMnYn5sg9DzDkfKikYvD1xM9QNB5Aj",
+    "t": 1789092306000,
+    "et": "Sep 10, 22:05:06"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:45"
+  },
+  {
+   "sym": "IBM",
+   "mint": "BMKdM4yUxX12moFqVk195k7coMbaybd4RUKCUdm7D1Sk",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985423816,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "7D7ZBEbWfCGco23pKqEqb9uySdMe25mbKaeHwh16opfh",
+    "supply": "679549722",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 702
+   },
+   "len": 702,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "2KsCtfsbz8BbgEVfVg9eW4t1ZWpjqtpYYWVPQDRY4dLhCydSdqFR98jzgc7r1rV3uWkzZeVUKxAAphZnBXUz2Q4B",
+    "t": 1790178400000,
+    "et": "Sep 23, 11:46:40"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:43"
+  },
+  {
+   "sym": "JNJ",
+   "mint": "JNJg1znKdF712Phe7L7z52AATAvEjEytBdN2w8Lnh1Y",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985413727,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "5vUPHURNE2sanrrWNTxyfyo3j37UFCTyxD6Warae9pBU",
+    "supply": "295881143",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 688
+   },
+   "len": 688,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "2vFqE5iEHkzPZzMLnDC11eofx4LRqDNoFxDcNg1XmWLjhLkTTVjQySaqqmQdhJfpTWePQg7YJ5EYQDr1CiBMnu2x",
+    "t": 1789351177000,
+    "et": "Sep 13, 21:59:37"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:33"
+  },
+  {
+   "sym": "LMT",
+   "mint": "LMT3i1BHgixFqPUgcyteJhnEz2dpy9i3cYy4pi9BoeV",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985411995,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "5h1SwcGk1FBqxbuwp2p4VfwWvtFkNbo1c9SYKDWu3Que",
+    "supply": "398310968",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 686
+   },
+   "len": 686,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "2CaPA3D7sMzC4janSVbnogKtvwNz773dMSU9ZCNAT77sBH6QBLL9EZkVMLJv7BVYYBMfhkEZU1ERhZHhM8nReCBH",
+    "t": 1789973066000,
+    "et": "Sep 21, 02:44:26"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:31"
+  },
+  {
+   "sym": "LULU",
+   "mint": "LULUmT9VMttkfAJE236LXJcYJ2tTP7nunrSWR5G1BdS",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985427323,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "4dFwFB8UdV9xV5FSVsKquYwd2k9FXgT2Fy4EKgjKLiL9",
+    "supply": "1248051283",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 697
+   },
+   "len": 697,
+   "pages": 11,
+   "sigsSeen": 10554,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "5pQ9mCP7HAYxW3QJbmXBxur3c33ZWfPrT5mU3cr3yKQHabUmVUo46znYoF3keQmSfKp6uswrpABUtxmGxBqh2JJh",
+    "t": 1790310656000,
+    "et": "Sep 25, 00:30:56"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:47"
+  },
+  {
+   "sym": "MGM",
+   "mint": "MGMuubtUEirmkhfEQdmGUh4pr7HuUdMWcZXFtpPbVJD",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985448723,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "9XSEXpLnarTRAVzxjCrCM85zjmwXcqUopfaUGbgf1N2B",
+    "supply": "2104496491",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 696
+   },
+   "len": 696,
+   "pages": 41,
+   "sigsSeen": 40929,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "4yz8cytbetBC5EwTNwByNjM6zSEuxUANydhwzKWUWrudVQ494sPWufQUabcvY1idYq1XipDPeFDvaVDYUeiGcPYe",
+    "t": 1790310647000,
+    "et": "Sep 25, 00:30:47"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:24:08"
+  },
+  {
+   "sym": "PFE",
+   "mint": "PFER6ENqP8r8NF3CqVt4mFowxsin3V5MLidBNQFCC3x",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985430298,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "AbPEjpzANSfEvSycSdYmMZZ1n6RVqRSBVn8DYXdYaXw1",
+    "supply": "2515691806",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 677
+   },
+   "len": 677,
+   "pages": 2,
+   "sigsSeen": 1316,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "54cwZT2sd9zcA5cDo6Uqz88927myZcSf7iNX1qcRaW71vkpAPgRuWaj7fBx4jAfuNYUSGTeN8w3JYVufHNVqGZBg",
+    "t": 1790310693000,
+    "et": "Sep 25, 00:31:33"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:50"
+  },
+  {
+   "sym": "QUBT",
+   "mint": "QUBTAD8C9bMU9LvmMNgKPhrmBGbHvxpu6vfWQtThxxw",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985433207,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "B98JFNttxEtfUNH3sj83FBWHKyxWinhmAcisWC1Xa1Nr",
+    "supply": "11330403155",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 690
+   },
+   "len": 690,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "4h2QbZ92VnRbyCmhMApn39bBthVgWqe9rxqwW5JnSe8fui7MLC7s8swth54B1vw3G2UkJ1Wk5e5pvBnQTuffJBXJ",
+    "t": 1789888892000,
+    "et": "Sep 20, 03:21:32"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:53"
+  },
+  {
+   "sym": "RBLX",
+   "mint": "RBLXDGRD64AtRamHMFVcjqne3Ar7NLWtFtYNtsrf1cE",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985436273,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "Fg4Aop8rMCETvXZBuNDrGab9cdMqR5qeYSqQPsbiWTKp",
+    "supply": "4493994835",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 679
+   },
+   "len": 679,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "qAtTDRpN8QvR4cuNesS5gusZoxmwjv5f3Rd6Z2P1YLYhKwrrtp7amWorGy3iPcGwLxYKpn9ACkLLzWy9nAWtRv3",
+    "t": 1790219574000,
+    "et": "Sep 23, 23:12:54"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:56"
+  },
+  {
+   "sym": "RDDT",
+   "mint": "RDDTGbhHwVXfyCvQMXzzowKjf5qrYBZAnehoXW83ooh",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985438953,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "3Snj7Qdc6ggJcJ27LwRRBE4a4XEtSzWWUBgoaheW46n7",
+    "supply": "1163115994",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 679
+   },
+   "len": 679,
+   "pages": 23,
+   "sigsSeen": 22279,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "E1G9W1XeTNoHHQ88UCgbRWtKadG2MsNU6MKah8pKxcwCUzxSUJ9rSMbBp9jMztN897va9S7pMvMpVZsBG2K3iBv",
+    "t": 1790310981000,
+    "et": "Sep 25, 00:36:21"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:23:58"
+  },
+  {
+   "sym": "RIVN",
+   "mint": "RcZmt84VMJv9bDhKqmw1uWDahYrUT468VwAChTnfD8p",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985441331,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "DPXB3CuqUKaYwwiCtwT312ixhHH1hoNXVbNuZpZC8EN5",
+    "supply": "5713763793",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 690
+   },
+   "len": 690,
+   "pages": 49,
+   "sigsSeen": 48013,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "3KCQAZao1mK9gf1Yaf6c7NmirCXNBVSoEw5FVJMpEdw7ai97TMHuSoKo5wnDjjDjGWYxdAX3XFnc9YnKqaDrf734",
+    "t": 1787620170000,
+    "et": "Aug 24, 21:09:30"
+   },
+   "preCount": 2,
+   "firstInWindow": {
+    "t": 1788951106000,
+    "et": "Sep 09, 06:51:46",
+    "leadMin": 158
+   },
+   "early": [
+    {
+     "et": "Sep 09, 06:51:46",
+     "leadMin": 158,
+     "err": false,
+     "signers": [
+      "RayVyjyJ"
+     ],
+     "what": "CAMMCz:d:11fb415c,createAccount,CreateSupportMintAssociated"
+    },
+    {
+     "et": "Sep 09, 06:52:25",
+     "leadMin": 158,
+     "err": false,
+     "signers": [
+      "Rayv2LG4"
+     ],
+     "what": "CPMMoo:d:11fb415c,createAccount,CreateSupportMintAssociated"
+    }
+   ],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:24:01"
+  },
+  {
+   "sym": "SHOP",
+   "mint": "SH55hfaipFAbwT42nQYhRoM5o5t61QpkmJ6p62vXB3m",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985444228,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "CdiZcEvWcCs2hbUzW9x3ZpBftbPNwm2W3QrY5ZuyupK8",
+    "supply": "663793017",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 680
+   },
+   "len": 680,
+   "pages": 3,
+   "sigsSeen": 2517,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "4ALPbkgtqJpp9i23mWycFaPPQb3w6TgzThhKjLNpnsATGY7Jup93jvmumqUUaMBBeXmgpvbD8tsE9jsFwJVL4fB9",
+    "t": 1790311187000,
+    "et": "Sep 25, 00:39:47"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:24:04"
+  },
+  {
+   "sym": "SNAP",
+   "mint": "SNAPcESrvnH8yUdgeMF6xm1hym9b6hW6s8YeqeHdZFz",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1788985446878,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "2tX1LvpCB2qrg8ABZGrgRpFFcGbJrHNV31wXkinBoogY",
+    "supply": "33240834001",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 677
+   },
+   "len": 677,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "3QMhzX2KwavY1HZQ57pZqboDQp7RvfMgTsEaMyGAJkAuEGWScy4V8A58ydd99M6sawxF6wfMv1XRYeYVrkmu5EaK",
+    "t": 1790179868000,
+    "et": "Sep 23, 12:11:08"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 09, 16:24:06"
+  },
+  {
+   "sym": "UPS",
+   "mint": "UPSqUeMHcWbkdg784XuBUEF9DtySSnW9ur5LAVdcuB9",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788960600000,
+   "upd": 1789015316127,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "FPP96YKQ7FNw5WAet69wEMjby6ZePiT6hBZcn8o5zfyx",
+    "supply": "938810701",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 692
+   },
+   "len": 692,
+   "pages": 15,
+   "sigsSeen": 14541,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "5BcQe2K6VX31GN35CeJfJ7tWZHy5CAXjEoaA19BTR1JaBQsTqjHogdW5pt5cgEt9a65o7uz16gVQUUkXxwJ681EK",
+    "t": 1790311189000,
+    "et": "Sep 25, 00:39:49"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 09, 09:30:00",
+   "updET": "Sep 10, 00:41:56"
+  },
+  {
+   "sym": "SPHR",
+   "mint": "SPHRp8cZaSQBTp1KMNP4V1X821SXhXWt4Q2yLdyHzju",
+   "cls": "stock",
+   "issuer": "backpack_securities",
+   "vf": 1788897300000,
+   "upd": 1788897111803,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "2oPTjFXJBp6CxsCzCXSDp23PZ11T4sPgcVTV2G8yDmoH",
+    "supply": "491184916",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 697
+   },
+   "len": 697,
+   "pages": 6,
+   "sigsSeen": 5676,
+   "reachedStart": true,
+   "oldestSeen": {
+    "sig": "4zqEu2aX8NAZmZwDTT7uhhNssPhdNK8rTvn3EhG2mypXeecoVx7F9FzxxCYm8k4wUAfiY4x9PW1EvYu3L4o9pMk",
+    "t": 1790312892000,
+    "et": "Sep 25, 01:08:12"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 08, 15:55:00",
+   "updET": "Sep 08, 15:51:51"
+  },
+  {
+   "sym": "PEAQ",
+   "mint": "PEAQjk7SRS6rXHVFFmpRr7zrC4g5ZuEebpwTxvaLr3b",
+   "cls": "crypto",
+   "issuer": null,
+   "vf": 1788879600000,
+   "upd": 1789327374835,
+   "onSF": true,
+   "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+   "mintInfo": {
+    "mintAuthority": "Hd6dAx5G2SJ1cxyXJvvaXdfCgn9mYLfvAcPYk9xXy2Gt",
+    "supply": "23423487779458847",
+    "decimals": 9,
+    "freezeAuthority": null,
+    "len": 82
+   },
+   "len": 82,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "5b2KkLigj5fNjj26c6Goy1KdNCpvFW5mbKVdvH8o411VJoATyJV2xQGEU2sn7WVsvfhvcKbqrpwdtkqmuGyZdWW4",
+    "t": 1789986306000,
+    "et": "Sep 21, 06:25:06"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 08, 11:00:00",
+   "updET": "Sep 13, 15:22:54"
+  },
+  {
+   "sym": "NKE",
+   "mint": "NKEda5nHhNGgjrE9nDdMvaEmkmJ96qqxzBVZEcKmjSg",
+   "cls": "stock",
+   "issuer": null,
+   "vf": 1788877800000,
+   "upd": 1788875827571,
+   "onSF": true,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "mintInfo": {
+    "mintAuthority": "5tPguepcKacsBPHrbWXr8Zo8A3osVKzLG65y697SvKTh",
+    "supply": "10399468863",
+    "decimals": 6,
+    "freezeAuthority": "2cVYpagTt7ZGc3mmTXBa7fAznUtx5DUu6aCq8uVDaf4a",
+    "len": 675
+   },
+   "len": 675,
+   "pages": 80,
+   "sigsSeen": 80000,
+   "reachedStart": false,
+   "oldestSeen": {
+    "sig": "ikvkkDTWsPx3hNZcjpQM1W9h3puQHZDygSWvDPjfoT5751vM1sDbKBFo7rodTyabHfm8kH44baRPWkNng14xDne",
+    "t": 1790271134000,
+    "et": "Sep 24, 13:32:14"
+   },
+   "preCount": 0,
+   "firstInWindow": null,
+   "early": [],
+   "vfET": "Sep 08, 10:30:00",
+   "updET": "Sep 08, 09:57:07"
+  }
+ ],
+ "zamaCreate": {
+  "slot": 450061936,
+  "time": 1790261702000,
+  "et": "Sep 24, 10:55:02",
+  "err": null,
+  "fee": 5000,
+  "signers": [
+   "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2"
+  ],
+  "ixs": [
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:c9cff3724b6f2fbd",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4",
+     "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh",
+     "rayvTLcCMDs7P5tgpuoNA6ZYeLERegeCphdqLSgdKms",
+     "rayHQtJKrtvqUs3HnhDW9RKubHRbu87eESKEYD5xosa",
+     "RAYzrepoBdjSFg7MZj2vy4XBSv2azKRXC72ztUMZMJB",
+     "RAYpQbFNq9i3mu6cKpTKKRwwHFDeK5AuZz8xvxUrCgw",
+     "11111111111111111111111111111111"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "11111111111111111111111111111111",
+    "what": "createAccount",
+    "inner": true,
+    "accounts": [],
+    "info": {
+     "lamports": 2534920,
+     "newAccount": "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4",
+     "owner": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+     "source": "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "space": 371
+    }
+   }
+  ],
+  "logs": [
+   "Program log: Instruction: CreateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig"
+  ]
+ },
+ "configs": [
+  {
+   "sym": "cbLTC",
+   "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+   "cfg": "FrfW4vMff4UTuKFRMnQNeYD5KfiTNygnAd7D4gWLg5gf",
+   "pages": 160,
+   "n": 160000,
+   "vf": 1790357400000,
+   "vfET": "Sep 25, 13:30:00"
+  },
+  {
+   "sym": "SQQQ",
+   "mint": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+   "cfg": "325UNQSTL1oQKJEYyF8L2GLNS4ZmTREqHs9pcoomHPKF",
+   "pages": 160,
+   "n": 160000,
+   "vf": 1790346600000,
+   "vfET": "Sep 25, 10:30:00"
+  },
+  {
+   "sym": "IREN",
+   "mint": "RENzhrJQgmAnfcLhU1U5XwAMc6TC15UA6jCbPBaasnj",
+   "cfg": "Em5sonKLfWSQ6rM5ym6bqtx5SoEDZjarDNfsJxr9Z2M2",
+   "pages": 140,
+   "n": 139904,
+   "vf": 1790280000000,
+   "vfET": "Sep 24, 16:00:00",
+   "createdT": 1790280074000,
+   "createdET": "Sep 24, 16:01:14",
+   "minAfterSunrise": 1,
+   "sig": "2scF6Rgd2rmDgg2zLL49bFYg92h94XMphLvmYahjEVfNbP2PanVWG1PpeaapjHgencvxFKDkVGAZ17zMU4uZhVvN",
+   "creator": [
+    "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2"
+   ],
+   "what": "LanMV9:d:c9cff372,LanMV9:d:1d9efcbf,createAccount,CreateConfig,UpdateConfig"
+  },
+  {
+   "sym": "ZAMA",
+   "mint": "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh",
+   "cfg": "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4",
+   "pages": 160,
+   "n": 160000,
+   "vf": 1790261400000,
+   "vfET": "Sep 24, 10:50:00"
+  },
+  {
+   "sym": "APE",
+   "mint": "C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f",
+   "cfg": "GYDrNGVw2zoqcMuejmBUkFwDzfcn3xPvBDeTprs3BNfF",
+   "pages": 160,
+   "n": 160000,
+   "vf": 1790190000000,
+   "vfET": "Sep 23, 15:00:00"
+  },
+  {
+   "sym": "CRWV",
+   "mint": "CRWVJeR2yEZuDUKYfGuKCHvLz8ywn4LGvovHfy5WiFmi",
+   "cfg": "CED7BrVkXC5sbrmP69Y2gSPgAu4Wa9vk9cdBxw5Xw866",
+   "pages": 1,
+   "n": 75,
+   "vf": 1790175600000,
+   "vfET": "Sep 23, 11:00:00",
+   "createdT": 1790323502000,
+   "createdET": "Sep 25, 04:05:02",
+   "minAfterSunrise": 2465,
+   "sig": "2wjM41Gad3npeZDzi5NmhxNf1xHvTw5isQPtXdmx8Bjxgb5paer9TbBezVfETRHGjU5aEzCqAjAByCanTaWWEq1H",
+   "creator": [
+    "71HmTQxRQbN2KJxQK3hJJVHGxhxrP9qRAaPLvW7esvhB"
+   ],
+   "what": "FLASHX:d:0140dcb3,FLASHX:d:0040dcb3,transfer,createAccount,initializeAccount3,syncNative,CAMMCz:d:2b04ed0b,transferChecked,LanMV9:d:faea0d7b,LanMV9:d:e445a52e,closeAccount,FLASHX:d:0700069b"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+1s rpc test {"https://solana-rpc.publicnode.com":{"status":200,"ok":false,"err":null,"t":null},"https://api.mainnet-beta.solana.com":{"status":200,"ok":true,"err":null,"t":1790261702},"https://solana.drpc.org":{"status":400,"ok":false,"err":"{\"message\":\"chain is not available on free plan, please upgrade to paid plan\",\"code\":35}","t":null}}
+1s listings to scan 55
+47s cbLTC pages 80 pre 0 first null min 46s
+94s SQQQ pages 80 pre 0 first null min 47s
+106s IREN pages 23 pre 0 first null min 12s
+199s ZAMA pages 80 pre 0 first null min 93s
+269s APE pages 80 pre 0 first null min 71s
+273s USDV pages 9 pre 0 first null min 4s
+275s CRWV pages 2 pre 0 first null min 1s
+283s ARM pages 16 pre 0 first null min 8s
+310s IONQ pages 52 pre 0 first null min 27s
+394s COPX pages 80 pre 0 first null min 84s
+398s URA pages 9 pre 0 first null min 5s
+488s BB pages 80 pre 0 first null min 90s
+542s PEPE pages 80 pre 0 first null min 54s
+562s CYPH pages 39 pre 0 first null min 20s
+645s USO pages 80 pre 0 first null min 83s
+646s RUM pages 1 pre 0 first null min 0s
+647s WULF pages 1 pre 0 first null min 2s
+661s INJ pages 22 pre 0 first null min 13s
+756s LUV pages 80 pre 0 first null min 96s
+846s FWDI pages 80 pre 0 first null min 89s
+856s AMD pages 17 pre 0 first null min 10s
+966s BROS pages 80 pre 0 first null min 110s
+1054s FLY pages 80 pre 0 first null min 88s
+1055s PTN pages 3 pre 0 first null min 2s
+1155s SCHH pages 80 pre 0 first null min 100s
+1162s LINK pages 11 pre 0 first null min 7s
+1252s FLWS pages 80 pre 0 first null min 90s
+1306s DKNG pages 80 pre 0 first null min 54s
+1395s WEN pages 80 pre 0 first null min 89s
+1400s DNUT pages 7 pre 0 first null min 4s
+1410s GRND pages 18 pre 0 first null min 10s
+1411s BA pages 2 pre 0 first null min 1s
+1428s BABA pages 30 pre 0 first null min 17s
+1429s BULL pages 2 pre 0 first null min 1s
+1439s COST pages 14 pre 0 first null min 10s
+1534s DELL pages 80 pre 0 first null min 95s
+1576s DJT pages 80 pre 0 first null min 42s
+1618s HIMS pages 80 pre 0 first null min 43s
+1714s HTZ pages 80 pre 0 first null min 96s
+1794s IBM pages 80 pre 0 first null min 80s
+1886s JNJ pages 80 pre 0 first null min 92s
+1982s LMT pages 80 pre 0 first null min 96s
+1987s LULU pages 11 pre 0 first null min 5s
+2009s MGM pages 41 pre 0 first null min 22s
+2011s PFE pages 2 pre 0 first null min 1s
+2101s QUBT pages 80 pre 0 first null min 90s
+2186s RBLX pages 80 pre 0 first null min 85s
+2198s RDDT pages 23 pre 0 first null min 12s
+2259s RIVN pages 49 pre 2 first 158 min 61s
+2260s SHOP pages 3 pre 0 first null min 1s
+2345s SNAP pages 80 pre 0 first null min 85s
+2353s UPS pages 15 pre 0 first null min 8s
+2356s SPHR pages 6 pre 0 first null min 3s
+2433s PEAQ pages 80 pre 0 first null min 77s
+2488s NKE pages 80 pre 0 first null min 55s
+2585s config cbLTC not reached pages 160
+2677s config SQQQ not reached pages 160
+2819s config IREN Sep 24, 16:01:14 pages 140
+2998s config ZAMA not reached pages 160
+3188s config APE not reached pages 160
+3189s config CRWV Sep 25, 04:05:02 pages 1
+exit 124
