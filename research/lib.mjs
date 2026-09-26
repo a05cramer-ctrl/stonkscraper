@@ -82,7 +82,7 @@ export async function oldestSig(addr, { maxPages = 400, stopBefore = 0 } = {}) {
 }
 
 export async function tx(sig) {
-  return rpc('getTransaction', [sig, { encoding: 'jsonParsed', maxSupportedTransactionVersion: 0, commitment: 'confirmed' }]);
+  return rpc('getTransaction', [sig, { encoding: 'jsonParsed', maxSupportedTransactionVersion: 1, commitment: 'confirmed' }]);
 }
 
 // Short description of a parsed tx: signers, programs, instruction names / discriminators.
