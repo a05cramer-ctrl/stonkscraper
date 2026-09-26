@@ -1,0 +1,36 @@
+# Listing research for the quote watcher. Runs only on the research branch; results are plain JSON
+# of public data (StonkFun, Raydium, Jupiter, Solana RPC), committed back to research/out.
+name: research
+on:
+  push:
+    branches: [research]
+    paths: ['research/*.mjs', 'research/JOB', '.github/workflows/research.yml']
+permissions:
+  contents: write
+concurrency:
+  group: research
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: run job
+        run: |
+          JOB=$(tr -d '[:space:]' < research/JOB)
+          mkdir -p research/out
+          OUT=$PWD/research/out/ timeout 55m node "research/$JOB" > "research/out/${JOB%.mjs}.log" 2>&1 || echo "exit $?" >> "research/out/${JOB%.mjs}.log"
+          tail -c 4000 "research/out/${JOB%.mjs}.log"
+      - name: commit results
+        run: |
+          git config user.name "research-bot"
+          git config user.email "research-bot@users.noreply.github.com"
+          git add research/out
+          git commit -q -m "results $(tr -d '[:space:]' < research/JOB)" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase origin research && git push -q origin HEAD:research && break; sleep 5; done
