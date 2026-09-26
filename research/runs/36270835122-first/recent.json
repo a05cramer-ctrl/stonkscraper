@@ -1,0 +1,3530 @@
+[
+ {
+  "mint": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump",
+  "sym": "Cupsey",
+  "cat": "custom",
+  "first": "2026-09-26T20:12:43.158Z",
+  "firstET": "Sep 26, 16:12:43",
+  "total": 9,
+  "firstSym": "CATSY"
+ },
+ {
+  "mint": "MGMuubtUEirmkhfEQdmGUh4pr7HuUdMWcZXFtpPbVJD",
+  "sym": "MGM",
+  "cat": "backpack",
+  "first": "2026-09-26T19:49:45.661Z",
+  "firstET": "Sep 26, 15:49:45",
+  "total": 83,
+  "firstSym": "LION"
+ },
+ {
+  "mint": "oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ",
+  "sym": "OPENAI",
+  "cat": "tessera",
+  "first": "2026-09-26T19:37:10.816Z",
+  "firstET": "Sep 26, 15:37:10",
+  "total": 1540,
+  "firstSym": "o"
+ },
+ {
+  "mint": "CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta",
+  "sym": "CARS",
+  "cat": "custom",
+  "first": "2026-09-26T18:04:42.345Z",
+  "firstET": "Sep 26, 14:04:42",
+  "total": 122,
+  "firstSym": "CAR"
+ },
+ {
+  "mint": "21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump",
+  "sym": "weedcoin",
+  "cat": "custom",
+  "first": "2026-09-26T17:54:53.868Z",
+  "firstET": "Sep 26, 13:54:53",
+  "total": 8,
+  "firstSym": "WEED"
+ },
+ {
+  "mint": "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+  "sym": "ALLINU",
+  "cat": "custom",
+  "first": "2026-09-26T17:54:53.868Z",
+  "firstET": "Sep 26, 13:54:53",
+  "total": 247,
+  "firstSym": "SIDELINED"
+ },
+ {
+  "mint": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+  "sym": "SI",
+  "cat": "custom",
+  "first": "2026-09-26T16:51:42.872Z",
+  "firstET": "Sep 26, 12:51:42",
+  "total": 57,
+  "firstSym": "SC"
+ },
+ {
+  "mint": "EWY4owSJYMpwN33qGDu5gGxpkQkpMJu8ZUsQJaNZG5dv",
+  "sym": "EWY",
+  "cat": "backpack",
+  "first": "2026-09-26T15:04:26.121Z",
+  "firstET": "Sep 26, 11:04:26",
+  "total": 122,
+  "firstSym": "Faker"
+ },
+ {
+  "mint": "Bb4jR951QtVjeFAYFLBYXDSMKjbTDroCLPbFLdd7pump",
+  "sym": "memecoin",
+  "cat": "custom",
+  "first": "2026-09-26T14:32:08.756Z",
+  "firstET": "Sep 26, 10:32:08",
+  "total": 45,
+  "firstSym": "Meme"
+ },
+ {
+  "mint": "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+  "sym": "MASK",
+  "cat": "custom",
+  "first": "2026-09-26T13:13:09.455Z",
+  "firstET": "Sep 26, 09:13:09",
+  "total": 59,
+  "firstSym": "V"
+ },
+ {
+  "mint": "62YE1d4sRArBQzR5bdbxsx2k9LV3MdPV4xMC4Di2pump",
+  "sym": "BIF",
+  "cat": "custom",
+  "first": "2026-09-26T12:51:17.866Z",
+  "firstET": "Sep 26, 08:51:17",
+  "total": 1,
+  "firstSym": "FBIBULL"
+ },
+ {
+  "mint": "CrAr4RRJMBVwRsZtT62pEhfA9H5utymC2mVx8e7FreP2",
+  "sym": "MON",
+  "cat": "custom",
+  "first": "2026-09-26T04:13:54.673Z",
+  "firstET": "Sep 26, 00:13:54",
+  "total": 147,
+  "firstSym": "DE"
+ },
+ {
+  "mint": "9BVn3Y8tPghbnGuuuxoj2mGekqgSQV1M7nALF7brpump",
+  "sym": "NYAN",
+  "cat": "custom",
+  "first": "2026-09-26T00:43:20.050Z",
+  "firstET": "Sep 25, 20:43:20",
+  "total": 8,
+  "firstSym": "NYAN CAT"
+ },
+ {
+  "mint": "zGh48JtNHVBb5evgoZLXwgPD2Qu4MhkWdJLGDAupump",
+  "sym": "retire",
+  "cat": "custom",
+  "first": "2026-09-25T20:02:32.397Z",
+  "firstET": "Sep 25, 16:02:32",
+  "total": 17,
+  "firstSym": "FREEDOM"
+ },
+ {
+  "mint": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
+  "sym": "MNDE",
+  "cat": "custom",
+  "first": "2026-09-25T17:59:30.668Z",
+  "firstET": "Sep 25, 13:59:30",
+  "total": 102,
+  "firstSym": "MARIN"
+ },
+ {
+  "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+  "sym": "CBLTC",
+  "cat": "backpack",
+  "first": "2026-09-25T17:46:22.433Z",
+  "firstET": "Sep 25, 13:46:22",
+  "total": 359,
+  "firstSym": "LESTER"
+ },
+ {
+  "mint": "Aigf5pKPyZW8nzxCrHEisE4tZMiUhFpKie8mYE7cmj6c",
+  "sym": "NVDGE",
+  "cat": "custom",
+  "first": "2026-09-25T16:53:05.474Z",
+  "firstET": "Sep 25, 12:53:05",
+  "total": 9,
+  "firstSym": "Bessent"
+ },
+ {
+  "mint": "35M9BcmFRQ86TnmoFMfUmteZrQrmUm2n7ZiV5gacpump",
+  "sym": "trumponfone",
+  "cat": "custom",
+  "first": "2026-09-25T15:41:49.389Z",
+  "firstET": "Sep 25, 11:41:49",
+  "total": 3,
+  "firstSym": "TRMPINU"
+ },
+ {
+  "mint": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+  "sym": "SQQQ",
+  "cat": "backpack",
+  "first": "2026-09-25T14:48:13.090Z",
+  "firstET": "Sep 25, 10:48:13",
+  "total": 396,
+  "firstSym": "HEDGE"
+ },
+ {
+  "mint": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump",
+  "sym": "HODL",
+  "cat": "custom",
+  "first": "2026-09-25T13:31:22.186Z",
+  "firstET": "Sep 25, 09:31:22",
+  "total": 28,
+  "firstSym": "HOLDOWEEN"
+ },
+ {
+  "mint": "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
+  "sym": "FEELSGOOD",
+  "cat": "custom",
+  "first": "2026-09-25T13:22:40.251Z",
+  "firstET": "Sep 25, 09:22:40",
+  "total": 44,
+  "firstSym": "BETTER"
+ },
+ {
+  "mint": "9CzNGAEutxKHJ5CwYC5Lk8X8YzgYrQnvKChP2BFEpump",
+  "sym": "MEMES",
+  "cat": "custom",
+  "first": "2026-09-25T11:11:08.427Z",
+  "firstET": "Sep 25, 07:11:08",
+  "total": 3,
+  "firstSym": "MEMELESS"
+ },
+ {
+  "mint": "VaxZxmFXV8tmsd72hUn22ex6GFzZ5uq9DVJ5wA5pump",
+  "sym": "OIIAOIIA",
+  "cat": "custom",
+  "first": "2026-09-25T10:25:25.484Z",
+  "firstET": "Sep 25, 06:25:25",
+  "total": 3,
+  "firstSym": "ETHELCOIN"
+ },
+ {
+  "mint": "GvQH1VGGbrjeRSbsCreptYN4GUcZ9w7vMFJ5ic8ypump",
+  "sym": "wiener",
+  "cat": "custom",
+  "first": "2026-09-25T10:01:55.872Z",
+  "firstET": "Sep 25, 06:01:55",
+  "total": 6,
+  "firstSym": "MUSTARD"
+ },
+ {
+  "mint": "F7pB3ZdfBnyFw2LRHydWEn9BmhEa5XihXLjhySFRpump",
+  "sym": "NOTHING",
+  "cat": "custom",
+  "first": "2026-09-25T08:21:29.419Z",
+  "firstET": "Sep 25, 04:21:29",
+  "total": 16,
+  "firstSym": "GLONK"
+ },
+ {
+  "mint": "HBrfYZgeLKdSvBBGnGkvAK4563pq8oBGpgNFAaespump",
+  "sym": "OnlyMarms",
+  "cat": "custom",
+  "first": "2026-09-25T05:06:11.446Z",
+  "firstET": "Sep 25, 01:06:11",
+  "total": 5,
+  "firstSym": "TETS"
+ },
+ {
+  "mint": "HkJiit2pbesCzSPyEmmf5jnvHpE3RXdB8KmzAWtsmFS6",
+  "sym": "WRY",
+  "cat": "custom",
+  "first": "2026-09-25T04:12:07.574Z",
+  "firstET": "Sep 25, 00:12:07",
+  "total": 62,
+  "firstSym": "YKNOT"
+ },
+ {
+  "mint": "DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump",
+  "sym": "House",
+  "cat": "custom",
+  "first": "2026-09-25T03:27:29.287Z",
+  "firstET": "Sep 24, 23:27:29",
+  "total": 10,
+  "firstSym": "HCAT"
+ },
+ {
+  "mint": "3psH1Mj1f7yUfaD5gh6Zj7epE8hhrMkMETgv5TshQA4o",
+  "sym": "boden",
+  "cat": "custom",
+  "first": "2026-09-25T03:16:54.058Z",
+  "firstET": "Sep 24, 23:16:54",
+  "total": 91,
+  "firstSym": "AUTOPEN"
+ },
+ {
+  "mint": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+  "sym": "GRASS",
+  "cat": "custom",
+  "first": "2026-09-25T02:10:51.030Z",
+  "firstET": "Sep 24, 22:10:51",
+  "total": 388,
+  "firstSym": "afk"
+ },
+ {
+  "mint": "hf34pZHnV4entu9bdp4pFEmeKpivEUeSUhASgWopump",
+  "sym": "MUMU",
+  "cat": "custom",
+  "first": "2026-09-25T01:53:57.222Z",
+  "firstET": "Sep 24, 21:53:57",
+  "total": 7,
+  "firstSym": "MILK"
+ },
+ {
+  "mint": "3DV5zVYWVkmJrdi2t7uziUuo4ybdtaLxxFPSNs1fXUjp",
+  "sym": "SNP500",
+  "cat": "custom",
+  "first": "2026-09-25T01:53:57.222Z",
+  "firstET": "Sep 24, 21:53:57",
+  "total": 10,
+  "firstSym": "RENT"
+ },
+ {
+  "mint": "SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH",
+  "sym": "SNDK",
+  "cat": "backpack",
+  "first": "2026-09-25T01:37:02.170Z",
+  "firstET": "Sep 24, 21:37:02",
+  "total": 167,
+  "firstSym": "SNDK"
+ },
+ {
+  "mint": "M1M6sdffCs3ozzhpRveweRCWdZhxth4mvVujPtYEC3h",
+  "sym": "MIM",
+  "cat": "custom",
+  "first": "2026-09-25T00:44:37.495Z",
+  "firstET": "Sep 24, 20:44:37",
+  "total": 163,
+  "firstSym": "MSI"
+ },
+ {
+  "mint": "2fUFhZyd47Mapv9wcfXh5gnQwFXtqcYu9xAN4THBpump",
+  "sym": "RNT",
+  "cat": "custom",
+  "first": "2026-09-24T23:43:00.457Z",
+  "firstET": "Sep 24, 19:43:00",
+  "total": 12,
+  "firstSym": "CENHiTLER"
+ },
+ {
+  "mint": "8wxkvAfEns76yBzu4MnbV7VnXWjg3iDPA9uwAQ6cpump",
+  "sym": "SOLANGELES",
+  "cat": "custom",
+  "first": "2026-09-24T21:42:26.206Z",
+  "firstET": "Sep 24, 17:42:26",
+  "total": 4,
+  "firstSym": "UI"
+ },
+ {
+  "mint": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+  "sym": "jellyjelly",
+  "cat": "custom",
+  "first": "2026-09-24T21:40:13.394Z",
+  "firstET": "Sep 24, 17:40:13",
+  "total": 11,
+  "firstSym": "WOBBLES"
+ },
+ {
+  "mint": "Gka1TQEevBbVw4W9K15ER96ZzKByMTb6TBMQzWFEpump",
+  "sym": "MINER",
+  "cat": "custom",
+  "first": "2026-09-24T21:30:53.427Z",
+  "firstET": "Sep 24, 17:30:53",
+  "total": 9,
+  "firstSym": "SAR"
+ },
+ {
+  "mint": "EeB76LHyVZPMRvTpLcxJqqfSz4gg9f9XgsUmFybcpump",
+  "sym": "sling",
+  "cat": "custom",
+  "first": "2026-09-24T20:55:54.249Z",
+  "firstET": "Sep 24, 16:55:54",
+  "total": 4,
+  "firstSym": "INKASVEHIC"
+ },
+ {
+  "mint": "4vqind26DsicHecdGyrjYc4yhQN9HtyfzJ3d1ouppump",
+  "sym": "dildo",
+  "cat": "custom",
+  "first": "2026-09-24T20:53:38.982Z",
+  "firstET": "Sep 24, 16:53:38",
+  "total": 11,
+  "firstSym": "IG"
+ },
+ {
+  "mint": "GRehQKv9E3fVuNJGQTwAAjYpcixRCYKkzAXAb5kGpump",
+  "sym": "BOIÚNA",
+  "cat": "custom",
+  "first": "2026-09-24T20:50:28.272Z",
+  "firstET": "Sep 24, 16:50:28",
+  "total": 2,
+  "firstSym": "CHUCKFRESC"
+ },
+ {
+  "mint": "H2c31USxu35MDkBrGph8pUDUnmzo2e4Rf4hnvL2Upump",
+  "sym": "Shoggoth",
+  "cat": "custom",
+  "first": "2026-09-24T20:48:24.201Z",
+  "firstET": "Sep 24, 16:48:24",
+  "total": 8,
+  "firstSym": "TODDCOWART"
+ },
+ {
+  "mint": "DJTu7vi8norVzdVAffgvb39VP7wjKeTsgaMBJrzfxvoF",
+  "sym": "DJT",
+  "cat": "backpack",
+  "first": "2026-09-24T20:48:24.201Z",
+  "firstET": "Sep 24, 16:48:24",
+  "total": 1210,
+  "firstSym": "AI"
+ },
+ {
+  "mint": "GnwoFdLNPZw9etvTAxPstSvQNHA5msqiQLNU9U78pump",
+  "sym": "RADON",
+  "cat": "custom",
+  "first": "2026-09-24T20:44:38.665Z",
+  "firstET": "Sep 24, 16:44:38",
+  "total": 2,
+  "firstSym": "RRGRESEARC"
+ },
+ {
+  "mint": "RENzhrJQgmAnfcLhU1U5XwAMc6TC15UA6jCbPBaasnj",
+  "sym": "IREN",
+  "cat": "backpack",
+  "first": "2026-09-24T20:23:44.031Z",
+  "firstET": "Sep 24, 16:23:44",
+  "total": 254,
+  "firstSym": "IRENman"
+ },
+ {
+  "mint": "SNAPcESrvnH8yUdgeMF6xm1hym9b6hW6s8YeqeHdZFz",
+  "sym": "SNAP",
+  "cat": "backpack",
+  "first": "2026-09-24T19:59:44.020Z",
+  "firstET": "Sep 24, 15:59:44",
+  "total": 313,
+  "firstSym": "HAROLD"
+ },
+ {
+  "mint": "CRWVJeR2yEZuDUKYfGuKCHvLz8ywn4LGvovHfy5WiFmi",
+  "sym": "CRWV",
+  "cat": "backpack",
+  "first": "2026-09-24T19:31:23.427Z",
+  "firstET": "Sep 24, 15:31:23",
+  "total": 199,
+  "firstSym": "CHRSHYDN"
+ },
+ {
+  "mint": "GzrN3MUCcfP4s3HfiYXrkFsQgvuSzbQ7326tU3fTfwZd",
+  "sym": "Benny",
+  "cat": "custom",
+  "first": "2026-09-24T19:27:56.441Z",
+  "firstET": "Sep 24, 15:27:56",
+  "total": 3,
+  "firstSym": "THEHOGWALL"
+ },
+ {
+  "mint": "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh",
+  "sym": "ZAMA",
+  "cat": "backpack",
+  "first": "2026-09-24T15:55:51.551Z",
+  "firstET": "Sep 24, 11:55:51",
+  "total": 283,
+  "firstSym": "ZAMACAT"
+ },
+ {
+  "mint": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+  "sym": "GOOGLX",
+  "cat": "xstock",
+  "first": "2026-09-24T15:43:21.329Z",
+  "firstET": "Sep 24, 11:43:21",
+  "total": 1268,
+  "firstSym": "SUNCATCHER"
+ },
+ {
+  "mint": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+  "sym": "neet",
+  "cat": "custom",
+  "first": "2026-09-24T15:04:13.157Z",
+  "firstET": "Sep 24, 11:04:13",
+  "total": 372,
+  "firstSym": "CHUDDY"
+ },
+ {
+  "mint": "Fch1oixTPri8zxBnmdCEADoJW2toyFHxqDZacQkwdvSP",
+  "sym": "HARAMBE",
+  "cat": "custom",
+  "first": "2026-09-24T11:10:19.967Z",
+  "firstET": "Sep 24, 07:10:19",
+  "total": 1,
+  "firstSym": "WGD"
+ },
+ {
+  "mint": "5Yy9JAGfh7ZN2ihRNYqkd3um929XJM1WR3CD2THsiWTG",
+  "sym": "BONKGUY",
+  "cat": "custom",
+  "first": "2026-09-24T09:26:09.713Z",
+  "firstET": "Sep 24, 05:26:09",
+  "total": 2,
+  "firstSym": "UNIPCS"
+ },
+ {
+  "mint": "CB9dDufT3ZuQXqqSfa1c5kY935TEreyBw9XJXxHKpump",
+  "sym": "USDUC",
+  "cat": "custom",
+  "first": "2026-09-24T08:34:32.930Z",
+  "firstET": "Sep 24, 04:34:32",
+  "total": 20,
+  "firstSym": "WOBBLY"
+ },
+ {
+  "mint": "13i7SfDDzg3t4MQnfZNtFKptHpv8HR2eaGRMfetSpump",
+  "sym": "熊猫",
+  "cat": "custom",
+  "first": "2026-09-24T07:33:54.132Z",
+  "firstET": "Sep 24, 03:33:54",
+  "total": 3,
+  "firstSym": "PPFSINU"
+ },
+ {
+  "mint": "XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg",
+  "sym": "HOODX",
+  "cat": "xstock",
+  "first": "2026-09-24T00:07:39.141Z",
+  "firstET": "Sep 23, 20:07:39",
+  "total": 1858,
+  "firstSym": "WIGGA"
+ },
+ {
+  "mint": "3gzVghdiQkpaFrYTtcrLDq9mV4tWBixPuXP5JsWRpump",
+  "sym": "BoysClub",
+  "cat": "custom",
+  "first": "2026-09-23T23:17:52.919Z",
+  "firstET": "Sep 23, 19:17:52",
+  "total": 1,
+  "firstSym": "BETBOLT"
+ },
+ {
+  "mint": "2q68mqEbjwmnMjs1o3KZDNZVyMv6RZKkHcm64iinpump",
+  "sym": "RETARD",
+  "cat": "custom",
+  "first": "2026-09-23T22:14:28.500Z",
+  "firstET": "Sep 23, 18:14:28",
+  "total": 41,
+  "firstSym": "INUTARD"
+ },
+ {
+  "mint": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk",
+  "sym": "1",
+  "cat": "custom",
+  "first": "2026-09-23T22:03:36.834Z",
+  "firstET": "Sep 23, 18:03:36",
+  "total": 5,
+  "firstSym": "2"
+ },
+ {
+  "mint": "RUMsPfFZFnN1ZmGANwP7FNMJMjKH4m9RiMePrtVtLe7",
+  "sym": "RUM",
+  "cat": "backpack",
+  "first": "2026-09-23T21:44:02.735Z",
+  "firstET": "Sep 23, 17:44:02",
+  "total": 170,
+  "firstSym": "RUMX"
+ },
+ {
+  "mint": "PresTj4Yc2bAR197Er7wz4UUKSfqt6FryBEdAriBoQB",
+  "sym": "ANDURIL",
+  "cat": "prestock",
+  "first": "2026-09-23T20:30:48.468Z",
+  "firstET": "Sep 23, 16:30:48",
+  "total": 117,
+  "firstSym": "LUCKEY"
+ },
+ {
+  "mint": "72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1",
+  "sym": "ENA",
+  "cat": "backpack",
+  "first": "2026-09-23T20:03:24.324Z",
+  "firstET": "Sep 23, 16:03:24",
+  "total": 341,
+  "firstSym": "hyENA"
+ },
+ {
+  "mint": "DmGvYx7R4ZJnSocMauain4LXh3oA8kuDYavLoDLYpump",
+  "sym": "Ram",
+  "cat": "custom",
+  "first": "2026-09-23T19:26:41.027Z",
+  "firstET": "Sep 23, 15:26:41",
+  "total": 6,
+  "firstSym": "RAMSEY"
+ },
+ {
+  "mint": "7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx",
+  "sym": "XHYPE",
+  "cat": "leverage",
+  "first": "2026-09-23T17:41:26.084Z",
+  "firstET": "Sep 23, 13:41:26",
+  "total": 967,
+  "firstSym": "HYPERCAT"
+ },
+ {
+  "mint": "33LZGLLvtRDx3uAfJ1CcBSC7pNFqdiCBAvwPsVkBpump",
+  "sym": "BILL",
+  "cat": "custom",
+  "first": "2026-09-23T16:32:49.816Z",
+  "firstET": "Sep 23, 12:32:49",
+  "total": 7,
+  "firstSym": "EQEQWE"
+ },
+ {
+  "mint": "E4Ap4icMLwKot8rkkTbq5JkS5kZxt5XCE3yfxbzYBjHx",
+  "sym": "BTC",
+  "cat": "custom",
+  "first": "2026-09-23T16:13:53.686Z",
+  "firstET": "Sep 23, 12:13:53",
+  "total": 38,
+  "firstSym": "STD"
+ },
+ {
+  "mint": "EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv",
+  "sym": "FTT",
+  "cat": "custom",
+  "first": "2026-09-23T16:06:17.335Z",
+  "firstET": "Sep 23, 12:06:17",
+  "total": 361,
+  "firstSym": "THERANOS"
+ },
+ {
+  "mint": "GtDZKAqvMZMnti46ZewMiXCa4oXF4bZxwQPoKzXPFxZn",
+  "sym": "nub",
+  "cat": "custom",
+  "first": "2026-09-23T14:34:59.462Z",
+  "firstET": "Sep 23, 10:34:59",
+  "total": 73,
+  "firstSym": "bun"
+ },
+ {
+  "mint": "F8YVYJkmm4fRNUuRXM4sc7TyoKdbaRs4tXU4fX3Npump",
+  "sym": "FF",
+  "cat": "custom",
+  "first": "2026-09-23T05:07:42.401Z",
+  "firstET": "Sep 23, 01:07:42",
+  "total": 2,
+  "firstSym": "FOMOPAY"
+ },
+ {
+  "mint": "4ikwYoNvoGEwtMbziUyYBTz1zRM6nmxspsfw9G7Bpump",
+  "sym": "crypto",
+  "cat": "custom",
+  "first": "2026-09-23T04:03:31.662Z",
+  "firstET": "Sep 23, 00:03:31",
+  "total": 11,
+  "firstSym": "CIF"
+ },
+ {
+  "mint": "4rkGWJNSUPBcMicXMRAzohEyeJLFG8gUjwiWaz7Pddr3",
+  "sym": "CRACKER",
+  "cat": "custom",
+  "first": "2026-09-23T02:37:07.985Z",
+  "firstET": "Sep 22, 22:37:07",
+  "total": 208,
+  "firstSym": "WHITE"
+ },
+ {
+  "mint": "TRUEq13uwehY57S1Y62iTxas7ahpFgohc8kScbGNu1h",
+  "sym": "STACY",
+  "cat": "custom",
+  "first": "2026-09-22T23:54:53.213Z",
+  "firstET": "Sep 22, 19:54:53",
+  "total": 10,
+  "firstSym": "HIDGRI30B0"
+ },
+ {
+  "mint": "Hos282xmdMJHwMjhni91fNqdjDsgWjgSckxuGc1Bpump",
+  "sym": "Token",
+  "cat": "custom",
+  "first": "2026-09-22T23:54:53.213Z",
+  "firstET": "Sep 22, 19:54:53",
+  "total": 17,
+  "firstSym": "JOLSASVPPQ"
+ },
+ {
+  "mint": "GJ9LEQZgoxW487LRaRnajr6DWzouswd29EruRqwZBAGS",
+  "sym": "NIKITA",
+  "cat": "custom",
+  "first": "2026-09-22T21:29:18.927Z",
+  "firstET": "Sep 22, 17:29:18",
+  "total": 3,
+  "firstSym": "GOLSHAUI3Z"
+ },
+ {
+  "mint": "HtTYHz1Kf3rrQo6AqDLmss7gq5WrkWAaXn3tupUZbonk",
+  "sym": "KORI",
+  "cat": "custom",
+  "first": "2026-09-22T21:24:32.554Z",
+  "firstET": "Sep 22, 17:24:32",
+  "total": 7,
+  "firstSym": "ROGVOL7Z21"
+ },
+ {
+  "mint": "9jVRLpzqYQBBhVejgtvCrBnivng62fjWrHxePh79pump",
+  "sym": "KLEF",
+  "cat": "custom",
+  "first": "2026-09-22T21:10:56.300Z",
+  "firstET": "Sep 22, 17:10:56",
+  "total": 13,
+  "firstSym": "QUAGEM6OEW"
+ },
+ {
+  "mint": "61Wj56QgGyyB966T7YsMzEAKRLcMvJpDbPzjkrCZc4Bi",
+  "sym": "COPPERINU",
+  "cat": "custom",
+  "first": "2026-09-22T21:04:21.797Z",
+  "firstET": "Sep 22, 17:04:21",
+  "total": 15,
+  "firstSym": "CCAT"
+ },
+ {
+  "mint": "7m2TUkpPZCScBhPJnGjWjbh75KkDNnwAdd7i74m8awad",
+  "sym": "Ww3",
+  "cat": "custom",
+  "first": "2026-09-22T20:52:03.137Z",
+  "firstET": "Sep 22, 16:52:03",
+  "total": 7,
+  "firstSym": "APES"
+ },
+ {
+  "mint": "9zqre5sRRdFvKqyTyvEd1jcKDRF4g47s7mZSGUnQpump",
+  "sym": "boob",
+  "cat": "custom",
+  "first": "2026-09-22T20:10:29.878Z",
+  "firstET": "Sep 22, 16:10:29",
+  "total": 34,
+  "firstSym": "EXIT"
+ },
+ {
+  "mint": "C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f",
+  "sym": "APE",
+  "cat": "backpack",
+  "first": "2026-09-22T19:19:49.925Z",
+  "firstET": "Sep 22, 15:19:49",
+  "total": 896,
+  "firstSym": "APECAT"
+ },
+ {
+  "mint": "FtateF34Xzawa91bpbVNdX72hZYo9cymRDYqBreHHbJi",
+  "sym": "PANTS",
+  "cat": "custom",
+  "first": "2026-09-22T19:10:53.045Z",
+  "firstET": "Sep 22, 15:10:53",
+  "total": 6,
+  "firstSym": "ELICOMYP6A"
+ },
+ {
+  "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+  "sym": "POLYMARKET",
+  "cat": "prestock",
+  "first": "2026-09-22T18:26:22.169Z",
+  "firstET": "Sep 22, 14:26:22",
+  "total": 418,
+  "firstSym": "POLYCAT"
+ },
+ {
+  "mint": "GPzpoXpD74E2C4CJNayuoyBqPQJEsPtdse3nhntrpump",
+  "sym": "LOOKSMAX",
+  "cat": "custom",
+  "first": "2026-09-22T16:45:11.627Z",
+  "firstET": "Sep 22, 12:45:11",
+  "total": 79,
+  "firstSym": "CLAVICULAR"
+ },
+ {
+  "mint": "NQ5hSuXQZrbnrwcDVk2qN73njjd3E3v3badYHnj5thF",
+  "sym": "IONQ",
+  "cat": "backpack",
+  "first": "2026-09-22T15:37:12.977Z",
+  "firstET": "Sep 22, 11:37:12",
+  "total": 387,
+  "firstSym": "WCAT"
+ },
+ {
+  "mint": "A8C3xuqscfmyLrte3VmTqrAq8kgMASius9AFNANwpump",
+  "sym": "FWOG",
+  "cat": "custom",
+  "first": "2026-09-22T15:31:21.567Z",
+  "firstET": "Sep 22, 11:31:21",
+  "total": 45,
+  "firstSym": "FWEN"
+ },
+ {
+  "mint": "EW7cWbNmTgL7PLQNiJ6tBVC62SJzJXa2pFYJjDPPpump",
+  "sym": "SOBAT",
+  "cat": "custom",
+  "first": "2026-09-22T14:18:15.193Z",
+  "firstET": "Sep 22, 10:18:15",
+  "total": 4,
+  "firstSym": "TABOS"
+ },
+ {
+  "mint": "B8RHrVBxSjBGKqAbn1tXo6CWjvt5jFkkqjbCZtuDpump",
+  "sym": "DUSD",
+  "cat": "custom",
+  "first": "2026-09-22T12:10:24.627Z",
+  "firstET": "Sep 22, 08:10:24",
+  "total": 2,
+  "firstSym": "CHAD"
+ },
+ {
+  "mint": "68GYUJW31GSJwLz44HGGQYaGXpG5iiWwYGiWxZ6apump",
+  "sym": "chrome",
+  "cat": "custom",
+  "first": "2026-09-22T09:12:03.936Z",
+  "firstET": "Sep 22, 05:12:03",
+  "total": 4,
+  "firstSym": "IRELANDBLU"
+ },
+ {
+  "mint": "4pnj9L8C1uJDhECSTHkToKHPmjLRfdSunENs2xtKpump",
+  "sym": "inuzard",
+  "cat": "custom",
+  "first": "2026-09-22T09:04:47.805Z",
+  "firstET": "Sep 22, 05:04:47",
+  "total": 3,
+  "firstSym": "NOS"
+ },
+ {
+  "mint": "HgBRWfYxEfvPhtqkaeymCQtHCrKE46qQ43pKe8HCpump",
+  "sym": "Bert",
+  "cat": "custom",
+  "first": "2026-09-22T08:37:33.827Z",
+  "firstET": "Sep 22, 04:37:33",
+  "total": 4,
+  "firstSym": "MIGHTYELFF"
+ },
+ {
+  "mint": "FzJ1Cm4kwEjiPmfna8WXWwjC7i41KnB9oi9wz3nHpump",
+  "sym": "Frug",
+  "cat": "custom",
+  "first": "2026-09-22T08:34:32.088Z",
+  "firstET": "Sep 22, 04:34:32",
+  "total": 3,
+  "firstSym": "ABDULCARTE"
+ },
+ {
+  "mint": "3sSbDu4q4rfKirh7k1gTNteMJaDQYWUSbgJ5dTXXpump",
+  "sym": "Tony",
+  "cat": "custom",
+  "first": "2026-09-22T08:34:32.088Z",
+  "firstET": "Sep 22, 04:34:32",
+  "total": 2,
+  "firstSym": "BRASILIENS"
+ },
+ {
+  "mint": "BcHEaaTCvycPwwsJ9yQTXdHP9X2gCLkznDbZ8VySpump",
+  "sym": "Jotchua",
+  "cat": "custom",
+  "first": "2026-09-22T07:55:38.338Z",
+  "firstET": "Sep 22, 03:55:38",
+  "total": 10,
+  "firstSym": "JOTCHUA2"
+ },
+ {
+  "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+  "sym": "Bonk",
+  "cat": "custom",
+  "first": "2026-09-22T05:30:46.998Z",
+  "firstET": "Sep 22, 01:30:46",
+  "total": 582,
+  "firstSym": "BOP"
+ },
+ {
+  "mint": "EeSHyt1ahSvm91CSa8ASqvenmxxQn2WU5VeNhdmepump",
+  "sym": "GYM",
+  "cat": "custom",
+  "first": "2026-09-22T05:17:19.161Z",
+  "firstET": "Sep 22, 01:17:19",
+  "total": 2,
+  "firstSym": "SCAT"
+ },
+ {
+  "mint": "67iVaRRQkNnZvN29rG75kt71nVdhkc5imwYDTivApump",
+  "sym": ".exe",
+  "cat": "custom",
+  "first": "2026-09-22T01:12:45.817Z",
+  "firstET": "Sep 21, 21:12:45",
+  "total": 5,
+  "firstSym": "steakinu"
+ },
+ {
+  "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+  "sym": "TOAD",
+  "cat": "custom",
+  "first": "2026-09-21T23:56:23.649Z",
+  "firstET": "Sep 21, 19:56:23",
+  "total": 43,
+  "firstSym": "TOAD"
+ },
+ {
+  "mint": "FMqh9mqR6drPZqqW6wPqLHxX4rqNDWGhYLaMfoaJpump",
+  "sym": "world",
+  "cat": "custom",
+  "first": "2026-09-21T23:36:38.108Z",
+  "firstET": "Sep 21, 19:36:38",
+  "total": 27,
+  "firstSym": "SOLWORLD"
+ },
+ {
+  "mint": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+  "sym": "JEANPHIL",
+  "cat": "custom",
+  "first": "2026-09-21T23:07:34.973Z",
+  "firstET": "Sep 21, 19:07:34",
+  "total": 222,
+  "firstSym": "CATPHIL"
+ },
+ {
+  "mint": "8m5hzX9hprtWwPuVZL4daCZfggWYKc6fhSJDDpiqpump",
+  "sym": "Kirkslop",
+  "cat": "custom",
+  "first": "2026-09-21T22:54:21.313Z",
+  "firstET": "Sep 21, 18:54:21",
+  "total": 5,
+  "firstSym": "kirkinu"
+ },
+ {
+  "mint": "8rWNVQoFyhWgKfBQGo1o7va5imP9rYT9jNroDqN4pump",
+  "sym": "OFFICIAL",
+  "cat": "custom",
+  "first": "2026-09-21T22:27:49.334Z",
+  "firstET": "Sep 21, 18:27:49",
+  "total": 101,
+  "firstSym": "ELON"
+ },
+ {
+  "mint": "5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ",
+  "sym": "WBTC",
+  "cat": "custom",
+  "first": "2026-09-21T22:01:56.560Z",
+  "firstET": "Sep 21, 18:01:56",
+  "total": 251,
+  "firstSym": "SATOSHINU"
+ },
+ {
+  "mint": "BDdzUjksj1J4bSnMveQ5tV9Up8A9c6YS1tHrxNw3pump",
+  "sym": "FOMO",
+  "cat": "custom",
+  "first": "2026-09-21T21:59:42.866Z",
+  "firstET": "Sep 21, 17:59:42",
+  "total": 44,
+  "firstSym": "fomocat"
+ },
+ {
+  "mint": "CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5",
+  "sym": "COPX",
+  "cat": "backpack",
+  "first": "2026-09-21T20:00:29.097Z",
+  "firstET": "Sep 21, 16:00:29",
+  "total": 560,
+  "firstSym": "COPCAT"
+ },
+ {
+  "mint": "CgypxZcmmZMVQMERA6D59hkh8maPEnj31pYRKM9cpump",
+  "sym": "DICKBUTT",
+  "cat": "custom",
+  "first": "2026-09-21T19:11:01.535Z",
+  "firstET": "Sep 21, 15:11:01",
+  "total": 14,
+  "firstSym": "dickbutt"
+ },
+ {
+  "mint": "LMT3i1BHgixFqPUgcyteJhnEz2dpy9i3cYy4pi9BoeV",
+  "sym": "LMT",
+  "cat": "backpack",
+  "first": "2026-09-21T18:58:49.797Z",
+  "firstET": "Sep 21, 14:58:49",
+  "total": 236,
+  "firstSym": "F-35"
+ },
+ {
+  "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+  "sym": "SPCXX",
+  "cat": "xstock",
+  "first": "2026-09-21T18:50:29.238Z",
+  "firstET": "Sep 21, 14:50:29",
+  "total": 5166,
+  "firstSym": "GROK"
+ },
+ {
+  "mint": "7NmbCaQpjpTcze5bmvWWJPjiaXMjHnLNYj9vJBG5pump",
+  "sym": "BOBAOPPA",
+  "cat": "custom",
+  "first": "2026-09-21T18:45:55.777Z",
+  "firstET": "Sep 21, 14:45:55",
+  "total": 1,
+  "firstSym": "RELIABLEBR"
+ },
+ {
+  "mint": "5XyKkFaJpAmsH4Tf2EFj3S61W3hC5cJhxNZQQ5h1pump",
+  "sym": "Luigi",
+  "cat": "custom",
+  "first": "2026-09-21T18:43:24.920Z",
+  "firstET": "Sep 21, 14:43:24",
+  "total": 2,
+  "firstSym": "POKEKAKAIT"
+ },
+ {
+  "mint": "2GXmB95pGD3pHV4mzNq7YsmyiEmVYWQLptbwYqgdpump",
+  "sym": "WNTV",
+  "cat": "custom",
+  "first": "2026-09-21T18:43:24.920Z",
+  "firstET": "Sep 21, 14:43:24",
+  "total": 2,
+  "firstSym": "WY0O5"
+ },
+ {
+  "mint": "BRZ5aeJCDuruA42V1CntqKvofa2G7DS3yyxx1pZEpump",
+  "sym": "moonkey",
+  "cat": "custom",
+  "first": "2026-09-21T18:43:24.920Z",
+  "firstET": "Sep 21, 14:43:24",
+  "total": 4,
+  "firstSym": "KOOL"
+ },
+ {
+  "mint": "AbpWkswGpFNYHatQG3eRTjpQLBoi5EYhbJQ7EspcR23R",
+  "sym": "DripCat",
+  "cat": "custom",
+  "first": "2026-09-21T18:43:24.920Z",
+  "firstET": "Sep 21, 14:43:24",
+  "total": 1,
+  "firstSym": "CHRISCBEYE"
+ },
+ {
+  "mint": "EUB1eZBt4m3X4FbperWnKGJdvLsuLMu2YmJix5yjpump",
+  "sym": "K-HOME",
+  "cat": "custom",
+  "first": "2026-09-21T18:34:02.962Z",
+  "firstET": "Sep 21, 14:34:02",
+  "total": 12,
+  "firstSym": "ORANGEJUIC"
+ },
+ {
+  "mint": "4xMegMRMd2TFQEXxv39vtMP1r5fFVuA7VcaSmAhLpump",
+  "sym": "GUNICORN",
+  "cat": "custom",
+  "first": "2026-09-21T18:21:21.654Z",
+  "firstET": "Sep 21, 14:21:21",
+  "total": 4,
+  "firstSym": "AVDHESHANA"
+ },
+ {
+  "mint": "BSqMUYb6ePwKsby85zrXaDa4SNf6AgZ9YfA2c4mZpump",
+  "sym": "LOOK",
+  "cat": "custom",
+  "first": "2026-09-21T18:21:21.654Z",
+  "firstET": "Sep 21, 14:21:21",
+  "total": 2,
+  "firstSym": "TURKI"
+ },
+ {
+  "mint": "3oY5NnNAbnRK4eNzPWZFmtAWVW4RNumpni4XtGarpump",
+  "sym": "Mobi",
+  "cat": "custom",
+  "first": "2026-09-21T18:00:53.691Z",
+  "firstET": "Sep 21, 14:00:53",
+  "total": 2,
+  "firstSym": "CLUBHOUSEB"
+ },
+ {
+  "mint": "EfPoo4wWgxKVToit7yX5VtXXBrhao4G8L7vrbKy6pump",
+  "sym": "DEXTER",
+  "cat": "custom",
+  "first": "2026-09-21T17:53:59.455Z",
+  "firstET": "Sep 21, 13:53:59",
+  "total": 1,
+  "firstSym": "VERAVONMON"
+ },
+ {
+  "mint": "AhSkPctV3gYxkEvPm4fxvieYgYyQA8p8xqXviP4mpump",
+  "sym": "CALL",
+  "cat": "custom",
+  "first": "2026-09-21T17:52:09.714Z",
+  "firstET": "Sep 21, 13:52:09",
+  "total": 3,
+  "firstSym": "Y1Z"
+ },
+ {
+  "mint": "H3EKcm3BayFEXgBo1njpg3v6FhSUr1FRyQRfuJVYpump",
+  "sym": "stonkbot",
+  "cat": "custom",
+  "first": "2026-09-21T17:43:13.776Z",
+  "firstET": "Sep 21, 13:43:13",
+  "total": 3,
+  "firstSym": "TIMKIPPEN"
+ },
+ {
+  "mint": "4978aTN9W3CDuUREGxAQaBYqhPXt8142N4o4Sfgzpump",
+  "sym": "YOMOGI",
+  "cat": "custom",
+  "first": "2026-09-21T17:37:24.948Z",
+  "firstET": "Sep 21, 13:37:24",
+  "total": 1,
+  "firstSym": "BLUEMAIL"
+ },
+ {
+  "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+  "sym": "NVDAX",
+  "cat": "xstock",
+  "first": "2026-09-21T15:49:04.818Z",
+  "firstET": "Sep 21, 11:49:04",
+  "total": 5048,
+  "firstSym": "SI"
+ },
+ {
+  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+  "sym": "USDT",
+  "cat": "currency",
+  "first": "2026-09-21T15:22:53.807Z",
+  "firstET": "Sep 21, 11:22:53",
+  "total": 293,
+  "firstSym": "NORMIE"
+ },
+ {
+  "mint": "URARfsinxCRw4JpvQhuT4CxavdZXZEMjv9ZwWmWpwag",
+  "sym": "URA",
+  "cat": "backpack",
+  "first": "2026-09-21T15:07:45.397Z",
+  "firstET": "Sep 21, 11:07:45",
+  "total": 300,
+  "firstSym": "INURANUS"
+ },
+ {
+  "mint": "CX2v7JSHJQDcNooubzzvZG8TPaDwbaPgfzcXRSWJpump",
+  "sym": "MARIO64",
+  "cat": "custom",
+  "first": "2026-09-21T14:03:45.046Z",
+  "firstET": "Sep 21, 10:03:45",
+  "total": 5,
+  "firstSym": "MARIOLANA"
+ },
+ {
+  "mint": "XshPgPdXFRWB8tP1j82rebb2Q9rPgGX37RuqzohmArM",
+  "sym": "INTCX",
+  "cat": "xstock",
+  "first": "2026-09-21T13:24:54.078Z",
+  "firstET": "Sep 21, 09:24:54",
+  "total": 213,
+  "firstSym": "QUANGO"
+ },
+ {
+  "mint": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+  "sym": "testicle",
+  "cat": "custom",
+  "first": "2026-09-21T10:54:26.979Z",
+  "firstET": "Sep 21, 06:54:26",
+  "total": 84,
+  "firstSym": "TEA"
+ },
+ {
+  "mint": "ACtfUWtgvaXrQGNMiohTusi5jcx5RJf5zwu9aAxkpump",
+  "sym": "unc",
+  "cat": "custom",
+  "first": "2026-09-21T07:09:49.074Z",
+  "firstET": "Sep 21, 03:09:49",
+  "total": 29,
+  "firstSym": "UNC"
+ },
+ {
+  "mint": "eL5fUxj2J4CiQsmW85k5FG9DvuQjjUoBHoQBi2Kpump",
+  "sym": "UFD",
+  "cat": "custom",
+  "first": "2026-09-21T06:47:41.733Z",
+  "firstET": "Sep 21, 02:47:41",
+  "total": 21,
+  "firstSym": "RBEANS"
+ },
+ {
+  "mint": "BArimz1PcKZr8PcPh3tcZ2dg4S7FJLk3cw6R5F8GsHKg",
+  "sym": "BOEING",
+  "cat": "backpack",
+  "first": "2026-09-21T05:42:52.147Z",
+  "firstET": "Sep 21, 01:42:52",
+  "total": 151,
+  "firstSym": "OSAMABINU"
+ },
+ {
+  "mint": "Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc",
+  "sym": "GMEX",
+  "cat": "xstock",
+  "first": "2026-09-21T03:43:28.793Z",
+  "firstET": "Sep 20, 23:43:28",
+  "total": 1311,
+  "firstSym": "TYGR"
+ },
+ {
+  "mint": "463SK47VkB7uE7XenTHKiVcMtxRsfNE2X4Q9wByaURVA",
+  "sym": "TSUKI",
+  "cat": "custom",
+  "first": "2026-09-21T03:14:18.092Z",
+  "firstET": "Sep 20, 23:14:18",
+  "total": 6,
+  "firstSym": "TSUKI"
+ },
+ {
+  "mint": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+  "sym": "ZEREBRO",
+  "cat": "custom",
+  "first": "2026-09-21T03:00:49.697Z",
+  "firstET": "Sep 20, 23:00:49",
+  "total": 10,
+  "firstSym": "ZEROBRO"
+ },
+ {
+  "mint": "4K1m7gAMDKzrxQn68yuZAd767w57Fw7Ykw69dG3umeta",
+  "sym": "RAWR",
+  "cat": "custom",
+  "first": "2026-09-21T02:24:06.748Z",
+  "firstET": "Sep 20, 22:24:06",
+  "total": 180,
+  "firstSym": "DINU"
+ },
+ {
+  "mint": "DeatoN4UYU2B658Lh4ZV1VXy1u2ros32UEwnAtCRv4nB",
+  "sym": "TRCH1",
+  "cat": "custom",
+  "first": "2026-09-21T01:53:45.474Z",
+  "firstET": "Sep 20, 21:53:45",
+  "total": 86,
+  "firstSym": "DCAT"
+ },
+ {
+  "mint": "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump",
+  "sym": "Martians",
+  "cat": "custom",
+  "first": "2026-09-21T01:08:02.907Z",
+  "firstET": "Sep 20, 21:08:02",
+  "total": 4,
+  "firstSym": "jellyjelly"
+ },
+ {
+  "mint": "avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D",
+  "sym": "AVAX",
+  "cat": "backpack",
+  "first": "2026-09-21T01:03:31.331Z",
+  "firstET": "Sep 20, 21:03:31",
+  "total": 656,
+  "firstSym": "ACAT"
+ },
+ {
+  "mint": "9oMa91M32dG8pCWuyvZuMNxtMj7xBjxAuMXex9ZTpump",
+  "sym": "TripleP",
+  "cat": "custom",
+  "first": "2026-09-20T23:36:14.080Z",
+  "firstET": "Sep 20, 19:36:14",
+  "total": 4,
+  "firstSym": "TripleY"
+ },
+ {
+  "mint": "EjAuFtMEP6LQDgLb11JU9bkcskhFYbgd9Q5NRXJppump",
+  "sym": "Doge2",
+  "cat": "custom",
+  "first": "2026-09-20T23:29:15.881Z",
+  "firstET": "Sep 20, 19:29:15",
+  "total": 32,
+  "firstSym": "STAMPDOGE"
+ },
+ {
+  "mint": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+  "sym": "WOJAK",
+  "cat": "custom",
+  "first": "2026-09-20T23:12:37.623Z",
+  "firstET": "Sep 20, 19:12:37",
+  "total": 181,
+  "firstSym": "UNC"
+ },
+ {
+  "mint": "7MYegHoqDGhWdvrnxeuiAEndgG6qcs1N3W5v6SXspump",
+  "sym": "Buddy",
+  "cat": "custom",
+  "first": "2026-09-20T21:57:28.441Z",
+  "firstET": "Sep 20, 17:57:28",
+  "total": 1,
+  "firstSym": "billy"
+ },
+ {
+  "mint": "9GyRGm8GGmRZyyQ2hEnazDvCSV8mXiMAHmjKwVHMvVpo",
+  "sym": "YES",
+  "cat": "custom",
+  "first": "2026-09-20T20:52:25.568Z",
+  "firstET": "Sep 20, 16:52:25",
+  "total": 6,
+  "firstSym": "imagine"
+ },
+ {
+  "mint": "uuxWwFL6G9UjiYRZvWxJrSB18V1oKBgYrmueamREK57",
+  "sym": "HONTER",
+  "cat": "custom",
+  "first": "2026-09-20T20:44:55.408Z",
+  "firstET": "Sep 20, 16:44:55",
+  "total": 15,
+  "firstSym": "BTC"
+ },
+ {
+  "mint": "BfFAisgK8Np12kxZj73rnw1srMjXtBK3B1PeYJ1ppump",
+  "sym": "CHROME",
+  "cat": "custom",
+  "first": "2026-09-20T20:41:51.309Z",
+  "firstET": "Sep 20, 16:41:51",
+  "total": 5,
+  "firstSym": "chrome"
+ },
+ {
+  "mint": "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2",
+  "sym": "aura",
+  "cat": "custom",
+  "first": "2026-09-20T20:39:12.517Z",
+  "firstET": "Sep 20, 16:39:12",
+  "total": 60,
+  "firstSym": "FLOW"
+ },
+ {
+  "mint": "aTUfRuPj3tp7FEpzAXLjs4VnQgAFbExD5JHGTyvpump",
+  "sym": "SFM",
+  "cat": "custom",
+  "first": "2026-09-20T17:49:04.339Z",
+  "firstET": "Sep 20, 13:49:04",
+  "total": 36,
+  "firstSym": "SAFEMOON"
+ },
+ {
+  "mint": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+  "sym": "TROLL",
+  "cat": "custom",
+  "first": "2026-09-20T13:12:15.443Z",
+  "firstET": "Sep 20, 09:12:15",
+  "total": 228,
+  "firstSym": "TROLLIONS"
+ },
+ {
+  "mint": "6JrR1iqPdinYTNvNPWTR2P7e2wSJ1rwdsrKGyhnzjUVr",
+  "sym": "WIFOUT",
+  "cat": "custom",
+  "first": "2026-09-20T12:18:57.007Z",
+  "firstET": "Sep 20, 08:18:57",
+  "total": 34,
+  "firstSym": "HAT"
+ },
+ {
+  "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+  "sym": "JTO",
+  "cat": "custom",
+  "first": "2026-09-20T09:20:57.680Z",
+  "firstET": "Sep 20, 05:20:57",
+  "total": 342,
+  "firstSym": "PIGGYBANK"
+ },
+ {
+  "mint": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+  "sym": "Fartcoin",
+  "cat": "custom",
+  "first": "2026-09-20T04:01:25.096Z",
+  "firstET": "Sep 20, 00:01:25",
+  "total": 654,
+  "firstSym": "QUEEF"
+ },
+ {
+  "mint": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump",
+  "sym": "maxxing",
+  "cat": "custom",
+  "first": "2026-09-20T01:05:21.818Z",
+  "firstET": "Sep 19, 21:05:21",
+  "total": 19,
+  "firstSym": "INU"
+ },
+ {
+  "mint": "DoGEV7LASBkQbibMc5k5vKnTZoMg423GpJ5QtJEGfm7R",
+  "sym": "DOGE",
+  "cat": "backpack",
+  "first": "2026-09-19T23:52:21.180Z",
+  "firstET": "Sep 19, 19:52:21",
+  "total": 1642,
+  "firstSym": "PYAK"
+ },
+ {
+  "mint": "72FkeF1cpBMtbordhTVNVbBGdaN5DfHcchstHwPWpump",
+  "sym": "PUMPVILLE",
+  "cat": "custom",
+  "first": "2026-09-19T22:49:58.841Z",
+  "firstET": "Sep 19, 18:49:58",
+  "total": 1,
+  "firstSym": "DUMPVILLE"
+ },
+ {
+  "mint": "TKLSidmLVt3cqGaaodG8tyRzoANfQwoh67AccjmubeZ",
+  "sym": "KALSHI",
+  "cat": "tessera",
+  "first": "2026-09-19T21:28:05.175Z",
+  "firstET": "Sep 19, 17:28:05",
+  "total": 102,
+  "firstSym": "DOGINU"
+ },
+ {
+  "mint": "8uFpKxenGXbnb5Jxjh3sPdKKTVM2F4EfQZYhjZEfpump",
+  "sym": "BOT",
+  "cat": "custom",
+  "first": "2026-09-19T21:23:54.507Z",
+  "firstET": "Sep 19, 17:23:54",
+  "total": 2,
+  "firstSym": "PINKBOT"
+ },
+ {
+  "mint": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+  "sym": "Buttcoin",
+  "cat": "custom",
+  "first": "2026-09-19T20:56:32.493Z",
+  "firstET": "Sep 19, 16:56:32",
+  "total": 148,
+  "firstSym": "DICK"
+ },
+ {
+  "mint": "B6f27ETGcjgGNB1fqULJbXVmw9FnL8HgBp7R83hmpump",
+  "sym": "drooling",
+  "cat": "custom",
+  "first": "2026-09-19T20:50:48.837Z",
+  "firstET": "Sep 19, 16:50:48",
+  "total": 4,
+  "firstSym": "ROCKET"
+ },
+ {
+  "mint": "8PzFWyLpCVEmbZmVJcaRTU5r69XKJx1rd7YGpWvnpump",
+  "sym": "Percolator",
+  "cat": "custom",
+  "first": "2026-09-19T20:11:08.514Z",
+  "firstET": "Sep 19, 16:11:08",
+  "total": 2,
+  "firstSym": "test"
+ },
+ {
+  "mint": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+  "sym": "WhiteWhale",
+  "cat": "custom",
+  "first": "2026-09-19T20:01:40.853Z",
+  "firstET": "Sep 19, 16:01:40",
+  "total": 17,
+  "firstSym": "Whale"
+ },
+ {
+  "mint": "RBLXDGRD64AtRamHMFVcjqne3Ar7NLWtFtYNtsrf1cE",
+  "sym": "RBLX",
+  "cat": "backpack",
+  "first": "2026-09-19T19:58:35.907Z",
+  "firstET": "Sep 19, 15:58:35",
+  "total": 447,
+  "firstSym": "TIX"
+ },
+ {
+  "mint": "73jj6SFe9FKn6qqpaGwbSd7TL1sHheh3HqDo9RwA7BHB",
+  "sym": "Pork",
+  "cat": "custom",
+  "first": "2026-09-19T19:25:41.294Z",
+  "firstET": "Sep 19, 15:25:41",
+  "total": 9,
+  "firstSym": "PORK"
+ },
+ {
+  "mint": "3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump",
+  "sym": "BILLY",
+  "cat": "custom",
+  "first": "2026-09-19T19:17:50.067Z",
+  "firstET": "Sep 19, 15:17:50",
+  "total": 25,
+  "firstSym": "TRILLY"
+ },
+ {
+  "mint": "AGi2s9zPRPHs3zEDPhPTroumTEXK5ufymYSfEFndCSSW",
+  "sym": "LEVERCAT",
+  "cat": "custom",
+  "first": "2026-09-19T17:41:17.756Z",
+  "firstET": "Sep 19, 13:41:17",
+  "total": 38,
+  "firstSym": "HYPOCAT"
+ },
+ {
+  "mint": "ANM35KbUcfKdEVBXzSjZBoT6ceSwYRs3fuc79fp7kRqP",
+  "sym": "Pumpcat",
+  "cat": "custom",
+  "first": "2026-09-19T16:54:36.825Z",
+  "firstET": "Sep 19, 12:54:36",
+  "total": 11,
+  "firstSym": "PUMPAW"
+ },
+ {
+  "mint": "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+  "sym": "WOW",
+  "cat": "custom",
+  "first": "2026-09-19T16:54:36.825Z",
+  "firstET": "Sep 19, 12:54:36",
+  "total": 351,
+  "firstSym": "LEEROY"
+ },
+ {
+  "mint": "AywAYdNJnSLSXwKWYxDciPjqGRnwp4iZdQptuuQTpump",
+  "sym": "MICHI",
+  "cat": "custom",
+  "first": "2026-09-19T16:38:06.285Z",
+  "firstET": "Sep 19, 12:38:06",
+  "total": 13,
+  "firstSym": "GMICHI"
+ },
+ {
+  "mint": "FtXH4AAgR8KMBR8zDfTfHnYdSStw2Am3iwq8TpoHpump",
+  "sym": "Intismeran",
+  "cat": "custom",
+  "first": "2026-09-19T16:25:25.963Z",
+  "firstET": "Sep 19, 12:25:25",
+  "total": 4,
+  "firstSym": "FTXPEPE"
+ },
+ {
+  "mint": "BBosJLw8ZzoATiEyywiifx7AgmrD2Cm3XjFWbhbRhChy",
+  "sym": "BB",
+  "cat": "backpack",
+  "first": "2026-09-19T16:06:19.729Z",
+  "firstET": "Sep 19, 12:06:19",
+  "total": 305,
+  "firstSym": "BB"
+ },
+ {
+  "mint": "C4j7kPx9PqDnfvxe2uycJQRTAeyGwmU4DyGf21Xgpump",
+  "sym": "MD",
+  "cat": "custom",
+  "first": "2026-09-19T15:44:18.160Z",
+  "firstET": "Sep 19, 11:44:18",
+  "total": 7,
+  "firstSym": "MDINU"
+ },
+ {
+  "mint": "9999FVbjHioTcoJpoBiSjpxHW6xEn3witVuXKqBh2RFQ",
+  "sym": "SLERF",
+  "cat": "custom",
+  "first": "2026-09-19T14:43:09.609Z",
+  "firstET": "Sep 19, 10:43:09",
+  "total": 12,
+  "firstSym": "FUCK"
+ },
+ {
+  "mint": "FkBF9u1upwEMUPxnXjcydxxVSxgr8f3k1YXbz7G7bmtA",
+  "sym": "glorp",
+  "cat": "custom",
+  "first": "2026-09-19T14:26:59.927Z",
+  "firstET": "Sep 19, 10:26:59",
+  "total": 2,
+  "firstSym": "PICKLE"
+ },
+ {
+  "mint": "3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN",
+  "sym": "MOTHER",
+  "cat": "custom",
+  "first": "2026-09-19T13:25:29.172Z",
+  "firstET": "Sep 19, 09:25:29",
+  "total": 7,
+  "firstSym": "FAT"
+ },
+ {
+  "mint": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump",
+  "sym": "ACT",
+  "cat": "custom",
+  "first": "2026-09-19T00:49:07.275Z",
+  "firstET": "Sep 18, 20:49:07",
+  "total": 13,
+  "firstSym": "Accenture"
+ },
+ {
+  "mint": "tSEakxwRz3Y3BpjDttokygCgScgLnui19NJGrR4pump",
+  "sym": "Lucifer",
+  "cat": "custom",
+  "first": "2026-09-19T00:19:20.035Z",
+  "firstET": "Sep 18, 20:19:20",
+  "total": 3,
+  "firstSym": "GRX"
+ },
+ {
+  "mint": "6oGuFDbEeaSzTcvrmmd2MqfNYwHKXFoN7regcR22pump",
+  "sym": "NEEGY",
+  "cat": "custom",
+  "first": "2026-09-19T00:08:29.581Z",
+  "firstET": "Sep 18, 20:08:29",
+  "total": 8,
+  "firstSym": "LILDADDY"
+ },
+ {
+  "mint": "8fZL148nnC168RAVCZh4PkjvMZmxMEfMLDhoziWVPnqf",
+  "sym": "NiggaButt",
+  "cat": "custom",
+  "first": "2026-09-18T23:54:05.453Z",
+  "firstET": "Sep 18, 19:54:05",
+  "total": 57,
+  "firstSym": "NBTINU"
+ },
+ {
+  "mint": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
+  "sym": "POPCAT",
+  "cat": "custom",
+  "first": "2026-09-18T22:27:37.552Z",
+  "firstET": "Sep 18, 18:27:37",
+  "total": 108,
+  "firstSym": "TOPCAT"
+ },
+ {
+  "mint": "PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m",
+  "sym": "PEPE",
+  "cat": "backpack",
+  "first": "2026-09-18T21:30:47.922Z",
+  "firstET": "Sep 18, 17:30:47",
+  "total": 1018,
+  "firstSym": "FEELSGOOD"
+ },
+ {
+  "mint": "8NoNPSYcFq4jdYTqX4rMLpQR3GoBe6XvPYkRDERwpump",
+  "sym": "BOT",
+  "cat": "custom",
+  "first": "2026-09-18T21:17:20.761Z",
+  "firstET": "Sep 18, 17:17:20",
+  "total": 9,
+  "firstSym": "slop"
+ },
+ {
+  "mint": "ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg",
+  "sym": "CYBERLEEK",
+  "cat": "custom",
+  "first": "2026-09-18T20:31:28.431Z",
+  "firstET": "Sep 18, 16:31:28",
+  "total": 47,
+  "firstSym": "WEPE"
+ },
+ {
+  "mint": "2wzVMXhLypmP92mXNCq4fuFcd9TCC972AbMfuiH3pump",
+  "sym": "AISLOP",
+  "cat": "custom",
+  "first": "2026-09-18T20:26:12.966Z",
+  "firstET": "Sep 18, 16:26:12",
+  "total": 16,
+  "firstSym": "MITCH"
+ },
+ {
+  "mint": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+  "sym": "GOAT",
+  "cat": "custom",
+  "first": "2026-09-18T19:29:31.196Z",
+  "firstET": "Sep 18, 15:29:31",
+  "total": 22,
+  "firstSym": "MESSINU"
+ },
+ {
+  "mint": "pSo1f9nQXWgXibFtKf7NWYxb5enAM4qfP6UJSiXRQfL",
+  "sym": "PSOL",
+  "cat": "solana",
+  "first": "2026-09-18T18:33:12.903Z",
+  "firstET": "Sep 18, 14:33:12",
+  "total": 217,
+  "firstSym": "GHOSTI"
+ },
+ {
+  "mint": "6kDhQghfw5GLUVx6uK6tA5zs9jTwACE17d7ahh6ZVsqu",
+  "sym": "dolan",
+  "cat": "custom",
+  "first": "2026-09-18T18:12:00.917Z",
+  "firstET": "Sep 18, 14:12:00",
+  "total": 5,
+  "firstSym": "GOOBY"
+ },
+ {
+  "mint": "CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK",
+  "sym": "CYPH",
+  "cat": "backpack",
+  "first": "2026-09-18T16:40:28.540Z",
+  "firstET": "Sep 18, 12:40:28",
+  "total": 333,
+  "firstSym": "CYPHERCAT"
+ },
+ {
+  "mint": "GvUCjmWSXA5hrTh9smmNA1AU55YCtP9mDLQcrKA1pump",
+  "sym": "WSOLP",
+  "cat": "custom",
+  "first": "2026-09-18T15:22:50.443Z",
+  "firstET": "Sep 18, 11:22:50",
+  "total": 15,
+  "firstSym": "SOLANA"
+ },
+ {
+  "mint": "USNv3NkKA27Dh4nsHJDPhW4VoEcTQmjoZyJt2dqdwFu",
+  "sym": "USO",
+  "cat": "backpack",
+  "first": "2026-09-18T14:18:33.780Z",
+  "firstET": "Sep 18, 10:18:33",
+  "total": 326,
+  "firstSym": "OILRIG"
+ },
+ {
+  "mint": "9WPTUkh8fKuCnepRWoPYLH3aK9gSjPHFDenBq2X1Czdp",
+  "sym": "SELFIE",
+  "cat": "custom",
+  "first": "2026-09-18T14:17:48.666Z",
+  "firstET": "Sep 18, 10:17:48",
+  "total": 16,
+  "firstSym": "INUFLENCER"
+ },
+ {
+  "mint": "3iQL8BFS2vE7mww4ehAqQHAsbmRNCrPxizWAT2Zfyr9y",
+  "sym": "VIRTUAL",
+  "cat": "custom",
+  "first": "2026-09-18T12:00:23.245Z",
+  "firstET": "Sep 18, 08:00:23",
+  "total": 32,
+  "firstSym": "VR"
+ },
+ {
+  "mint": "3MTaDF66xZJULFPdfkffe2khfAmcoaJR1KnCKbqu3hXW",
+  "sym": "BULL",
+  "cat": "custom",
+  "first": "2026-09-18T10:51:28.397Z",
+  "firstET": "Sep 18, 06:51:28",
+  "total": 5,
+  "firstSym": "JASON"
+ },
+ {
+  "mint": "GYKmdfcUmZVrqfcH1g579BGjuzSRijj3LBuwv79rpump",
+  "sym": "wDOG",
+  "cat": "custom",
+  "first": "2026-09-18T01:15:40.458Z",
+  "firstET": "Sep 17, 21:15:40",
+  "total": 9,
+  "firstSym": "wDOG"
+ },
+ {
+  "mint": "9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+  "sym": "WBNB",
+  "cat": "custom",
+  "first": "2026-09-18T01:02:27.823Z",
+  "firstET": "Sep 17, 21:02:27",
+  "total": 324,
+  "firstSym": "wCat"
+ },
+ {
+  "mint": "CaWZeUM4FvX9dPkjGc2xHS6tSN3qJfTWyvaG77aM5o7h",
+  "sym": "AGI",
+  "cat": "custom",
+  "first": "2026-09-17T21:59:07.989Z",
+  "firstET": "Sep 17, 17:59:07",
+  "total": 4,
+  "firstSym": "IGA"
+ },
+ {
+  "mint": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+  "sym": "pippin",
+  "cat": "custom",
+  "first": "2026-09-17T21:03:25.581Z",
+  "firstET": "Sep 17, 17:03:25",
+  "total": 3,
+  "firstSym": "Pip"
+ },
+ {
+  "mint": "SoLo9oxzLDpcq1dpqAgMwgce5WqkRDtNXK7EPnbmeta",
+  "sym": "SOLO",
+  "cat": "custom",
+  "first": "2026-09-17T17:35:40.015Z",
+  "firstET": "Sep 17, 13:35:40",
+  "total": 155,
+  "firstSym": "Han"
+ },
+ {
+  "mint": "WULFeyfrj1VJKD9HhRTcW8R4g5HefUA11HDEdBv2WxD",
+  "sym": "WULF",
+  "cat": "backpack",
+  "first": "2026-09-17T15:16:36.629Z",
+  "firstET": "Sep 17, 11:16:36",
+  "total": 183,
+  "firstSym": "Wolf"
+ },
+ {
+  "mint": "DTGWeDVPAvr7TdY7sdbfjz2bi4QihVMMn9KhyKH1pump",
+  "sym": "WOFL",
+  "cat": "custom",
+  "first": "2026-09-17T15:04:31.305Z",
+  "firstET": "Sep 17, 11:04:31",
+  "total": 6,
+  "firstSym": "WOFL"
+ },
+ {
+  "mint": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+  "sym": "CHILLGUY",
+  "cat": "custom",
+  "first": "2026-09-17T14:37:24.158Z",
+  "firstET": "Sep 17, 10:37:24",
+  "total": 65,
+  "firstSym": "CHILLGIRL"
+ },
+ {
+  "mint": "1NJMqVM4PadjuzYmeB7zV7q7DV8oB3ExaQCd9x6KsLz",
+  "sym": "INJ",
+  "cat": "backpack",
+  "first": "2026-09-17T14:32:37.212Z",
+  "firstET": "Sep 17, 10:32:37",
+  "total": 236,
+  "firstSym": "NINJACAT"
+ },
+ {
+  "mint": "5mbK36SZ7J19An8jFochhQS4of8g6BwUjbeCSxBSoWdp",
+  "sym": "$michi",
+  "cat": "custom",
+  "first": "2026-09-17T13:29:50.861Z",
+  "firstET": "Sep 17, 09:29:50",
+  "total": 4,
+  "firstSym": "GMICHI"
+ },
+ {
+  "mint": "4S2qS8P17LSPosME8grirgfUE4p6kW2kZfMSzgmDpump",
+  "sym": "DOT",
+  "cat": "custom",
+  "first": "2026-09-17T08:13:14.874Z",
+  "firstET": "Sep 17, 04:13:14",
+  "total": 6,
+  "firstSym": "DOTCAT"
+ },
+ {
+  "mint": "6D7NaB2xsLd7cauWu1wKk6KBsJohJmP2qZH9GEfVi5Ui",
+  "sym": "SC",
+  "cat": "custom",
+  "first": "2026-09-17T06:32:49.429Z",
+  "firstET": "Sep 17, 02:32:49",
+  "total": 3,
+  "firstSym": "SD"
+ },
+ {
+  "mint": "4tkupXEGfbYPCVN37CagviJd3tgWnudT9avKZvouT3Dm",
+  "sym": "HEAVIER",
+  "cat": "custom",
+  "first": "2026-09-17T04:05:10.505Z",
+  "firstET": "Sep 17, 00:05:10",
+  "total": 47,
+  "firstSym": "THICC"
+ },
+ {
+  "mint": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+  "sym": "GP",
+  "cat": "custom",
+  "first": "2026-09-17T04:05:10.505Z",
+  "firstET": "Sep 17, 00:05:10",
+  "total": 1003,
+  "firstSym": "CRACKER"
+ },
+ {
+  "mint": "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr",
+  "sym": "NEARKAT",
+  "cat": "custom",
+  "first": "2026-09-17T02:45:59.946Z",
+  "firstET": "Sep 16, 22:45:59",
+  "total": 44,
+  "firstSym": "PUP"
+ },
+ {
+  "mint": "HiMSSzzwkZkrXJ4PGVJRdtfLaANeAztjjcgk5Dxe7Lwx",
+  "sym": "HIMS",
+  "cat": "backpack",
+  "first": "2026-09-17T01:55:37.333Z",
+  "firstET": "Sep 16, 21:55:37",
+  "total": 398,
+  "firstSym": "CUMINU"
+ },
+ {
+  "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+  "sym": "MSFTX",
+  "cat": "xstock",
+  "first": "2026-09-16T22:44:16.780Z",
+  "firstET": "Sep 16, 18:44:16",
+  "total": 1349,
+  "firstSym": "LinkedInu"
+ },
+ {
+  "mint": "LUV9GB51PNZNRyzzyYK3rtqFfvDvWtRiXZ34wVq2HrX",
+  "sym": "LUV",
+  "cat": "backpack",
+  "first": "2026-09-16T20:40:51.570Z",
+  "firstET": "Sep 16, 16:40:51",
+  "total": 86,
+  "firstSym": "ILY"
+ },
+ {
+  "mint": "FWDtiB5fXHdVAewPqvHPL2dh4aBC1C6GacQbePoQXKjz",
+  "sym": "FWDI",
+  "cat": "backpack",
+  "first": "2026-09-16T20:10:21.906Z",
+  "firstET": "Sep 16, 16:10:21",
+  "total": 201,
+  "firstSym": "SALAMI"
+ },
+ {
+  "mint": "HukaK2eHhbTyiuUwuKMntjPJP4aGdD4VwiExsNmyT8WJ",
+  "sym": "BOT",
+  "cat": "custom",
+  "first": "2026-09-16T18:57:09.190Z",
+  "firstET": "Sep 16, 14:57:09",
+  "total": 17,
+  "firstSym": "STEVE"
+ },
+ {
+  "mint": "chipCAT7vi5CZtbZsn9z7iMPXvFwyAnKz3QFu8XVuHm",
+  "sym": "CHIP",
+  "cat": "backpack",
+  "first": "2026-09-16T18:13:35.135Z",
+  "firstET": "Sep 16, 14:13:35",
+  "total": 188,
+  "firstSym": "GPU"
+ },
+ {
+  "mint": "BKXtSJWJk8s6DGEv71a3HohqHMhzn1iXLAzxMm6ZXjmy",
+  "sym": "GPRO",
+  "cat": "custom",
+  "first": "2026-09-16T18:00:52.684Z",
+  "firstET": "Sep 16, 14:00:52",
+  "total": 62,
+  "firstSym": "FAILROOMS"
+ },
+ {
+  "mint": "3fqify4QnaKFsvmFVqmLMUHaRKdiPki6w2H3GyDmpump",
+  "sym": "Bark",
+  "cat": "custom",
+  "first": "2026-09-16T16:34:03.549Z",
+  "firstET": "Sep 16, 12:34:03",
+  "total": 3,
+  "firstSym": "PINKBARK"
+ },
+ {
+  "mint": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+  "sym": "GIGA",
+  "cat": "custom",
+  "first": "2026-09-16T16:07:48.713Z",
+  "firstET": "Sep 16, 12:07:48",
+  "total": 225,
+  "firstSym": "FLY"
+ },
+ {
+  "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+  "sym": "AMD",
+  "cat": "backpack",
+  "first": "2026-09-16T15:11:06.806Z",
+  "firstET": "Sep 16, 11:11:06",
+  "total": 406,
+  "firstSym": "GB"
+ },
+ {
+  "mint": "6zjLjqd483pWwrowtKdyhie8tqEvkWwRcrR4btkVpump",
+  "sym": "expensive",
+  "cat": "custom",
+  "first": "2026-09-16T12:36:08.078Z",
+  "firstET": "Sep 16, 08:36:08",
+  "total": 3,
+  "firstSym": "THIS"
+ },
+ {
+  "mint": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+  "sym": "TRUMP",
+  "cat": "custom",
+  "first": "2026-09-16T05:41:18.444Z",
+  "firstET": "Sep 16, 01:41:18",
+  "total": 629,
+  "firstSym": "SHEEPLE"
+ },
+ {
+  "mint": "BRVaZKg6J9iF2BEsdpsxJ9NyvN9PPxPZuoQUX2v8qqkk",
+  "sym": "BROS",
+  "cat": "backpack",
+  "first": "2026-09-15T20:04:11.460Z",
+  "firstET": "Sep 15, 16:04:11",
+  "total": 298,
+  "firstSym": "BROS"
+ },
+ {
+  "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+  "sym": "PURR",
+  "cat": "custom",
+  "first": "2026-09-15T17:50:53.789Z",
+  "firstET": "Sep 15, 13:50:53",
+  "total": 121,
+  "firstSym": "HYPURRLOOP"
+ },
+ {
+  "mint": "AavE1kKKnesPw4MuRJmJ9jZs9QzEE8CPxQ3ViczUDfc1",
+  "sym": "AAVE",
+  "cat": "custom",
+  "first": "2026-09-15T15:44:59.762Z",
+  "firstET": "Sep 15, 11:44:59",
+  "total": 213,
+  "firstSym": "JIMMY"
+ },
+ {
+  "mint": "FLYRq3en8r2Z69gN3KyAnDrvnitEJNkwPYY7favinHeD",
+  "sym": "FLY",
+  "cat": "backpack",
+  "first": "2026-09-15T15:08:14.325Z",
+  "firstET": "Sep 15, 11:08:14",
+  "total": 186,
+  "firstSym": "WILL"
+ },
+ {
+  "mint": "FEpeZgApzGs4AmzN5JeGqGuNoafpAKXSkn86nrLrpump",
+  "sym": "Telegram",
+  "cat": "custom",
+  "first": "2026-09-15T14:28:34.395Z",
+  "firstET": "Sep 15, 10:28:34",
+  "total": 1,
+  "firstSym": "Kito"
+ },
+ {
+  "mint": "5gR8NcXCmtLUss6P1Lz1aGdZpSVHfpV29LvR8zMEpump",
+  "sym": "Telegram",
+  "cat": "custom",
+  "first": "2026-09-15T14:27:06.775Z",
+  "firstET": "Sep 15, 10:27:06",
+  "total": 2,
+  "firstSym": "Kito"
+ },
+ {
+  "mint": "7V6Sk63y8Rr1MvcN5mYNp61wgFhy4EeQg5gUASk9pump",
+  "sym": "HBULL",
+  "cat": "custom",
+  "first": "2026-09-15T11:58:08.037Z",
+  "firstET": "Sep 15, 07:58:08",
+  "total": 2,
+  "firstSym": "BSTREET"
+ },
+ {
+  "mint": "991L48va9rMiysu3fCpeg5p9bN4NLzhujojzmFtkgacE",
+  "sym": "spurdo",
+  "cat": "custom",
+  "first": "2026-09-15T07:00:00.001Z",
+  "firstET": "Sep 15, 03:00:00",
+  "total": 32,
+  "firstSym": "SPURDOSPAD"
+ },
+ {
+  "mint": "AMC1qwR9KhiyrQBRPrxnfo4JfMeMZqEBvt5tgTytNNoc",
+  "sym": "AMC",
+  "cat": "backpack",
+  "first": "2026-09-15T02:11:18.950Z",
+  "firstET": "Sep 14, 22:11:18",
+  "total": 205,
+  "firstSym": "TICKET"
+ },
+ {
+  "mint": "PTNzAfFAB4LvoUQEUUGrFMyUoRLExMYjH6CcfyQfsVP",
+  "sym": "PTN",
+  "cat": "backpack",
+  "first": "2026-09-14T20:10:44.215Z",
+  "firstET": "Sep 14, 16:10:44",
+  "total": 304,
+  "firstSym": "WET"
+ },
+ {
+  "mint": "2qEHjDLDLbuBgRYvsxhc5D6uDWAivNFZGan56P1tpump",
+  "sym": "Pnut",
+  "cat": "custom",
+  "first": "2026-09-14T19:44:58.850Z",
+  "firstET": "Sep 14, 15:44:58",
+  "total": 68,
+  "firstSym": "PNUTS"
+ },
+ {
+  "mint": "9gwTegFJJErDpWJKjPfLr2g2zrE3nL1v5zpwbtsk3c6P",
+  "sym": "USEDCAR",
+  "cat": "custom",
+  "first": "2026-09-14T18:04:47.986Z",
+  "firstET": "Sep 14, 14:04:47",
+  "total": 7,
+  "firstSym": "CIVIC"
+ },
+ {
+  "mint": "SATqS9DYpLQsM2z51P4QCoqJRHa5wboV4qjJerJRUSH",
+  "sym": "RUSH",
+  "cat": "custom",
+  "first": "2026-09-14T17:32:13.425Z",
+  "firstET": "Sep 14, 13:32:13",
+  "total": 126,
+  "firstSym": "CATOSHI"
+ },
+ {
+  "mint": "SCHHJ3jRdSjeFEVAaLrnYdx3Brphn92Ys7z1qkiCtPX",
+  "sym": "SCHH",
+  "cat": "backpack",
+  "first": "2026-09-14T15:04:03.871Z",
+  "firstET": "Sep 14, 11:04:03",
+  "total": 317,
+  "firstSym": "HOUSE"
+ },
+ {
+  "mint": "SiLVFMgD3eD2rgK628NbTBq9MnuJF5FW2CRaVyTB35L",
+  "sym": "SILVER",
+  "cat": "backpack",
+  "first": "2026-09-14T10:50:01.781Z",
+  "firstET": "Sep 14, 06:50:01",
+  "total": 360,
+  "firstSym": "VBUCKS"
+ },
+ {
+  "mint": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+  "sym": "CATE",
+  "cat": "custom",
+  "first": "2026-09-14T02:34:23.429Z",
+  "firstET": "Sep 13, 22:34:23",
+  "total": 622,
+  "firstSym": "ETAC"
+ },
+ {
+  "mint": "GUmbtfjSZkybSFgPibBcvwExEBdXwewJHR5PkTjzpump",
+  "sym": "Morty",
+  "cat": "custom",
+  "first": "2026-09-14T02:16:37.525Z",
+  "firstET": "Sep 13, 22:16:37",
+  "total": 4,
+  "firstSym": "PICKLE"
+ },
+ {
+  "mint": "7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze",
+  "sym": "Nasduck",
+  "cat": "custom",
+  "first": "2026-09-14T02:10:22.542Z",
+  "firstET": "Sep 13, 22:10:22",
+  "total": 6,
+  "firstSym": "CHILLCAT"
+ },
+ {
+  "mint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
+  "sym": "GOLD",
+  "cat": "custom",
+  "first": "2026-09-14T02:01:05.167Z",
+  "firstET": "Sep 13, 22:01:05",
+  "total": 127,
+  "firstSym": "JSON"
+ },
+ {
+  "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+  "sym": "cbBTC",
+  "cat": "custom",
+  "first": "2026-09-14T00:17:07.397Z",
+  "firstET": "Sep 13, 20:17:07",
+  "total": 151,
+  "firstSym": "BCAT"
+ },
+ {
+  "mint": "6yjNqPzTSanBWSa6dxVEgTjePXBrZ2FoHLDQwYwEsyM6",
+  "sym": "Chud",
+  "cat": "custom",
+  "first": "2026-09-13T23:25:10.411Z",
+  "firstET": "Sep 13, 19:25:10",
+  "total": 60,
+  "firstSym": "CHUD"
+ },
+ {
+  "mint": "EmcxFTNVDqyLHp11NvwvLZ4D7LKGbG9i7B8RF7dwpump",
+  "sym": "ZERO",
+  "cat": "custom",
+  "first": "2026-09-13T20:09:13.430Z",
+  "firstET": "Sep 13, 16:09:13",
+  "total": 5,
+  "firstSym": "ZERO"
+ },
+ {
+  "mint": "LinkhB3afbBKb2EQQu7s7umdZceV3wcvAUJhQAfQ23L",
+  "sym": "LINK",
+  "cat": "backpack",
+  "first": "2026-09-13T19:52:24.209Z",
+  "firstET": "Sep 13, 15:52:24",
+  "total": 302,
+  "firstSym": "MARINE"
+ },
+ {
+  "mint": "CreiuhfwdWCN5mJbMJtA9bBpYQrQF2tCBuZwSPWfpump",
+  "sym": "PYTHIA",
+  "cat": "custom",
+  "first": "2026-09-13T18:07:15.756Z",
+  "firstET": "Sep 13, 14:07:15",
+  "total": 14,
+  "firstSym": "MASCOT"
+ },
+ {
+  "mint": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+  "sym": "PYTH",
+  "cat": "custom",
+  "first": "2026-09-13T18:07:15.756Z",
+  "firstET": "Sep 13, 14:07:15",
+  "total": 304,
+  "firstSym": "PythCat"
+ },
+ {
+  "mint": "9GGGhze1NnQwcABTzxdxx89BEFLFtDueHhkwh6japump",
+  "sym": "CatGPT",
+  "cat": "custom",
+  "first": "2026-09-13T17:12:25.817Z",
+  "firstET": "Sep 13, 13:12:25",
+  "total": 1,
+  "firstSym": "CATGPT"
+ },
+ {
+  "mint": "A48KeWUuiDSdRQBqAFssgyYATDuBv7cer54V2JSDpump",
+  "sym": "CALLOOOR",
+  "cat": "custom",
+  "first": "2026-09-13T13:57:51.345Z",
+  "firstET": "Sep 13, 09:57:51",
+  "total": 1,
+  "firstSym": "BENDOOOR"
+ },
+ {
+  "mint": "2hXHY3DnN7HUGySZEmBsLFKSqLB8nj3aE8wwq44wpump",
+  "sym": "LIZARD",
+  "cat": "custom",
+  "first": "2026-09-13T12:28:37.796Z",
+  "firstET": "Sep 13, 08:28:37",
+  "total": 4,
+  "firstSym": "Raaz"
+ },
+ {
+  "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "sym": "USDC",
+  "cat": "currency",
+  "first": "2026-09-13T09:55:16.483Z",
+  "firstET": "Sep 13, 05:55:16",
+  "total": 1843,
+  "firstSym": "BRRR"
+ },
+ {
+  "mint": "9Pfync3ejPC9eHqVzq3nYQJAhyhjqpnB9UsaSfLxpump",
+  "sym": "KET",
+  "cat": "custom",
+  "first": "2026-09-13T05:27:01.341Z",
+  "firstET": "Sep 13, 01:27:01",
+  "total": 33,
+  "firstSym": "POPKET"
+ },
+ {
+  "mint": "bioJ9JTqW62MLz7UKHU69gtKhPpGi1BQhccj2kmSvUJ",
+  "sym": "BIO",
+  "cat": "custom",
+  "first": "2026-09-13T02:22:15.677Z",
+  "firstET": "Sep 12, 22:22:15",
+  "total": 18,
+  "firstSym": "DRUGS"
+ },
+ {
+  "mint": "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83",
+  "sym": "USEFUL",
+  "cat": "custom",
+  "first": "2026-09-13T01:56:05.486Z",
+  "firstET": "Sep 12, 21:56:05",
+  "total": 26,
+  "firstSym": "uniPCs"
+ },
+ {
+  "mint": "B1oEzGes1QxVZoxR3abiwAyL4jcPRF2s2ok5Yerrpump",
+  "sym": "rasmr",
+  "cat": "custom",
+  "first": "2026-09-13T01:48:11.872Z",
+  "firstET": "Sep 12, 21:48:11",
+  "total": 2,
+  "firstSym": "RASMR"
+ },
+ {
+  "mint": "6hxu7BY4mRChLovDjc1ML3wpizv86dP3fA7Jn5wDZ4SS",
+  "sym": "HOBBES",
+  "cat": "custom",
+  "first": "2026-09-13T01:48:11.872Z",
+  "firstET": "Sep 12, 21:48:11",
+  "total": 2,
+  "firstSym": "HOBBES"
+ },
+ {
+  "mint": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+  "sym": "ANSEM",
+  "cat": "custom",
+  "first": "2026-09-13T00:09:34.305Z",
+  "firstET": "Sep 12, 20:09:34",
+  "total": 810,
+  "firstSym": "GUARD"
+ },
+ {
+  "mint": "4CmYEygEusR76TpjxUbTjSLjyDbCMjxKhRKNozkrpump",
+  "sym": "BOB",
+  "cat": "custom",
+  "first": "2026-09-12T21:34:53.813Z",
+  "firstET": "Sep 12, 17:34:53",
+  "total": 2,
+  "firstSym": "Bob"
+ },
+ {
+  "mint": "oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+  "sym": "ORE",
+  "cat": "custom",
+  "first": "2026-09-12T21:12:47.427Z",
+  "firstET": "Sep 12, 17:12:47",
+  "total": 740,
+  "firstSym": "MINECAT"
+ },
+ {
+  "mint": "XsoBhf2ufR8fTyNSjqfU71DYGaE6Z3SUGAidpzriAA4",
+  "sym": "PLTRX",
+  "cat": "xstock",
+  "first": "2026-09-12T20:55:35.185Z",
+  "firstET": "Sep 12, 16:55:35",
+  "total": 653,
+  "firstSym": "HONEYPOT"
+ },
+ {
+  "mint": "FLWSojG1gB5VStYR3Sb4nQFRt43UBYkqih1j2CpVLqgd",
+  "sym": "FLWS",
+  "cat": "backpack",
+  "first": "2026-09-12T19:54:50.776Z",
+  "firstET": "Sep 12, 15:54:50",
+  "total": 193,
+  "firstSym": "Tulip"
+ },
+ {
+  "mint": "suifhC9gU1VbJAPYPTBkHJyyyStKGLLYPVDTmPoqbvA",
+  "sym": "SUI",
+  "cat": "custom",
+  "first": "2026-09-12T18:24:15.394Z",
+  "firstET": "Sep 12, 14:24:15",
+  "total": 277,
+  "firstSym": "SUICAT"
+ },
+ {
+  "mint": "4N4DnNo3qpPks9aQCkcWkzoir8tnvT6diS4TnnZibonk",
+  "sym": "KITTY",
+  "cat": "custom",
+  "first": "2026-09-12T16:06:20.782Z",
+  "firstET": "Sep 12, 12:06:20",
+  "total": 73,
+  "firstSym": "CINNA"
+ },
+ {
+  "mint": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+  "sym": "ZCAT",
+  "cat": "custom",
+  "first": "2026-09-12T13:36:46.139Z",
+  "firstET": "Sep 12, 09:36:46",
+  "total": 211,
+  "firstSym": "TACZ"
+ },
+ {
+  "mint": "BoTx8y9ynfdxf5ZjWtCoBVkff52qKA82ysaLU8ZM6d8T",
+  "sym": "ROBOSTRATEGY",
+  "cat": "backpack",
+  "first": "2026-09-12T08:40:43.509Z",
+  "firstET": "Sep 12, 04:40:43",
+  "total": 203,
+  "firstSym": "GROK"
+ },
+ {
+  "mint": "86KR6eG2VuNntLBi23SAYFW1cXkiYcwxGJd746rqcUAG",
+  "sym": "MIM",
+  "cat": "custom",
+  "first": "2026-09-12T04:12:52.705Z",
+  "firstET": "Sep 12, 00:12:52",
+  "total": 15,
+  "firstSym": "Tarot"
+ },
+ {
+  "mint": "Dx68jydZnXJkp6Xngku8FbjFFovp9tZmXT66jrLXpump",
+  "sym": "TEB",
+  "cat": "custom",
+  "first": "2026-09-12T02:46:55.688Z",
+  "firstET": "Sep 11, 22:46:55",
+  "total": 109,
+  "firstSym": "TCAT"
+ },
+ {
+  "mint": "32eFDwQXfnj5ULY2b71cLuy5HJuhsRHSYTw3qCcKpump",
+  "sym": "1",
+  "cat": "custom",
+  "first": "2026-09-12T01:36:38.469Z",
+  "firstET": "Sep 11, 21:36:38",
+  "total": 1,
+  "firstSym": "FSDFD"
+ },
+ {
+  "mint": "CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump",
+  "sym": "biketyson",
+  "cat": "custom",
+  "first": "2026-09-12T01:15:43.884Z",
+  "firstET": "Sep 11, 21:15:43",
+  "total": 96,
+  "firstSym": "BIKESON"
+ },
+ {
+  "mint": "7XSmrerjGbVi9uVW8qVHfp7SN1GU1vnxHguzUEt1pump",
+  "sym": "ALON",
+  "cat": "custom",
+  "first": "2026-09-12T00:25:23.471Z",
+  "firstET": "Sep 11, 20:25:23",
+  "total": 4,
+  "firstSym": "RoshHannah"
+ },
+ {
+  "mint": "zj1jpp7QMveWHLs61vL9KMZf254KvW7j4AAmBF8ry2k",
+  "sym": "BULLSHIT",
+  "cat": "custom",
+  "first": "2026-09-11T23:09:04.220Z",
+  "firstET": "Sep 11, 19:09:04",
+  "total": 20,
+  "firstSym": "SHIT"
+ },
+ {
+  "mint": "4hfye6h74Nrm2HMEhQxWyBwWJZHJHRNTEf9vnbfwpump",
+  "sym": "TOILET",
+  "cat": "custom",
+  "first": "2026-09-11T22:20:14.895Z",
+  "firstET": "Sep 11, 18:20:14",
+  "total": 1,
+  "firstSym": "TOILETCAT"
+ },
+ {
+  "mint": "ucBaqBtYRuxKciy91wGx4iJtHvCwxU48ehwRDxFpump",
+  "sym": "UOTF",
+  "cat": "custom",
+  "first": "2026-09-11T21:15:05.563Z",
+  "firstET": "Sep 11, 17:15:05",
+  "total": 5,
+  "firstSym": "halalinu"
+ },
+ {
+  "mint": "6yUr61zspt6cftb8LAQ4xqf9cZDQqfz2xa2H4bENpump",
+  "sym": "TNOS",
+  "cat": "custom",
+  "first": "2026-09-11T20:54:51.006Z",
+  "firstET": "Sep 11, 16:54:51",
+  "total": 1,
+  "firstSym": "TNON"
+ },
+ {
+  "mint": "DKNGQFNGQmoBdXSRGKJ8tTu7uPDasw5JDcfMmWniNfow",
+  "sym": "DKNG",
+  "cat": "backpack",
+  "first": "2026-09-11T20:05:00.407Z",
+  "firstET": "Sep 11, 16:05:00",
+  "total": 711,
+  "firstSym": "ALLINU"
+ },
+ {
+  "mint": "GodL6KZ9uuUoQwELggtVzQkKmU1LfqmDokPibPeDKkhF",
+  "sym": "GODL",
+  "cat": "custom",
+  "first": "2026-09-11T19:39:38.996Z",
+  "firstET": "Sep 11, 15:39:38",
+  "total": 16,
+  "firstSym": "GCAT"
+ },
+ {
+  "mint": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+  "sym": "$HACHI",
+  "cat": "custom",
+  "first": "2026-09-11T19:32:25.472Z",
+  "firstET": "Sep 11, 15:32:25",
+  "total": 2,
+  "firstSym": "APOLLO"
+ },
+ {
+  "mint": "2dJniDEAGCG7zWKseCkyrML3W23WLjDf1CGxpNv3pump",
+  "sym": "TURTLE",
+  "cat": "custom",
+  "first": "2026-09-11T19:18:32.477Z",
+  "firstET": "Sep 11, 15:18:32",
+  "total": 18,
+  "firstSym": "SLOW"
+ },
+ {
+  "mint": "EicWvteVi2fWepEzS3FYWsnuPoP6caZfjnKqNvydLjCH",
+  "sym": "LIT",
+  "cat": "backpack",
+  "first": "2026-09-11T19:14:23.608Z",
+  "firstET": "Sep 11, 15:14:23",
+  "total": 802,
+  "firstSym": "HEV"
+ },
+ {
+  "mint": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+  "sym": "SKR",
+  "cat": "solana",
+  "first": "2026-09-11T17:57:56.283Z",
+  "firstET": "Sep 11, 13:57:56",
+  "total": 299,
+  "firstSym": "OMEN"
+ },
+ {
+  "mint": "7M3gDRgozcumFsiTeXwjB8cYxpg7Q9R7rH7rkw2Fpump",
+  "sym": "CRIME",
+  "cat": "custom",
+  "first": "2026-09-11T15:39:34.904Z",
+  "firstET": "Sep 11, 11:39:34",
+  "total": 17,
+  "firstSym": "SBF"
+ },
+ {
+  "mint": "WENAZ2WyPbmgvUcKfQ8hyMDfBQP9bZ65hsZ5KTFrRGZ",
+  "sym": "WEN",
+  "cat": "backpack",
+  "first": "2026-09-11T14:49:27.188Z",
+  "firstET": "Sep 11, 10:49:27",
+  "total": 353,
+  "firstSym": "WEN"
+ },
+ {
+  "mint": "Xs78JED6PFZxWc2wCEPspZW9kL3Se5J7L5TChKgsidH",
+  "sym": "STRCX",
+  "cat": "xstock",
+  "first": "2026-09-11T13:10:06.816Z",
+  "firstET": "Sep 11, 09:10:06",
+  "total": 266,
+  "firstSym": "DIVI"
+ },
+ {
+  "mint": "5PwsE1yXAvANamqbYwM6zoWrYkNw8RZ74TZSsxnGu4vq",
+  "sym": "black",
+  "cat": "custom",
+  "first": "2026-09-11T03:52:21.357Z",
+  "firstET": "Sep 10, 23:52:21",
+  "total": 49,
+  "firstSym": "blackrock"
+ },
+ {
+  "mint": "8RVBk8vxLiUHueLUW1f4izFVqN3nWippLhkohKg6EGkS",
+  "sym": "KNOTS",
+  "cat": "custom",
+  "first": "2026-09-11T02:49:44.633Z",
+  "firstET": "Sep 10, 22:49:44",
+  "total": 198,
+  "firstSym": "LOOP"
+ },
+ {
+  "mint": "2wMTr4ZttVr5tmS4wLStee59wi8f9QQfMtT2Hoispump",
+  "sym": "GTA",
+  "cat": "custom",
+  "first": "2026-09-11T02:41:30.890Z",
+  "firstET": "Sep 10, 22:41:30",
+  "total": 6,
+  "firstSym": "SOLSISTERS"
+ },
+ {
+  "mint": "Dx2bQe2UPv4k3BmcW8G2KhaL5oKsxduM5XxLSV3Sbonk",
+  "sym": "Hosico",
+  "cat": "custom",
+  "first": "2026-09-11T02:11:51.408Z",
+  "firstET": "Sep 10, 22:11:51",
+  "total": 13,
+  "firstSym": "CLAW"
+ },
+ {
+  "mint": "LULUmT9VMttkfAJE236LXJcYJ2tTP7nunrSWR5G1BdS",
+  "sym": "LULU",
+  "cat": "backpack",
+  "first": "2026-09-11T01:37:30.553Z",
+  "firstET": "Sep 10, 21:37:30",
+  "total": 237,
+  "firstSym": "RWA"
+ },
+ {
+  "mint": "AzeNfRi7DX5HndH7dUgCxMD5sQPV7FPFH1cwDkoqpump",
+  "sym": "KNIGHT",
+  "cat": "custom",
+  "first": "2026-09-11T00:46:50.561Z",
+  "firstET": "Sep 10, 20:46:50",
+  "total": 2,
+  "firstSym": "KNIGHTCAT"
+ },
+ {
+  "mint": "8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB",
+  "sym": "GME",
+  "cat": "custom",
+  "first": "2026-09-11T00:40:43.158Z",
+  "firstET": "Sep 10, 20:40:43",
+  "total": 287,
+  "firstSym": "SLING"
+ },
+ {
+  "mint": "22PQLzLuYSr4DCFKszEA36rkPXRxeHrZ9pFUv5hHpump",
+  "sym": "COG",
+  "cat": "custom",
+  "first": "2026-09-10T22:04:05.261Z",
+  "firstET": "Sep 10, 18:04:05",
+  "total": 2,
+  "firstSym": "Devin"
+ },
+ {
+  "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+  "sym": "$WIF",
+  "cat": "custom",
+  "first": "2026-09-10T20:34:16.042Z",
+  "firstET": "Sep 10, 16:34:16",
+  "total": 503,
+  "firstSym": "wifout"
+ },
+ {
+  "mint": "6ogzHhzdrQr9Pgv6hZ2MNze7UrzBMAFyBBWUYp1Fhitx",
+  "sym": "RETARDIO",
+  "cat": "custom",
+  "first": "2026-09-10T20:28:54.813Z",
+  "firstET": "Sep 10, 16:28:54",
+  "total": 27,
+  "firstSym": "DOWN4200"
+ },
+ {
+  "mint": "DNUTsCvKbKwu2RM72cUuW3TD9YpzArzACcqYQssjPLSk",
+  "sym": "DNUT",
+  "cat": "backpack",
+  "first": "2026-09-10T19:55:20.589Z",
+  "firstET": "Sep 10, 15:55:20",
+  "total": 269,
+  "firstSym": "GLAZE"
+ },
+ {
+  "mint": "HxQhDGYqyjorgogMJx7YbBHADEDxuHhLnMMmr6VYpyn",
+  "sym": "MANLET",
+  "cat": "custom",
+  "first": "2026-09-10T19:53:29.805Z",
+  "firstET": "Sep 10, 15:53:29",
+  "total": 12,
+  "firstSym": "CNUT"
+ },
+ {
+  "mint": "GCa9TZMK9Q3VUSkhZgX76YAQBjqQd1dPxkBnZojFpump",
+  "sym": "Plumber",
+  "cat": "custom",
+  "first": "2026-09-10T19:42:08.208Z",
+  "firstET": "Sep 10, 15:42:08",
+  "total": 15,
+  "firstSym": "plumber"
+ },
+ {
+  "mint": "he1iusmfkpAdwvxLNGV8Y1iSbj4rUy6yMhEA3fotn9A",
+  "sym": "HSOL",
+  "cat": "custom",
+  "first": "2026-09-10T18:52:49.974Z",
+  "firstET": "Sep 10, 14:52:49",
+  "total": 330,
+  "firstSym": "MERT"
+ },
+ {
+  "mint": "BiYu1Lx12rQjNsvo4zeg85cuWJG5RvkL63AqZSGnTtu",
+  "sym": "DIP",
+  "cat": "custom",
+  "first": "2026-09-10T18:40:06.234Z",
+  "firstET": "Sep 10, 14:40:06",
+  "total": 3,
+  "firstSym": "dip"
+ },
+ {
+  "mint": "Qirqk4cXB3txQmdqwB7R9o5KVkNzj5ZCT9BHsuLpump",
+  "sym": "STONK",
+  "cat": "custom",
+  "first": "2026-09-10T16:50:37.430Z",
+  "firstET": "Sep 10, 12:50:37",
+  "total": 7,
+  "firstSym": "Stonk"
+ },
+ {
+  "mint": "HJvNXZ64yZeB2aZWyFEP7D35W8eRLfLDcbfUKRyHpump",
+  "sym": "CASHAPP",
+  "cat": "custom",
+  "first": "2026-09-10T16:46:38.224Z",
+  "firstET": "Sep 10, 12:46:38",
+  "total": 47,
+  "firstSym": "CASHPIG"
+ },
+ {
+  "mint": "ATBR4i19gcQ31Rfr7ymA2XvkCQEAkNFGBtVKTmdqpump",
+  "sym": "Machi",
+  "cat": "custom",
+  "first": "2026-09-10T15:38:58.140Z",
+  "firstET": "Sep 10, 11:38:58",
+  "total": 44,
+  "firstSym": "麻吉"
+ },
+ {
+  "mint": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+  "sym": "BOME",
+  "cat": "custom",
+  "first": "2026-09-10T15:23:58.424Z",
+  "firstET": "Sep 10, 11:23:58",
+  "total": 98,
+  "firstSym": "SMR"
+ },
+ {
+  "mint": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+  "sym": "PENGU",
+  "cat": "custom",
+  "first": "2026-09-10T15:16:46.618Z",
+  "firstET": "Sep 10, 11:16:46",
+  "total": 361,
+  "firstSym": "POLLY"
+ },
+ {
+  "mint": "CAGtwKrcnwgLABdg5o16oMczxUV6i1pj973K9XWQpump",
+  "sym": "Gringott",
+  "cat": "custom",
+  "first": "2026-09-10T14:58:31.433Z",
+  "firstET": "Sep 10, 10:58:31",
+  "total": 1,
+  "firstSym": "俊哥帥"
+ },
+ {
+  "mint": "GRNDYDpqwpCm6jVxpbh4xT5AM4r3p391qYsKTHqgaET2",
+  "sym": "GRND",
+  "cat": "backpack",
+  "first": "2026-09-10T14:07:16.699Z",
+  "firstET": "Sep 10, 10:07:16",
+  "total": 725,
+  "firstSym": "GAY"
+ },
+ {
+  "mint": "uniHfuPhEQSrtpzXpJZDCSq53yaejKKpNhFUiKoHKHV",
+  "sym": "UNI",
+  "cat": "custom",
+  "first": "2026-09-10T12:08:52.075Z",
+  "firstET": "Sep 10, 08:08:52",
+  "total": 424,
+  "firstSym": "INU"
+ },
+ {
+  "mint": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+  "sym": "SPX",
+  "cat": "custom",
+  "first": "2026-09-10T09:55:03.182Z",
+  "firstET": "Sep 10, 05:55:03",
+  "total": 351,
+  "firstSym": "SOMETHING"
+ },
+ {
+  "mint": "UKbXwN3ySC2jP5p9TyQ91yXYXmnnDsjiZQ55QCqpump",
+  "sym": "KASPA",
+  "cat": "custom",
+  "first": "2026-09-10T08:33:23.514Z",
+  "firstET": "Sep 10, 04:33:23",
+  "total": 6,
+  "firstSym": "KAS"
+ },
+ {
+  "mint": "3d1qHSAkQhoN7kN1C6tvpAArCkXWxwYdBng6taXCDM6u",
+  "sym": "RTM",
+  "cat": "custom",
+  "first": "2026-09-10T08:09:45.709Z",
+  "firstET": "Sep 10, 04:09:45",
+  "total": 9,
+  "firstSym": "BOTFARM"
+ },
+ {
+  "mint": "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump",
+  "sym": "TIT",
+  "cat": "custom",
+  "first": "2026-09-10T07:30:49.896Z",
+  "firstET": "Sep 10, 03:30:49",
+  "total": 58,
+  "firstSym": "sdaa"
+ },
+ {
+  "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+  "sym": "WETH",
+  "cat": "custom",
+  "first": "2026-09-10T06:33:52.605Z",
+  "firstET": "Sep 10, 02:33:52",
+  "total": 560,
+  "firstSym": "ROCK"
+ },
+ {
+  "mint": "68fn2tLABKmS7VA9Eaz3n6RfoXM3iBWUACckT9dwpump",
+  "sym": "HAPPY",
+  "cat": "custom",
+  "first": "2026-09-10T05:30:15.021Z",
+  "firstET": "Sep 10, 01:30:15",
+  "total": 12,
+  "firstSym": "Jacob"
+ },
+ {
+  "mint": "PFER6ENqP8r8NF3CqVt4mFowxsin3V5MLidBNQFCC3x",
+  "sym": "PFIZER",
+  "cat": "backpack",
+  "first": "2026-09-09T23:10:19.565Z",
+  "firstET": "Sep 09, 19:10:19",
+  "total": 87,
+  "firstSym": "VIAGRA"
+ },
+ {
+  "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+  "sym": "PUMP",
+  "cat": "custom",
+  "first": "2026-09-09T22:42:08.251Z",
+  "firstET": "Sep 09, 18:42:08",
+  "total": 2176,
+  "firstSym": "PENIS"
+ },
+ {
+  "mint": "CZEB3WNZuF2Yz1z2H81RcCk8T7fsw82KB33zqamASVsg",
+  "sym": "COST",
+  "cat": "backpack",
+  "first": "2026-09-09T21:19:47.544Z",
+  "firstET": "Sep 09, 17:19:47",
+  "total": 221,
+  "firstSym": "SOLPRICE"
+ },
+ {
+  "mint": "CrJPSvj625TnPdWS42aG5ybMcHeFvnNqq5AExVespump",
+  "sym": "Momota",
+  "cat": "custom",
+  "first": "2026-09-09T20:40:42.957Z",
+  "firstET": "Sep 09, 16:40:42",
+  "total": 5,
+  "firstSym": "MOM"
+ },
+ {
+  "mint": "BABANGA4JE7Kkam4nTrALAwAVgsNJUuFJnnkF7S16BZp",
+  "sym": "BABA",
+  "cat": "backpack",
+  "first": "2026-09-09T19:43:38.736Z",
+  "firstET": "Sep 09, 15:43:38",
+  "total": 410,
+  "firstSym": "bababoi"
+ },
+ {
+  "mint": "JNJg1znKdF712Phe7L7z52AATAvEjEytBdN2w8Lnh1Y",
+  "sym": "JNJ",
+  "cat": "backpack",
+  "first": "2026-09-09T19:23:02.468Z",
+  "firstET": "Sep 09, 15:23:02",
+  "total": 84,
+  "firstSym": "JNJ"
+ },
+ {
+  "mint": "7XJiwLDrjzxDYdZipnJXzpr1iDTmK55XixSFAa7JgNEL",
+  "sym": "MLG",
+  "cat": "custom",
+  "first": "2026-09-09T18:59:11.743Z",
+  "firstET": "Sep 09, 14:59:11",
+  "total": 24,
+  "firstSym": "BENKS"
+ },
+ {
+  "mint": "RDDTGbhHwVXfyCvQMXzzowKjf5qrYBZAnehoXW83ooh",
+  "sym": "RDDT",
+  "cat": "backpack",
+  "first": "2026-09-09T18:55:40.079Z",
+  "firstET": "Sep 09, 14:55:40",
+  "total": 454,
+  "firstSym": "DFC"
+ },
+ {
+  "mint": "BULL151gUXcFV5wXEUqu9Am2L7Qt4bTJRLRuAUjkcspC",
+  "sym": "WEBULL",
+  "cat": "backpack",
+  "first": "2026-09-09T18:46:17.649Z",
+  "firstET": "Sep 09, 14:46:17",
+  "total": 90,
+  "firstSym": "BULL"
+ },
+ {
+  "mint": "B4iCqVsAZv9dBiBVv58GJiBxWGmwkwbtPTn4sUQTpump",
+  "sym": "Polycat",
+  "cat": "custom",
+  "first": "2026-09-09T18:36:26.177Z",
+  "firstET": "Sep 09, 14:36:26",
+  "total": 2,
+  "firstSym": "test"
+ },
+ {
+  "mint": "UPSqUeMHcWbkdg784XuBUEF9DtySSnW9ur5LAVdcuB9",
+  "sym": "UPS",
+  "cat": "backpack",
+  "first": "2026-09-09T18:36:26.177Z",
+  "firstET": "Sep 09, 14:36:26",
+  "total": 203,
+  "firstSym": "UPS"
+ },
+ {
+  "mint": "SH55hfaipFAbwT42nQYhRoM5o5t61QpkmJ6p62vXB3m",
+  "sym": "SHOP",
+  "cat": "backpack",
+  "first": "2026-09-09T18:35:44.294Z",
+  "firstET": "Sep 09, 14:35:44",
+  "total": 190,
+  "firstSym": "BUY"
+ },
+ {
+  "mint": "RcZmt84VMJv9bDhKqmw1uWDahYrUT468VwAChTnfD8p",
+  "sym": "RIVN",
+  "cat": "backpack",
+  "first": "2026-09-09T18:31:07.360Z",
+  "firstET": "Sep 09, 14:31:07",
+  "total": 33,
+  "firstSym": "RIVN"
+ },
+ {
+  "mint": "QUBTAD8C9bMU9LvmMNgKPhrmBGbHvxpu6vfWQtThxxw",
+  "sym": "QUBT",
+  "cat": "backpack",
+  "first": "2026-09-09T18:25:21.306Z",
+  "firstET": "Sep 09, 14:25:21",
+  "total": 156,
+  "firstSym": "QCAT"
+ },
+ {
+  "mint": "DELL2aRKQz7DMq5DrKLtkn47ZCnbxXPZXrSGbkmd13wy",
+  "sym": "DELL",
+  "cat": "backpack",
+  "first": "2026-09-09T18:21:50.370Z",
+  "firstET": "Sep 09, 14:21:50",
+  "total": 83,
+  "firstSym": "DELL"
+ },
+ {
+  "mint": "BMKdM4yUxX12moFqVk195k7coMbaybd4RUKCUdm7D1Sk",
+  "sym": "IBM",
+  "cat": "backpack",
+  "first": "2026-09-09T18:21:50.370Z",
+  "firstET": "Sep 09, 14:21:50",
+  "total": 203,
+  "firstSym": "IBM"
+ },
+ {
+  "mint": "HTZsLG4zqaNvWMwXSLHH3GG5KyJpKwpBRsKVdMG6hvzP",
+  "sym": "HTZ",
+  "cat": "backpack",
+  "first": "2026-09-09T16:06:52.385Z",
+  "firstET": "Sep 09, 12:06:52",
+  "total": 208,
+  "firstSym": "USEDCAR"
+ },
+ {
+  "mint": "EnA53NmMzfsAs7p44dATdvT55HHUACxpEbC9AKY3pump",
+  "sym": "HTZ",
+  "cat": "custom",
+  "first": "2026-09-09T16:03:28.155Z",
+  "firstET": "Sep 09, 12:03:28",
+  "total": 6,
+  "firstSym": "LAMBO"
+ },
+ {
+  "mint": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+  "sym": "XBTC",
+  "cat": "leverage",
+  "first": "2026-09-09T14:51:22.001Z",
+  "firstET": "Sep 09, 10:51:22",
+  "total": 872,
+  "firstSym": "BTCX"
+ },
+ {
+  "mint": "CKfatsPMUf8SkiURsDXs7eK6GWb4Jsd6UDbs7twMCWxo",
+  "sym": "BERN",
+  "cat": "custom",
+  "first": "2026-09-09T13:54:03.235Z",
+  "firstET": "Sep 09, 09:54:03",
+  "total": 16,
+  "firstSym": "BERN"
+ },
+ {
+  "mint": "pepo1CFNU2RXf7yXX7HNXazXwxsq8WrPvDHpHriwoLY",
+  "sym": "PEPO",
+  "cat": "custom",
+  "first": "2026-09-09T13:17:16.009Z",
+  "firstET": "Sep 09, 09:17:16",
+  "total": 2,
+  "firstSym": "$LAPTOP2"
+ },
+ {
+  "mint": "EdhTCqUxXRWQcUd5Fonyz9rapHAB6mABAuVkmPrtpump",
+  "sym": "UNITY",
+  "cat": "custom",
+  "first": "2026-09-09T11:49:30.718Z",
+  "firstET": "Sep 09, 07:49:30",
+  "total": 3,
+  "firstSym": "UINU"
+ },
+ {
+  "mint": "FeDrozMMWvy1MjV7Y5pcgssxiN42TR1fV3GqYmohqA6W",
+  "sym": "KETCHUP",
+  "cat": "custom",
+  "first": "2026-09-09T09:46:05.432Z",
+  "firstET": "Sep 09, 05:46:05",
+  "total": 1,
+  "firstSym": "fries"
+ },
+ {
+  "mint": "3WPep4ufaToK1aS5s8BL9inzeUrt4DYaQCiic6ZkkC1U",
+  "sym": "GIKO",
+  "cat": "custom",
+  "first": "2026-09-09T05:15:45.439Z",
+  "firstET": "Sep 09, 01:15:45",
+  "total": 2,
+  "firstSym": "GIKO²"
+ },
+ {
+  "mint": "XsaBXg8dU5cPM6ehmVctMkVqoiRG2ZjMo1cyBJ3AykQ",
+  "sym": "KOX",
+  "cat": "xstock",
+  "first": "2026-09-09T01:21:23.394Z",
+  "firstET": "Sep 08, 21:21:23",
+  "total": 494,
+  "firstSym": "COKE"
+ },
+ {
+  "mint": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+  "sym": "MANIFEST",
+  "cat": "custom",
+  "first": "2026-09-09T01:01:44.971Z",
+  "firstET": "Sep 08, 21:01:44",
+  "total": 10,
+  "firstSym": "MONEYFEST"
+ },
+ {
+  "mint": "3BgwJ8b7b9hHX4sgfZ2KJhv9496CoVfsMK2YePevsBRw",
+  "sym": "EPIK",
+  "cat": "custom",
+  "first": "2026-09-08T23:40:48.792Z",
+  "firstET": "Sep 08, 19:40:48",
+  "total": 12,
+  "firstSym": "STTEST"
+ },
+ {
+  "mint": "eqQZhyLCkw4Ca5sRJKwZ9TLBS5j3Mg43zdZj68xpump",
+  "sym": "DeepSeek",
+  "cat": "custom",
+  "first": "2026-09-08T23:18:41.024Z",
+  "firstET": "Sep 08, 19:18:41",
+  "total": 10,
+  "firstSym": "DEEPY"
+ },
+ {
+  "mint": "4TC5nT1B7p3YpYUqiJcGSFjgLoASiH1Upxi1h1Jdpump",
+  "sym": "fomo",
+  "cat": "custom",
+  "first": "2026-09-08T22:54:58.963Z",
+  "firstET": "Sep 08, 18:54:58",
+  "total": 73,
+  "firstSym": "REMUS"
+ },
+ {
+  "mint": "AMnRhMEt4QzoKACHuN8nTykxYthscAFyX9fhDNVpump",
+  "sym": "STONK",
+  "cat": "custom",
+  "first": "2026-09-08T22:52:55.412Z",
+  "firstET": "Sep 08, 18:52:55",
+  "total": 4,
+  "firstSym": "FOMO"
+ },
+ {
+  "mint": "Am8iBffqgaedfdK5XhtorbcRrKzwH9nyL3ySikQfpump",
+  "sym": "Kimchi",
+  "cat": "custom",
+  "first": "2026-09-08T22:29:35.681Z",
+  "firstET": "Sep 08, 18:29:35",
+  "total": 7,
+  "firstSym": "AURA"
+ },
+ {
+  "mint": "AkchGAUdXXRGHt3HXaHbTvw3JLGUwtJRmYnkG66wpump",
+  "sym": "looong",
+  "cat": "custom",
+  "first": "2026-09-08T21:21:42.876Z",
+  "firstET": "Sep 08, 17:21:42",
+  "total": 1,
+  "firstSym": "shrt"
+ },
+ {
+  "mint": "Xs2yquAgsHByNzx68WJC55WHjHBvG9JsMB7CWjTLyPy",
+  "sym": "DFDV",
+  "cat": "xstock",
+  "first": "2026-09-08T20:56:17.469Z",
+  "firstET": "Sep 08, 16:56:17",
+  "total": 163,
+  "firstSym": "MAXI"
+ },
+ {
+  "mint": "AMUgSjmdFsS8Y3JeL32u7A45Fpt8YF9xKaiwW5uGHdXk",
+  "sym": "CMNS",
+  "cat": "custom",
+  "first": "2026-09-08T20:46:32.972Z",
+  "firstET": "Sep 08, 16:46:32",
+  "total": 16,
+  "firstSym": "Comotitty"
+ },
+ {
+  "mint": "SPHRp8cZaSQBTp1KMNP4V1X821SXhXWt4Q2yLdyHzju",
+  "sym": "SPHR",
+  "cat": "backpack",
+  "first": "2026-09-08T20:03:18.530Z",
+  "firstET": "Sep 08, 16:03:18",
+  "total": 165,
+  "firstSym": "$WIF"
+ },
+ {
+  "mint": "69kdRLyP5DTRkpHraaSZAQbWmAwzF9guKjZfzMXzcbAs",
+  "sym": "USA",
+  "cat": "custom",
+  "first": "2026-09-08T19:58:36.522Z",
+  "firstET": "Sep 08, 15:58:36",
+  "total": 13,
+  "firstSym": "MWG"
+ },
+ {
+  "mint": "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp",
+  "sym": "XMR",
+  "cat": "custom",
+  "first": "2026-09-08T19:20:44.085Z",
+  "firstET": "Sep 08, 15:20:44",
+  "total": 1095,
+  "firstSym": "MONEROCHAN"
+ },
+ {
+  "mint": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+  "sym": "METAX",
+  "cat": "xstock",
+  "first": "2026-09-08T18:45:11.701Z",
+  "firstET": "Sep 08, 14:45:11",
+  "total": 1632,
+  "firstSym": "MUSE"
+ },
+ {
+  "mint": "D8kgv5BRyfxUgTJGhkPJcw1Neo1eaneENC5XxC99pump",
+  "sym": "RZLR",
+  "cat": "custom",
+  "first": "2026-09-08T18:35:08.089Z",
+  "firstET": "Sep 08, 14:35:08",
+  "total": 2,
+  "firstSym": "RZLR"
+ },
+ {
+  "mint": "J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd",
+  "sym": "DOUBLEZERO",
+  "cat": "custom",
+  "first": "2026-09-08T18:13:37.184Z",
+  "firstET": "Sep 08, 14:13:37",
+  "total": 85,
+  "firstSym": "2Z"
+ },
+ {
+  "mint": "4oWhtcmBBsMG1bLZCLKusmq4t9fxdVVfbyJLevsYg5Ct",
+  "sym": "CRIMECAT",
+  "cat": "custom",
+  "first": "2026-09-08T18:08:48.678Z",
+  "firstET": "Sep 08, 14:08:48",
+  "total": 2,
+  "firstSym": "CRIMEDOG"
+ },
+ {
+  "mint": "CGEDT9QZDvvH5GmVkWJH2BXiMJqMJySC9ihWyr7Spump",
+  "sym": "BURNIE",
+  "cat": "custom",
+  "first": "2026-09-08T17:41:36.179Z",
+  "firstET": "Sep 08, 13:41:36",
+  "total": 1,
+  "firstSym": "TOLY"
+ },
+ {
+  "mint": "AVBN6kXdaw27ySuvMevKYzNTL8d39b7sGQFDCmsvpump",
+  "sym": "PINK",
+  "cat": "custom",
+  "first": "2026-09-08T17:18:51.211Z",
+  "firstET": "Sep 08, 13:18:51",
+  "total": 15,
+  "firstSym": "GEY"
+ },
+ {
+  "mint": "PEAQjk7SRS6rXHVFFmpRr7zrC4g5ZuEebpwTxvaLr3b",
+  "sym": "PEAQ",
+  "cat": "backpack",
+  "first": "2026-09-08T16:47:03.313Z",
+  "firstET": "Sep 08, 12:47:03",
+  "total": 147,
+  "firstSym": "PEAK"
+ },
+ {
+  "mint": "moJA7YR7ZfCsfAnjQwR94zjmn886ik9KchMjBnrpump",
+  "sym": "Monero",
+  "cat": "custom",
+  "first": "2026-09-08T16:10:33.460Z",
+  "firstET": "Sep 08, 12:10:33",
+  "total": 45,
+  "firstSym": "MONEROCHAN"
+ },
+ {
+  "mint": "4FdojUmXeaFMBG6yUaoufAC5Bz7u9AwnSAMizkx5pump",
+  "sym": "core",
+  "cat": "custom",
+  "first": "2026-09-08T15:59:48.638Z",
+  "firstET": "Sep 08, 11:59:48",
+  "total": 4,
+  "firstSym": "BEE"
+ },
+ {
+  "mint": "EVULoNF4DeMBN4dGiZiDfpiiTfNZgoCvXWWgaV3epump",
+  "sym": "TOKEN",
+  "cat": "custom",
+  "first": "2026-09-08T15:00:07.240Z",
+  "firstET": "Sep 08, 11:00:07",
+  "total": 5,
+  "firstSym": "STONKNFT"
+ },
+ {
+  "mint": "AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR",
+  "sym": "GUAC",
+  "cat": "custom",
+  "first": "2026-09-08T14:57:20.863Z",
+  "firstET": "Sep 08, 10:57:20",
+  "total": 1,
+  "firstSym": "GUAC"
+ },
+ {
+  "mint": "NKEda5nHhNGgjrE9nDdMvaEmkmJ96qqxzBVZEcKmjSg",
+  "sym": "NIKE",
+  "cat": "backpack",
+  "first": "2026-09-08T14:37:55.806Z",
+  "firstET": "Sep 08, 10:37:55",
+  "total": 951,
+  "firstSym": "RUNNER"
+ },
+ {
+  "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+  "sym": "GLDX",
+  "cat": "xstock",
+  "first": "2026-09-08T01:38:21.198Z",
+  "firstET": "Sep 07, 21:38:21",
+  "total": 1799,
+  "firstSym": "GP"
+ },
+ {
+  "mint": "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e",
+  "sym": "SHINJUKU",
+  "cat": "custom",
+  "first": "2026-09-08T00:52:48.489Z",
+  "firstET": "Sep 07, 20:52:48",
+  "total": 4,
+  "firstSym": "DOG"
+ },
+ {
+  "mint": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
+  "sym": "MSTRX",
+  "cat": "xstock",
+  "first": "2026-09-07T23:13:00.826Z",
+  "firstET": "Sep 07, 19:13:00",
+  "total": 555,
+  "firstSym": "PONZI"
+ },
+ {
+  "mint": "CdAH7BSRD7qNeZFA2Rbm4KATL45ko793hPxxAixUpump",
+  "sym": "pep",
+  "cat": "custom",
+  "first": "2026-09-07T22:10:41.022Z",
+  "firstET": "Sep 07, 18:10:41",
+  "total": 1,
+  "firstSym": "PIP"
+ },
+ {
+  "mint": "461C1ngHZtzTvMWT8gL7C2JLaYg2VQvaYj8aDFqhEni1",
+  "sym": "Link",
+  "cat": "custom",
+  "first": "2026-09-07T22:05:04.975Z",
+  "firstET": "Sep 07, 18:05:04",
+  "total": 22,
+  "firstSym": "LIGHTER"
+ },
+ {
+  "mint": "XSTuo1fV7HHMhs4BYiwtrWSLsMCJNrooH2AssWTYZqP",
+  "sym": "XST",
+  "cat": "custom",
+  "first": "2026-09-07T19:02:45.584Z",
+  "firstET": "Sep 07, 15:02:45",
+  "total": 3,
+  "firstSym": "LAPTOP"
+ },
+ {
+  "mint": "Xs6B6zawENwAbWVi7w92rjazLuAr5Az59qgWKcNb45x",
+  "sym": "BRKX",
+  "cat": "xstock",
+  "first": "2026-09-07T17:27:59.316Z",
+  "firstET": "Sep 07, 13:27:59",
+  "total": 231,
+  "firstSym": "BUFFETT"
+ },
+ {
+  "mint": "GHichsGq8aPnqJyz6Jp1ASTK4PNLpB5KrD6XrfDjpump",
+  "sym": "$1",
+  "cat": "custom",
+  "first": "2026-09-07T17:16:57.357Z",
+  "firstET": "Sep 07, 13:16:57",
+  "total": 5,
+  "firstSym": "1DOG"
+ },
+ {
+  "mint": "BAQPhMtf6UaXMdEwZLu1BVTSxRz9AYZkkb8FQXncpump",
+  "sym": "CALICO",
+  "cat": "custom",
+  "first": "2026-09-07T12:58:03.350Z",
+  "firstET": "Sep 07, 08:58:03",
+  "total": 2,
+  "firstSym": "LUNA"
+ },
+ {
+  "mint": "4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs",
+  "sym": "xSOL",
+  "cat": "leverage",
+  "first": "2026-09-07T11:20:03.301Z",
+  "firstET": "Sep 07, 07:20:03",
+  "total": 3601,
+  "firstSym": "LEVERCAT"
+ },
+ {
+  "mint": "J7tYmq2JnQPvxyhcXpCDrvJnc9R5ts8rv7tgVHDPsw7U",
+  "sym": "FLOYDAI",
+  "cat": "custom",
+  "first": "2026-09-07T04:11:06.233Z",
+  "firstET": "Sep 07, 00:11:06",
+  "total": 9,
+  "firstSym": "BLM"
+ },
+ {
+  "mint": "ARBzQTYDCW2KnVEjs1Mc81LekB1ibVFZKbSVmorkoT9d",
+  "sym": "ARB",
+  "cat": "backpack",
+  "first": "2026-09-07T04:02:28.621Z",
+  "firstET": "Sep 07, 00:02:28",
+  "total": 223,
+  "firstSym": "BRA"
+ },
+ {
+  "mint": "Ge87EtsjwRQbHaqQmKRno69RFTwh9bfSsm99XNxTpump",
+  "sym": "Jimothy",
+  "cat": "custom",
+  "first": "2026-09-07T03:02:07.918Z",
+  "firstET": "Sep 06, 23:02:07",
+  "total": 41,
+  "firstSym": "P"
+ },
+ {
+  "mint": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
+  "sym": "MU",
+  "cat": "backpack",
+  "first": "2026-09-07T01:13:36.029Z",
+  "firstET": "Sep 06, 21:13:36",
+  "total": 192,
+  "firstSym": "WIWI"
+ },
+ {
+  "mint": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg",
+  "sym": "AMZNX",
+  "cat": "xstock",
+  "first": "2026-09-07T01:03:19.687Z",
+  "firstET": "Sep 06, 21:03:19",
+  "total": 610,
+  "firstSym": "PRIMECAT"
+ },
+ {
+  "mint": "3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+  "sym": "NEAR",
+  "cat": "custom",
+  "first": "2026-09-07T00:36:30.252Z",
+  "firstET": "Sep 06, 20:36:30",
+  "total": 563,
+  "firstSym": "NEARKAT"
+ },
+ {
+  "mint": "KMnDBXcPXoz6oMJW5XG4tXdwSWpmWEP2RQM1Uujpump",
+  "sym": "FIGHT",
+  "cat": "custom",
+  "first": "2026-09-06T23:58:39.902Z",
+  "firstET": "Sep 06, 19:58:39",
+  "total": 1,
+  "firstSym": "SFIGHT"
+ },
+ {
+  "mint": "EbT2jpoeRJVFNWAFJE97EGfQF3iwHsEY8sh17fGbL5ER",
+  "sym": "ZDOG",
+  "cat": "custom",
+  "first": "2026-09-06T20:31:49.269Z",
+  "firstET": "Sep 06, 16:31:49",
+  "total": 2,
+  "firstSym": "Pennycoin"
+ },
+ {
+  "mint": "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+  "sym": "OPENAI",
+  "cat": "prestock",
+  "first": "2026-09-06T19:32:07.230Z",
+  "firstET": "Sep 06, 15:32:07",
+  "total": 2557,
+  "firstSym": "GPT"
+ },
+ {
+  "mint": "2zcgjEptFV8crPbj5j2ZDHgxhKsQX5MHuKZQxUwNqtjE",
+  "sym": "GPRO",
+  "cat": "custom",
+  "first": "2026-09-06T19:14:25.313Z",
+  "firstET": "Sep 06, 15:14:25",
+  "total": 14,
+  "firstSym": "chica"
+ },
+ {
+  "mint": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
+  "sym": "MET",
+  "cat": "custom",
+  "first": "2026-09-06T18:41:27.116Z",
+  "firstET": "Sep 06, 14:41:27",
+  "total": 222,
+  "firstSym": "METCAT"
+ },
+ {
+  "mint": "GvV7sFu6FHJsSVXfpG7xqFnWar3c7YkcC74rqe7Bpump",
+  "sym": "RAGEGUY",
+  "cat": "custom",
+  "first": "2026-09-06T18:37:22.547Z",
+  "firstET": "Sep 06, 14:37:22",
+  "total": 3,
+  "firstSym": "E"
+ },
+ {
+  "mint": "H74CYmXgMkYHYuSRsZt6RJb4NYp2u72Vw8BS5huApump",
+  "sym": "LMAO!",
+  "cat": "custom",
+  "first": "2026-09-06T18:05:09.395Z",
+  "firstET": "Sep 06, 14:05:09",
+  "total": 140,
+  "firstSym": "LMEOW"
+ },
+ {
+  "mint": "Pb9xCuCGr5BGLj1c4uJZs2in8rn7GZV6sQVoWhjpump",
+  "sym": "TikTok",
+  "cat": "custom",
+  "first": "2026-09-06T17:50:38.813Z",
+  "firstET": "Sep 06, 13:50:38",
+  "total": 159,
+  "firstSym": "SCUBA"
+ },
+ {
+  "mint": "CTg3ZgYx79zrE1MteDVkmkcGniiFrK1hJ6yiabropump",
+  "sym": "NEIRO",
+  "cat": "custom",
+  "first": "2026-09-06T17:03:28.496Z",
+  "firstET": "Sep 06, 13:03:28",
+  "total": 8,
+  "firstSym": "StonksInu"
+ },
+ {
+  "mint": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+  "sym": "BP",
+  "cat": "custom",
+  "first": "2026-09-06T16:42:51.974Z",
+  "firstET": "Sep 06, 12:42:51",
+  "total": 1290,
+  "firstSym": "🎒"
+ },
+ {
+  "mint": "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta",
+  "sym": "META",
+  "cat": "custom",
+  "first": "2026-09-06T16:03:29.956Z",
+  "firstET": "Sep 06, 12:03:29",
+  "total": 73,
+  "firstSym": "Futardio"
+ },
+ {
+  "mint": "6UpQcMAb5xMzxc7ZfPaVMgx3KqsvKZdT5U718BzD5We2",
+  "sym": "wXRP",
+  "cat": "custom",
+  "first": "2026-09-06T10:42:59.289Z",
+  "firstET": "Sep 06, 06:42:59",
+  "total": 737,
+  "firstSym": "UBER"
+ },
+ {
+  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+  "sym": "JUP",
+  "cat": "custom",
+  "first": "2026-09-06T08:50:40.264Z",
+  "firstET": "Sep 06, 04:50:40",
+  "total": 715,
+  "firstSym": "JUPCAT"
+ },
+ {
+  "mint": "PreZad18qfPtbxNpMtMuAuX2zVpvkEU8DnJx56faCWd",
+  "sym": "FIGUREAI",
+  "cat": "prestock",
+  "first": "2026-09-06T07:38:30.444Z",
+  "firstET": "Sep 06, 03:38:30",
+  "total": 53,
+  "firstSym": "FUCKBOT"
+ },
+ {
+  "mint": "Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ",
+  "sym": "QQQX",
+  "cat": "xstock",
+  "first": "2026-09-06T07:26:08.953Z",
+  "firstET": "Sep 06, 03:26:08",
+  "total": 1589,
+  "firstSym": "PIG"
+ },
+ {
+  "mint": "taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY",
+  "sym": "TAO",
+  "cat": "backpack",
+  "first": "2026-09-06T05:18:37.463Z",
+  "firstET": "Sep 06, 01:18:37",
+  "total": 338,
+  "firstSym": "BUTT"
+ },
+ {
+  "mint": "8ncucXv6U6epZKHPbgaEBcEK399TpHGKCquSt4RnmX4f",
+  "sym": "TRENCHER",
+  "cat": "custom",
+  "first": "2026-09-06T05:07:02.227Z",
+  "firstET": "Sep 06, 01:07:02",
+  "total": 2,
+  "firstSym": "TRENCHER"
+ },
+ {
+  "mint": "5SVG3T9CNQsm2kEwzbRq6hASqh1oGfjqTtLXYUibpump",
+  "sym": "SIGMA",
+  "cat": "custom",
+  "first": "2026-09-06T04:48:00.502Z",
+  "firstET": "Sep 06, 00:48:00",
+  "total": 4,
+  "firstSym": "GODFATHER"
+ },
+ {
+  "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+  "sym": "CARDS",
+  "cat": "custom",
+  "first": "2026-09-06T04:36:54.543Z",
+  "firstET": "Sep 06, 00:36:54",
+  "total": 1593,
+  "firstSym": "POKEMON"
+ },
+ {
+  "mint": "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump",
+  "sym": "Zoe",
+  "cat": "custom",
+  "first": "2026-09-06T04:02:30.286Z",
+  "firstET": "Sep 06, 00:02:30",
+  "total": 5,
+  "firstSym": "AI"
+ },
+ {
+  "mint": "CDBdbNqmrLu1PcgjrFG52yxg71QnFhBZcUE6PSFdbonk",
+  "sym": "LetsBONK",
+  "cat": "custom",
+  "first": "2026-09-05T21:50:37.707Z",
+  "firstET": "Sep 05, 17:50:37",
+  "total": 5,
+  "firstSym": "USELESS"
+ }
+]
