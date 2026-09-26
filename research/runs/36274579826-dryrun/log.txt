@@ -1,0 +1,56 @@
+run 0 {"t":1790459748058,"v":3,"errors":[],"warn":["The operation was aborted due to timeout"],"pairs":545,"mints":2032,"cands":1679,"ms":33310,"events":0,"ok":true} wall 33310 ms pings 0
+run 1 {"t":1790459781368,"v":3,"errors":[],"warn":[],"pairs":545,"mints":2032,"cands":1674,"ms":17577,"events":0,"ok":true} wall 17577 ms pings 0
+run 2 {"t":1790459798945,"v":3,"errors":[],"warn":[],"pairs":545,"mints":2032,"cands":1674,"ms":17558,"events":0,"ok":true} wall 17558 ms pings 0
+pings: []
+likely top 30:
+  1 tSpaceX 117K 419K PreStock/Tessera · hot volume
+  2 MORPHO 727K 185K Sunrise
+  3 sUSDai 9729K 3086K 
+  4 GO 342K 5013K hot volume
+  5 PAXG 493K 140K Sunrise
+  6 arc 15272K 376K old Raydium setup
+  7 SHARTCOIN 323K 292K 
+  8 SLX 92K 119K Sunrise
+  9 EMBER 867K 3155K hot volume
+  10 USDv 405K 131K Sunrise stablecoin
+  11 MUSHU 273K 38K old Raydium setup
+  12 7 344K 3512K hot volume
+  13 JLP 6781K 7425K 
+  14 CHZ 32K 55K Sunrise
+  15 BOTIFY 65K 1434K hot volume
+  16 KMNO 2954K 14774K hot volume
+  17 REVS 72K 31K 
+  18 RUNUP 118K 185K 
+  19 ANTFUN 4519K 3055K 
+  20 MEGA 59K 4K Sunrise
+  21 oTFY 1135K 63K 
+  22 GTR 573K 175K 
+  23 CX 657K 138K 
+  24 MPLX 3449K 2615K 
+  25 CAPX 474K 206K 
+  26 DBR 3446K 2252K 
+  27 Infinex 28K 8K Sunrise
+  28 LIKE 9327K 318K 
+  29 MEW 10801K 242K 
+  30 TUSD  162K 491K hot volume
+early recorded (quiet): 
+backpack on: 65 top launches: 0 state bytes: 51269
+digest: {"sent":"digest","rows":40,"to":["discord"]} 
+Likely next · Sat 09/26
+1. [tSpaceX](https://dexscreener.com/solana/TSPXcLV76s6V2zDiZQ18kBfcbnjaE2ZzNT3ga2Pd99v) $117K liq · $419K vol · 228d old · PreStock/Tessera · hot volume
+2. [MORPHO](https://dexscreener.com/solana/Morpho2VPeTr2E1Jx6monxCzF7mqwUnjz74RdwLXYyP) $727K liq · $185K vol · 79d old · Sunrise
+3. [sUSDai](https://dexscreener.com/solana/sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE) $9.7M liq · $3.1M vol · 46d old
+4. [GO](https://dexscreener.com/solana/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n) $342K liq · $5.0M vol · 3d old · hot volume
+5. [PAXG](https://dexscreener.com/solana/5GgRAEmv8ZxF2PR5hY72Qs5x1bnQ6UK2RbTPoqJ3wSwW) $493K liq · $140K vol · 94d old · Sunrise
+6. [arc](https://dexscreener.com/solana/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump) $15.3M liq · $376K vol · 655d old · old Raydium setup
+7. [SHARTCOIN](https://dexscreener.com/solana/UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids) $323K liq · $292K vol · 3d old
+8. [SLX](https://dexscreener.com/solana/SLXdx4BUt2v9uJQNzWqSfzTJ9UKLUDsvxHFMEEdrfgq) $92K liq · $119K vol · 124d old · Sunrise
+9. [EMBER](https://dexscreener.com/solana/5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6) $867K liq · $3.2M vol · 17d old · hot volume
+10. [USDv](https://dexscreener.com/solana/USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk) $405K liq · $131K vol · 19d old · Sunrise stablecoin
+11. [MUSHU](https://dexscreener.com/solana/5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump) $273K liq · $38K vol · old Raydium setup
+12. [7](https://dexscreener.com/solana/777XNvfVmvumMEc6M9yxJQJQnQtjbUYJyx53cqrwo777) $344K liq · $3.5M vol · hot volume
+13. [JLP](https://dexscreener.com/solana/27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4) $6.8M liq · $7.4M vol · 949d old
+14. [CHZ](https://dexscreener.com/solana/6eftxVbSAunVEoxUWdGhPdxg5UdsJ8Wkwy5w5YFuxouw) $32K liq · $55K vol · 152d old · Sunrise
+15. [BOTIFY](https://dexscreener.com/solana/7C94RweVKZtBhA291WpXW7pkYEnbqhGvCFTU8nPoBTFY) $65K liq · $1.4M vol · 5d old · hot volume
+
+Went live in the last 24 h: none
