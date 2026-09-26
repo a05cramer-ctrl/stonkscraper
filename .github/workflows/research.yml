@@ -27,7 +27,13 @@ jobs:
           OUTDIR="research/runs/${GITHUB_RUN_ID}-${JOB%.mjs}"
           mkdir -p "$OUTDIR"
           echo "OUTDIR=$OUTDIR" >> "$GITHUB_ENV"
+          git config user.name "research-bot"
+          git config user.email "research-bot@users.noreply.github.com"
+          # push partial results every 4 minutes so long jobs can be read while they run
+          ( while sleep 240; do git add research/runs && git commit -qm "partial $OUTDIR" && for i in 1 2 3; do git fetch -q origin research && git rebase -q origin/research && git push -q origin HEAD:research && break; git rebase --abort 2>/dev/null; sleep 3; done; done ) &
+          PUSHER=$!
           OUT="$PWD/$OUTDIR/" timeout 55m node "research/$JOB" > "$OUTDIR/log.txt" 2>&1 || echo "exit $?" >> "$OUTDIR/log.txt"
+          kill $PUSHER 2>/dev/null || true; sleep 2
           tail -c 4000 "$OUTDIR/log.txt"
       - name: commit results
         if: always()
