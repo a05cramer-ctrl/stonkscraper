@@ -248,7 +248,7 @@ function pingFor(ev) {
   switch (ev.type) {
     case 'early': return { title: `EARLY: ${ev.sym}`, body: `${ev.why}\n${leadText(ev)}${ev.odds ? `\nStonkFun has listed ${ev.odds.on} of ${ev.odds.of} Sunrise assets.` : ''}${rankLine(ev)}${links(ev)}\n${ev.mint}`, prio: 'urgent', tags: 'hourglass_flowing_sand', click: link };
     case 'watch': return { title: `WATCH: ${ev.sym}`, body: `${ev.why}${links(ev)}\n${ev.mint}`, prio: 'default', tags: 'eyes', click: link };
-    case 'coming': return { title: `COMING TO STONKFUN: ${ev.sym}`, body: `Raydium just set ${ev.sym}${nm} up as a launch quote. StonkFun doesn't list it yet.${ev.tvl ? `\nLiquidity ${usd(ev.tvl)}${ev.vs ? ` vs ${ev.vs}` : ''}` : ''}${ev.chance != null ? `\nChance StonkFun adds it: ${Math.round(ev.chance * 100)}%` : ''}${ev.early ? `\nEARLY ping came ${dur((ev.t - ev.early) / 6e4)} before this.` : ''}${rankLine(ev)}${links(ev, true)}\n${ev.mint}`, prio: 'urgent', tags: 'rotating_light', click: link };
+    case 'coming': return { title: `COMING TO STONKFUN: ${ev.sym}`, body: `Raydium just set ${ev.sym}${nm} up as a launch quote. StonkFun doesn't list it yet.${ev.lead ? `\n${leadText(ev)}` : ''}${ev.tvl ? `\nLiquidity ${usd(ev.tvl)}${ev.vs ? ` vs ${ev.vs}` : ''}` : ''}${ev.chance != null ? `\nChance StonkFun adds it: ${Math.round(ev.chance * 100)}%` : ''}${ev.early ? `\nEARLY ping came ${dur((ev.t - ev.early) / 6e4)} before this.` : ''}${rankLine(ev)}${links(ev, true)}\n${ev.mint}`, prio: 'urgent', tags: 'rotating_light', click: link };
     case 'added': return { title: `StonkFun added ${ev.sym} - NOT live yet`, body: `${ev.sym}${nm} is on StonkFun's list but can't be launched yet.${rankLine(ev)}\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'rotating_light', click: link };
     case 'live': return { title: `LIVE on StonkFun: ${ev.sym}`, body: `${ev.sym}${nm}${ev.catLabel ? ` (${ev.catLabel})` : ''} can be launched now.${coinsLine(ev)}${ev.early ? `\nEARLY ping came ${dur((ev.t - ev.early) / 6e4)} before this.` : ''}${ev.arrived ? `\nIt showed up as Arriving ${Math.max(1, Math.round((ev.t - ev.arrived) / 6e4))} min before this.` : ''}${rankLine(ev)}${links(ev, true)}\n${ev.mint}`, prio: soft ? 'default' : 'urgent', tags: 'green_circle', click: link };
     case 'digest': return { title: ev.title, body: ev.body, prio: 'default', tags: 'crystal_ball', click: ev.click };
@@ -325,7 +325,6 @@ async function runCheck() {
     S.leads = S.leads || {}; // kind -> minutes from EARLY ping to live, newest last
     S.lr = S.lr || {};       // mint -> rank on the last "Likely next" list
     S.recent = S.recent || []; // quotes that went live lately, for the digest's scorecard
-    S.watch = S.watch || {};   // mint -> t : quiet WATCH pings sent
     // full scan every ~2 min; a cron hit in between (cron every minute) only does the quick checks
     const heavy = first || quiet || !S.fullT || now - S.fullT >= FULL_EVERY;
     if (!heavy) run.light = 1;
@@ -375,6 +374,7 @@ async function runCheck() {
               const L = (S.leads[k] = S.leads[k] || []); L.push(Math.round((now - t) / 6e4)); if (L.length > 50) L.shift();
             }
           }
+          if (arr && arr.t > 0) { const L = (S.leads.coming = S.leads.coming || []); L.push(Math.round((now - arr.t) / 6e4)); if (L.length > 50) L.shift(); }
           S.recent.push({ sym: p.symbol, mint: p.mint, t: now, rank: base.rank, early: base.early, arrived: base.arrived });
         }
         S.pairs[p.mint] = [p.symbol, ready ? 1 : 0, (old && old[2]) || ready ? 1 : 0, p.category || '', old ? (old[4] || 0) : (first ? 0 : now)];
@@ -434,7 +434,7 @@ async function runCheck() {
     }
 
     // 2b) Raydium's admin wallet: a new quote config for any token, even one no list knows yet
-    try {
+    if (pairsRes.status === 'fulfilled') try {
       const found = await adminConfigs(S, quiet);
       for (const q of found) {
         if (S.pairs[q] || S.cfg[q] || STABLES.has(q) || q === WSOL) continue;
@@ -464,12 +464,14 @@ async function runCheck() {
     }
 
     // 3b) WATCH (quiet, no @everyone): StonkFun launches getting close to the size where they become quotes
-    if (pairsRes.status === 'fulfilled') {
-      for (const [m, sym, mcap] of S.top || []) {
+    if (pairsRes.status === 'fulfilled' && S.top && S.top.length) {
+      const init = !S.watch; // first look: note the launches already past the line, no pings
+      S.watch = S.watch || {}; // mint -> t
+      for (const [m, sym, mcap] of S.top) {
         if (S.watch[m] || (S.pairs[m] && S.pairs[m][2]) || mcap < SF_WATCH_MCAP || mcap >= SF_PROMOTE_MCAP) continue;
         if (Object.values(S.pairs).some((p) => String(p[0]).toUpperCase() === String(sym).toUpperCase())) continue;
         S.watch[m] = now;
-        if (!quiet) events.push({ type: 'watch', sym, mint: m, t: now, why: `${sym} is a StonkFun launch at ${usd(mcap)} market cap. Launches past ${usd(SF_PROMOTE_MCAP)} become quotes (EARLY ping comes then).` });
+        if (!quiet && !init) events.push({ type: 'watch', sym, mint: m, t: now, why: `${sym} is a StonkFun launch at ${usd(mcap)} market cap. Launches past ${usd(SF_PROMOTE_MCAP)} become quotes (EARLY ping comes then).` });
       }
       for (const m of Object.keys(S.watch)) if (now - S.watch[m] > 30 * 864e5) delete S.watch[m];
     }
@@ -507,7 +509,7 @@ async function runCheck() {
     }
 
     const o = odds(S, now);
-    for (const ev of events) if (ev.type === 'coming') ev.chance = o.pct;
+    for (const ev of events) if (ev.type === 'coming') { ev.chance = o.pct; ev.lead = leadFor(S, 'coming'); }
     // LIVE: how many coins are already on the new pair (bots often launch in the first seconds)
     await Promise.all(events.filter((e) => e.type === 'live').slice(0, 3).map(async (e) => {
       try { const j = await getJson(`${SF_TOKENS}?quoteMint=${e.mint}&pageSize=1`, { timeout: 6000 }); e.coins = j.data && j.data.pagination ? j.data.pagination.total : null; } catch {}
@@ -612,10 +614,13 @@ async function adminConfigs(S, quiet) {
   let cursor = S.adm;
   for (let i = 0; i < todo.length && i < 16; i += 4) {
     const batch = todo.slice(i, i + 4);
-    const txs = await Promise.all(batch.map((s) => (s.err ? null : rpc('getTransaction', [s.signature, { encoding: 'json', maxSupportedTransactionVersion: 0, commitment: 'confirmed' }]).catch(() => undefined))));
+    const txs = await Promise.all(batch.map((s) => (s.err ? null : txAny(s.signature))));
     let stop = false;
     for (let k = 0; k < batch.length; k++) {
-      if (!batch[k].err && !txs[k]) { stop = true; break; } // not served yet: try again next scan
+      if (!batch[k].err && !txs[k]) {
+        // not served yet: try again next scan (after 10 min, give up on it so the cursor can't get stuck)
+        if (!(batch[k].blockTime && Date.now() - batch[k].blockTime * 1000 > 10 * 60e3)) { stop = true; break; }
+      }
       out.push(...configsIn(txs[k]));
       cursor = batch[k].signature;
     }
@@ -623,6 +628,16 @@ async function adminConfigs(S, quiet) {
   }
   S.adm = cursor;
   return out;
+}
+// a transaction from whichever RPC has it (a node can lag a few seconds behind another)
+async function txAny(sig) {
+  for (const url of RPCS) {
+    try {
+      const j = await getJson(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'getTransaction', params: [sig, { encoding: 'json', maxSupportedTransactionVersion: 0, commitment: 'confirmed' }] }), timeout: 8000 });
+      if (j && j.result) return j.result;
+    } catch {}
+  }
+  return null;
 }
 function configsIn(t) {
   if (!t || !t.transaction || (t.meta && t.meta.err)) return [];
@@ -666,6 +681,8 @@ function sunriseStats(sun, S) {
 const BASE_LEAD = {
   'sunrise-live': { min: 6, n: 4, base: 'last 4 Sunrise listings' },
   'sf-top': { min: 101 * 60, n: 7, base: 'the last 7 launches that became quotes, 15 h to 10 days after passing $5M' },
+  // Raydium setup -> StonkFun live: IREN 1, GRASS 2, ZAMA 3, cbLTC 4, SQQQ 4, MASK 6 min (ENA took 98)
+  coming: { min: 3, n: 6, base: '1 to 6 min on the last 6 listings' },
 };
 function leadFor(S, kind, c, now) {
   const L = (S.leads && S.leads[kind]) || [];
