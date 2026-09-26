@@ -1,0 +1,7 @@
+pubTop [{"ms":129,"status":200,"len":97434,"cache":"STALE"},{"ms":27,"status":200,"len":97434,"cache":"STALE"},{"ms":33,"status":200,"len":97434,"cache":"STALE"}]
+pubTop50 [{"ms":231,"status":200,"len":49092,"cache":"MISS"},{"ms":18,"status":200,"len":49092,"cache":"HIT"},{"ms":13,"status":200,"len":49092,"cache":"HIT"}]
+platPools [{"ms":209,"status":200,"len":31753,"cache":"MISS"},{"ms":15,"status":200,"len":31753,"cache":"HIT"},{"ms":32,"status":200,"len":31753,"cache":"HIT"}]
+platPools2 [{"ms":1195,"status":200,"len":31753,"cache":"MISS"},{"ms":23,"status":200,"len":31753,"cache":"HIT"},{"ms":16,"status":200,"len":31753,"cache":"HIT"}]
+sunrise [{"ms":1897,"status":200,"len":167695,"cache":""},{"ms":69,"status":200,"len":167695,"cache":""},{"ms":65,"status":200,"len":167695,"cache":""}]
+qt [{"ms":22,"status":200,"len":136479,"cache":"HIT"},{"ms":19,"status":200,"len":136479,"cache":"HIT"},{"ms":31,"status":200,"len":136479,"cache":"HIT"}]
+backpack [{"ms":172,"status":200,"len":2153396,"cache":""},{"ms":43,"status":200,"len":2153396,"cache":""},{"ms":36,"status":200,"len":2153396,"cache":""}]
