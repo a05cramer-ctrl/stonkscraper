@@ -74,7 +74,7 @@ function configPda(mint) {
 // ---------- io ----------
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function getJson(url, opts = {}) {
-  const r = await fetch(url, { ...opts, headers: { 'user-agent': 'stonk-quote-watcher', ...(opts.headers || {}) }, signal: AbortSignal.timeout(15000) });
+  const r = await fetch(url, { ...opts, headers: { 'user-agent': 'stonk-quote-watcher', ...(opts.headers || {}) }, signal: AbortSignal.timeout(opts.timeout || 15000) });
   if (!r.ok) throw new Error(`${r.status} from ${new URL(url).host}`);
   return r.json();
 }
@@ -136,7 +136,7 @@ async function loadBackpack() {
 }
 // StonkFun's own biggest launches (a top launch sometimes becomes a quote, like MASK)
 async function loadSfTop() {
-  const j = await getJson(SF_TOP);
+  const j = await getJson(SF_TOP, { timeout: 30000 }); // StonkFun's market-cap sort is slow (15-25 s)
   return ((j.data && j.data.tokens) || []).map((t) => ({ mint: t.mint, sym: t.symbol, name: t.name, mcap: (t.market && t.market.marketCapUsd) || 0, vol: (t.market && t.market.volume24hUsd) || 0, liq: (t.market && t.market.liquidityUsd) || 0, born: Date.parse(t.createdAt) || 0 }));
 }
 const STABLES = new Set(['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']);
@@ -315,16 +315,19 @@ async function runCheck() {
     S.recent = S.recent || []; // quotes that went live lately, for the digest's scorecard
 
     const uniT = UNI && UNI.t;
-    const slow = !S.slowT || now - S.slowT > SLOW_EVERY; // Backpack's list is 2 MB: every 10 min is plenty
+    // every 10 min is plenty for these two (Backpack's list is 2 MB, StonkFun's market-cap sort is slow); each retries on its own
+    const bpDue = !S.bpT || now - S.bpT > SLOW_EVERY, topDue = !S.topT || now - S.topT > SLOW_EVERY;
     const [pairsRes, poolsRes, sunRes, qtRes, bpRes, topRes] = await Promise.allSettled([
       loadPairs(), loadUniverse(), loadSunrise(), loadQuoteTokens(),
-      slow ? loadBackpack() : Promise.resolve(null), slow ? loadSfTop() : Promise.resolve(null),
+      bpDue ? loadBackpack() : Promise.resolve(null), topDue ? loadSfTop() : Promise.resolve(null),
     ]);
     // side sources: a failure only skips their signals, it doesn't count as a failed scan
     run.warn = [sunRes, qtRes, bpRes, topRes].filter((r) => r.status === 'rejected').map((r) => r.reason.message);
     const sun = sunRes.status === 'fulfilled' ? sunRes.value : null;
     const qt = qtRes.status === 'fulfilled' ? qtRes.value : null;
-    if (slow && (bpRes.status === 'fulfilled' || topRes.status === 'fulfilled')) S.slowT = now;
+    if (bpDue && bpRes.status === 'fulfilled') S.bpT = now;
+    if (topDue && topRes.status === 'fulfilled') S.topT = now;
+    delete S.slowT;
     // Backpack stocks switched on since the last look
     let bpNew = null;
     if (bpRes.status === 'fulfilled' && bpRes.value) {
