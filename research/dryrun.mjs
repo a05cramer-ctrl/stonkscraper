@@ -42,3 +42,4 @@ const dg = await core.testPing('digest');
 out.digest = sent[sent.length - 1] && sent[sent.length - 1].embeds[0];
 console.log('digest:', JSON.stringify(dg), '\n' + (out.digest ? out.digest.title + '\n' + out.digest.description : ''));
 save('dryrun.json', out);
+// final code 2155
