@@ -1,0 +1,501 @@
+{
+ "runs": [
+  {
+   "i": 0,
+   "r": {
+    "t": 1790459093630,
+    "errors": [],
+    "warn": [],
+    "pairs": 545,
+    "mints": 2030,
+    "cands": 1676,
+    "ms": 19377,
+    "events": 0,
+    "ok": true
+   },
+   "wallMs": 19377,
+   "pingsSoFar": 0
+  },
+  {
+   "i": 1,
+   "r": {
+    "t": 1790459113008,
+    "errors": [],
+    "warn": [],
+    "pairs": 545,
+    "mints": 2030,
+    "cands": 1671,
+    "ms": 17917,
+    "events": 0,
+    "ok": true
+   },
+   "wallMs": 17917,
+   "pingsSoFar": 0
+  },
+  {
+   "i": 2,
+   "r": {
+    "t": 1790459130925,
+    "errors": [],
+    "warn": [],
+    "pairs": 545,
+    "mints": 2030,
+    "cands": 1671,
+    "ms": 17667,
+    "events": 0,
+    "ok": true
+   },
+   "wallMs": 17667,
+   "pingsSoFar": 0
+  }
+ ],
+ "pings": [],
+ "likely": [
+  {
+   "rank": 1,
+   "sym": "arc",
+   "liq": 15285576,
+   "vol": 378654.78467841743,
+   "why": "Raydium set up"
+  },
+  {
+   "rank": 2,
+   "sym": "MUSHU",
+   "liq": 273291,
+   "vol": 38319.182264710245,
+   "why": "Raydium set up"
+  },
+  {
+   "rank": 3,
+   "sym": "SNDK",
+   "liq": 128372,
+   "vol": 1130175,
+   "why": "StonkFun launch $1.8M mcap · hot volume"
+  },
+  {
+   "rank": 4,
+   "sym": "Anon",
+   "liq": 197770,
+   "vol": 178877,
+   "why": "Raydium set up"
+  },
+  {
+   "rank": 5,
+   "sym": "SPCX",
+   "liq": 966971,
+   "vol": 2628609,
+   "why": "Backpack stock · hot volume"
+  },
+  {
+   "rank": 6,
+   "sym": "Rizzmas",
+   "liq": 360972,
+   "vol": 42554.835586930916,
+   "why": "Raydium set up"
+  },
+  {
+   "rank": 7,
+   "sym": "tSpaceX",
+   "liq": 113411,
+   "vol": 412216,
+   "why": "PreStock/Tessera · hot volume"
+  },
+  {
+   "rank": 8,
+   "sym": "GROK",
+   "liq": 183393,
+   "vol": 956031,
+   "why": "StonkFun launch $2.7M mcap · hot volume"
+  },
+  {
+   "rank": 9,
+   "sym": "USD1",
+   "liq": 23916085,
+   "vol": 15353858,
+   "why": "Raydium set up"
+  },
+  {
+   "rank": 10,
+   "sym": "HYPERCAT",
+   "liq": 114833,
+   "vol": 190903.16592281178,
+   "why": "StonkFun launch $1.5M mcap"
+  },
+  {
+   "rank": 11,
+   "sym": "🎒",
+   "liq": 344224,
+   "vol": 484202.4086052249,
+   "why": "StonkFun launch $3.2M mcap"
+  },
+  {
+   "rank": 12,
+   "sym": "BOP",
+   "liq": 107422,
+   "vol": 581427,
+   "why": "StonkFun launch $1.1M mcap · hot volume"
+  },
+  {
+   "rank": 13,
+   "sym": "STONKCATS",
+   "liq": 169959,
+   "vol": 542586,
+   "why": "StonkFun launch $2.6M mcap · hot volume"
+  },
+  {
+   "rank": 14,
+   "sym": "MSTR",
+   "liq": 495945,
+   "vol": 27198.37559398228,
+   "why": "Backpack stock"
+  },
+  {
+   "rank": 15,
+   "sym": "HOOD",
+   "liq": 329158,
+   "vol": 29141,
+   "why": "Backpack stock"
+  },
+  {
+   "rank": 16,
+   "sym": "GROK",
+   "liq": 153108,
+   "vol": 276292.65315473673,
+   "why": "StonkFun launch $2.4M mcap"
+  },
+  {
+   "rank": 17,
+   "sym": "DIVI",
+   "liq": 161007,
+   "vol": 90043,
+   "why": "StonkFun launch $3.4M mcap"
+  },
+  {
+   "rank": 18,
+   "sym": "MORPHO",
+   "liq": 727027,
+   "vol": 184851,
+   "why": "Sunrise"
+  },
+  {
+   "rank": 19,
+   "sym": "INTC",
+   "liq": 195123,
+   "vol": 32548,
+   "why": "Backpack stock"
+  },
+  {
+   "rank": 20,
+   "sym": "sUSDai",
+   "liq": 9728586,
+   "vol": 3085582,
+   "why": ""
+  },
+  {
+   "rank": 21,
+   "sym": "PAXG",
+   "liq": 492771,
+   "vol": 153149,
+   "why": "Sunrise"
+  },
+  {
+   "rank": 22,
+   "sym": "GO",
+   "liq": 307511,
+   "vol": 5030054,
+   "why": "hot volume"
+  },
+  {
+   "rank": 23,
+   "sym": "POLLY",
+   "liq": 148802,
+   "vol": 175053,
+   "why": "StonkFun launch $1.6M mcap"
+  },
+  {
+   "rank": 24,
+   "sym": "RAYCAT",
+   "liq": 35008,
+   "vol": 436699,
+   "why": "StonkFun launch $2.6M mcap · hot volume"
+  },
+  {
+   "rank": 25,
+   "sym": "SHARTCOIN",
+   "liq": 323820,
+   "vol": 297097.23190516286,
+   "why": ""
+  },
+  {
+   "rank": 26,
+   "sym": "SLX",
+   "liq": 91791,
+   "vol": 118972,
+   "why": "Sunrise"
+  },
+  {
+   "rank": 27,
+   "sym": "PENIS",
+   "liq": 114561,
+   "vol": 60347,
+   "why": "StonkFun launch $1.0M mcap"
+  },
+  {
+   "rank": 28,
+   "sym": "EMBER",
+   "liq": 872246,
+   "vol": 3164655,
+   "why": "hot volume"
+  },
+  {
+   "rank": 29,
+   "sym": "USDv",
+   "liq": 404765,
+   "vol": 131062,
+   "why": "Sunrise stablecoin"
+  },
+  {
+   "rank": 30,
+   "sym": "GUARD",
+   "liq": 102330,
+   "vol": 12203,
+   "why": "StonkFun launch $1.1M mcap"
+  }
+ ],
+ "early": {},
+ "bpCount": 65,
+ "top": [
+  [
+   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "STONK",
+   231782812,
+   1993641,
+   0,
+   1784833683348
+  ],
+  [
+   "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+   "ZCAT",
+   82923477,
+   1824689,
+   0,
+   1788132626185
+  ],
+  [
+   "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+   "MASK",
+   20200510,
+   5979755,
+   523014,
+   1790153571406
+  ],
+  [
+   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "SI",
+   13546291,
+   4341313,
+   482719,
+   1790005744818
+  ],
+  [
+   "8RVBk8vxLiUHueLUW1f4izFVqN3nWippLhkohKg6EGkS",
+   "KNOTS",
+   9378174,
+   635797,
+   794659,
+   1788626085099
+  ],
+  [
+   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+   "ALLINU",
+   8430885,
+   1034324,
+   311357,
+   1789157100407
+  ],
+  [
+   "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr",
+   "NEARKAT",
+   7175696,
+   681948,
+   413102,
+   1788741390252
+  ],
+  [
+   "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "PURR",
+   6064868,
+   415499,
+   0,
+   1787188075607
+  ],
+  [
+   "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+   "GP",
+   5825154,
+   1687550,
+   253832,
+   1788831501198
+  ],
+  [
+   "FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht",
+   "DIVI",
+   3391342,
+   90043,
+   161007,
+   1789132206816
+  ],
+  [
+   "ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK",
+   "🎒",
+   3244546,
+   430673,
+   344224,
+   1788712971974
+  ],
+  [
+   "6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8",
+   "GROK",
+   2679792,
+   956031,
+   183393,
+   1790016629238
+  ],
+  [
+   "9h5AzEQzYu9CV5K6uLtFRMD1KcbxZSFNxZEgBTNfw5Na",
+   "STONKCATS",
+   2614431,
+   283380,
+   169959,
+   1789437012750
+  ],
+  [
+   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+   "WOW",
+   2587757,
+   493450,
+   159008,
+   1789346386053
+  ],
+  [
+   "CFNRDaxFcvRwRSNnA5cHrCCr6AHhk9dNkHWpRUjNupFL",
+   "RAYCAT",
+   2553156,
+   347915,
+   0,
+   1786624224634
+  ],
+  [
+   "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih",
+   "GROK",
+   2431751,
+   264869,
+   153108,
+   1789202443509
+  ],
+  [
+   "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
+   "FEELSGOOD",
+   2255359,
+   262583,
+   162516,
+   1789767047922
+  ],
+  [
+   "E4Ap4icMLwKot8rkkTbq5JkS5kZxt5XCE3yfxbzYBjHx",
+   "BTC",
+   2176225,
+   256034,
+   0,
+   1788155966484
+  ],
+  [
+   "8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2",
+   "SNDK",
+   1824583,
+   1130175,
+   128372,
+   1790300222170
+  ],
+  [
+   "7MCgYMzq3fov6oERdtTMAYbN2U9LZrrSYS1MBhjixZFr",
+   "POLLY",
+   1642021,
+   175053,
+   148802,
+   1789053406618
+  ],
+  [
+   "7Qy2cXpdj4Fu2DUPVWdN3oogM3JSwLUV2LZaKVgVcPZh",
+   "HYPERCAT",
+   1530304,
+   183982,
+   114833,
+   1790185286084
+  ],
+  [
+   "7ssJZGFT3twGqeYA1kvpoMWwZYvMZvrMEbjRaWgg46BL",
+   "BUTTHOLE",
+   1471182,
+   22870,
+   0,
+   1785966304100
+  ],
+  [
+   "AGi2s9zPRPHs3zEDPhPTroumTEXK5ufymYSfEFndCSSW",
+   "LEVERCAT",
+   1460295,
+   127201,
+   154486,
+   1788780003301
+  ],
+  [
+   "527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz",
+   "BOP",
+   1115394,
+   581427,
+   107422,
+   1790055046998
+  ],
+  [
+   "HRe2LkLMiQnrpeooNTmvkHp2bzX7JdBPpek7Eu3oWSuK",
+   "GUARD",
+   1071785,
+   12203,
+   102330,
+   1789258174305
+  ],
+  [
+   "JE3HT7SbCgXDQWV6xp3oiiAisDzq4HyZ8wyEVBDCs45Z",
+   "PENIS",
+   1006571,
+   60347,
+   114561,
+   1788993728251
+  ]
+ ],
+ "fv": 3,
+ "dg": "2026-09-26",
+ "stateBytes": 53732,
+ "board": {
+  "likely": 40,
+  "early": [],
+  "run": {
+   "t": 1790459130925,
+   "errors": [],
+   "warn": [],
+   "pairs": 545,
+   "mints": 2030,
+   "cands": 1671,
+   "ms": 17667,
+   "events": 0,
+   "ok": true
+  }
+ },
+ "digest": {
+  "title": "Likely next · Sat 09/26",
+  "description": "1. [arc](https://dexscreener.com/solana/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump) $15.3M liq · $379K vol · 655d old · Raydium set up\n2. [MUSHU](https://dexscreener.com/solana/5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump) $273K liq · $38K vol · Raydium set up\n3. [SNDK](https://dexscreener.com/solana/8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2) $128K liq · $1.1M vol · 2d old · StonkFun launch $1.8M mcap · hot volume\n4. [Anon](https://dexscreener.com/solana/9McvH6w97oewLmPxqQEoHUAv3u5iYMyQ9AeZZhguYf1T) $198K liq · $179K vol · 636d old · Raydium set up\n5. [SPCX](https://dexscreener.com/solana/SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb) $967K liq · $2.6M vol · 107d old · Backpack stock · hot volume\n6. [Rizzmas](https://dexscreener.com/solana/85cQsFgbi8mBZxiPppbpPXuV7j1hA8tBwhjF4gKW6mHg) $361K liq · $43K vol · 1007d old · Raydium set up\n7. [tSpaceX](https://dexscreener.com/solana/TSPXcLV76s6V2zDiZQ18kBfcbnjaE2ZzNT3ga2Pd99v) $113K liq · $412K vol · 228d old · PreStock/Tessera · hot volume\n8. [GROK](https://dexscreener.com/solana/6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8) $183K liq · $956K vol · 5d old · StonkFun launch $2.7M mcap · hot volume\n9. [USD1](https://dexscreener.com/solana/USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB) $23.9M liq · $15.4M vol · 400d old · Raydium set up\n10. [HYPERCAT](https://dexscreener.com/solana/7Qy2cXpdj4Fu2DUPVWdN3oogM3JSwLUV2LZaKVgVcPZh) $115K liq · $191K vol · 3d old · StonkFun launch $1.5M mcap\n11. [🎒](https://dexscreener.com/solana/ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK) $344K liq · $484K vol · 20d old · StonkFun launch $3.2M mcap\n12. [BOP](https://dexscreener.com/solana/527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz) $107K liq · $581K vol · 5d old · StonkFun launch $1.1M mcap · hot volume\n13. [STONKCATS](https://dexscreener.com/solana/9h5AzEQzYu9CV5K6uLtFRMD1KcbxZSFNxZEgBTNfw5Na) $170K liq · $543K vol · 12d old · StonkFun launch $2.6M mcap · hot volume\n14. [MSTR](https://dexscreener.com/solana/MSTRdWXMeZxdE8osAQy3fA4rvTY5rgummDSMEx6U7Nz) $496K liq · $27K vol · 61d old · Backpack stock\n15. [HOOD](https://dexscreener.com/solana/HooDYv5RewLRiMLnEVq3VJqdqxhuE6c5eYvqejMC3e9A) $329K liq · $29K vol · 72d old · Backpack stock\n\nWent live in the last 24 h: none",
+  "color": 13079274,
+  "timestamp": "2026-09-26T21:45:48.598Z"
+ }
+}

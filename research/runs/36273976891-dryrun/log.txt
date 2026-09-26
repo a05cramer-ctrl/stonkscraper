@@ -1,0 +1,56 @@
+run 0 {"t":1790459093630,"errors":[],"warn":[],"pairs":545,"mints":2030,"cands":1676,"ms":19377,"events":0,"ok":true} wall 19377 ms pings 0
+run 1 {"t":1790459113008,"errors":[],"warn":[],"pairs":545,"mints":2030,"cands":1671,"ms":17917,"events":0,"ok":true} wall 17917 ms pings 0
+run 2 {"t":1790459130925,"errors":[],"warn":[],"pairs":545,"mints":2030,"cands":1671,"ms":17667,"events":0,"ok":true} wall 17667 ms pings 0
+pings: []
+likely top 30:
+  1 arc 15286K 379K Raydium set up
+  2 MUSHU 273K 38K Raydium set up
+  3 SNDK 128K 1130K StonkFun launch $1.8M mcap · hot volume
+  4 Anon 198K 179K Raydium set up
+  5 SPCX 967K 2629K Backpack stock · hot volume
+  6 Rizzmas 361K 43K Raydium set up
+  7 tSpaceX 113K 412K PreStock/Tessera · hot volume
+  8 GROK 183K 956K StonkFun launch $2.7M mcap · hot volume
+  9 USD1 23916K 15354K Raydium set up
+  10 HYPERCAT 115K 191K StonkFun launch $1.5M mcap
+  11 🎒 344K 484K StonkFun launch $3.2M mcap
+  12 BOP 107K 581K StonkFun launch $1.1M mcap · hot volume
+  13 STONKCATS 170K 543K StonkFun launch $2.6M mcap · hot volume
+  14 MSTR 496K 27K Backpack stock
+  15 HOOD 329K 29K Backpack stock
+  16 GROK 153K 276K StonkFun launch $2.4M mcap
+  17 DIVI 161K 90K StonkFun launch $3.4M mcap
+  18 MORPHO 727K 185K Sunrise
+  19 INTC 195K 33K Backpack stock
+  20 sUSDai 9729K 3086K 
+  21 PAXG 493K 153K Sunrise
+  22 GO 308K 5030K hot volume
+  23 POLLY 149K 175K StonkFun launch $1.6M mcap
+  24 RAYCAT 35K 437K StonkFun launch $2.6M mcap · hot volume
+  25 SHARTCOIN 324K 297K 
+  26 SLX 92K 119K Sunrise
+  27 PENIS 115K 60K StonkFun launch $1.0M mcap
+  28 EMBER 872K 3165K hot volume
+  29 USDv 405K 131K Sunrise stablecoin
+  30 GUARD 102K 12K StonkFun launch $1.1M mcap
+early recorded (quiet): 
+backpack on: 65 top launches: 26 state bytes: 53732
+digest: {"sent":"digest","rows":40,"to":["discord"]} 
+Likely next · Sat 09/26
+1. [arc](https://dexscreener.com/solana/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump) $15.3M liq · $379K vol · 655d old · Raydium set up
+2. [MUSHU](https://dexscreener.com/solana/5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump) $273K liq · $38K vol · Raydium set up
+3. [SNDK](https://dexscreener.com/solana/8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2) $128K liq · $1.1M vol · 2d old · StonkFun launch $1.8M mcap · hot volume
+4. [Anon](https://dexscreener.com/solana/9McvH6w97oewLmPxqQEoHUAv3u5iYMyQ9AeZZhguYf1T) $198K liq · $179K vol · 636d old · Raydium set up
+5. [SPCX](https://dexscreener.com/solana/SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb) $967K liq · $2.6M vol · 107d old · Backpack stock · hot volume
+6. [Rizzmas](https://dexscreener.com/solana/85cQsFgbi8mBZxiPppbpPXuV7j1hA8tBwhjF4gKW6mHg) $361K liq · $43K vol · 1007d old · Raydium set up
+7. [tSpaceX](https://dexscreener.com/solana/TSPXcLV76s6V2zDiZQ18kBfcbnjaE2ZzNT3ga2Pd99v) $113K liq · $412K vol · 228d old · PreStock/Tessera · hot volume
+8. [GROK](https://dexscreener.com/solana/6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8) $183K liq · $956K vol · 5d old · StonkFun launch $2.7M mcap · hot volume
+9. [USD1](https://dexscreener.com/solana/USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB) $23.9M liq · $15.4M vol · 400d old · Raydium set up
+10. [HYPERCAT](https://dexscreener.com/solana/7Qy2cXpdj4Fu2DUPVWdN3oogM3JSwLUV2LZaKVgVcPZh) $115K liq · $191K vol · 3d old · StonkFun launch $1.5M mcap
+11. [🎒](https://dexscreener.com/solana/ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK) $344K liq · $484K vol · 20d old · StonkFun launch $3.2M mcap
+12. [BOP](https://dexscreener.com/solana/527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz) $107K liq · $581K vol · 5d old · StonkFun launch $1.1M mcap · hot volume
+13. [STONKCATS](https://dexscreener.com/solana/9h5AzEQzYu9CV5K6uLtFRMD1KcbxZSFNxZEgBTNfw5Na) $170K liq · $543K vol · 12d old · StonkFun launch $2.6M mcap · hot volume
+14. [MSTR](https://dexscreener.com/solana/MSTRdWXMeZxdE8osAQy3fA4rvTY5rgummDSMEx6U7Nz) $496K liq · $27K vol · 61d old · Backpack stock
+15. [HOOD](https://dexscreener.com/solana/HooDYv5RewLRiMLnEVq3VJqdqxhuE6c5eYvqejMC3e9A) $329K liq · $29K vol · 72d old · Backpack stock
+
+Went live in the last 24 h: none
