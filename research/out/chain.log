@@ -1,0 +1,13 @@
+2s rpc test {"https://solana-rpc.publicnode.com":{"status":200,"ok":false,"err":null,"t":null},"https://api.mainnet-beta.solana.com":{"status":200,"ok":true,"err":null,"t":1790261702},"https://solana.drpc.org":{"status":400,"ok":false,"err":"{\"message\":\"chain is not available on free plan, please upgrade to paid plan\",\"code\":35}","t":null}}
+2s listings to scan 57
+file:///home/runner/work/stonkscraper/stonkscraper/research/lib.mjs:63
+      if (j.error) { last = new Error(JSON.stringify(j.error).slice(0, 200)); await sleep(500 * (i + 1)); continue; }
+                            ^
+
+Error: {"code":-32602,"message":"Invalid param: Invalid"}
+    at rpc (file:///home/runner/work/stonkscraper/stonkscraper/research/lib.mjs:63:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///home/runner/work/stonkscraper/stonkscraper/research/chain.mjs:40:15
+
+Node.js v22.23.2
+exit 1

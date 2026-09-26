@@ -1,0 +1,126 @@
+{
+ "rpcTest": {
+  "https://solana-rpc.publicnode.com": {
+   "status": 200,
+   "ok": false,
+   "err": null,
+   "t": null
+  },
+  "https://api.mainnet-beta.solana.com": {
+   "status": 200,
+   "ok": true,
+   "err": null,
+   "t": 1790261702
+  },
+  "https://solana.drpc.org": {
+   "status": 400,
+   "ok": false,
+   "err": "{\"message\":\"chain is not available on free plan, please upgrade to paid plan\",\"code\":35}",
+   "t": null
+  }
+ },
+ "listings": [],
+ "zamaCreate": {
+  "slot": 450061936,
+  "time": 1790261702000,
+  "et": "Sep 24, 10:55:02",
+  "err": null,
+  "fee": 5000,
+  "signers": [
+   "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2"
+  ],
+  "ixs": [
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:c9cff3724b6f2fbd",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4",
+     "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh",
+     "rayvTLcCMDs7P5tgpuoNA6ZYeLERegeCphdqLSgdKms",
+     "rayHQtJKrtvqUs3HnhDW9RKubHRbu87eESKEYD5xosa",
+     "RAYzrepoBdjSFg7MZj2vy4XBSv2azKRXC72ztUMZMJB",
+     "RAYpQbFNq9i3mu6cKpTKKRwwHFDeK5AuZz8xvxUrCgw",
+     "11111111111111111111111111111111"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+    "what": "d:1d9efcbf0a53db63",
+    "inner": false,
+    "accounts": [
+     "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4"
+    ]
+   },
+   {
+    "prog": "11111111111111111111111111111111",
+    "what": "createAccount",
+    "inner": true,
+    "accounts": [],
+    "info": {
+     "lamports": 2534920,
+     "newAccount": "9iEYcMmB5X6XF2bLQEx6AZeViLru7gu3KN87wp3HjEB4",
+     "owner": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+     "source": "RayUzntHM1dWZJyCnkQjHusUGhYyi6gpNf7t8srtty2",
+     "space": 371
+    }
+   }
+  ],
+  "logs": [
+   "Program log: Instruction: CreateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig",
+   "Program log: Instruction: UpdateConfig"
+  ]
+ }
+}
