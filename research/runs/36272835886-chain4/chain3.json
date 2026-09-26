@@ -52,6 +52,187 @@
    "t0ET": "Sep 25, 10:30:00",
    "liveET": "Sep 25, 10:40:36",
    "firstLaunchET": "Sep 25, 10:48:13"
+  },
+  {
+   "sym": "EWY",
+   "mint": "EWY4owSJYMpwN33qGDu5gGxpkQkpMJu8ZUsQJaNZG5dv",
+   "kind": "sunrise-stock",
+   "t0": 1790434800000,
+   "live": null,
+   "firstLaunch": 1790435066000,
+   "pre": {
+    "n": 1973,
+    "pages": 3,
+    "reachedStart": true
+   },
+   "preFirst": {
+    "et": "Sep 26, 10:51:48",
+    "leadMin": 8
+   },
+   "preTx": [
+    {
+     "et": "Sep 26, 10:51:48",
+     "leadMin": 8,
+     "err": true,
+     "signers": [
+      "GCrbXrXK"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,CAMMCz:2b44d4a7,createAccount,CreateCustomizablePool"
+    },
+    {
+     "et": "Sep 26, 10:51:49",
+     "leadMin": 8,
+     "err": true,
+     "signers": [
+      "GCrbXrXK"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,CAMMCz:2b44d4a7,createAccount,CreateCustomizablePool"
+    },
+    {
+     "et": "Sep 26, 10:51:52",
+     "leadMin": 8,
+     "err": true,
+     "signers": [
+      "GCrbXrXK"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,CAMMCz:2b44d4a7,createAccount,CreateCustomizablePool"
+    },
+    {
+     "et": "Sep 26, 10:52:39",
+     "leadMin": 7,
+     "err": true,
+     "signers": [
+      "GCrbXrXK"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,CAMMCz:2b44d4a7,createAccount,CreateCustomizablePool"
+    },
+    {
+     "et": "Sep 26, 10:52:40",
+     "leadMin": 7,
+     "err": true,
+     "signers": [
+      "GCrbXrXK"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,CAMMCz:2b44d4a7,createAccount,CreateCustomizablePool"
+    },
+    {
+     "et": "Sep 26, 10:54:05",
+     "leadMin": 6,
+     "err": true,
+     "signers": [
+      "2tBHun1m",
+      "Dn8KgWhe"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,createIdempotent,transfer,syncNative,CAMMCz:2b44d4a7,CAMMCz:4db84ad6,closeAccount,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,GetAccountDataSize,InitializeImmutableOwner"
+    },
+    {
+     "et": "Sep 26, 10:54:06",
+     "leadMin": 6,
+     "err": true,
+     "signers": [
+      "2tBHun1m",
+      "AW2ND3ab"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,createIdempotent,transfer,syncNative,CAMMCz:2b44d4a7,CAMMCz:4db84ad6,closeAccount,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,GetAccountDataSize,InitializeImmutableOwner"
+    },
+    {
+     "et": "Sep 26, 10:54:07",
+     "leadMin": 6,
+     "err": true,
+     "signers": [
+      "2tBHun1m",
+      "4HRxNpmC"
+     ],
+     "what": "Comput:02a0bb0d,Comput:03404b4c,createIdempotent,transfer,syncNative,CAMMCz:2b44d4a7,CAMMCz:4db84ad6,closeAccount,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,GetAccountDataSize,InitializeImmutableOwner"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:02c50606,Comput:03010000,transfer,Prism8:0d011401"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:020dfb05,Comput:03010000,transfer,Prism8:0d011401"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:02e90006,transfer,Prism8:0d011401"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:0225f705,Comput:03020000,transfer,Prism8:0d011401"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:02fdd305,transfer,Prism8:0d011401"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:02e5d705,Comput:03010000,transfer,Prism8:0d011401"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:0249f105,Comput:03010000,transfer,Prism8:0d011401"
+    },
+    {
+     "et": "Sep 26, 11:00:00",
+     "leadMin": 0,
+     "err": false,
+     "signers": [
+      "Cn6CDLum"
+     ],
+     "what": "advanceNonce,Comput:043e154f,Comput:02b5df05,Comput:03020000,transfer,Prism8:0d011401"
+    }
+   ],
+   "cfg": {
+    "foundK": 1,
+    "reachedStart": true,
+    "n": 6252,
+    "et": "Sep 26, 11:00:40",
+    "minVsT0": 0.7,
+    "signers": [
+     "4X2GxjtsvRCbrFTQWWWvB1dTs8fDrLjEpd2G6PfpwLcp",
+     "HtSSLeMZPyTd4jfexszUo3T9MDXqc5Hdgc4gLyhg5WBy"
+    ],
+    "what": "advanceNonce,createIdempotent,LanMV9:25be7ede,LanMV9:faea0d7b,transfer,createAccount,initializeAccount3,LanMV9:e445a52e,initializeMetadataPointer,initializeTransferFeeConfig,initializeMint2,initializeTokenMetadata,mintTo,setAuthority"
+   },
+   "t0ET": "Sep 26, 11:00:00",
+   "liveET": null,
+   "firstLaunchET": "Sep 26, 11:04:26"
   }
  ]
 }
