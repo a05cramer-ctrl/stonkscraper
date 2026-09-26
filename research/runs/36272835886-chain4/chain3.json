@@ -22,6 +22,36 @@
    "t0ET": "Sep 25, 14:01:06",
    "liveET": "Sep 25, 14:01:06",
    "firstLaunchET": "Sep 25, 13:59:30"
+  },
+  {
+   "sym": "SQQQ",
+   "mint": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+   "kind": "sunrise-stock",
+   "t0": 1790346600000,
+   "live": 1790347236326,
+   "firstLaunch": 1790347693090,
+   "pre": {
+    "n": 0,
+    "pages": 1,
+    "reachedStart": true
+   },
+   "preFirst": null,
+   "preTx": [],
+   "cfg": {
+    "foundK": 8,
+    "reachedStart": true,
+    "n": 6991,
+    "et": "Sep 25, 10:36:20",
+    "minVsT0": 6.3,
+    "signers": [
+     "B9Zbs2W9VK22AHnCWiK4PqBueDFzN17RNAFu5uFozLMJ",
+     "2HmX9Gv5z9oVTzhgsVUp87k5rKMmmCNnQNQakarXdLms"
+    ],
+    "what": "createIdempotent,transfer,syncNative,JUP6Lk:e517cb97,closeAccount,LanMV9:25be7ede,LanMV9:faea0d7b,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,CAMMCz:2b04ed0b,transferChecked,JUP6Lk:e445a52e"
+   },
+   "t0ET": "Sep 25, 10:30:00",
+   "liveET": "Sep 25, 10:40:36",
+   "firstLaunchET": "Sep 25, 10:48:13"
   }
  ]
 }
