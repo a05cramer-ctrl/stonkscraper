@@ -1,0 +1,38 @@
+upgrade (full, quiet)  {"t":1790465139864,"v":4,"errors":[],"n":1,"ne":0,"gap":0,"hs":1790465139864,"warn":[],"pairs":544,"mints":2027,"cands":1676,"ms":19565,"events":0,"ok":true} | wall 19566 ms | pings 0
+quick                  {"t":1790465159429,"v":4,"errors":[],"n":2,"ne":0,"gap":79565,"hs":1790465139864,"light":1,"warn":[],"pairs":544,"cands":47,"ms":3870,"events":0,"ok":true,"mints":2027} | wall 3870 ms | pings 0
+CARS config tx index 0 Sep 26, 13:59:48
+quick: admin replay    {"t":1790465163681,"v":4,"errors":[],"n":3,"ne":0,"gap":79565,"hs":1790465139864,"light":1,"warn":[],"pairs":544,"cands":47,"ms":4452,"events":0,"ok":true,"mints":2027} | wall 4452 ms | pings 0
+quick: CARS listed     {"t":1790465168133,"v":4,"errors":[],"n":4,"ne":0,"gap":79565,"hs":1790465139864,"light":1,"warn":[],"pairs":545,"cands":47,"ms":9717,"events":1,"ok":true,"mints":2027} | wall 9717 ms | pings 1
+full (forced)          {"t":1790465177851,"v":4,"errors":[],"n":5,"ne":0,"gap":79565,"hs":1790465139864,"warn":[],"pairs":545,"mints":2027,"cands":1670,"ms":18405,"events":0,"ok":true} | wall 18405 ms | pings 1
+
+pings:
+--- (quiet) 
+LIVE on StonkFun: CARS
+CARS (Rip Cars) (Custom) can be launched now.
+Was #31 on Likely next.
+[Launch on StonkFun](https://www.stonkfun.xyz/launch) (search CARS) · [Chart](https://dexscreener.com/solana/CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta)
+CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta
+
+leads {} cfg CARS {"sym":"CARS","name":"Rip Cars","tvl":147913,"vs":"","t":0} recent [{"sym":"CARS","mint":"CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta","t":1790465168134,"rank":31,"early":0,"arrived":0}]
+
+digest:
+Likely next · Sat 09/26
+**Likely next**
+1. [tSpaceX](https://dexscreener.com/solana/TSPXcLV76s6V2zDiZQ18kBfcbnjaE2ZzNT3ga2Pd99v) $119K liq · $430K vol · 228d old · PreStock/Tessera · hot volume
+2. [GROK](https://dexscreener.com/solana/6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8) $199K liq · $938K vol · 5d old · StonkFun launch $3.1M mcap · hot volume
+3. [HYPERCAT](https://dexscreener.com/solana/7Qy2cXpdj4Fu2DUPVWdN3oogM3JSwLUV2LZaKVgVcPZh) $114K liq · $182K vol · 3d old · StonkFun launch $1.5M mcap
+4. [🎒](https://dexscreener.com/solana/ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK) $330K liq · $441K vol · 20d old · StonkFun launch $3.1M mcap
+5. [STONKCATS](https://dexscreener.com/solana/9h5AzEQzYu9CV5K6uLtFRMD1KcbxZSFNxZEgBTNfw5Na) $169K liq · $368K vol · 12d old · StonkFun launch $2.6M mcap · hot volume
+6. [GROK](https://dexscreener.com/solana/GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih) $168K liq · $280K vol · 15d old · StonkFun launch $2.9M mcap
+7. [MORPHO](https://dexscreener.com/solana/Morpho2VPeTr2E1Jx6monxCzF7mqwUnjz74RdwLXYyP) $731K liq · $184K vol · 79d old · Sunrise
+8. [DIVI](https://dexscreener.com/solana/FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht) $157K liq · $90K vol · 15d old · StonkFun launch $3.2M mcap
+9. [sUSDai](https://dexscreener.com/solana/sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE) $9.7M liq · $3.1M vol · 46d old
+10. [GO](https://dexscreener.com/solana/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n) $330K liq · $4.7M vol · 3d old · hot volume
+11. [PAXG](https://dexscreener.com/solana/5GgRAEmv8ZxF2PR5hY72Qs5x1bnQ6UK2RbTPoqJ3wSwW) $493K liq · $123K vol · 94d old · Sunrise
+12. [CYPHERCAT](https://dexscreener.com/solana/6AUURRdHb9TrfPHv9AMofa8NEVoZDXcsbWKcUBpFSRXs) $114K liq · $215K vol · 8d old · StonkFun launch $1.1M mcap
+13. [POLLY](https://dexscreener.com/solana/7MCgYMzq3fov6oERdtTMAYbN2U9LZrrSYS1MBhjixZFr) $149K liq · $173K vol · 16d old · StonkFun launch $1.6M mcap
+14. [arc](https://dexscreener.com/solana/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump) $15.3M liq · $356K vol · 655d old · old Raydium setup
+15. [RAYCAT](https://dexscreener.com/solana/CFNRDaxFcvRwRSNnA5cHrCCr6AHhk9dNkHWpRUjNupFL) $33K liq · $397K vol · 44d old · StonkFun launch $2.4M mcap · hot volume
+
+**Went live in the last 24 h:** CARS (no early ping, was #31)
+**Watcher:** 5 checks since Sat 19:25 ET, no errors, longest gap 1 min.
