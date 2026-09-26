@@ -7,11 +7,12 @@ const require = createRequire(import.meta.url);
 process.env.DISCORD_WEBHOOK = 'https://discord.fake/hook';
 const CARS = 'CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta';
 let hide = true;
+let scanStart = 0;
 const sent = [];
 const realFetch = global.fetch;
 global.fetch = async (url, opts) => {
   const u = String(url);
-  if (u.startsWith('https://discord.fake')) { sent.push(JSON.parse(opts.body)); return new Response('', { status: 204 }); }
+  if (u.startsWith('https://discord.fake')) { const b = JSON.parse(opts.body); b.at = Date.now() - scanStart; sent.push(b); return new Response('', { status: 204 }); }
   const r = await realFetch(url, opts);
   if (hide && (u.includes('stonkfun.xyz/api/public/v1/pairs') || u.includes('stonkfun.xyz/api/quote-tokens'))) {
     const j = await r.json();
@@ -33,6 +34,7 @@ async function one(label, prep) {
   if (run) { run.t -= 60e3; M.set('sqw:run', JSON.stringify(run)); }
   if (prep) { const S = JSON.parse(M.get('sqw:state')); prep(S); M.set('sqw:state', JSON.stringify(S)); }
   const t = Date.now();
+  scanStart = t;
   const r = await core.runCheck();
   out.runs.push({ label, r, wallMs: Date.now() - t, pingsSoFar: sent.length });
   console.log(label.padEnd(22), JSON.stringify(r), '| wall', Date.now() - t, 'ms | pings', sent.length);
@@ -47,12 +49,15 @@ for (let i = 0; i < sigs.length && k < 0; i++) {
   if (core.configsIn(t).includes(CARS)) k = i;
 }
 console.log('CARS config tx index', k, k >= 0 ? et(sigs[k].blockTime * 1000) : '');
-await one('quick: admin replay', (S) => { S.adm = sigs[k + 1].signature; S.fullT = Date.now(); });
+await one('quick: admin replay', (S) => { S.adm = sigs[k + 1].signature; delete S.cfg[CARS]; S.fullT = Date.now(); });
 hide = false;
 await one('quick: CARS listed', (S) => { S.fullT = Date.now(); });
 await one('full (forced)', (S) => { S.fullT = 0; });
-out.pings = sent.map((b) => ({ content: b.content, embeds: b.embeds.map((e) => ({ title: e.title, d: e.description })) }));
-console.log('\npings:'); for (const p of out.pings) for (const e of p.embeds) console.log('---', p.content || '(quiet)', '\n' + e.title + '\n' + e.d);
+// a LIVE in a full scan: hide CARS again, forget it, show it -> how fast does LIVE go out?
+hide = true; await one('quick: CARS hidden', (S) => { S.fullT = Date.now(); });
+hide = false; await one('full: CARS listed', (S) => { delete S.pairs[CARS]; delete S.cfg[CARS]; S.fullT = 0; });
+out.pings = sent.map((b) => ({ at: b.at, content: b.content, embeds: b.embeds.map((e) => ({ title: e.title, d: e.description })) }));
+console.log('\npings:'); for (const p of out.pings) for (const e of p.embeds) console.log('---', p.content || '(quiet)', `(sent ${p.at} ms into the scan)`, '\n' + e.title + '\n' + e.d);
 const S = JSON.parse(M.get('sqw:state'));
 console.log('\nleads', JSON.stringify(S.leads), 'cfg CARS', JSON.stringify(S.cfg[CARS]), 'recent', JSON.stringify(S.recent));
 M.delete('sqw:test');
