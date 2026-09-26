@@ -1,0 +1,73 @@
+upgrade (full, quiet)    {"t":1790464378012,"v":4,"errors":[],"n":1,"ne":0,"gap":0,"hs":1790464378012,"warn":["The operation was aborted due to timeout"],"pairs":545,"mints":2024,"cands":1672,"ms":48594,"events":0,"ok":true} | wall 48595 ms | pings 0
+quick 1                  {"t":1790464426606,"v":4,"errors":[],"n":2,"ne":0,"gap":108594,"hs":1790464378012,"light":1,"warn":[],"pairs":545,"cands":45,"ms":5155,"events":0,"ok":true,"mints":2024} | wall 5155 ms | pings 0
+quick 2                  {"t":1790464431761,"v":4,"errors":[],"n":3,"ne":0,"gap":108594,"hs":1790464378012,"light":1,"warn":[],"pairs":545,"cands":45,"ms":3629,"events":0,"ok":true,"mints":2024} | wall 3629 ms | pings 0
+full (forced)            {"t":1790464435391,"v":4,"errors":[],"n":4,"ne":0,"gap":108594,"hs":1790464378012,"warn":[],"pairs":545,"mints":2024,"cands":1667,"ms":33013,"events":3,"ok":true} | wall 33013 ms | pings 1
+quick 3                  {"t":1790464468404,"v":4,"errors":[],"n":5,"ne":0,"gap":108594,"hs":1790464378012,"light":1,"warn":[],"pairs":545,"cands":56,"ms":3676,"events":0,"ok":true,"mints":2024} | wall 3676 ms | pings 1
+admin decode:
+  Sep 26, 13:59:48   CARS CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta
+  Sep 26, 12:37:51   SI DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP
+  Sep 26, 11:00:40   EWY EWY4owSJYMpwN33qGDu5gGxpkQkpMJu8ZUsQJaNZG5dv
+  Sep 26, 00:44:12   MASK HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7
+  Sep 25, 13:36:57   CBLTC cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf
+  Sep 25, 10:36:20   SQQQ SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE
+  Sep 24, 22:00:20   GRASS Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs
+  Sep 24, 16:01:14   IREN RENzhrJQgmAnfcLhU1U5XwAMc6TC15UA6jCbPBaasnj
+  Sep 24, 11:41:44   
+  Sep 24, 10:55:02   ZAMA 4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh
+  Sep 23, 15:57:59   ENA 72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1
+  Sep 23, 13:30:18   XHYPE 7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx
+  Sep 23, 11:00:38   CRWV CRWVJeR2yEZuDUKYfGuKCHvLz8ywn4LGvovHfy5WiFmi
+  Sep 23, 06:48:04   MIM M1M6sdffCs3ozzhpRveweRCWdZhxth4mvVujPtYEC3h
+  Sep 22, 22:18:41   CRACKER 4rkGWJNSUPBcMicXMRAzohEyeJLFG8gUjwiWaz7Pddr3
+  Sep 22, 16:04:36   ARM ARMbSB1MBRQrY6PNMao1HdQ431VafC6JRJCsGZ2Yv3iJ
+  Sep 22, 13:18:36   APE C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f
+  Sep 22, 11:32:27   IONQ NQ5hSuXQZrbnrwcDVk2qN73njjd3E3v3badYHnj5thF
+  Sep 22, 00:28:38   FEELSGOOD HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT
+  Sep 21, 15:54:23   COPX CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5
+  Sep 21, 10:58:46   URA URARfsinxCRw4JpvQhuT4CxavdZXZEMjv9ZwWmWpwag
+  Sep 20, 22:20:42   RAWR 4K1m7gAMDKzrxQn68yuZAd767w57Fw7Ykw69dG3umeta
+  Sep 20, 21:00:39   AVAX avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D
+  Sep 20, 20:54:59   TRCH1 DeatoN4UYU2B658Lh4ZV1VXy1u2ros32UEwnAtCRv4nB
+  Sep 20, 15:44:20   FTT EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv
+  Sep 20, 11:23:48   JEANPHIL GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump
+  Sep 19, 12:31:15   WOW 72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi
+  Sep 19, 11:59:31   BB BBosJLw8ZzoATiEyywiifx7AgmrD2Cm3XjFWbhbRhChy
+  Sep 18, 20:43:48   WRY HkJiit2pbesCzSPyEmmf5jnvHpE3RXdB8KmzAWtsmFS6
+  Sep 18, 17:17:22   PEPE PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m
+  Sep 18, 12:13:38   CYPH CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK
+  Sep 18, 09:54:14   USO USNv3NkKA27Dh4nsHJDPhW4VoEcTQmjoZyJt2dqdwFu
+  Sep 17, 15:55:45   RUM RUMsPfFZFnN1ZmGANwP7FNMJMjKH4m9RiMePrtVtLe7
+  Sep 17, 13:30:09   SOLO SoLo9oxzLDpcq1dpqAgMwgce5WqkRDtNXK7EPnbmeta
+  Sep 17, 11:05:23   WULF WULFeyfrj1VJKD9HhRTcW8R4g5HefUA11HDEdBv2WxD
+  Sep 17, 10:01:11   INJ 1NJMqVM4PadjuzYmeB7zV7q7DV8oB3ExaQCd9x6KsLz
+  Sep 17, 07:52:27   PSOL pSo1f9nQXWgXibFtKf7NWYxb5enAM4qfP6UJSiXRQfL
+  Sep 17, 00:32:11   WIFOUT 6JrR1iqPdinYTNvNPWTR2P7e2wSJ1rwdsrKGyhnzjUVr
+  Sep 16, 22:01:16   GP HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ
+  Sep 16, 22:00:11   NEARKAT 6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr
+quick + admin rewind     {"t":1790464532146,"v":4,"errors":[],"n":6,"ne":0,"gap":123742,"hs":1790464378012,"light":1,"warn":[],"pairs":545,"cands":56,"ms":4679,"events":0,"ok":true,"mints":2024} | wall 4679 ms | pings 1
+pings:
+  (quiet) | WATCH: DIVI | DIVI is a StonkFun launch at $3.2M market cap. Launches past $5.0M become quotes (EARLY ping comes then). / [Chart](https://dexscreener.com/solana/FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht) / FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht
+  (quiet) | WATCH: GROK | GROK is a StonkFun launch at $3.1M market cap. Launches past $5.0M become quotes (EARLY ping comes then). / [Chart](https://dexscreener.com/solana/6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8) / 6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8
+  (quiet) | WATCH: 🎒 | 🎒 is a StonkFun launch at $3.1M market cap. Launches past $5.0M become quotes (EARLY ping comes then). / [Chart](https://dexscreener.com/solana/ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK) / ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK
+watch: {"FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht":1790464435392,"6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8":1790464435392,"ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK":1790464435392} top: 26 cfg new: 0 cfg old: 5 state bytes: 56302
+digest: {"sent":"digest","rows":40,"to":["discord"]} 
+Likely next · Sat 09/26
+**Likely next**
+1. [tSpaceX](https://dexscreener.com/solana/TSPXcLV76s6V2zDiZQ18kBfcbnjaE2ZzNT3ga2Pd99v) $119K liq · $433K vol · 228d old · PreStock/Tessera · hot volume
+2. [MORPHO](https://dexscreener.com/solana/Morpho2VPeTr2E1Jx6monxCzF7mqwUnjz74RdwLXYyP) $731K liq · $183K vol · 79d old · Sunrise
+3. [sUSDai](https://dexscreener.com/solana/sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE) $9.7M liq · $3.1M vol · 46d old
+4. [GO](https://dexscreener.com/solana/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n) $331K liq · $4.8M vol · 3d old · hot volume
+5. [PAXG](https://dexscreener.com/solana/5GgRAEmv8ZxF2PR5hY72Qs5x1bnQ6UK2RbTPoqJ3wSwW) $493K liq · $114K vol · 94d old · Sunrise
+6. [arc](https://dexscreener.com/solana/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump) $15.3M liq · $357K vol · 655d old · old Raydium setup
+7. [SHARTCOIN](https://dexscreener.com/solana/UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids) $317K liq · $254K vol · 3d old
+8. [SLX](https://dexscreener.com/solana/SLXdx4BUt2v9uJQNzWqSfzTJ9UKLUDsvxHFMEEdrfgq) $94K liq · $123K vol · 125d old · Sunrise
+9. [EMBER](https://dexscreener.com/solana/5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6) $865K liq · $3.1M vol · 17d old · hot volume
+10. [USDv](https://dexscreener.com/solana/USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk) $405K liq · $139K vol · 19d old · Sunrise stablecoin
+11. [MUSHU](https://dexscreener.com/solana/5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump) $278K liq · $40K vol · old Raydium setup
+12. [JLP](https://dexscreener.com/solana/27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4) $6.8M liq · $7.5M vol · 949d old
+13. [7](https://dexscreener.com/solana/777XNvfVmvumMEc6M9yxJQJQnQtjbUYJyx53cqrwo777) $264K liq · $3.7M vol · hot volume
+14. [CHZ](https://dexscreener.com/solana/6eftxVbSAunVEoxUWdGhPdxg5UdsJ8Wkwy5w5YFuxouw) $32K liq · $51K vol · 152d old · Sunrise
+15. [KMNO](https://dexscreener.com/solana/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS) $3.0M liq · $15.2M vol · 880d old · hot volume
+
+**Went live in the last 24 h:** none
+**Watcher:** 6 checks since Sat 19:12 ET, no errors, longest gap 2 min.

@@ -1,0 +1,779 @@
+{
+ "runs": [
+  {
+   "label": "upgrade (full, quiet)",
+   "r": {
+    "t": 1790464378012,
+    "v": 4,
+    "errors": [],
+    "n": 1,
+    "ne": 0,
+    "gap": 0,
+    "hs": 1790464378012,
+    "warn": [
+     "The operation was aborted due to timeout"
+    ],
+    "pairs": 545,
+    "mints": 2024,
+    "cands": 1672,
+    "ms": 48594,
+    "events": 0,
+    "ok": true
+   },
+   "wallMs": 48595,
+   "pingsSoFar": 0
+  },
+  {
+   "label": "quick 1",
+   "r": {
+    "t": 1790464426606,
+    "v": 4,
+    "errors": [],
+    "n": 2,
+    "ne": 0,
+    "gap": 108594,
+    "hs": 1790464378012,
+    "light": 1,
+    "warn": [],
+    "pairs": 545,
+    "cands": 45,
+    "ms": 5155,
+    "events": 0,
+    "ok": true,
+    "mints": 2024
+   },
+   "wallMs": 5155,
+   "pingsSoFar": 0
+  },
+  {
+   "label": "quick 2",
+   "r": {
+    "t": 1790464431761,
+    "v": 4,
+    "errors": [],
+    "n": 3,
+    "ne": 0,
+    "gap": 108594,
+    "hs": 1790464378012,
+    "light": 1,
+    "warn": [],
+    "pairs": 545,
+    "cands": 45,
+    "ms": 3629,
+    "events": 0,
+    "ok": true,
+    "mints": 2024
+   },
+   "wallMs": 3629,
+   "pingsSoFar": 0
+  },
+  {
+   "label": "full (forced)",
+   "r": {
+    "t": 1790464435391,
+    "v": 4,
+    "errors": [],
+    "n": 4,
+    "ne": 0,
+    "gap": 108594,
+    "hs": 1790464378012,
+    "warn": [],
+    "pairs": 545,
+    "mints": 2024,
+    "cands": 1667,
+    "ms": 33013,
+    "events": 3,
+    "ok": true
+   },
+   "wallMs": 33013,
+   "pingsSoFar": 1
+  },
+  {
+   "label": "quick 3",
+   "r": {
+    "t": 1790464468404,
+    "v": 4,
+    "errors": [],
+    "n": 5,
+    "ne": 0,
+    "gap": 108594,
+    "hs": 1790464378012,
+    "light": 1,
+    "warn": [],
+    "pairs": 545,
+    "cands": 56,
+    "ms": 3676,
+    "events": 0,
+    "ok": true,
+    "mints": 2024
+   },
+   "wallMs": 3676,
+   "pingsSoFar": 1
+  },
+  {
+   "label": "quick + admin rewind",
+   "r": {
+    "t": 1790464532146,
+    "v": 4,
+    "errors": [],
+    "n": 6,
+    "ne": 0,
+    "gap": 123742,
+    "hs": 1790464378012,
+    "light": 1,
+    "warn": [],
+    "pairs": 545,
+    "cands": 56,
+    "ms": 4679,
+    "events": 0,
+    "ok": true,
+    "mints": 2024
+   },
+   "wallMs": 4679,
+   "pingsSoFar": 1
+  }
+ ],
+ "admin": [
+  {
+   "et": "Sep 26, 13:59:48",
+   "err": false,
+   "configs": [
+    {
+     "m": "CARSsxWPkpQWvfyRBwfGMGvysJBHdHGfE46X5MNgmeta",
+     "sf": "CARS"
+    }
+   ]
+  },
+  {
+   "et": "Sep 26, 12:37:51",
+   "err": false,
+   "configs": [
+    {
+     "m": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+     "sf": "SI"
+    }
+   ]
+  },
+  {
+   "et": "Sep 26, 11:00:40",
+   "err": false,
+   "configs": [
+    {
+     "m": "EWY4owSJYMpwN33qGDu5gGxpkQkpMJu8ZUsQJaNZG5dv",
+     "sf": "EWY"
+    }
+   ]
+  },
+  {
+   "et": "Sep 26, 00:44:12",
+   "err": false,
+   "configs": [
+    {
+     "m": "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+     "sf": "MASK"
+    }
+   ]
+  },
+  {
+   "et": "Sep 25, 13:36:57",
+   "err": false,
+   "configs": [
+    {
+     "m": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+     "sf": "CBLTC"
+    }
+   ]
+  },
+  {
+   "et": "Sep 25, 10:36:20",
+   "err": false,
+   "configs": [
+    {
+     "m": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+     "sf": "SQQQ"
+    }
+   ]
+  },
+  {
+   "et": "Sep 24, 22:00:20",
+   "err": false,
+   "configs": [
+    {
+     "m": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+     "sf": "GRASS"
+    }
+   ]
+  },
+  {
+   "et": "Sep 24, 16:01:14",
+   "err": false,
+   "configs": [
+    {
+     "m": "RENzhrJQgmAnfcLhU1U5XwAMc6TC15UA6jCbPBaasnj",
+     "sf": "IREN"
+    }
+   ]
+  },
+  {
+   "et": "Sep 24, 11:41:44",
+   "err": false,
+   "configs": []
+  },
+  {
+   "et": "Sep 24, 10:55:02",
+   "err": false,
+   "configs": [
+    {
+     "m": "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh",
+     "sf": "ZAMA"
+    }
+   ]
+  },
+  {
+   "et": "Sep 23, 15:57:59",
+   "err": false,
+   "configs": [
+    {
+     "m": "72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1",
+     "sf": "ENA"
+    }
+   ]
+  },
+  {
+   "et": "Sep 23, 13:30:18",
+   "err": false,
+   "configs": [
+    {
+     "m": "7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx",
+     "sf": "XHYPE"
+    }
+   ]
+  },
+  {
+   "et": "Sep 23, 11:00:38",
+   "err": false,
+   "configs": [
+    {
+     "m": "CRWVJeR2yEZuDUKYfGuKCHvLz8ywn4LGvovHfy5WiFmi",
+     "sf": "CRWV"
+    }
+   ]
+  },
+  {
+   "et": "Sep 23, 06:48:04",
+   "err": false,
+   "configs": [
+    {
+     "m": "M1M6sdffCs3ozzhpRveweRCWdZhxth4mvVujPtYEC3h",
+     "sf": "MIM"
+    }
+   ]
+  },
+  {
+   "et": "Sep 22, 22:18:41",
+   "err": false,
+   "configs": [
+    {
+     "m": "4rkGWJNSUPBcMicXMRAzohEyeJLFG8gUjwiWaz7Pddr3",
+     "sf": "CRACKER"
+    }
+   ]
+  },
+  {
+   "et": "Sep 22, 16:04:36",
+   "err": false,
+   "configs": [
+    {
+     "m": "ARMbSB1MBRQrY6PNMao1HdQ431VafC6JRJCsGZ2Yv3iJ",
+     "sf": "ARM"
+    }
+   ]
+  },
+  {
+   "et": "Sep 22, 13:18:36",
+   "err": false,
+   "configs": [
+    {
+     "m": "C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f",
+     "sf": "APE"
+    }
+   ]
+  },
+  {
+   "et": "Sep 22, 11:32:27",
+   "err": false,
+   "configs": [
+    {
+     "m": "NQ5hSuXQZrbnrwcDVk2qN73njjd3E3v3badYHnj5thF",
+     "sf": "IONQ"
+    }
+   ]
+  },
+  {
+   "et": "Sep 22, 00:28:38",
+   "err": false,
+   "configs": [
+    {
+     "m": "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
+     "sf": "FEELSGOOD"
+    }
+   ]
+  },
+  {
+   "et": "Sep 21, 15:54:23",
+   "err": false,
+   "configs": [
+    {
+     "m": "CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5",
+     "sf": "COPX"
+    }
+   ]
+  },
+  {
+   "et": "Sep 21, 10:58:46",
+   "err": false,
+   "configs": [
+    {
+     "m": "URARfsinxCRw4JpvQhuT4CxavdZXZEMjv9ZwWmWpwag",
+     "sf": "URA"
+    }
+   ]
+  },
+  {
+   "et": "Sep 20, 22:20:42",
+   "err": false,
+   "configs": [
+    {
+     "m": "4K1m7gAMDKzrxQn68yuZAd767w57Fw7Ykw69dG3umeta",
+     "sf": "RAWR"
+    }
+   ]
+  },
+  {
+   "et": "Sep 20, 21:00:39",
+   "err": false,
+   "configs": [
+    {
+     "m": "avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D",
+     "sf": "AVAX"
+    }
+   ]
+  },
+  {
+   "et": "Sep 20, 20:54:59",
+   "err": false,
+   "configs": [
+    {
+     "m": "DeatoN4UYU2B658Lh4ZV1VXy1u2ros32UEwnAtCRv4nB",
+     "sf": "TRCH1"
+    }
+   ]
+  },
+  {
+   "et": "Sep 20, 15:44:20",
+   "err": false,
+   "configs": [
+    {
+     "m": "EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv",
+     "sf": "FTT"
+    }
+   ]
+  },
+  {
+   "et": "Sep 20, 11:23:48",
+   "err": false,
+   "configs": [
+    {
+     "m": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+     "sf": "JEANPHIL"
+    }
+   ]
+  },
+  {
+   "et": "Sep 19, 12:31:15",
+   "err": false,
+   "configs": [
+    {
+     "m": "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+     "sf": "WOW"
+    }
+   ]
+  },
+  {
+   "et": "Sep 19, 11:59:31",
+   "err": false,
+   "configs": [
+    {
+     "m": "BBosJLw8ZzoATiEyywiifx7AgmrD2Cm3XjFWbhbRhChy",
+     "sf": "BB"
+    }
+   ]
+  },
+  {
+   "et": "Sep 18, 20:43:48",
+   "err": false,
+   "configs": [
+    {
+     "m": "HkJiit2pbesCzSPyEmmf5jnvHpE3RXdB8KmzAWtsmFS6",
+     "sf": "WRY"
+    }
+   ]
+  },
+  {
+   "et": "Sep 18, 17:17:22",
+   "err": false,
+   "configs": [
+    {
+     "m": "PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m",
+     "sf": "PEPE"
+    }
+   ]
+  },
+  {
+   "et": "Sep 18, 12:13:38",
+   "err": false,
+   "configs": [
+    {
+     "m": "CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK",
+     "sf": "CYPH"
+    }
+   ]
+  },
+  {
+   "et": "Sep 18, 09:54:14",
+   "err": false,
+   "configs": [
+    {
+     "m": "USNv3NkKA27Dh4nsHJDPhW4VoEcTQmjoZyJt2dqdwFu",
+     "sf": "USO"
+    }
+   ]
+  },
+  {
+   "et": "Sep 17, 15:55:45",
+   "err": false,
+   "configs": [
+    {
+     "m": "RUMsPfFZFnN1ZmGANwP7FNMJMjKH4m9RiMePrtVtLe7",
+     "sf": "RUM"
+    }
+   ]
+  },
+  {
+   "et": "Sep 17, 13:30:09",
+   "err": false,
+   "configs": [
+    {
+     "m": "SoLo9oxzLDpcq1dpqAgMwgce5WqkRDtNXK7EPnbmeta",
+     "sf": "SOLO"
+    }
+   ]
+  },
+  {
+   "et": "Sep 17, 11:05:23",
+   "err": false,
+   "configs": [
+    {
+     "m": "WULFeyfrj1VJKD9HhRTcW8R4g5HefUA11HDEdBv2WxD",
+     "sf": "WULF"
+    }
+   ]
+  },
+  {
+   "et": "Sep 17, 10:01:11",
+   "err": false,
+   "configs": [
+    {
+     "m": "1NJMqVM4PadjuzYmeB7zV7q7DV8oB3ExaQCd9x6KsLz",
+     "sf": "INJ"
+    }
+   ]
+  },
+  {
+   "et": "Sep 17, 07:52:27",
+   "err": false,
+   "configs": [
+    {
+     "m": "pSo1f9nQXWgXibFtKf7NWYxb5enAM4qfP6UJSiXRQfL",
+     "sf": "PSOL"
+    }
+   ]
+  },
+  {
+   "et": "Sep 17, 00:32:11",
+   "err": false,
+   "configs": [
+    {
+     "m": "6JrR1iqPdinYTNvNPWTR2P7e2wSJ1rwdsrKGyhnzjUVr",
+     "sf": "WIFOUT"
+    }
+   ]
+  },
+  {
+   "et": "Sep 16, 22:01:16",
+   "err": false,
+   "configs": [
+    {
+     "m": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+     "sf": "GP"
+    }
+   ]
+  },
+  {
+   "et": "Sep 16, 22:00:11",
+   "err": false,
+   "configs": [
+    {
+     "m": "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr",
+     "sf": "NEARKAT"
+    }
+   ]
+  }
+ ],
+ "pings": [
+  {
+   "content": "",
+   "embeds": [
+    {
+     "title": "WATCH: DIVI",
+     "d": "DIVI is a StonkFun launch at $3.2M market cap. Launches past $5.0M become quotes (EARLY ping comes then).\n[Chart](https://dexscreener.com/solana/FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht)\nFjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht"
+    },
+    {
+     "title": "WATCH: GROK",
+     "d": "GROK is a StonkFun launch at $3.1M market cap. Launches past $5.0M become quotes (EARLY ping comes then).\n[Chart](https://dexscreener.com/solana/6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8)\n6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8"
+    },
+    {
+     "title": "WATCH: 🎒",
+     "d": "🎒 is a StonkFun launch at $3.1M market cap. Launches past $5.0M become quotes (EARLY ping comes then).\n[Chart](https://dexscreener.com/solana/ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK)\nZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK"
+    }
+   ]
+  }
+ ],
+ "watch": {
+  "FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht": 1790464435392,
+  "6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8": 1790464435392,
+  "ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK": 1790464435392
+ },
+ "adm": "3XPvZPJ1WUHxUevjodyMcB8krADnib7Dd7MFvjNHfFzUj7w6KNPDuWKE7C6tePcQYZfxApDMbk98PumMFV7ZhB89",
+ "fv": 4,
+ "fullT": 1790464532146,
+ "stateBytes": 56302,
+ "top": [
+  [
+   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "STONK",
+   228921558,
+   1986875,
+   0,
+   1784833683348
+  ],
+  [
+   "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+   "ZCAT",
+   86523499,
+   1925850,
+   0,
+   1788132626185
+  ],
+  [
+   "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+   "MASK",
+   20642229,
+   5784148,
+   528200,
+   1790153571406
+  ],
+  [
+   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "SI",
+   13419202,
+   4315825,
+   480550,
+   1790005744818
+  ],
+  [
+   "8RVBk8vxLiUHueLUW1f4izFVqN3nWippLhkohKg6EGkS",
+   "KNOTS",
+   9285918,
+   645072,
+   786987,
+   1788626085099
+  ],
+  [
+   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+   "ALLINU",
+   7598262,
+   1044517,
+   295137,
+   1789157100407
+  ],
+  [
+   "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr",
+   "NEARKAT",
+   6866912,
+   685415,
+   406884,
+   1788741390252
+  ],
+  [
+   "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+   "GP",
+   6132974,
+   1705520,
+   260574,
+   1788831501198
+  ],
+  [
+   "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "PURR",
+   5980868,
+   418072,
+   0,
+   1787188075607
+  ],
+  [
+   "FjTfaSH861nVcbAxdFAHTvhoSL4kyR6wgTWynuJkapht",
+   "DIVI",
+   3224218,
+   90295,
+   156825,
+   1789132206816
+  ],
+  [
+   "6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8",
+   "GROK",
+   3111934,
+   933669,
+   197697,
+   1790016629238
+  ],
+  [
+   "ZesMGYmokFiEuDvNzWeMhB7jxF6eUW8c512vwSKSTNK",
+   "🎒",
+   3076138,
+   431698,
+   329936,
+   1788712971974
+  ],
+  [
+   "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih",
+   "GROK",
+   2923781,
+   278661,
+   168205,
+   1789202443509
+  ],
+  [
+   "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
+   "FEELSGOOD",
+   2762307,
+   358748,
+   179931,
+   1789767047922
+  ],
+  [
+   "9h5AzEQzYu9CV5K6uLtFRMD1KcbxZSFNxZEgBTNfw5Na",
+   "STONKCATS",
+   2609969,
+   270583,
+   169008,
+   1789437012750
+  ],
+  [
+   "8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2",
+   "SNDK",
+   2482047,
+   1158815,
+   150182,
+   1790300222170
+  ],
+  [
+   "CFNRDaxFcvRwRSNnA5cHrCCr6AHhk9dNkHWpRUjNupFL",
+   "RAYCAT",
+   2348931,
+   323439,
+   0,
+   1786624224634
+  ],
+  [
+   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+   "WOW",
+   2226166,
+   496562,
+   147501,
+   1789346386053
+  ],
+  [
+   "E4Ap4icMLwKot8rkkTbq5JkS5kZxt5XCE3yfxbzYBjHx",
+   "BTC",
+   2160929,
+   268756,
+   0,
+   1788155966484
+  ],
+  [
+   "7MCgYMzq3fov6oERdtTMAYbN2U9LZrrSYS1MBhjixZFr",
+   "POLLY",
+   1626725,
+   169478,
+   148341,
+   1789053406618
+  ],
+  [
+   "7Qy2cXpdj4Fu2DUPVWdN3oogM3JSwLUV2LZaKVgVcPZh",
+   "HYPERCAT",
+   1505538,
+   177826,
+   113798,
+   1790185286084
+  ],
+  [
+   "AGi2s9zPRPHs3zEDPhPTroumTEXK5ufymYSfEFndCSSW",
+   "LEVERCAT",
+   1419543,
+   121584,
+   152600,
+   1788780003301
+  ],
+  [
+   "7ssJZGFT3twGqeYA1kvpoMWwZYvMZvrMEbjRaWgg46BL",
+   "BUTTHOLE",
+   1404419,
+   22889,
+   0,
+   1785966304100
+  ],
+  [
+   "6AUURRdHb9TrfPHv9AMofa8NEVoZDXcsbWKcUBpFSRXs",
+   "CYPHERCAT",
+   1135737,
+   215045,
+   113888,
+   1789749628540
+  ],
+  [
+   "HRe2LkLMiQnrpeooNTmvkHp2bzX7JdBPpek7Eu3oWSuK",
+   "GUARD",
+   1083060,
+   9090,
+   103408,
+   1789258174305
+  ],
+  [
+   "JE3HT7SbCgXDQWV6xp3oiiAisDzq4HyZ8wyEVBDCs45Z",
+   "PENIS",
+   1041348,
+   58081,
+   115775,
+   1788993728251
+  ]
+ ],
+ "cfgNew": [],
+ "cfgOldCount": 5,
+ "digest": {
+  "title": "Likely next · Sat 09/26",
+  "description": "**Likely next**\n1. [tSpaceX](https://dexscreener.com/solana/TSPXcLV76s6V2zDiZQ18kBfcbnjaE2ZzNT3ga2Pd99v) $119K liq · $433K vol · 228d old · PreStock/Tessera · hot volume\n2. [MORPHO](https://dexscreener.com/solana/Morpho2VPeTr2E1Jx6monxCzF7mqwUnjz74RdwLXYyP) $731K liq · $183K vol · 79d old · Sunrise\n3. [sUSDai](https://dexscreener.com/solana/sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE) $9.7M liq · $3.1M vol · 46d old\n4. [GO](https://dexscreener.com/solana/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n) $331K liq · $4.8M vol · 3d old · hot volume\n5. [PAXG](https://dexscreener.com/solana/5GgRAEmv8ZxF2PR5hY72Qs5x1bnQ6UK2RbTPoqJ3wSwW) $493K liq · $114K vol · 94d old · Sunrise\n6. [arc](https://dexscreener.com/solana/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump) $15.3M liq · $357K vol · 655d old · old Raydium setup\n7. [SHARTCOIN](https://dexscreener.com/solana/UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids) $317K liq · $254K vol · 3d old\n8. [SLX](https://dexscreener.com/solana/SLXdx4BUt2v9uJQNzWqSfzTJ9UKLUDsvxHFMEEdrfgq) $94K liq · $123K vol · 125d old · Sunrise\n9. [EMBER](https://dexscreener.com/solana/5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6) $865K liq · $3.1M vol · 17d old · hot volume\n10. [USDv](https://dexscreener.com/solana/USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk) $405K liq · $139K vol · 19d old · Sunrise stablecoin\n11. [MUSHU](https://dexscreener.com/solana/5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump) $278K liq · $40K vol · old Raydium setup\n12. [JLP](https://dexscreener.com/solana/27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4) $6.8M liq · $7.5M vol · 949d old\n13. [7](https://dexscreener.com/solana/777XNvfVmvumMEc6M9yxJQJQnQtjbUYJyx53cqrwo777) $264K liq · $3.7M vol · hot volume\n14. [CHZ](https://dexscreener.com/solana/6eftxVbSAunVEoxUWdGhPdxg5UdsJ8Wkwy5w5YFuxouw) $32K liq · $51K vol · 152d old · Sunrise\n15. [KMNO](https://dexscreener.com/solana/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS) $3.0M liq · $15.2M vol · 880d old · hot volume\n\n**Went live in the last 24 h:** none\n**Watcher:** 6 checks since Sat 19:12 ET, no errors, longest gap 2 min.",
+  "color": 13079274,
+  "timestamp": "2026-09-26T23:15:36.827Z"
+ }
+}
