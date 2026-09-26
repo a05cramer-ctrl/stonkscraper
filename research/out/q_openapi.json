@@ -1,0 +1,1522 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "StonkFun Developer API",
+  "version": "1.0.0",
+  "description": "Launch tokens and read platform data. Launches are non-custodial: the creator signs their own fee payment and the platform never holds a private key."
+ },
+ "servers": [
+  {
+   "url": "https://www.stonkfun.xyz"
+  }
+ ],
+ "tags": [
+  {
+   "name": "Data",
+   "description": "Tokens, launches, pairs, rewards and revenue."
+  },
+  {
+   "name": "Launch",
+   "description": "Create tokens programmatically."
+  }
+ ],
+ "paths": {
+  "/api/public/v1/tokens": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "List and search tokens",
+    "description": "Every token with a live platform pool, with market data. Works without a key at a lower rate limit. V3 reward tokens additionally carry transferFee.bps (a Token-2022 transfer tax paid to holders — use the Token-2022 program for their accounts) and, while in the buyback rankings, flywheel.active.",
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "description": "Search name, symbol or mint.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "sort",
+      "in": "query",
+      "required": false,
+      "description": "Defaults to marketCap.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "mode",
+      "in": "query",
+      "required": false,
+      "description": "Filter by fee model.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "status",
+      "in": "query",
+      "required": false,
+      "description": "Filter by graduation status.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "quoteMint",
+      "in": "query",
+      "required": false,
+      "description": "Filter by paired token.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "category",
+      "in": "query",
+      "required": false,
+      "description": "Filter by pair category, e.g. xstock.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "page",
+      "in": "query",
+      "required": false,
+      "description": "Defaults to 1.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "pageSize",
+      "in": "query",
+      "required": false,
+      "description": "1-100, defaults to 25.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Get one token",
+    "description": "Live market data plus the launch record, when the platform launched it. V3 reward tokens carry the same optional transferFee and flywheel fields as /tokens.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}/burns": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Token burn history",
+    "description": "Totals and recent burns of this token by the platform fee sweep.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "description": "1-100, defaults to 25.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}/rewards": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Token holder rewards",
+    "description": "Distribution totals for a reward coin. Standard launches answer with mode \"standard\" and a null rewards object. Amounts under \"rewards\" are quote-token amounts; the separate \"base\" object carries what the launch paid holders in its OWN token, and is null when that has never happened.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}/airdrop": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Token launch airdrop",
+    "description": "The airdrop a token launched with, if any: what share of supply was carved out of the pool, how many wallets received it, and where those wallets came from. Reads the frozen snapshot taken at quote time, so it is the drop that was actually paid for rather than a live balance scan. A token that launched without one answers airdrop: null, which is not an error — most tokens have no airdrop.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}/fees": {
+   "get": {
+    "tags": [
+     "Fees"
+    ],
+    "summary": "Creator claimable fees",
+    "description": "Trading fees currently claimable by the creator of a standard (fee coin) launch, in both the base and quote token. Needs no wallet, so a dashboard can show what is waiting before anyone connects. Reward coins and pump launches return claimable: null with a reason rather than an error. LaunchLab launches answer the same way for a different reason: a standard one accrues creator fees, a share of the platform fee that is FORWARDED to the creator automatically, with nothing to claim by signature, and a reward one distributes the mint’s transfer tax to holders and has no creator fees. Where a LaunchLab creator does have a claimable balance it is quote-side only, and scope: \"creator-quote-vault\" says the amount covers every launch that creator has against this quote token, not this one alone.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}/fees/claim/prepare": {
+   "post": {
+    "tags": [
+     "Fees"
+    ],
+    "summary": "Step 1: prepare a fee claim",
+    "description": "Returns an UNSIGNED transaction that pays the creator their claimable trading fees, plus the amounts it will collect. Sign it with the wallet holding this launch’s Fee Key NFT — on a LaunchLab launch there is no Fee Key NFT and the creator wallet itself signs, draining its per-quote fee vault — and post it to /fees/claim/submit. Non-custodial: the claim is only valid signed by that wallet and pays that wallet’s own token accounts, so no platform key signs anything and a claim prepared for a token you do not own is unusable. Standard (fee coin) launches only — reward coins and pump launches answer 403. 409 when nothing is claimable yet. Expires after 90 seconds; just prepare again, fees keep accruing.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "required": [
+         "creatorWallet"
+        ],
+        "properties": {
+         "creatorWallet": {
+          "type": "string",
+          "description": "The creator wallet holding the Fee Key NFT. It must be the fee payer of the transaction you sign."
+         }
+        }
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}/fees/claim/submit": {
+   "post": {
+    "tags": [
+     "Fees"
+    ],
+    "summary": "Step 2: submit the signed claim",
+    "description": "Relays the signed claim and waits for confirmation, answering with the transaction signature. Fees land directly in the creator’s token accounts. Only the exact transaction issued by /prepare is relayed — instructions are checked against the recorded intent. Idempotent per intentId: an intent already relayed returns its original signature with alreadySubmitted: true, so a retry after a timeout cannot claim twice.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "required": [
+         "creatorWallet",
+         "intentId",
+         "signedTransaction"
+        ],
+        "properties": {
+         "creatorWallet": {
+          "type": "string",
+          "description": "The same wallet passed to /prepare."
+         },
+         "intentId": {
+          "type": "string",
+          "description": "From /fees/claim/prepare."
+         },
+         "signedTransaction": {
+          "type": "string",
+          "description": "The transaction from /fees/claim/prepare, signed by the creator wallet."
+         }
+        }
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/tokens/{mint}/backing": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Token backing value",
+    "description": "USD permanently locked behind a pump-launched token, summed from the platform’s own locked positions. Pump launches only: every other launch — Raydium CLMM and LaunchLab alike — answers 400 invalid_request rather than a zero, since backing is not a thing those have. Check launchpad from /tokens/{mint} before calling.",
+    "parameters": [
+     {
+      "name": "mint",
+      "in": "path",
+      "required": true,
+      "description": "Token mint address.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/launches": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "List launches",
+    "description": "The launch ledger, newest first. Filter by creator to find your own. Launches built directly against the venue appear here too, once adopted, under launchpad \"launchlab\" — no payment of ours exists for those, so they are read here or from /tokens/{mint} rather than by polling a payment signature.",
+    "parameters": [
+     {
+      "name": "creator",
+      "in": "query",
+      "required": false,
+      "description": "Filter by creator wallet.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "mode",
+      "in": "query",
+      "required": false,
+      "description": "Filter by fee model.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "since",
+      "in": "query",
+      "required": false,
+      "description": "Only launches at or after this time.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "page",
+      "in": "query",
+      "required": false,
+      "description": "Defaults to 1.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "pageSize",
+      "in": "query",
+      "required": false,
+      "description": "1-100, defaults to 25.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/pairs": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "List launchable pairs",
+    "description": "Quote tokens a new launch can be paired against. Call this first — quoteMint must be one of these. Two different gates apply and both are reported: `launchable` is this platform’s own rule (retired categories and mints are false), while `launchLabReady` says whether Raydium has created the on-chain GlobalConfig a LaunchLab launch needs. A pair can be launchable but not yet LaunchLab-ready; constructing a launch against one of those fails on-chain. `launchLabReady` is absent rather than false when the venue is off or the probe could not run.",
+    "parameters": [
+     {
+      "name": "category",
+      "in": "query",
+      "required": false,
+      "description": "Filter by category.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "launchable",
+      "in": "query",
+      "required": false,
+      "description": "Set true to exclude retired categories.",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "launchLabReady",
+      "in": "query",
+      "required": false,
+      "description": "Set true to return only pairs with a live LaunchLab config on-chain.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/rewards": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Rewards overview",
+    "description": "Lifetime payout totals per reward coin plus recent distribution transactions. \"launches\" and \"recentDistributions\" are quote-token amounts only; rewards paid in a launch's own token appear in \"baseDistributions\" and \"recentBaseDistributions\". In those two, \"decimals\" and the token amount are null together when the launch record cannot be resolved — read the raw amount instead of scaling it yourself.",
+    "parameters": [
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "description": "1-100, defaults to 25.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/revenue": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Platform revenue and burns",
+    "description": "Fee revenue, buybacks and burns.",
+    "parameters": [
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "description": "1-100, defaults to 25.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/revenue/history": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Daily revenue series",
+    "description": "Whole daily history in one response, keyed by UTC day, in USD. dailyRevenue is quote-token fees claimed to the treasury valued at claim time, and sums to the \"Total revenue\" figure on the /revenue page; dailyHoldersRevenue is the share spent buying the platform token back and burning it; dailyProtocolRevenue is the remainder. Fees earned by creator and reward-holder positions are claimed directly from Raydium and are not included. A coverage block reports ledger rows that carry no USD price and therefore count as zero. No date parameter by design — fetch once and index locally.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/stats": {
+   "get": {
+    "tags": [
+     "Data"
+    ],
+    "summary": "Platform stats and config",
+    "description": "Aggregate totals plus the thresholds and switches a client needs, so your UI tracks the platform instead of hardcoding it. config.paidLaunchesEnabled and config.launchLabEnabled together say which launch path is live: the two-call /launches flow, the transaction you build yourself, or both. Read them before offering a launch button.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/launches/{paymentSignature}": {
+   "get": {
+    "tags": [
+     "Launch"
+    ],
+    "summary": "Launch status",
+    "description": "Poll this after a \"processing\" response until status is \"completed\".",
+    "parameters": [
+     {
+      "name": "paymentSignature",
+      "in": "path",
+      "required": true,
+      "description": "Signature of the fee payment.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/public/v1/launchlab/pricing": {
+   "get": {
+    "tags": [
+     "Launch"
+    ],
+    "summary": "Curve pricing for a launch you build yourself",
+    "description": "Everything needed to size and attribute a LaunchLab launch you construct YOURSELF, instead of through /launches/prepare: the exact raw totalFundRaisingB to pass so the launch opens and graduates at the same market caps as one launched here, the caps that raise produces, the virtual reserves the program will derive from it, and the remaining create-instruction constants. The raise is a RAW amount in the quote’s own decimals — reusing Raydium’s 85-SOL lamport constant on another quote is the mistake this endpoint exists to prevent. `platform.standard` / `platform.reward` are the platform ids to attribute the create to, and `modes.reward.transferFeeBps` the holder-tax tiers this platform publishes. `curveRule` carries the per-platform rule account to append as the LAST (read-only) account of the initialize instruction: once a platform enforces its launch shape on-chain, an initialize without it is refused outright (6018), and one outside the published shape is refused too (6025) — append it now and both futures are covered. A pool built to exactly this shape is adopted automatically once it lands — same token page, same fee forwarding, same holder rewards as a launch made through the API; one built to any other shape is left alone, which for a taxed mint means nobody ever collects the tax. Prices move, so a raise is only as current as prices.observedAt; nothing is reserved by calling this.",
+    "parameters": [
+     {
+      "name": "quoteMint",
+      "in": "query",
+      "required": true,
+      "description": "Mint address of the quote token to price against, from GET /pairs.",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Success",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "data": {
+           "type": "object"
+          },
+          "meta": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "default": {
+      "description": "Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "object",
+           "properties": {
+            "code": {
+             "type": "string",
+             "enum": [
+              "invalid_request",
+              "forbidden",
+              "not_found",
+              "method_not_allowed",
+              "conflict",
+              "rate_limited",
+              "internal",
+              "service_unavailable"
+             ]
+            },
+            "message": {
+             "type": "string"
+            },
+            "retryable": {
+             "type": "boolean"
+            },
+            "retryAfterSeconds": {
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

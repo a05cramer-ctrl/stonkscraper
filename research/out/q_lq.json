@@ -1,0 +1,50 @@
+{
+ "devBuy": {
+  "available": true,
+  "maxPercent": 50,
+  "startMarketCapUsd": 5000,
+  "solUsdPrice": 121.36476297893746,
+  "tradeFeeRates": {
+   "standard": 0.01,
+   "standard2pct": 0.02,
+   "reward": 0.04,
+   "rewardTax": 0.01
+  }
+ },
+ "feeLamports": 290409252,
+ "feeSol": 0.290409252,
+ "launchLabEnabled": true,
+ "launchLabFeeLamports": 0,
+ "launchLabFeeSol": 0,
+ "launchLabRentSol": {
+  "standard": 0.012,
+  "reward": 0.013,
+  "devBuyExtra": 0.003
+ },
+ "launchLabFeeRates": {
+  "protocol": 0.0025,
+  "platform": 0.01,
+  "creator": 0
+ },
+ "launchLabRewardsEnabled": true,
+ "launchLabV4FeeRates": {
+  "protocol": 0.0025,
+  "platform": 0.01,
+  "creator": 0
+ },
+ "legacyLaunchesDisabled": true,
+ "rewardEnabled": true,
+ "rewardAdminOnly": false,
+ "v3Launches": true,
+ "v3TransferTaxBps": 100,
+ "v3TransferTaxChoicesBps": [
+  100,
+  300
+ ],
+ "v3FlywheelShareBps": 500,
+ "airdropEnabled": true,
+ "airdropAdminOnly": false,
+ "airdropWalletLists": true,
+ "airdropMaxPercent": 50,
+ "airdropHolderSnapshotsEnabled": true
+}
