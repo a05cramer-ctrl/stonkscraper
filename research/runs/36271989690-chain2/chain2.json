@@ -542,6 +542,250 @@
    "t0ET": "Sep 25, 13:30:00",
    "liveET": "Sep 25, 13:40:34",
    "firstLaunchET": "Sep 25, 13:46:22"
+  },
+  {
+   "sym": "SQQQ",
+   "mint": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+   "kind": "sunrise-stock",
+   "t0": 1790346600000,
+   "live": 1790347236326,
+   "firstLaunch": 1790347693090,
+   "pages": 30,
+   "reachedStart": false,
+   "n": 7214,
+   "nBefore": 0,
+   "first": {
+    "et": "Sep 25, 10:39:40",
+    "leadMin": -10
+   },
+   "tx": [
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": false,
+     "signers": [
+      "LASTvjDW"
+     ],
+     "what": "Comput:02801a06,Comput:03720d00,NA777p:000802ff,Comput:04a80c85"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": false,
+     "signers": [
+      "AjkDC1Kd"
+     ],
+     "what": "transfer,3iqgDs:d07ca197"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": true,
+     "signers": [
+      "Dd2nB2vD"
+     ],
+     "what": "Comput:02c4ad01,Comput:03e80300,Comput:040000d0,CCMRZv:048df916,LanMV9:faea0d7b,transfer"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": false,
+     "signers": [
+      "AMDEmVoc"
+     ],
+     "what": "advanceNonce,DDDDUi:05000601,createIdempotent,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,LanMV9:9527de9b,LanMV9:e445a52e,transferChecked,CAMMCz:2b04ed0b,closeAccount,SellExactIn,TransferChecked"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": true,
+     "signers": [
+      "QqQ8Dkkn"
+     ],
+     "what": "626x1q:09c288ad,transfer,CAMMCz:2b04ed0b,transferChecked,CPMMoo:8fbe5ada,SwapV2,TransferChecked,SwapBaseInput"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": false,
+     "signers": [
+      "HvidZDSP"
+     ],
+     "what": "Comput:02170504,Comput:032c0100,transfer,Prism8:0d010c02"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": true,
+     "signers": [
+      "QqQ8Dkkn"
+     ],
+     "what": "626x1q:09c288ad,CAMMCz:2b04ed0b,transferChecked,CPMMoo:8fbe5ada,SwapV2,TransferChecked,SwapBaseInput"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": false,
+     "signers": [
+      "9BFmA3Qg"
+     ],
+     "what": "Comput:022e6102,Comput:03e01101,createIdempotent,JUP6Lk:bb64facc,closeAccount,getAccountDataSize,createAccount,initializeImmutableOwner,initializeAccount3,CPMMoo:8fbe5ada,transferChecked,CAMMCz:2b04ed0b,JUP6Lk:e445a52e,transfer"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": true,
+     "signers": [
+      "QqQ8Dkkn"
+     ],
+     "what": "advanceNonce,626x1q:09c288ad,CAMMCz:2b04ed0b,transferChecked,CPMMoo:8fbe5ada,SwapV2,TransferChecked,SwapBaseInput"
+    },
+    {
+     "et": "Sep 25, 10:39:40",
+     "leadMin": -10,
+     "err": true,
+     "signers": [
+      "Dd2nB2vD"
+     ],
+     "what": "Comput:02c3ad01,Comput:03e80300,Comput:040000d0,CCMRZv:048df916,LanMV9:faea0d7b,transfer"
+    }
+   ],
+   "cfg": {
+    "et": "Sep 25, 10:56:06",
+    "minVsT0": 26,
+    "n": 59664,
+    "reachedStart": false,
+    "pages": 60,
+    "signers": [
+     "BuekUk3YMmm7Agnb4ni1qMCmShVpeBTdQZYNyihyzr7u"
+    ],
+    "what": "transfer,DhpyNW:067a57d8"
+   },
+   "t0ET": "Sep 25, 10:30:00",
+   "liveET": "Sep 25, 10:40:36",
+   "firstLaunchET": "Sep 25, 10:48:13"
+  },
+  {
+   "sym": "GRASS",
+   "mint": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+   "kind": "custom",
+   "t0": 1790301736735,
+   "live": 1790301736735,
+   "firstLaunch": 1790302251030,
+   "pages": 30,
+   "reachedStart": false,
+   "n": 16544,
+   "nBefore": 0,
+   "first": {
+    "et": "Sep 24, 22:10:59",
+    "leadMin": -9
+   },
+   "tx": [
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": true,
+     "signers": [
+      "Dd2nB2vD"
+     ],
+     "what": "Comput:02b2ad01,Comput:03e80300,Comput:040000d0,CCMRZv:04611cf5,LanMV9:faea0d7b,transfer"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": false,
+     "signers": [
+      "AXmnRBrN"
+     ],
+     "what": "HVi6Vy:06040000"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": true,
+     "signers": [
+      "FKj74Cpb"
+     ],
+     "what": "6boYuq:029eb7d5,6boYuq:07180023,6boYuq:06bc2e12,transfer"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": false,
+     "signers": [
+      "85NiTpwT"
+     ],
+     "what": "FLASHX:03fe,FLASHX:01803dcd,FLASHX:00803dcd,transfer,getAccountDataSize,createAccount,initializeAccount3,syncNative,whirLb:2b04ed0b,transferChecked,LanMV9:faea0d7b,LanMV9:e445a52e,closeAccount,FLASHX:0700069b"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": true,
+     "signers": [
+      "3zNWpeRB"
+     ],
+     "what": "BMofZX:029eb7d5,BMofZX:071d0023,BMofZX:065d6ba8,transfer"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": true,
+     "signers": [
+      "FKj74Cpb"
+     ],
+     "what": "6boYuq:029eb7d5,6boYuq:07180023,6boYuq:067504bd,transfer"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": false,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "DhpyNW:069db7d5"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": false,
+     "signers": [
+      "LASTvjDW"
+     ],
+     "what": "Comput:02801a06,Comput:03f92400,NA777p:001802ff,Comput:04646a44"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": true,
+     "signers": [
+      "BuekUk3Y"
+     ],
+     "what": "transfer,DhpyNW:069db7d5"
+    },
+    {
+     "et": "Sep 24, 22:10:59",
+     "leadMin": -9,
+     "err": false,
+     "signers": [
+      "CzYQ2kFn"
+     ],
+     "what": "Comput:02205704,Comput:03707600,FoaFt2:0a0c0300,Comput:04c00e16"
+    }
+   ],
+   "cfg": {
+    "et": "Sep 24, 22:23:00",
+    "minVsT0": 21,
+    "n": 56470,
+    "reachedStart": false,
+    "pages": 60,
+    "signers": [
+     "3zNWpeRBZY7c5eS5fYboheQP5juPqD525qixxbjiVhEQ"
+    ],
+    "what": "BMofZX:022ec2d5,BMofZX:071d0023,BMofZX:06313012,transfer"
+   },
+   "t0ET": "Sep 24, 22:02:16",
+   "liveET": "Sep 24, 22:02:16",
+   "firstLaunchET": "Sep 24, 22:10:51"
   }
  ]
 }
