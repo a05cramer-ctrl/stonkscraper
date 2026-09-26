@@ -24,13 +24,21 @@ jobs:
       - name: run job
         run: |
           JOB=$(tr -d '[:space:]' < research/JOB)
-          mkdir -p research/out
-          OUT=$PWD/research/out/ timeout 55m node "research/$JOB" > "research/out/${JOB%.mjs}.log" 2>&1 || echo "exit $?" >> "research/out/${JOB%.mjs}.log"
-          tail -c 4000 "research/out/${JOB%.mjs}.log"
+          OUTDIR="research/runs/${GITHUB_RUN_ID}-${JOB%.mjs}"
+          mkdir -p "$OUTDIR"
+          echo "OUTDIR=$OUTDIR" >> "$GITHUB_ENV"
+          OUT="$PWD/$OUTDIR/" timeout 55m node "research/$JOB" > "$OUTDIR/log.txt" 2>&1 || echo "exit $?" >> "$OUTDIR/log.txt"
+          tail -c 4000 "$OUTDIR/log.txt"
       - name: commit results
+        if: always()
         run: |
           git config user.name "research-bot"
           git config user.email "research-bot@users.noreply.github.com"
-          git add research/out
-          git commit -q -m "results $(tr -d '[:space:]' < research/JOB)" || exit 0
-          for i in 1 2 3 4 5; do git pull -q --rebase origin research && git push -q origin HEAD:research && break; sleep 5; done
+          git add research/runs
+          git commit -q -m "results $OUTDIR" || exit 0
+          for i in 1 2 3 4 5 6 7 8; do
+            git fetch -q origin research && git rebase -q origin/research && git push -q origin HEAD:research && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 10 + 3))
+          done
+          exit 1

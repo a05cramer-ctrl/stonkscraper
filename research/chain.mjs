@@ -1,5 +1,6 @@
 // Stage 3: on-chain timeline around each recent Sunrise listing (stock + crypto) and StonkFun config creation.
-import { get, rpc, save, sleep, describeTx, configPda, et, parseMint, RPCS } from './lib.mjs';
+import { get, rpc, save, sleep, describeTx, configPda, et, parseMint, RPCS, b58decode } from './lib.mjs';
+const isMint = (m) => { try { return b58decode(m).length === 32; } catch { return false; } };
 
 const T0 = Date.now();
 const log = (...a) => console.log(((Date.now() - T0) / 1000).toFixed(0) + 's', ...a);
@@ -21,8 +22,6 @@ for (const u of CANDIDATES) {
   } catch (e) { R.rpcTest[u] = { err: String(e) }; }
 }
 log('rpc test', JSON.stringify(R.rpcTest));
-const good = CANDIDATES.filter((u) => R.rpcTest[u] && R.rpcTest[u].ok);
-if (good.length) { RPCS.length = 0; RPCS.push(...good); }
 save('chain.json', R);
 
 // 2) Sunrise listings since Sep 8
@@ -31,7 +30,7 @@ const pairs = (await get(`https://www.stonkfun.xyz/api/public/v1/pairs?_=${Date.
 const pm = new Map(pairs.map((p) => [p.mint, p]));
 const L = sun.data.listings
   .map((x) => ({ sym: x.listing.displaySymbol, mint: x.token.address, cls: x.token.assetClass, issuer: x.token.issuer, vf: Date.parse(x.listing.visibleFrom), upd: Date.parse(x.listing.updatedAt), onSF: pm.has(x.token.address) }))
-  .filter((x) => x.vf > Date.parse('2026-09-08T00:00:00Z') && x.mint && x.mint.length >= 32)
+  .filter((x) => x.vf > Date.parse('2026-09-08T00:00:00Z') && x.mint && isMint(x.mint))
   .sort((a, b) => b.vf - a.vf);
 log('listings to scan', L.length);
 

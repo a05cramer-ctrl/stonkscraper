@@ -50,15 +50,18 @@ export async function get(url, { json = true, headers = {}, method = 'GET', body
   return { status: 0, error: String(last && last.message || last) };
 }
 
-export const RPCS = (process.env.RPC_URLS || 'https://solana-rpc.publicnode.com,https://api.mainnet-beta.solana.com').split(',');
+export const RPCS = (process.env.RPC_URLS || 'https://api.mainnet-beta.solana.com,https://solana-rpc.publicnode.com').split(',');
+// publicnode has no old transactions; mainnet-beta does (from GitHub runners)
+const HISTORY = ['https://api.mainnet-beta.solana.com'];
 let rpcN = 0;
 export async function rpc(method, params, tries = 6) {
   let last;
   for (let i = 0; i < tries; i++) {
-    const url = RPCS[(rpcN++) % RPCS.length];
+    const pool = method === 'getTransaction' ? HISTORY : RPCS;
+    const url = pool[(rpcN++) % pool.length];
     try {
       const r = await fetch(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method, params }), signal: AbortSignal.timeout(40000) });
-      if (r.status === 429) { last = new Error('429'); await sleep(1200 * (i + 1)); continue; }
+      if (r.status === 429 || r.status >= 500) { last = new Error(String(r.status)); await sleep(1500 * (i + 1)); continue; }
       const j = await r.json();
       if (j.error) { last = new Error(JSON.stringify(j.error).slice(0, 200)); await sleep(500 * (i + 1)); continue; }
       return j.result;
